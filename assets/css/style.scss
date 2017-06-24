@@ -1,0 +1,10 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+p, ul, ol, pre, blockquote, hr, object { margin: 1em 0; }
+
+div.post actions, div.post info {
+  color: #ccc;
+}
