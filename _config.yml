@@ -1,1 +1,5 @@
-theme: jekyll-theme-minimal
+# Site Settings
+locale          : "en-AU"
+title           : "IXEnv Blog"
+description     : "Interaction Environments"
+theme           : jekyll-theme-minimal
