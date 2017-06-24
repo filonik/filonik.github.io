@@ -1,5 +1,10 @@
 # Site Settings
-locale          : "en-AU"
 title           : "IXEnv Blog"
+author          : "Daniel Filonik"
 description     : "Interaction Environments"
+locale          : "en-AU"
 theme           : jekyll-theme-minimal
+
+# Jekyll Plugins
+gems:
+  - jemoji
