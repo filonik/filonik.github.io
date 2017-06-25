@@ -1,10 +1,18 @@
 # Site Settings
-title           : "IXEnv Blog"
+#title           : "IXEnv Blog"
+title           : "The Source"
 author          : "Daniel Filonik"
 description     : "Interaction Environments"
 locale          : "en-AU"
 theme           : jekyll-theme-minimal
 
-# Jekyll Plugins
+# Github metadata settings
+github: [metadata]
+repository: filonik/filonik.github.io
+
+# Gem settings
 gems:
+  - jekyll-github-metadata
   - jemoji
+
+
