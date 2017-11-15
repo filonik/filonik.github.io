@@ -4,16 +4,29 @@
 <meta charset="utf-8">
 <title>Hello AngularJS!</title>
 
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/dropzone.css">
+<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<script src="/assets/js/projects/viewer/app.js"></script>
+<script src="assets/js/angular-dropzone.js"></script>
+<script src="assets/js/app.js"></script>
 
 </head>
 
 <body ng-app='myApp'>
 
-<div class="main" ng-controller="MainCtrl as $ctrl">
+<div class="container" ng-controller="MainCtrl as $ctrl">
 
-{{message}}
+<dropzone id="dropzone" file="image" file-name="imageFileName" data-mime-types="" style="visibility:hidden; opacity:0"></dropzone>
+
+<div class="content" ng-show="image !== undefined">
+<div class="prompt">Opened "{{imageFileName}}".</div>
+</div>
+
+<div  class="content" ng-show="image === undefined">
+<div class="prompt">Drag a dataset here to start...</div>
+</div>
 
 </div>
 
