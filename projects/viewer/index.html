@@ -6,30 +6,34 @@
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/dropzone.css">
+<link rel="stylesheet" type="text/css" href="assets/css/tree-control-custom.css">
 <link rel="stylesheet" type="text/css" href="assets/css/app.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="assets/js/angular-dropzone.js"></script>
+<script src="assets/js/angular-tree-control.js"></script>
+<script src="assets/js/medley.js"></script>
+<script src="assets/js/medley-databrowser.js"></script>
 <script src="assets/js/app.js"></script>
 
 </head>
-
 <body ng-app='myApp'>
 
 <div class="container" ng-controller="MainCtrl as $ctrl">
 
-<dropzone id="dropzone" file="image" file-name="imageFileName" data-mime-types="" style="visibility:hidden; opacity:0"></dropzone>
+<dropzone file="dataFile" file-name="dataFileName" on-load-file="loadFromFile(file)" data-valid-mime-types="[application/json]" style="visibility:hidden; opacity:0"></dropzone>
 
-<div class="content" ng-show="image !== undefined">
-<div class="prompt">Opened "{{imageFileName}}".</div>
+<!-- Main -->
+<databrowser ng-show="!!dataModel" model="dataModel"></databrowser>
+
+<!-- Prompt -->
+<div ng-show="!dataModel" class="content">
+<div class="content-inner-center">
+<p>Drag a dataset here to start...</p>
 </div>
-
-<div  class="content" ng-show="image === undefined">
-<div class="prompt">Drag a dataset here to start...</div>
 </div>
 
 </div>
 
 </body>
-
 </html>

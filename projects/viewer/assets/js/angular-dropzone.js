@@ -6,7 +6,8 @@
       restrict: 'EA',
       scope: {
         file: '=',
-        fileName: '='
+        fileName: '=',
+        onLoadFile: "&",
       },
       link: function(scope, element, attrs) {
         function isFile(event) {
@@ -54,6 +55,7 @@
         window.addEventListener('dragover', function(event) {
           //console.log('dragover', event.target);
           event.preventDefault();
+          event.dataTransfer.dropEffect = 'copy'; 
         });
         
         window.addEventListener('dragenter', function(event) {
@@ -62,7 +64,7 @@
           if (isFile(event)) {
             counter++;
           }
-          if (counter > 0) { 
+          if (counter == 1) { 
             showOverlay();
           }
         });
@@ -73,7 +75,7 @@
           if (isFile(event)) {
             counter--;
           }
-          if (counter === 0) { 
+          if (counter == 0) { 
             hideOverlay();
           }
         });
@@ -88,8 +90,12 @@
           reader.onload = function(evt) {
             //console.log("load", evt.target.result);
             if (isTypeValid(type) && isSizeValid(size)) {
+              var file = evt.target.result;
+              if (scope.onLoadFile) {
+                scope.onLoadFile({file: file, fileName: name});
+              }
               return scope.$apply(function() {
-                scope.file = evt.target.result;
+                scope.file = file;
                 if (angular.isString(scope.fileName)) {
                   return scope.fileName = name;
                 }
@@ -100,7 +106,8 @@
           name = file.name;
           type = file.type;
           size = file.size;
-          reader.readAsDataURL(file);
+          reader.readAsText(file);
+          //reader.readAsDataURL(file);
           return false;
         });
       }

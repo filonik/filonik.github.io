@@ -1,14 +1,14 @@
 html {
-    height: 100%;
-    font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 
 .container {
@@ -16,12 +16,33 @@ body {
 }
 
 .content {
-  display: flex;
   height: 100%;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
   justify-content: center;
 }
 
-.prompt {
+.content-left {
+  flex: 0 0 250px;
+}
 
+.content-inner {
+  flex: 1;
+}
+
+.content-inner-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.content-right {
+  flex: 0 0 250px;
+}
+
+.prompt {
+  
 }
