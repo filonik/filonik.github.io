@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Metabolomics - Test #01</title>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="assets/css/common.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/colorbrewer.v1.min.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<style>
+
+.compound {
+  background-color: #eee;
+  /*border: 1px solid #eee;*/
+  margin: 5px;
+  padding: 2px;
+}
+
+.compound:hover {
+  background-color: #ddeef7;
+  /*border: 1px solid black;*/
+}
+
+.compound .variant {
+  background-color: #ddd;
+  /*border: 1px solid #ddd;*/
+  margin: 2px;
+  padding: 2px;
+}
+
+.compound:hover .variant {
+  background-color: #ccdde6;
+  /*border: 1px solid black;*/
+}
+
+.overview {}
+
+.detail {}
+
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid black;
+  pointer-events: none;
+  padding: 2px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="menu" style="text-align:right">
+<input type="checkbox" id="toggleOverview" checked> Overview
+</div>
+
+<div id="chart"></div>
+
+
+<script type="text/javascript">
+
+var Dataset = {
+    compounds: item(0),
+    correlations: item(1),
+};
+
+var Compound = {
+    name: item(0),
+    fullname: item(1),
+    amounts: item(2),
+    extent: item(4),
+    parentExtent: item(5),
+    variants: item(3),
+};
+
+var Variant = {
+    name: item(1),
+    fullname: item(0),
+    amounts: item(2),
+    extent: item(3),
+    parentExtent: item(4),
+    //samples: item(1),
+};
+
+var Sample = {
+    amount: item(0),
+}
+
+/*
+var dataset = [[
+    ["Glu", Array.from(linspace(0.0, 1.0, 100)), [
+        ["C1", Array.from(randomNormal(1.5, 1.5, 100)),],
+        ["C2", Array.from(randomNormal(1.5, 1.5, 100)),],
+    ]],
+    ["Gln", Array.from(linspace(0.0, 2.0, 100)), [
+        ["C2", Array.from(randomUniform(0.0, 3.0, 100)),],
+        //["C3", [1.0, 2.0, 3.0],],
+    ]],
+    ["Asp", Array.from(linspace(0.0, 3.0, 100)), [
+        ["C3", Array.from(randomUniform(0.0, 3.0, 100)),],
+        ["C4", Array.from(randomUniform(0.0, 3.0, 100)),],
+    ]],
+]];
+*/
+
+d3.json("data.json", function(error, dataset) {
+    if (error) throw error;
+    
+    function preprocess(dataset) {
+        let compounds = Dataset.compounds(dataset);
+        for (compound of compounds) {
+            let data = Compound.amounts(compound);
+            let compoundExtent = d3.extent(data);
+            compound.push(compoundExtent)
+            let variants = Compound.variants(compound);
+            for (variant of variants){
+                let data = Variant.amounts(variant);
+                let variantExtent = d3.extent(data);
+                variant.push(variantExtent);
+            }
+        }
+        
+        //let compounds = Dataset.compounds(dataset);
+        let compoundsExtent = compounds.map(Compound.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+        for (compound of compounds) {
+            compound.push(compoundsExtent);
+            let variants = Compound.variants(compound);
+            let variantsExtent = variants.map(Variant.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+            for (variant of variants){
+                variant.push(variantsExtent);
+            }
+        }
+    }
+    
+    preprocess(dataset);
+    
+    var root = d3.select("#chart").append("div")
+        .datum(dataset);
+
+    var tooltip = d3.select("#chart").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    function getAbsolutePosition(element) {
+        let matrix = element.node().getScreenCTM().translate(+element.attr("cx"), +element.attr("cy"));
+        return {x: window.pageXOffset + matrix.e, y: window.pageYOffset + matrix.f};
+    }
+
+    function getSize(element) {
+        let rect = tooltip.node().getBoundingClientRect();
+        return {width: rect.width, height: rect.height};
+    }
+
+    function setTooltip(label) {
+        return function(element) {
+            element
+                .on("mouseover", function(d, i) {
+                    let self = d3.select(this);
+                    self.attr("fill", "red");
+                    
+                    tooltip.text(label(d, i));
+                    
+                    let p = getAbsolutePosition(self);
+                    let s = getSize(tooltip);
+                    
+                    tooltip
+                        .style("left", (p.x - s.width/2)  + "px")
+                        .style("top", (p.y - s.height - 10) + "px");
+                    
+                    tooltip.transition()
+                        .duration(250)
+                        .style("opacity", 1.0);
+                })
+                .on("mouseout", function(d) {
+                    let self = d3.select(this);
+                    self.attr("fill", "black");
+                    
+                    tooltip.transition()
+                        .duration(250)
+                        .style("opacity", 0.0);
+                });
+        }
+    }
+
+    function points1d(element, values) {
+        var margin = {top: 10, right: 10, bottom: 10, left: 10};
+        
+        var svg = element.append("svg")
+            .attr("width", "100%")
+            .attr("height", 100);
+        
+        var root = svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        
+        root.selectAll(".point")
+            .data(values)
+            .enter().append("circle")
+                .attr("class", "point")
+                .call(setTooltip((d,i) => d))
+            .exit().remove();
+        
+        /*
+        var axis = root.append("g")
+            .attr("class", "axis");
+        */
+        
+        function resize() {
+            if (!$(element.node()).is(":visible")) return;
+            
+            var rect = element.node().getBoundingClientRect();
+            var width = rect.width - margin.left - margin.right;
+            var height = rect.height - margin.top - margin.bottom;
+            
+            var xScale = d3.scaleLinear()
+                .domain([0, 20])
+                .range([0, width]);
+            
+            var yScale = d3.scaleLinear()
+                .domain([-1, +1])
+                .range([0, height]);
+            
+            root.selectAll(".point")
+                .attr("r", 5)
+                .attr("cx", function(d) { return xScale(d); })
+                .attr("cy", function(d) { return yScale(0); });
+            
+            /*
+            axis.attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(xScale).ticks(20, ".1s"));
+            */
+        }
+        
+        $(window).bind('resize', resize);
+    }
+
+
+    function beeswarm1d(element, values, extent) {
+        var margin = {top: 10, right: 10, bottom: 10, left: 10};
+        
+        var svg = element.append("svg")
+            .attr("width", "100%")
+            .attr("height", 100)
+            .each(function(d) {
+                let data = values.get(d);
+                data = data.map(function(d) {return { value: d, x: 0, y: 0 }});
+                values.set(d, data);
+            });
+        
+        var root = svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        
+        root.selectAll(".point")
+            .data(values)
+            .enter().append("circle")
+                .attr("class", "point")
+                .call(setTooltip((d,i) => d.value))
+            .exit().remove();
+        
+        /*
+        var axis = root.append("g")
+            .attr("class", "axis");
+        */
+        
+        function resize() {
+            if (!$(element.node()).is(":visible")) return;
+            
+            var rect = element.node().getBoundingClientRect();
+            var width = rect.width - margin.left - margin.right;
+            var height = rect.height - margin.top - margin.bottom;
+        
+            var xScale = d3.scaleLinear()
+                .domain([-1, +1])
+                .range([0, width]);
+            
+            var yScale = d3.scaleLinear()
+                .domain([-1, +1])
+                .range([0, height]);
+        
+            function simulate(d) {
+                let data = values.get(d);
+                
+                xScale.domain(extent(d));
+                
+                let simulation = d3.forceSimulation(data)
+                    .force("x", d3.forceX(function(d) { return xScale(d.value); }).strength(1))
+                    .force("y", d3.forceY(height/2))
+                    .force("collide", d3.forceCollide(6))
+                    .stop();
+                
+                for (let i = 0; i < 100; ++i) simulation.tick();
+            }
+            
+            svg.each(simulate); 
+            
+            root.selectAll(".point")
+                .data(values)
+                .attr("r", 5)
+                .attr("cx", function(d) { return d.x; })
+                .attr("cy", function(d) { return d.y; })
+            
+            /*
+            axis.attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(xScale).ticks(20, ".1s"));
+            */
+        }
+        
+        $(window).bind('resize', debounce(resize, 100));
+    }
+
+    //var plot1d = points1d;
+    var plot1d = beeswarm1d;
+
+    var compounds = root.append("div")
+            .attr("class", "vbox");
+
+    var compound = compounds.selectAll(".compound")
+        .data(Dataset.compounds)
+        .enter().append("div")
+            .attr("class", "compound hbox");
+
+    compound.append("div")
+        .attr("class", "cell")
+        .style("flex", "0 0 50px")
+        .style("align-items", "center")
+        .style("justify-content", "center")
+        .append("div")
+            .text(Compound.name);
+
+    var plot = compound.append("div")
+        .attr("class", "overview cell");
+
+    plot1d(plot, Compound.amounts, Compound.parentExtent);
+
+
+    var variants = compound.append("div")
+        .attr("class", "detail vbox");
+
+    var variant = variants.selectAll(".variant")
+        .data(Compound.variants)
+        .enter().append("div")
+            .attr("class", "variant hbox");
+
+    variant.append("div")
+        .attr("class", "cell")
+        .style("flex", "0 0 50px")
+        .style("align-items", "center")
+        .style("justify-content", "center")
+        .append("div")
+            .text(Variant.name);
+
+    var plot = variant.append("div")
+        .attr("class", "cell");
+
+    plot1d(plot, Variant.amounts, Variant.parentExtent);
+    
+    $("#toggleOverview").trigger("change");
+});
+
+function toggleOveriew(){
+  var checked = d3.select("#toggleOverview").property("checked");
+  
+  d3.select("#chart").selectAll(".overview")
+    .classed("hidden", !checked)
+  d3.select("#chart").selectAll(".detail")
+    .classed("hidden", checked)
+  
+  $(window).trigger('resize');
+}
+
+$("#toggleOverview").bind("change", toggleOveriew);
+
+</script>
+
+</body>
+</html>
