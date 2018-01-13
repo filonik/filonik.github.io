@@ -12,28 +12,35 @@
 <style>
 
 .compound {
-  background-color: #eee;
-  /*border: 1px solid #eee;*/
+  background-color: #ddd;
+  /*border: 1px solid #ddd;*/
   margin: 5px;
   padding: 2px;
 }
 
 .compound:hover {
-  background-color: #ddeef7;
+  background-color: #ccdde6;
   /*border: 1px solid black;*/
 }
 
 .compound .variant {
-  background-color: #ddd;
-  /*border: 1px solid #ddd;*/
+  background-color: #eee;
+  /*border: 1px solid #eee;*/
   margin: 2px;
   padding: 2px;
 }
 
 .compound:hover .variant {
-  background-color: #ccdde6;
+  background-color: #ddeef7;
   /*border: 1px solid black;*/
 }
+
+/*
+.compound .sample {
+  background-color: #fff;
+  margin: 2px;
+}
+*/
 
 .overview {}
 
@@ -45,6 +52,10 @@
   border: 1px solid black;
   pointer-events: none;
   padding: 2px;
+}
+
+.selected {
+  fill: red;
 }
 
 </style>
@@ -61,8 +72,10 @@
 <script type="text/javascript">
 
 var Dataset = {
-    compounds: item(0),
-    correlations: item(1),
+    samples: item(0),
+    compounds: item(1),
+    compoundCorrelations: item(2),
+    variantCorrelations: item(3),
 };
 
 var Compound = {
@@ -135,6 +148,8 @@ d3.json("data.json", function(error, dataset) {
     
     preprocess(dataset);
     
+    var formatNumber = d3.format(".3f");
+    
     var root = d3.select("#chart").append("div")
         .datum(dataset);
 
@@ -152,12 +167,19 @@ d3.json("data.json", function(error, dataset) {
         return {width: rect.width, height: rect.height};
     }
 
+    function selectSamples(predicate) {
+        d3.select("#chart").selectAll(".sample").selectAll(".point").classed("selected", predicate);
+    }
+    
     function setTooltip(label) {
         return function(element) {
             element
                 .on("mouseover", function(d, i) {
                     let self = d3.select(this);
-                    self.attr("fill", "red");
+                    
+                    selectSamples(function(d, j) {
+                        return i == j;
+                    });
                     
                     tooltip.text(label(d, i));
                     
@@ -172,9 +194,10 @@ d3.json("data.json", function(error, dataset) {
                         .duration(250)
                         .style("opacity", 1.0);
                 })
-                .on("mouseout", function(d) {
+                .on("mouseout", function(d, i) {
                     let self = d3.select(this);
-                    self.attr("fill", "black");
+                    
+                    selectSamples(false);
                     
                     tooltip.transition()
                         .duration(250)
@@ -197,7 +220,7 @@ d3.json("data.json", function(error, dataset) {
             .data(values)
             .enter().append("circle")
                 .attr("class", "point")
-                .call(setTooltip((d,i) => d))
+                .call(setTooltip((d,i) => formatNumber(d)))
             .exit().remove();
         
         /*
@@ -254,7 +277,7 @@ d3.json("data.json", function(error, dataset) {
             .data(values)
             .enter().append("circle")
                 .attr("class", "point")
-                .call(setTooltip((d,i) => d.value))
+                .call(setTooltip((d,i) => formatNumber(d.value)))
             .exit().remove();
         
         /*
@@ -325,16 +348,17 @@ d3.json("data.json", function(error, dataset) {
         .style("align-items", "center")
         .style("justify-content", "center")
         .append("div")
+            .attr("title", Compound.fullname)
             .text(Compound.name);
 
     var plot = compound.append("div")
-        .attr("class", "overview cell");
+        .attr("class", "sample cell overview");
 
     plot1d(plot, Compound.amounts, Compound.parentExtent);
 
 
     var variants = compound.append("div")
-        .attr("class", "detail vbox");
+        .attr("class", "vbox detail");
 
     var variant = variants.selectAll(".variant")
         .data(Compound.variants)
@@ -350,7 +374,7 @@ d3.json("data.json", function(error, dataset) {
             .text(Variant.name);
 
     var plot = variant.append("div")
-        .attr("class", "cell");
+        .attr("class", "sample cell");
 
     plot1d(plot, Variant.amounts, Variant.parentExtent);
     
