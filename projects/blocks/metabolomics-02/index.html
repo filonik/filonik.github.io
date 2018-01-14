@@ -184,17 +184,6 @@ d3.json("data.json", function(error, dataset) {
             yScales[d] = d3.scaleLinear().domain(extent(items(d))).range([height, 0]);
         }
         
-        var dimension = element.selectAll(".compound")
-            .data(dimensions)
-            .enter().append("g")
-                .attr("class", "compound")
-                .attr("transform", function(d, i) { return "translate(" + xScale(d) + ")"; });
-        
-        dimension.append("text")
-            .style("text-anchor", "middle")
-            .attr("y", -15)
-            .text(function(d) { return label(items(d)); });
-        
         var line = d3.line()
             .defined(function(d) { return d; })
             .x(function(d) { return d.x; })
@@ -215,6 +204,17 @@ d3.json("data.json", function(error, dataset) {
             .data(Array.from(range(72)))
             .enter().append("path")
                 .attr("d", path);
+        
+        var dimension = element.selectAll(".compound")
+            .data(dimensions)
+            .enter().append("g")
+                .attr("class", "compound")
+                .attr("transform", function(d, i) { return "translate(" + xScale(d) + ")"; });
+        
+        dimension.append("text")
+            .style("text-anchor", "middle")
+            .attr("y", -15)
+            .text(function(d) { return label(items(d)); });
         
         var axis = dimension.append("g")
             .attr("class", "axis")
