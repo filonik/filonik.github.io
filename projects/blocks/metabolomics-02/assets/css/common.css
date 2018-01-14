@@ -1,11 +1,14 @@
 html {
   font-family: 'Noto Sans', sans-serif;
   margin: 0px;
+  padding: 0px;
   overflow-y: scroll;
 }
 
 body {
   background-color: #bbb;
+  margin: 0px;
+  padding: 0px;
 }
 
 .hbox {

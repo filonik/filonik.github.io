@@ -117,34 +117,34 @@ var dataset = [[
 ]];
 */
 
-d3.json("data.json", function(error, dataset) {
-    if (error) throw error;
-    
-    function preprocess(dataset) {
-        let compounds = Dataset.compounds(dataset);
-        for (compound of compounds) {
-            let data = Compound.amounts(compound);
-            let compoundExtent = d3.extent(data);
-            compound.push(compoundExtent)
-            let variants = Compound.variants(compound);
-            for (variant of variants){
-                let data = Variant.amounts(variant);
-                let variantExtent = d3.extent(data);
-                variant.push(variantExtent);
-            }
-        }
-        
-        //let compounds = Dataset.compounds(dataset);
-        let compoundsExtent = compounds.map(Compound.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
-        for (compound of compounds) {
-            compound.push(compoundsExtent);
-            let variants = Compound.variants(compound);
-            let variantsExtent = variants.map(Variant.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
-            for (variant of variants){
-                variant.push(variantsExtent);
-            }
+function preprocess(dataset) {
+    let compounds = Dataset.compounds(dataset);
+    for (compound of compounds) {
+        let data = Compound.amounts(compound);
+        let compoundExtent = d3.extent(data);
+        compound.push(compoundExtent)
+        let variants = Compound.variants(compound);
+        for (variant of variants){
+            let data = Variant.amounts(variant);
+            let variantExtent = d3.extent(data);
+            variant.push(variantExtent);
         }
     }
+    
+    //let compounds = Dataset.compounds(dataset);
+    let compoundsExtent = compounds.map(Compound.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+    for (compound of compounds) {
+        compound.push(compoundsExtent);
+        let variants = Compound.variants(compound);
+        let variantsExtent = variants.map(Variant.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+        for (variant of variants){
+            variant.push(variantsExtent);
+        }
+    }
+}
+
+d3.json("data.json", function(error, dataset) {
+    if (error) throw error;
     
     preprocess(dataset);
     
@@ -206,7 +206,7 @@ d3.json("data.json", function(error, dataset) {
         }
     }
 
-    function points1d(element, values) {
+    function points1d(element, values, extent) {
         var margin = {top: 10, right: 10, bottom: 10, left: 10};
         
         var svg = element.append("svg")
@@ -256,7 +256,6 @@ d3.json("data.json", function(error, dataset) {
         
         $(window).bind('resize', resize);
     }
-
 
     function beeswarm1d(element, values, extent) {
         var margin = {top: 10, right: 10, bottom: 10, left: 10};

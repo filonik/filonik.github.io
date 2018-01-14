@@ -11,37 +11,6 @@
 <script type="text/javascript" src="assets/js/common.js"></script>
 <style>
 
-.compound {
-  background-color: #ddd;
-  /*border: 1px solid #ddd;*/
-  margin: 5px;
-  padding: 2px;
-}
-
-.compound:hover {
-  background-color: #ccdde6;
-  /*border: 1px solid black;*/
-}
-
-.compound .variant {
-  background-color: #eee;
-  /*border: 1px solid #eee;*/
-  margin: 2px;
-  padding: 2px;
-}
-
-.compound:hover .variant {
-  background-color: #ddeef7;
-  /*border: 1px solid black;*/
-}
-
-/*
-.compound .sample {
-  background-color: #fff;
-  margin: 2px;
-}
-*/
-
 .overview {}
 
 .detail {}
@@ -54,14 +23,274 @@
   padding: 2px;
 }
 
+.background path {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 1.0;
+}
+
+.foreground path {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5;
+}
+
+.foreground path.hidden {
+  stroke: #000;
+  stroke-opacity: 0.0;
+}
+
 .selected {
   fill: red;
+}
+
+#chart {
+  background-color: #eee;
 }
 
 </style>
 </head>
 <body>
 
+<div id="menu" style="text-align:right">
+<input type="checkbox" id="toggleOverview" checked> Overview
+</div>
+
+<div id="chart"></div>
+
+
+<script type="text/javascript">
+
+var Dataset = {
+    samples: item(0),
+    compounds: item(1),
+    compoundCorrelations: item(2),
+    variantCorrelations: item(3),
+};
+
+var Compound = {
+    name: item(0),
+    fullname: item(1),
+    amounts: item(2),
+    extent: item(4),
+    parentExtent: item(5),
+    variants: item(3),
+};
+
+var Variant = {
+    name: item(1),
+    fullname: item(0),
+    amounts: item(2),
+    extent: item(3),
+    parentExtent: item(4),
+    //samples: item(1),
+};
+
+var Sample = {
+    amount: item(0),
+}
+
+function preprocess(dataset) {
+    let compounds = Dataset.compounds(dataset);
+    for (compound of compounds) {
+        let data = Compound.amounts(compound);
+        let compoundExtent = d3.extent(data);
+        compound.push(compoundExtent)
+        let variants = Compound.variants(compound);
+        for (variant of variants){
+            let data = Variant.amounts(variant);
+            let variantExtent = d3.extent(data);
+            variant.push(variantExtent);
+        }
+    }
+    
+    //let compounds = Dataset.compounds(dataset);
+    let compoundsExtent = compounds.map(Compound.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+    for (compound of compounds) {
+        compound.push(compoundsExtent);
+        let variants = Compound.variants(compound);
+        let variantsExtent = variants.map(Variant.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+        for (variant of variants){
+            variant.push(variantsExtent);
+        }
+    }
+}
+
+var clientWidth = document.documentElement.clientWidth,
+    clientHeight = document.documentElement.clientHeight;
+
+var margin = {top: 40, right: 30, bottom: 40, left: 30},
+    width = clientWidth - margin.left - margin.right,
+    height = clientHeight - margin.top - margin.bottom - 40;
+
+var root = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.json("data.json", function(error, dataset) {
+    if (error) throw error;
+    
+    preprocess(dataset);
+    
+    var formatNumber = d3.format(".3f");
+    
+    function flatIndices() {
+        let args = Array.from(arguments);
+        let obj = args.shift();
+        let getter = args.shift();
+        if (arguments.length == 2) {
+            let child = getter(obj);
+            return Array.from(indices(child)).map((i)=>[i]);
+        } else if (arguments.length > 2) {
+            let child = getter(obj);
+            let result = [];
+            for(let i of indices(child)) {
+                for(let j of flatIndices(child[i], ...args)) {
+                    result.push([i].concat(j));
+                }
+            }
+            return result;
+        }
+        return [];
+    }
+    
+    function indexed() {
+        let args = Array.from(arguments);
+        let obj = args.shift();
+        let getter = args.shift();
+        let result = function(index) {
+            if (index.length == 0) {
+                return obj;
+            } else if (index.length > 0) {
+                let child = getter(obj);
+                let tail = Array.from(index);
+                let head = tail.shift();
+                return indexed(child[head], ...args)(tail);
+            }
+        };
+        result.indices = flatIndices(...arguments);
+        return result;
+    }
+    
+    function parallelCoordinates(element, items, values, extent, label) {
+        let dimensions = items.indices;
+        
+        let xScale = d3.scalePoint().domain(dimensions).range([0, width]);
+        let yScales = {};
+        
+        for (let d of dimensions) {
+            yScales[d] = d3.scaleLinear().domain(extent(items(d))).range([height, 0]);
+        }
+        
+        var dimension = element.selectAll(".compound")
+            .data(dimensions)
+            .enter().append("g")
+                .attr("class", "compound")
+                .attr("transform", function(d, i) { return "translate(" + xScale(d) + ")"; });
+        
+        dimension.append("text")
+            .style("text-anchor", "middle")
+            .attr("y", -15)
+            .text(function(d) { return label(items(d)); });
+        
+        var line = d3.line()
+            .defined(function(d) { return d; })
+            .x(function(d) { return d.x; })
+            .y(function(d) { return d.y; });
+        
+        var background = element.append("g")
+            .attr("class", "background");
+        
+        var foreground = element.append("g")
+            .attr("class", "foreground");
+        
+        var backgroundPaths = background.selectAll("path")
+            .data(Array.from(range(72)))
+            .enter().append("path")
+                .attr("d", path);
+        
+        var foregroundPaths = foreground.selectAll("path")
+            .data(Array.from(range(72)))
+            .enter().append("path")
+                .attr("d", path);
+        
+        var axis = dimension.append("g")
+            .attr("class", "axis")
+            .each(function(d) {
+                d3.select(this).call(d3.axisLeft(yScales[d]));
+            });
+        
+        var brush = dimension.append("g")
+            .attr("class", "brush")
+            .each(function(d) {
+                let range = yScales[d].range();
+                yScales[d].brush = d3.brushY()
+                    .extent([[-8, range[1]],[+8, range[0]]])
+                    .on("brush", brush)
+                    .on("brush end", brush);
+                d3.select(this).call(yScales[d].brush);
+            })
+            .selectAll("rect")
+                .attr("x", -8)
+                .attr("width", 16);
+        
+        function path(i) {
+            return line(dimensions.map(function(d) {
+                let value = values(items(d))[i];
+                value = isFinite(value)? {x: xScale(d), y: yScales[d](value)}: undefined;
+                return value;
+            }));
+        }
+        
+        function brush() {
+            var actives = [];
+            element.selectAll(".brush")
+                .filter(function(d) { return d3.brushSelection(this); })
+                .each(function(d) {
+                    actives.push({ dimension: d, extent: d3.brushSelection(this) });
+                });
+            
+            foregroundPaths.classed("hidden", function(i) {
+                return !actives.every(function(active) {
+                    var d = active.dimension;
+                    let value = values(items(d))[i];
+                    return active.extent[0] <= yScales[d](value) && yScales[d](value) <= active.extent[1];
+                });
+            });
+        }
+    }
+    
+    var plot = root.append("g")
+        .attr("class", "overview");
+    
+    var items = indexed(dataset, Dataset.compounds);
+    parallelCoordinates(plot, items, Compound.amounts, Compound.extent, Compound.name);
+    
+    var plot = root.append("g")
+        .attr("class", "detail");
+    
+    var items = indexed(dataset, Dataset.compounds, Compound.variants);
+    parallelCoordinates(plot, items, Variant.amounts, Variant.extent, Variant.fullname);
+    
+    $("#toggleOverview").trigger("change");
+});
+
+function toggleOveriew(){
+  var checked = d3.select("#toggleOverview").property("checked");
+  
+  d3.select("#chart").selectAll(".overview")
+    .classed("hidden", !checked)
+  d3.select("#chart").selectAll(".detail")
+    .classed("hidden", checked)
+  
+  $(window).trigger('resize');
+}
+
+$("#toggleOverview").bind("change", toggleOveriew);
+
+</script>
 
 </body>
 </html>
