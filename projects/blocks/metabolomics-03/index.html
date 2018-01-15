@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Metabolomics - Test #03</title>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="assets/css/common.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/colorbrewer.v1.min.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<style>
+
+.overview {}
+
+.detail {}
+
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid black;
+  pointer-events: none;
+  padding: 2px;
+}
+
+.selected {
+  stroke: #000;
+  stroke-width: 2.0;
+  /*fill: red !important;*/
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 1.0;
+}
+
+.foreground path {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5;
+}
+
+.foreground path.hidden {
+  stroke: #000;
+  stroke-opacity: 0.0;
+}
+
+#chart {
+  background-color: #eee;
+}
+
+</style>
+</head>
+<body>
+
+<div id="menu" style="text-align:right">
+<input type="checkbox" id="toggleOverview" checked> Overview
+</div>
+
+<div id="chart"></div>
+
+
+<script type="text/javascript">
+
+var Dataset = {
+    samples: item(0),
+    compounds: item(1),
+    compoundCorrelations: item(2),
+    variantCorrelations: item(3),
+};
+
+var Compound = {
+    name: item(0),
+    fullname: item(1),
+    amounts: item(2),
+    extent: item(4),
+    parentExtent: item(5),
+    variants: item(3),
+};
+
+var Variant = {
+    name: item(1),
+    fullname: item(0),
+    amounts: item(2),
+    extent: item(3),
+    parentExtent: item(4),
+    //samples: item(1),
+};
+
+var Sample = {
+    amount: item(0),
+}
+
+var CompoundCorrelation = {
+    i: (d) => [d[0]],
+    j: (d) => [d[1]],
+    value: (d) => d[2],
+}
+
+var VariantCorrelation = {
+    i: (d) => [d[0],d[1]],
+    j: (d) => [d[2],d[3]],
+    value: (d) => d[4],
+}
+
+function preprocess(dataset) {
+    let compounds = Dataset.compounds(dataset);
+    for (compound of compounds) {
+        let data = Compound.amounts(compound);
+        let compoundExtent = d3.extent(data);
+        compound.push(compoundExtent)
+        let variants = Compound.variants(compound);
+        for (variant of variants){
+            let data = Variant.amounts(variant);
+            let variantExtent = d3.extent(data);
+            variant.push(variantExtent);
+        }
+    }
+    
+    //let compounds = Dataset.compounds(dataset);
+    let compoundsExtent = compounds.map(Compound.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+    for (compound of compounds) {
+        compound.push(compoundsExtent);
+        let variants = Compound.variants(compound);
+        let variantsExtent = variants.map(Variant.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+        for (variant of variants){
+            variant.push(variantsExtent);
+        }
+    }
+}
+
+var clientWidth = document.documentElement.clientWidth,
+    clientHeight = document.documentElement.clientHeight;
+
+var margin = {top: 40, right: 30, bottom: 40, left: 30},
+    width = clientWidth - margin.left - margin.right,
+    height = clientHeight - margin.top - margin.bottom - 40;
+
+var root = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var tooltip = d3.select("#chart").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+function getAbsolutePosition(element) {
+    let matrix = element.node().getScreenCTM().translate(+element.attr("cx"), +element.attr("cy"));
+    return {x: window.pageXOffset + matrix.e, y: window.pageYOffset + matrix.f};
+}
+
+function getSize(element) {
+    let rect = tooltip.node().getBoundingClientRect();
+    return {width: rect.width, height: rect.height};
+}
+
+function setTooltip(root, label) {
+    return function(element) {
+        element
+            .on("mouseover", function(d, i) {
+                let self = d3.select(this);
+                
+                root.selectAll(".point").classed("selected", function(d, j) {
+                    return i == j;
+                });
+                
+                tooltip.text(label(d, i));
+                
+                let p = getAbsolutePosition(self);
+                let s = getSize(tooltip);
+                
+                tooltip
+                    .style("left", (p.x - s.width/2)  + "px")
+                    .style("top", (p.y - s.height - 10) + "px");
+                
+                tooltip.transition()
+                    .duration(250)
+                    .style("opacity", 1.0);
+            })
+            .on("mouseout", function(d, i) {
+                let self = d3.select(this);
+                
+                root.selectAll(".point").classed("selected", false);
+                
+                tooltip.transition()
+                    .duration(250)
+                    .style("opacity", 0.0);
+            });
+    }
+}
+
+d3.json("data.json", function(error, dataset) {
+    if (error) throw error;
+    
+    preprocess(dataset);
+    
+    var formatNumber = d3.format(".2f");
+    
+    function flatIndices() {
+        let args = Array.from(arguments);
+        let obj = args.shift();
+        let getter = args.shift();
+        if (arguments.length == 2) {
+            let child = getter(obj);
+            return Array.from(indices(child)).map((i)=>[i]);
+        } else if (arguments.length > 2) {
+            let child = getter(obj);
+            let result = [];
+            for(let i of indices(child)) {
+                for(let j of flatIndices(child[i], ...args)) {
+                    result.push([i].concat(j));
+                }
+            }
+            return result;
+        }
+        return [];
+    }
+    
+    function indexed() {
+        let args = Array.from(arguments);
+        let obj = args.shift();
+        let getter = args.shift();
+        let result = function(index) {
+            if (index.length == 0) {
+                return obj;
+            } else if (index.length > 0) {
+                let values = getter(obj);
+                let tail = Array.from(index);
+                let head = tail.shift();
+                return indexed(values[head], ...args)(tail);
+            }
+        };
+        result.indices = flatIndices(...arguments);
+        result.values = function() { return getter(obj); }
+        return result;
+    }
+    
+    var innerMargin = 80;
+    var size = Math.min(width, height);
+    
+    var x = (width-size)/2 + innerMargin;
+    var y = (height-size)/2 + innerMargin;
+    
+    size = size - 2 * innerMargin;
+    
+    function correlationMatrix(element, items, values, valueType, extent, label, titleLabel) {
+        let dimensions = items.indices;
+        
+        let maxZ = 0.5 * size/dimensions.length;
+        
+        let xScale = d3.scalePoint().domain(dimensions).range([0, size]);
+        let yScale = d3.scalePoint().domain(dimensions).range([size, 0]);
+        let zScale = d3.scaleLinear().domain([-1, +1]).range([0, maxZ]);
+        var color = d3.scaleLinear().domain(Array.from(linspace(-1, +1, 9))).range(colorbrewer.Spectral[9]);
+        
+        /*
+        var xAxis = element.append("g")
+            .attr("class", "axis")
+            .attr("transform", "translate(0," + size + ")")
+            .call(d3.axisBottom(xScale));
+        
+        var yAxis = element.append("g")
+            .attr("class", "axis")
+            .call(d3.axisLeft(yScale));
+        */
+        
+        var xLabels = element.selectAll(".label--x")
+            .data(dimensions)
+            .enter().append("g")
+                .attr("class", "label--x")
+                .attr("transform", function(d, i) { return "translate(" + xScale(d) + "," + (size + (maxZ + 10)) + ")"; })
+                .append("text")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", 5)
+                    .style("text-anchor", "end")
+                    .text(function(d) { return label(items(d)); })
+                    .append("title")
+                        .text(function(d) { return titleLabel(items(d)); });
+        
+        var yLabels = element.selectAll(".label--y")
+            .data(dimensions)
+            .enter().append("g")
+                .attr("class", "label--y")
+                .attr("transform", function(d, i) { return "translate(" + (-(maxZ + 10)) + "," + yScale(d) + ")"; })
+                .append("text")
+                    .attr("y", 5)
+                    .style("text-anchor", "end")
+                    .text(function(d) { return label(items(d)); })
+                    .append("title")
+                        .text(function(d) { return titleLabel(items(d)); });
+        
+        var points = element.append("g").selectAll(".point")
+            .data(values.values());
+        
+        points.enter()
+            .append("circle")
+                .attr("class", "point")
+                .attr("cx", function(d) { return xScale(valueType.i(d)); })
+                .attr("cy", function(d) { return yScale(valueType.j(d)); })
+                .attr("r", function(d) { return zScale(valueType.value(d)); })
+                .style("fill", function(d) { return color(valueType.value(d)); })
+                .call(setTooltip(element, (d,i) => formatNumber(valueType.value(d))));
+        
+        points.exit().remove();
+    }
+    
+    var plot = root.append("g")
+        .attr("class", "overview")
+        .attr("transform", "translate(" + x + "," + y + ")");
+    
+    var items = indexed(dataset, Dataset.compounds);
+    var values = indexed(dataset, Dataset.compoundCorrelations);
+    correlationMatrix(plot, items, values, CompoundCorrelation, Compound.extent, Compound.name, Compound.fullname);
+    
+    var plot = root.append("g")
+        .attr("class", "detail")
+        .attr("transform", "translate(" + x + "," + y + ")");
+    
+    var items = indexed(dataset, Dataset.compounds, Compound.variants);
+    var values = indexed(dataset, Dataset.variantCorrelations);
+    correlationMatrix(plot, items, values, VariantCorrelation, Variant.extent, Variant.fullname, Variant.fullname);
+    
+    $("#toggleOverview").trigger("change");
+});
+
+function toggleOveriew(){
+  var checked = d3.select("#toggleOverview").property("checked");
+  
+  d3.select("#chart").selectAll(".overview")
+    .classed("hidden", !checked)
+  d3.select("#chart").selectAll(".detail")
+    .classed("hidden", checked)
+  
+  $(window).trigger('resize');
+}
+
+$("#toggleOverview").bind("change", toggleOveriew);
+
+</script>
+
+</body>
+</html>
