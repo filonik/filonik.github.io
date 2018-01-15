@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Metabolomics - Test #04</title>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="assets/css/common.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/colorbrewer.v1.min.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<style>
+
+.overview {}
+
+.detail {}
+
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid black;
+  pointer-events: none;
+  padding: 2px;
+}
+
+.selected {
+  stroke: #000;
+  stroke-width: 2.0;
+  /*fill: red !important;*/
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 1.0;
+}
+
+.foreground path {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5;
+}
+
+.foreground path.hidden {
+  stroke: #000;
+  stroke-opacity: 0.0;
+}
+
+#chart {
+  background-color: #eee;
+}
+
+</style>
+</head>
+<body>
+
+<div id="menu" style="text-align:right">
+<input type="checkbox" id="toggleOverview" checked> Overview
+</div>
+
+<div id="chart"></div>
+
+
+<script type="text/javascript">
+
+var Dataset = {
+    samples: item(0),
+    compounds: item(1),
+    compoundCorrelations: item(2),
+    variantCorrelations: item(3),
+};
+
+var Compound = {
+    name: item(0),
+    fullname: item(1),
+    amounts: item(2),
+    extent: item(4),
+    parentExtent: item(5),
+    variants: item(3),
+};
+
+var Variant = {
+    name: item(1),
+    fullname: item(0),
+    amounts: item(2),
+    extent: item(3),
+    parentExtent: item(4),
+    //samples: item(1),
+};
+
+var Sample = {
+    amount: item(0),
+}
+
+var CompoundCorrelation = {
+    i: (d) => [d[0]],
+    j: (d) => [d[1]],
+    value: (d) => d[2],
+}
+
+var VariantCorrelation = {
+    i: (d) => [d[0],d[1]],
+    j: (d) => [d[2],d[3]],
+    value: (d) => d[4],
+}
+
+function preprocess(dataset) {
+    let compounds = Dataset.compounds(dataset);
+    for (compound of compounds) {
+        let data = Compound.amounts(compound);
+        let compoundExtent = d3.extent(data);
+        compound.push(compoundExtent)
+        let variants = Compound.variants(compound);
+        for (variant of variants){
+            let data = Variant.amounts(variant);
+            let variantExtent = d3.extent(data);
+            variant.push(variantExtent);
+        }
+    }
+    
+    //let compounds = Dataset.compounds(dataset);
+    let compoundsExtent = compounds.map(Compound.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+    for (compound of compounds) {
+        compound.push(compoundsExtent);
+        let variants = Compound.variants(compound);
+        let variantsExtent = variants.map(Variant.extent).filter((x) => !x.includes(undefined)).reduce(minmax)
+        for (variant of variants){
+            variant.push(variantsExtent);
+        }
+    }
+}
+
+var clientWidth = document.documentElement.clientWidth,
+    clientHeight = document.documentElement.clientHeight;
+
+var margin = {top: 40, right: 30, bottom: 40, left: 30},
+    width = clientWidth - margin.left - margin.right,
+    height = clientHeight - margin.top - margin.bottom - 40;
+
+var root = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var tooltip = d3.select("#chart").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+function getAbsolutePosition(element) {
+    let matrix = element.node().getScreenCTM().translate(+element.attr("cx"), +element.attr("cy"));
+    return {x: window.pageXOffset + matrix.e, y: window.pageYOffset + matrix.f};
+}
+
+function getSize(element) {
+    let rect = tooltip.node().getBoundingClientRect();
+    return {width: rect.width, height: rect.height};
+}
+
+function setTooltip(root, label) {
+    return function(element) {
+        element
+            .on("mouseover", function(d, i) {
+                let self = d3.select(this);
+                
+                root.selectAll(".point").classed("selected", function(d, j) {
+                    return i == j;
+                });
+                
+                tooltip.text(label(d, i));
+                
+                let p = getAbsolutePosition(self);
+                let s = getSize(tooltip);
+                
+                tooltip
+                    .style("left", (p.x - s.width/2)  + "px")
+                    .style("top", (p.y - s.height - 10) + "px");
+                
+                tooltip.transition()
+                    .duration(250)
+                    .style("opacity", 1.0);
+            })
+            .on("mouseout", function(d, i) {
+                let self = d3.select(this);
+                
+                root.selectAll(".point").classed("selected", false);
+                
+                tooltip.transition()
+                    .duration(250)
+                    .style("opacity", 0.0);
+            });
+    }
+}
+
+d3.json("data.json", function(error, dataset) {
+    if (error) throw error;
+});
+
+var matrix = [
+  [11975,  5871, 8916, 2868],
+  [ 1951, 10048, 2060, 6171],
+  [ 8010, 16145, 8090, 8045],
+  [ 1013,   990,  940, 6907]
+];
+
+var outerRadius = Math.min(width, height) * 0.5 - 40,
+    innerRadius = outerRadius - 30;
+
+var formatValue = d3.formatPrefix(",.0", 1e3);
+
+var chord = d3.chord()
+    .padAngle(0.05)
+    .sortSubgroups(d3.descending);
+
+var arc = d3.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius);
+
+var ribbon = d3.ribbon()
+    .radius(innerRadius);
+
+var color = d3.scaleOrdinal()
+    .domain(d3.range(4))
+    .range(colorbrewer.Pastel1[4]);
+
+var g = root.append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+    .datum(chord(matrix));
+
+var group = g.append("g")
+    .attr("class", "groups")
+    .selectAll("g")
+    .data(function(chords) { return chords.groups; })
+    .enter().append("g");
+
+group.append("path")
+    .style("fill", function(d) { return color(d.index); })
+    .style("stroke", function(d) { return d3.rgb(color(d.index)).darker(); })
+    .attr("d", arc);
+
+var groupTick = group.selectAll(".group-tick")
+    .data(function(d) { return groupTicks(d, 1e3); })
+    .enter().append("g")
+        .attr("class", "group-tick")
+        .attr("transform", function(d) { return "rotate(" + (d.angle * 180 / Math.PI - 90) + ") translate(" + outerRadius + ",0)"; });
+
+groupTick.append("line")
+    .attr("x2", 6);
+
+groupTick
+    .filter(function(d) { return d.value % 5e3 === 0; })
+    .append("text")
+        .attr("x", 8)
+        .attr("dy", ".35em")
+        .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180) translate(-16)" : null; })
+        .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+        .text(function(d) { return formatValue(d.value); });
+
+g.append("g")
+    .attr("class", "ribbons")
+    .selectAll("path")
+    .data(function(chords) { return chords; })
+    .enter().append("path")
+        .attr("d", ribbon)
+        .style("fill", function(d) { return color(d.target.index); })
+        .style("stroke", function(d) { return d3.rgb(color(d.target.index)).darker(); });
+
+// Returns an array of tick angles and values for a given group and step.
+function groupTicks(d, step) {
+  var k = (d.endAngle - d.startAngle) / d.value;
+  return d3.range(0, d.value, step).map(function(value) {
+    return {value: value, angle: value * k + d.startAngle};
+  });
+}
+
+function toggleOveriew(){
+  var checked = d3.select("#toggleOverview").property("checked");
+  
+  d3.select("#chart").selectAll(".overview")
+    .classed("hidden", !checked)
+  d3.select("#chart").selectAll(".detail")
+    .classed("hidden", checked)
+  
+  $(window).trigger('resize');
+}
+
+$("#toggleOverview").bind("change", toggleOveriew);
+
+</script>
+
+</body>
+</html>
