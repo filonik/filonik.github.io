@@ -29,21 +29,8 @@
   /*fill: red !important;*/
 }
 
-.background path {
-  fill: none;
-  stroke: #ddd;
-  stroke-width: 1.0;
-}
-
-.foreground path {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5;
-}
-
-.foreground path.hidden {
-  stroke: #000;
-  stroke-opacity: 0.0;
+.ribbons {
+  fill-opacity: 0.6;
 }
 
 #chart {
@@ -221,7 +208,7 @@ var ribbon = d3.ribbon()
 
 var color = d3.scaleOrdinal()
     .domain(d3.range(4))
-    .range(colorbrewer.Pastel1[4]);
+    .range(colorbrewer.Set1[4]);
 
 var g = root.append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
