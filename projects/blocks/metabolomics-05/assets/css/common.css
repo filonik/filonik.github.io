@@ -1,0 +1,33 @@
+html {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #bbb;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cell {
+  display: flex;
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+}
