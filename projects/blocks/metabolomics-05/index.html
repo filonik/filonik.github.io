@@ -8,6 +8,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
 <script type="text/javascript" src="https://d3js.org/colorbrewer.v1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.min.js"></script>
 <script type="text/javascript" src="assets/js/common.js"></script>
 <style>
 
@@ -34,6 +35,15 @@
 .nodes circle {
   stroke: #666;
   stroke-width: 1.5px;
+}
+
+.legendTitle {
+  font-weight: bold;
+}
+
+.legendLinkScale line {
+  stroke: #666;
+  stroke-opacity: 0.5;
 }
 
 </style>
@@ -217,11 +227,19 @@ function indexed() {
         }
     };
     result.indices = flatIndices(...arguments);
-    result.values = function() { return getter(obj); }
+    result.values = flatIndices(...arguments).map(i => result(i));
     return result;
 }
 
 var formatNumber = d3.format(".2f");
+
+function areaFromRadius(r) {
+    return Math.PI * r * r;
+}
+
+function radiusFromArea(a) {
+    return Math.sqrt(a/Math.PI);
+}
 
 d3.json("data.json", function(error, dataset) {
     if (error) throw error;
@@ -236,19 +254,45 @@ d3.json("data.json", function(error, dataset) {
     
     var flatIndex = (index) => index[0] * 1024 + index[1];
     var items = indexed(dataset, Dataset.compounds, Compound.variants);
-    var nodes = items.indices.map(function(i) { return {id: flatIndex(i), name: Variant.fullname(items(i)), group: i[0]}; });
-    var links = Dataset.variantCorrelations(dataset).filter((x) => flatIndex(VariantCorrelation.i(x)) !=  flatIndex(VariantCorrelation.j(x))).map(function(x, i) { return {
-        source: flatIndex(VariantCorrelation.i(x)),
-        target: flatIndex(VariantCorrelation.j(x)),
-        value: VariantCorrelation.value(x),
-    };});
+    
+    let sum = (xs) => xs.reduce((acc,x) => acc + x, 0);
+    let len = (xs) => xs.length;
+    let avg = (xs) => sum(xs)/len(xs);
+    var domain = d3.extent(items.values.map(x => { return avg(Variant.amounts(x)); }));
+    var nodeScale = d3.scaleLinear()
+        .domain(domain)
+        .range([100.0, 1000.0]);
+    
+    var nodeSizeMap = radiusFromArea;
+    var legendNodeScale = d3.scaleOrdinal()
+        .domain(Array.from(linspace(domain[0], domain[1], 6)))
+        .range(Array.from(linspace(100.0, 1000.0, 6)).map(nodeSizeMap));
+    
+    //console.log(domain);
     
     var domain = d3.extent(Dataset.variantCorrelations(dataset).map((x) => VariantCorrelation.value(x)));
     var linkScale = d3.scaleLinear()
         .domain(domain)
         .range([0.0, 1.0]);
     
-    console.log(domain);
+    var linkSizeMap = (size) => 10.0 * Math.pow(Math.abs(size), 8);
+    var legendLinkScale = d3.scaleOrdinal()
+        .domain(Array.from(linspace(0.5, 1.0, 6)))
+        .range(Array.from(linspace(0.5, 1.0, 6)).map(linkSizeMap));
+    
+    //console.log(domain);
+    
+    var nodes = items.indices.map(function(i) { return {
+      id: flatIndex(i),
+      name: Variant.fullname(items(i)),
+      size: avg(Variant.amounts(items(i))),
+      group: i[0]};
+    });
+    var links = Dataset.variantCorrelations(dataset).filter((x) => flatIndex(VariantCorrelation.i(x)) !=  flatIndex(VariantCorrelation.j(x))).map(function(x, i) { return {
+        source: flatIndex(VariantCorrelation.i(x)),
+        target: flatIndex(VariantCorrelation.j(x)),
+        value: VariantCorrelation.value(x),
+    };});
     
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function(d){
@@ -268,15 +312,15 @@ d3.json("data.json", function(error, dataset) {
         .enter().append("line")
             .attr("stroke-width", function(d) {
                 //let x = linkScale(d.value);
-                return 10.0 * Math.pow(Math.abs(d.value), 8);
+                return linkSizeMap(d.value);
             });
-
+    
     var node = root.append("g")
         .attr("class", "nodes")
         .selectAll("circle")
         .data(nodes)
         .enter().append("circle")
-            .attr("r", 15)
+            .attr("r", function(d) { return nodeSizeMap(nodeScale(d.size)); })
             .attr("fill", function(d) { return color(d.group); })
             .call(d3.drag()
                 .on("start", dragstarted)
@@ -302,7 +346,7 @@ d3.json("data.json", function(error, dataset) {
             .attr("y1", function(d) { return d.source.y; })
             .attr("x2", function(d) { return d.target.x; })
             .attr("y2", function(d) { return d.target.y; });
-
+        
         node
             .attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
@@ -324,6 +368,49 @@ d3.json("data.json", function(error, dataset) {
       d.fx = null;
       d.fy = null;
     }
+    
+    // Color Legend
+    root.append("g")
+        .attr("class", "legendOrdinal")
+        .attr("transform", "translate(20,20)");
+    
+    var legendOrdinal = d3.legendColor()
+        .title("Compound")
+        .labels(function (d) { return Compound.fullname(Dataset.compounds(dataset)[d.i]); })
+        .scale(color);
+    
+    root.select(".legendOrdinal")
+        .call(legendOrdinal);
+    
+    // Link Size Legend
+    root.append("g")
+        .attr("class", "legendNodeScale")
+        .attr("transform", "translate(20, 320)");
+    
+    var legendNode = d3.legendSize()
+        .title("Amount (Average)")
+        .labels(function (d) { return formatNumber(d.domain[d.i]); })
+        .scale(legendNodeScale)
+        .shape('circle')
+        .shapePadding(15);
+    
+    root.select(".legendNodeScale")
+        .call(legendNode);
+    
+    // Link Size Legend
+    root.append("g")
+        .attr("class", "legendLinkScale")
+        .attr("transform", "translate(20, 720)");
+    
+    var legendLink = d3.legendSize()
+        .title("Correlation")
+        .labels(function (d) { return formatNumber(d.domain[d.i]); })
+        .scale(legendLinkScale)
+        .shape("line")
+        .shapeWidth(40);
+    
+    root.select(".legendLinkScale")
+        .call(legendLink);
 });
 
 function toggleOveriew(){
