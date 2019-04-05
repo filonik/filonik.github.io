@@ -55,13 +55,3 @@ def transform_orthogonal_projection(n, m, axes):
     for i in range(m):
         result[:,i] = vec_unit(axes[i], n+1) if i < len(axes) and axes[i] is not None else vec_zeros(n+1)
     return result
-
-"""
-def plots_nd(specifications, count=None, size=None):
-    count = (1,1) if count is None else count
-    size = (10,10) if size is None else size
-    
-    fig, axes = plt.subplots(count[0], count[1], figsize=size)
-    
-    for i, j in np.ndindex(count):
-"""
