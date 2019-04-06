@@ -43,13 +43,35 @@ def transform_scale(s, n=None):
     result = transform_identity(n, n)
     result[_scale_indices(n)] = s
     return result
-    
-def transform_normalise(data):
+
+def transform_range_to_normal(lower, upper):
+    delta = (upper - lower)
+    def _transform_range_to_normal(data):
+        n = data.shape[1] - 1
+        return transform_translate(-lower) @ transform_scale(2/delta) @ transform_translate(-np.ones(n))
+    return _transform_range_to_normal
+
+def transform_normal_to_range(lower, upper):
+    delta = (upper - lower)
+    def _transform_normal_to_range(data):
+        n = data.shape[1] - 1
+        return transform_translate(+np.ones(n)) @ transform_scale(delta/2) @ transform_translate(+lower)
+    return _transform_normal_to_range
+
+def transform_fit(data):
     lower = np.amin(data[:,:-1], axis=0)
     upper = np.amax(data[:,:-1], axis=0)
-    delta = (upper - lower)
-    return transform_translate(-lower) @ transform_scale(2/delta) @ transform_translate(-np.ones(lower.shape))
-    
+    return transform_range_to_normal(lower, upper)(data)
+
+def transform_fit_aspect(data):
+    n = data.shape[1] - 1
+    lower = np.full((n,), np.amin(data[:,:-1]))
+    upper = np.full((n,), np.amax(data[:,:-1]))
+    return transform_range_to_normal(lower, upper)(data)
+
+transform_normalise = transform_fit
+transform_normalise_aspect = transform_fit_aspect
+
 def transform_orthogonal_projection(n, m, axes):
     result = transform_zeros(n, m)
     for i in range(m):
