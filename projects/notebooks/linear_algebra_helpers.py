@@ -32,6 +32,7 @@ def mat_zeros(n, m):
 
 def transform_identity(n, m):
     result = np.eye(n+1, m+1, dtype=np.float32)
+    result[-1,-1] = 1
     return result
 
 def transform_zeros(n, m):
@@ -61,20 +62,22 @@ def transform_unit_cols(indices, n, m):
 def transform_projection(basis, n=None, m=None):
     return transform_rows(basis, n=n, m=m)
 
-def _translate_indices(n):
-    return ([n]*n, list(range(n)))
+def _translate_indices(n, m):
+    return ([n]*m, list(range(m)))
 
 def _scale_indices(n):
     return np.diag_indices(n)
 
-def transform_translate(t, n=None):
+def transform_translate(t, n=None, m=None):
     n = len(t) if n is None else n
-    result = transform_identity(n, n)
-    result[_translate_indices(n)] = t
+    m = len(t) if m is None else m
+    result = transform_identity(n, m)
+    result[_translate_indices(n, m)] = t
     return result
 
-def transform_scale(s, n=None):
+def transform_scale(s, n=None, m=None):
     n = len(s) if n is None else n
+    m = len(s) if m is None else m
     result = transform_identity(n, n)
     result[_scale_indices(n)] = s
     return result
@@ -106,3 +109,7 @@ def transform_fit_aspect(data):
 
 transform_normalise = transform_fit
 transform_normalise_aspect = transform_fit_aspect
+
+def transform_parallel_coordinates(i, n, m):
+    dx = 2 * i/(n-1) - 1
+    return transform_unit_cols([None, i], n, m) @ transform_translate([dx, 0])
