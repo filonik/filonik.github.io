@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./editor-CC1uDrJd.js","./rolldown-runtime-XKyaHtl9.js","./editor.api-Oa-M2bY6.js","./editor-g1MJRkXV.css","./editor-CYlBetm9.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./editor-aDFtMcq2.js","./rolldown-runtime-XKyaHtl9.js","./editor.api-BT1admxH.js","./editor-g1MJRkXV.css","./editor-CYlBetm9.css"])))=>i.map(i=>d[i]);
 import{r as e,t}from"./rolldown-runtime-XKyaHtl9.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var n=e(t(((e,t)=>{var n=(function(){var e=String.fromCharCode,t=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=`,n=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$`,r={};function i(e,t){if(!r[e]){r[e]={};for(var n=0;n<e.length;n++)r[e][e.charAt(n)]=n}return r[e][t]}var a={compressToBase64:function(e){if(e==null)return``;var n=a._compress(e,6,function(e){return t.charAt(e)});switch(n.length%4){default:case 0:return n;case 1:return n+`===`;case 2:return n+`==`;case 3:return n+`=`}},decompressFromBase64:function(e){return e==null?``:e==``?null:a._decompress(e.length,32,function(n){return i(t,e.charAt(n))})},compressToUTF16:function(t){return t==null?``:a._compress(t,15,function(t){return e(t+32)})+` `},decompressFromUTF16:function(e){return e==null?``:e==``?null:a._decompress(e.length,16384,function(t){return e.charCodeAt(t)-32})},compressToUint8Array:function(e){for(var t=a.compress(e),n=new Uint8Array(t.length*2),r=0,i=t.length;r<i;r++){var o=t.charCodeAt(r);n[r*2]=o>>>8,n[r*2+1]=o%256}return n},decompressFromUint8Array:function(t){if(t==null)return a.decompress(t);for(var n=Array(t.length/2),r=0,i=n.length;r<i;r++)n[r]=t[r*2]*256+t[r*2+1];var o=[];return n.forEach(function(t){o.push(e(t))}),a.decompress(o.join(``))},compressToEncodedURIComponent:function(e){return e==null?``:a._compress(e,6,function(e){return n.charAt(e)})},decompressFromEncodedURIComponent:function(e){return e==null?``:e==``?null:(e=e.replace(/ /g,`+`),a._decompress(e.length,32,function(t){return i(n,e.charAt(t))}))},compress:function(t){return a._compress(t,16,function(t){return e(t)})},_compress:function(e,t,n){if(e==null)return``;for(var r,i,a={},o={},s=``,c=``,l=``,u=2,d=3,f=2,p=[],m=0,h=0,g=0;g<e.length;g+=1)if(s=e.charAt(g),Object.prototype.hasOwnProperty.call(a,s)||(a[s]=d++,o[s]=!0),c=l+s,Object.prototype.hasOwnProperty.call(a,c))l=c;else{if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++),a[c]=d++,l=String(s)}if(l!==``){if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++)}for(i=2,r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;for(;;){if(m<<=1,h==t-1){p.push(n(m));break}h++}return p.join(``)},decompress:function(e){return e==null?``:e==``?null:a._decompress(e.length,32768,function(t){return e.charCodeAt(t)})},_decompress:function(t,n,r){var i=[],a=4,o=4,s=3,c=``,l=[],u,d,f,p,m,h,g,_={val:r(0),position:n,index:1};for(u=0;u<3;u+=1)i[u]=u;for(f=0,m=4,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(f){case 0:for(f=0,m=256,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 2:return``}for(i[3]=g,d=g,l.push(g);;){if(_.index>t)return``;for(f=0,m=2**s,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(g=f){case 0:for(f=0,m=256,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 2:return l.join(``)}if(a==0&&(a=2**s,s++),i[g])c=i[g];else if(g===o)c=d+d.charAt(0);else return null;l.push(c),i[o++]=d+c.charAt(0),a--,d=c,a==0&&(a=2**s,s++)}}};return a})();typeof define==`function`&&define.amd?define(function(){return n}):t!==void 0&&t!=null?t.exports=n:typeof angular<`u`&&angular!=null&&angular.module(`LZString`,[]).factory(`LZString`,function(){return n})}))(),1),r=Object.entries(Object.assign({"../../examples/src/categories/01-categories.ts":`import { type Category, category, equation } from '@cod-ts/categories'
 import { type View, view } from '@cod-ts/views'
 
@@ -5941,7 +5941,7 @@ export declare function typed(document: Document, name: string, type: string): r
 /** A table caption: a bold title, then its number of rows, subtle: "Object (3)". */
 export declare function caption(document: Document, title: string, n: number): readonly Child[];
 export declare function table(document: Document, captionParts: readonly Child[], headers: readonly Header[], rows: readonly (readonly string[])[]): HTMLElement;
-`,j="import { type Category, type Copresheaf, type CopresheafMap, type Query, type RawFunctor } from '@cod-ts/categories';\nimport { type GraphViewOptions } from '@cod-ts/views/graphs';\nimport type { View } from '../view';\nimport { type Names } from './names';\n/**\n * Options of the graph views of categories, functors and copresheaves:\n * those of `graphView` from `@cod-ts/views/graphs`, and `names`.\n */\nexport interface CategoryGraphViewOptions extends GraphViewOptions {\n    /**\n     * The names shown for objects, arrows and parts on their nodes and links\n     * (unless `nodes.label` or `links.label` sets the text), from their IDs\n     * and provenance (see `Names`). Each defaults to the ID; data attributes\n     * keep the IDs.\n     */\n    readonly names?: Names;\n}\n/** The values `graphView` can show. */\nexport type GraphViewable = Category | RawFunctor | Copresheaf | CopresheafMap | Query;\n/**\n * A category drawn as a graph: its objects as nodes, and its generating\n * arrows as links between them. Equations are not drawn; `tableView` shows\n * them. Options are those of `graphView` from `@cod-ts/views/graphs`; links\n * are labelled with their arrows' names by default.\n *\n * A category of elements (`copresheaf.pivot`) gives its nodes and links the\n * data attributes of what they are elements of, as its provenance records\n * them: a node `data-object` and `data-part`, the object of the copresheaf's\n * category and the part; a link `data-object`, `data-arrow` and\n * `data-part`, its source's object, the arrow it lies over and its source's\n * part.\n */\nexport declare function categoryGraphView(C: Category, options?: CategoryGraphViewOptions): View;\n/**\n * A functor F : D → C drawn as its collage: D's objects and generating\n * arrows on one side, C's on the other, and a dotted arrow from each object\n * d of D to F(d). Where F takes an arrow of D to a path of C that is not a\n * single generating arrow (an identity or a composite), C gets a link\n * for that path, labelled with it. Objects of C that are not F(d) for any d,\n * and generating arrows that are not F(f) for any f, are drawn faintly.\n *\n * While a part of the domain is hovered, what it maps to is highlighted\n * too: for an object, its image and the dotted arrow there; for an arrow,\n * its image, a generating arrow or the link for a path. For a path, the\n * generating arrows it runs along, and their objects, are highlighted as\n * context, in a quieter colour (`--node-context`, `--link-context`) and in\n * full even where faint, also while the link for the path is hovered.\n *\n * Each side is laid out on its own, and C is put next to D along D's\n * shorter extent: below a D laid out wider than tall, right of one taller\n * than wide. That is across the way the layouts run, for categories whose\n * arrows set their shape; for others, such as discrete categories laid out\n * in a row, it keeps the two sides apart. When D is as wide as tall, C goes\n * below it when the layouts run left to right (dagre's default), and right\n * of it when they run top to bottom. Options are those of\n * `graphView` from\n * `@cod-ts/views/graphs`; parts have the classes `cod-domain` or\n * `cod-codomain`, and `cod-map` (the mapping of objects), `cod-path` (the\n * links for paths) and `cod-faint` (outside the image), for `style` to select.\n * Lines are solid for the two categories' own arrows, dashed for the links\n * for paths, which the collage adds, and dotted for the mapping of objects\n * across the two.\n */\nexport declare function functorGraphView(F: RawFunctor, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf drawn as a graph, its category of elements: the category\n * view of `copresheaf.pivot(X)`, with a node for every part, and a link for\n * every arrow from every part, from the part to its image (`a : o → o'`\n * takes part p of o to part a(p) of o'). Nodes are\n * labelled with their parts' names and links with their arrows' names. A\n * node has `data-object` and `data-part`, its object and part, and a link\n * `data-object`, `data-arrow` and `data-part`, its arrow's source, its\n * arrow and the part it starts from, so that `style` can select them, e.g.\n * `'.cod-link[data-object=\"Employee\"][data-arrow=\"worksIn\"]'`. Options are\n * those of `graphView` from `@cod-ts/views/graphs`, and `names` (see\n * `CategoryGraphViewOptions`).\n *\n * Copresheaves on the graph categories of `@cod-ts/graphs` are graphs\n * already, and `graphView` from `@cod-ts/views/graphs` draws them as such,\n * a node for every vertex and a link for every edge.\n */\nexport declare function copresheafGraphView(X: Copresheaf, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf map α : X ⇒ Y drawn as the collage of the functor between\n * categories of elements it pivots to (`copresheafMap.pivot(α)`, see\n * `functorGraphView`): X's category of elements on one side, Y's on the\n * other, and a dotted arrow from each part of X to its image. Nodes are\n * named by their parts and links by their arrows, and have the data\n * attributes of a copresheaf's graph view (see `copresheafGraphView`).\n * Options are those of `functorGraphView`, with `names` for the parts and\n * arrows of the copresheaves.\n */\nexport declare function copresheafMapGraphView(alpha: CopresheafMap, options?: CategoryGraphViewOptions): View;\n/**\n * A query Q : B → C drawn as a functor collage, of the query as a functor\n * into its codomain's completion (`query.completion`): B on one side, and\n * on the other C with the limits (or colimits) of the query's diagrams\n * added as apexes, with their legs. Each object of B goes to its apex (or\n * to its single object), and each arrow to the arrow between apexes its\n * diagram map induces (or to a path).\n *\n * Apexes are named `lim b` (or `colim b`), legs by their variables, and\n * induced arrows by the arrow of B and the terms of its map, `h: v = e.f`\n * (or `h: j ↦ f.k` for colimits). Unlike a functor's collage, what the\n * diagrams use is not faint: the legs, the objects they reach, and the\n * arrows along the diagrams' arrows and the maps' components. What the\n * completion adds is dashed, like a collage's paths: apexes' outlines, legs\n * and induced arrows.\n *\n * What B goes to is drawn in full; what the diagrams use (`cod-involved`)\n * and the rest of C are faint, as in a functor's collage. Hovering\n * highlights, as there, what a part of B goes to; and in a quieter colour\n * (`--node-context`, `--link-context`), and in full, what it is made of:\n * for an object of B, its apex's legs and their objects; for an arrow of\n * B, or the arrow it induces, the square of each of its terms (the leg of\n * the term's source variable, the component's arrows and objects in C,\n * and the leg of its target variable); and for a leg, the arrows whose\n * terms use its variable.\n *\n * Options are those of `functorGraphView`. Parts have the classes of a\n * functor's collage, and `cod-apex` (apexes), `cod-leg` (legs),\n * `cod-induced` (induced arrows) and `cod-involved` (what the diagrams\n * use), for `style` to select. `names`\n * gets the completion's objects and arrows with their provenance (see\n * `ObjectProvenance`'s `'apex'`, `ArrowProvenance`'s `'leg'` and `'induced'`).\n */\nexport declare function queryGraphView(Q: Query, options?: CategoryGraphViewOptions): View;\n/**\n * A value drawn as a graph: a category (see `categoryGraphView`, also\n * `graphView.category`); a functor, as its collage (see `functorGraphView`,\n * also `graphView.functor`); or any copresheaf, graphs included, as its\n * category of elements (see `copresheafGraphView`, also\n * `graphView.copresheaf`); a copresheaf map, as the collage of its pivot\n * (see `copresheafMapGraphView`, also `graphView.copresheafMap`); or a\n * query, as the collage of its completion (see `queryGraphView`, also\n * `graphView.query`). Each also takes `names`, the names shown (see\n * `CategoryGraphViewOptions`). `graphView` from `@cod-ts/views/graphs`\n * draws graphs as graphs.\n */\nexport declare const graphView: ((x: GraphViewable, options?: CategoryGraphViewOptions) => View) & {\n    category: typeof categoryGraphView;\n    functor: typeof functorGraphView;\n    copresheaf: typeof copresheafGraphView;\n    copresheafMap: typeof copresheafMapGraphView;\n    query: typeof queryGraphView;\n};\n",Ce=`export { categoryView } from './category-view';
+`,j="import { type Category, type Copresheaf, type CopresheafMap, type Query, type RawFunctor } from '@cod-ts/categories';\nimport { type GraphViewOptions } from '@cod-ts/views/graphs';\nimport type { View } from '../view';\nimport { type Names } from './names';\n/**\n * Options of the graph views of categories, functors and copresheaves:\n * those of `graphView` from `@cod-ts/views/graphs`, and `names`.\n */\nexport interface CategoryGraphViewOptions extends GraphViewOptions {\n    /**\n     * The names shown for objects, arrows and parts on their nodes and links\n     * (unless `nodes.label` or `links.label` sets the text), from their IDs\n     * and provenance (see `Names`). Each defaults to the ID; data attributes\n     * keep the IDs.\n     */\n    readonly names?: Names;\n}\n/** The values `graphView` can show. */\nexport type GraphViewable = Category | RawFunctor | Copresheaf | CopresheafMap | Query;\n/**\n * A category drawn as a graph: its objects as nodes, and its generating\n * arrows as links between them. Equations are not drawn; `tableView` shows\n * them. Options are those of `graphView` from `@cod-ts/views/graphs`; links\n * are labelled with their arrows' names by default.\n *\n * Nodes and links have data attributes saying what they draw, for `style`\n * to select: a node `data-object`, its object; a link `data-object` and\n * `data-arrow`, its source and its name. In a category of elements\n * (`copresheaf.pivot`), as its provenance records them, a node has\n * `data-object` and `data-part`, the object of the copresheaf's category and\n * the part, and a link also `data-arrow`, the arrow it lies over.\n */\nexport declare function categoryGraphView(C: Category, options?: CategoryGraphViewOptions): View;\n/**\n * A functor F : D → C drawn as its collage: D's objects and generating\n * arrows on one side, C's on the other, and a dotted arrow from each object\n * d of D to F(d). Where F takes an arrow of D to a path of C that is not a\n * single generating arrow (an identity or a composite), C gets a link\n * for that path, labelled with it. Objects of C that are not F(d) for any d,\n * and generating arrows that are not F(f) for any f, are drawn faintly.\n *\n * While a part of the domain is hovered, what it maps to is highlighted\n * too: for an object, its image and the dotted arrow there; for an arrow,\n * its image, a generating arrow or the link for a path. For a path, the\n * generating arrows it runs along, and their objects, are highlighted as\n * context, in a quieter colour (`--node-context`, `--link-context`) and in\n * full even where faint, also while the link for the path is hovered.\n *\n * Each side is laid out on its own, and C is put next to D along D's\n * shorter extent: below a D laid out wider than tall, right of one taller\n * than wide. That is across the way the layouts run, for categories whose\n * arrows set their shape; for others, such as discrete categories laid out\n * in a row, it keeps the two sides apart. When D is as wide as tall, C goes\n * below it when the layouts run left to right (dagre's default), and right\n * of it when they run top to bottom. Options are those of\n * `graphView` from\n * `@cod-ts/views/graphs`; parts have the classes `cod-domain` or\n * `cod-codomain`, and `cod-map` (the mapping of objects), `cod-path` (the\n * links for paths) and `cod-faint` (outside the image), for `style` to select.\n * Nodes and links have data attributes saying what they draw, as in\n * `categoryGraphView` (for categories of elements too), and `data-side`,\n * `domain` or `codomain`; a link for a path, the `data-object` (and\n * `data-part`) it starts at and `data-path`, its steps joined by `.`; and a\n * dotted arrow, `data-side` `map` and the `data-object` (and `data-part`) of\n * the object of D it starts at. The linked highlighting selects by them.\n * Lines are solid for the two categories' own arrows, dashed for the links\n * for paths, which the collage adds, and dotted for the mapping of objects\n * across the two.\n */\nexport declare function functorGraphView(F: RawFunctor, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf drawn as a graph, its category of elements: the category\n * view of `copresheaf.pivot(X)`, with a node for every part, and a link for\n * every arrow from every part, from the part to its image (`a : o → o'`\n * takes part p of o to part a(p) of o'). Nodes are\n * labelled with their parts' names and links with their arrows' names. A\n * node has `data-object` and `data-part`, its object and part, and a link\n * `data-object`, `data-arrow` and `data-part`, its arrow's source, its\n * arrow and the part it starts from, so that `style` can select them, e.g.\n * `'.cod-link[data-object=\"Employee\"][data-arrow=\"worksIn\"]'`. Options are\n * those of `graphView` from `@cod-ts/views/graphs`, and `names` (see\n * `CategoryGraphViewOptions`).\n *\n * Copresheaves on the graph categories of `@cod-ts/graphs` are graphs\n * already, and `graphView` from `@cod-ts/views/graphs` draws them as such,\n * a node for every vertex and a link for every edge.\n */\nexport declare function copresheafGraphView(X: Copresheaf, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf map α : X ⇒ Y drawn as the collage of the functor between\n * categories of elements it pivots to (`copresheafMap.pivot(α)`, see\n * `functorGraphView`): X's category of elements on one side, Y's on the\n * other, and a dotted arrow from each part of X to its image. Nodes are\n * named by their parts and links by their arrows, and have the data\n * attributes of a copresheaf's graph view (see `copresheafGraphView`).\n * Options are those of `functorGraphView`, with `names` for the parts and\n * arrows of the copresheaves.\n */\nexport declare function copresheafMapGraphView(alpha: CopresheafMap, options?: CategoryGraphViewOptions): View;\n/**\n * A query Q : B → C drawn as a functor collage, of the query as a functor\n * into its codomain's completion (`query.completion`): B on one side, and\n * on the other C with the limits (or colimits) of the query's diagrams\n * added as apexes, with their legs. Each object of B goes to its apex (or\n * to its single object), and each arrow to the arrow between apexes its\n * diagram map induces (or to a path).\n *\n * Apexes are named `lim b` (or `colim b`), legs by their variables, and\n * induced arrows by the arrow of B and the terms of its map, `h: v = e.f`\n * (or `h: j ↦ f.k` for colimits). Unlike a functor's collage, what the\n * diagrams use is not faint: the legs, the objects they reach, and the\n * arrows along the diagrams' arrows and the maps' components. What the\n * completion adds is dashed, like a collage's paths: apexes' outlines, legs\n * and induced arrows.\n *\n * What B goes to is drawn in full; what the diagrams use (`cod-involved`)\n * and the rest of C are faint, as in a functor's collage. Hovering\n * highlights, as there, what a part of B goes to; and in a quieter colour\n * (`--node-context`, `--link-context`), and in full, what it is made of:\n * for an object of B, its apex's legs and their objects; for an arrow of\n * B, or the arrow it induces, the square of each of its terms (the leg of\n * the term's source variable, the component's arrows and objects in C,\n * and the leg of its target variable); and for a leg, the arrows whose\n * terms use its variable.\n *\n * Options are those of `functorGraphView`. Parts have the classes of a\n * functor's collage, and `cod-apex` (apexes), `cod-leg` (legs),\n * `cod-induced` (induced arrows) and `cod-involved` (what the diagrams\n * use), for `style` to select. `names`\n * gets the completion's objects and arrows with their provenance (see\n * `ObjectProvenance`'s `'apex'`, `ArrowProvenance`'s `'leg'` and `'induced'`).\n */\nexport declare function queryGraphView(Q: Query, options?: CategoryGraphViewOptions): View;\n/**\n * A value drawn as a graph: a category (see `categoryGraphView`, also\n * `graphView.category`); a functor, as its collage (see `functorGraphView`,\n * also `graphView.functor`); or any copresheaf, graphs included, as its\n * category of elements (see `copresheafGraphView`, also\n * `graphView.copresheaf`); a copresheaf map, as the collage of its pivot\n * (see `copresheafMapGraphView`, also `graphView.copresheafMap`); or a\n * query, as the collage of its completion (see `queryGraphView`, also\n * `graphView.query`). Each also takes `names`, the names shown (see\n * `CategoryGraphViewOptions`). `graphView` from `@cod-ts/views/graphs`\n * draws graphs as graphs.\n */\nexport declare const graphView: ((x: GraphViewable, options?: CategoryGraphViewOptions) => View) & {\n    category: typeof categoryGraphView;\n    functor: typeof functorGraphView;\n    copresheaf: typeof copresheafGraphView;\n    copresheafMap: typeof copresheafMapGraphView;\n    query: typeof queryGraphView;\n};\n",Ce=`export { categoryView } from './category-view';
 export { type Names } from './names';
 export { categoryGraphView, copresheafGraphView, copresheafMapGraphView, queryGraphView, type CategoryGraphViewOptions, functorGraphView, graphView, type GraphViewable, } from './graph-views';
 export { categoryTableView, copresheafMapTableView, copresheafTableView, functorMapTableView, functorTableView, type TableViewable, type TableViewOptions, tableView, } from './table-views';
@@ -6041,7 +6041,7 @@ export declare function categoryTreeView(C: Category, options?: TreeViewOptions)
 export declare const treeView: ((x: TreeViewable, options?: TreeViewOptions) => View) & {
     category: typeof categoryTreeView;
 };
-`,De="import type { Copresheaf } from '@cod-ts/categories';\nimport { type GraphCategory, type GraphLink, type GraphLayoutEngineOptions, type GraphPart, type NodeSize } from '@cod-ts/graphs';\nimport type { View } from '../view';\n/**\n * Where a label goes: a point `[x, y]`, each from -1 to 1, in the\n * coordinates of what it labels, which also says which way the label\n * extends from that point.\n *\n * - For a node, a point on its box: `[-1, -1]` its top-left corner,\n *   `[0, 0]` its centre, `[1, 1]` its bottom-right corner (y points down).\n * - For a link, a point in its own frame: x along it, from -1 at its start\n *   through 0 at its middle to 1 at its end; y across it, 0 on the line and\n *   -1 to the left of its direction (above a link going right), 1 to the\n *   right.\n *\n * The label extends away from the anchor's centre: at x = 1 it starts at\n * the point, at x = -1 it ends there, at x = 0 it is centred, and so on in\n * between; likewise for y.\n */\nexport type Anchor = readonly [x: number, y: number];\n/**\n * A part's label: its text, and where it goes (see `Anchor`). How it looks\n * is up to `style`. It is HTML in a `foreignObject`, so that the page can\n * typeset its text (e.g. TeX with MathJax), and its colour is `color`.\n */\nexport interface LabelOptions<P> {\n    /** The text. Default the part's name. */\n    readonly text?: (part: P) => string;\n    /** Where it goes. */\n    readonly anchor?: Anchor;\n    /** The gap between the anchor point and the label. Default 4. */\n    readonly gap?: number;\n}\n/** A part's label, or `false` for none. */\nexport type Label<P> = false | LabelOptions<P>;\n/**\n * CSS declarations, with property names in camelCase (`strokeWidth`).\n * Numbers get `px`, except for unitless properties such as `opacity`. A key\n * containing `&` is a nested rule, `&` standing for the enclosing selector:\n * `{ stroke: 'gray', '&:hover': { stroke: 'blue' } }`.\n */\nexport interface StyleRules {\n    readonly [property: string]: string | number | StyleRules;\n}\n/**\n * Style rules by CSS selector, applied to the view alone. Selectors name the\n * view's classes: `.cod-node` (a node's group), `.cod-shape` (its ellipse),\n * `.cod-link` (a link's group), `.cod-line`, `.cod-arrowhead`, `.cod-label`;\n * nodes and links also have `data-object` and `data-part` (and whatever\n * `nodes.data` and `links.data` give them). A selector without `&` is\n * looked for inside the view; with `&`, `&` is the view's element. These\n * rules take precedence over the defaults, so that labels shown on hover\n * become always shown with `{ '.cod-label': { visibility: 'visible' } }`.\n *\n * Colours are CSS variables: `--node-fill`, `--node-stroke` and\n * `--node-highlight` (a hovered node's stroke and label), and `--link-fill`\n * (none by default), `--link-stroke` (lines, arrowheads and labels) and\n * `--link-highlight` (a hovered link's line, arrowhead and label), and\n * `--node-context` and `--link-context`, a quieter colour for what views\n * that link parts highlight as context (see `queryGraphView`). Set them\n * on `.cod-node` or `.cod-link`, e.g. `{ '.cod-node': { '--node-fill':\n * 'white' } }`, rather than `fill` or `stroke` themselves: those would take\n * precedence over the colours of hovered parts too.\n */\nexport type GraphStyle = {\n    readonly [selector: string]: StyleRules;\n};\nexport interface GraphViewOptions {\n    /**\n     * How the graph is laid out, by `graphLayout` from `@cod-ts/graphs`: the\n     * `engine` (`'dagre'` by default, `'elk'`, or a function), and the\n     * `options` passed to it, e.g. `{ rankdir: 'TB' }`.\n     */\n    readonly layout?: GraphLayoutEngineOptions;\n    /**\n     * The nodes of the graph's skeleton (see `graphSkeleton`): their size, a\n     * diameter or a width and height (default 16, also used by the layout),\n     * and their labels (default below the node, anchor [0, 1]).\n     */\n    readonly nodes?: {\n        readonly size?: NodeSize;\n        readonly label?: Label<GraphPart>;\n        /** Classes to add to a node, besides `cod-node`, for `style` to select. */\n        readonly class?: (part: GraphPart) => string | undefined;\n        /**\n         * A node's `data-*` attributes, by name without `data-`, for `style` to\n         * select: by default `object` and `part`, which these replace or add to.\n         */\n        readonly data?: (part: GraphPart) => Readonly<Record<string, string>>;\n        /**\n         * Where a node's loops sit on it: an anchor, a point on its box (see\n         * `Anchor`), towards which loops bulge out. By default, the point\n         * opposite the nodes' labels, so that loops and labels keep apart: above\n         * the node when its label is below (the default), and so on; above when\n         * there are no labels, or they are centred.\n         */\n        readonly loop?: {\n            readonly anchor?: Anchor;\n        };\n    };\n    /**\n     * The links of the graph's skeleton: their margin, the gap between their\n     * ends and the nodes' outlines (default 4); the size of their arrowheads\n     * (default 9); and their labels (default on the middle of the link,\n     * anchor [0, 0]).\n     */\n    readonly links?: {\n        readonly margin?: number;\n        readonly arrow?: number;\n        readonly label?: Label<GraphLink>;\n        /** Classes to add to a link, besides `cod-link`, for `style` to select. */\n        readonly class?: (link: GraphLink) => string | undefined;\n        /**\n         * A link's `data-*` attributes, by name without `data-`, for `style` to\n         * select: by default `object` and `part`, which these replace or add to.\n         */\n        readonly data?: (link: GraphLink) => Readonly<Record<string, string>>;\n    };\n    /**\n     * How the view looks: CSS rules by selector (see `GraphStyle`). By default,\n     * labels show while their part is hovered.\n     */\n    readonly style?: GraphStyle;\n}\nexport declare function compileStyle(style: GraphStyle, scope: string): string;\n/**\n * A graph, a copresheaf on one of the graph categories of @cod-ts/graphs,\n * drawn as SVG: the nodes and links of its skeleton (see `graphSkeleton`),\n * laid out by `graphLayout`, and arrowheads on links that have a direction.\n * Every option is optional:\n *\n * - layout: `layout.engine` and `layout.options`, passed to `graphLayout`\n *   with `nodes.size`;\n * - geometry: `nodes.size`, `links.margin` (between links and nodes),\n *   `links.arrow` (the arrowheads' size);\n * - labels: `nodes.label` and `links.label`, their text and where they go\n *   (see `Anchor`), or `false` for none;\n * - looks: `style`, CSS rules by selector (see `GraphStyle`), and\n *   `nodes.class` and `links.class`, more classes for parts to select. By\n *   default, labels show while their part is hovered.\n *\n * The layout is computed when the view is rendered, and finishes later: the\n * view's element has `data-state` \"pending\", then \"ready\" (or \"error\", with\n * the message shown).\n *\n * Also available as `graphView.graph`, so that this module's views and\n * those of `@cod-ts/views/categories` (`categoryView`) can stand in for each\n * other: `import { graphView as view } from '@cod-ts/views/graphs'`, then\n * `view.graph(g)`.\n */\nexport declare const graphView: ((g: Copresheaf<GraphCategory>, options?: GraphViewOptions) => View) & {\n    graph: (g: Copresheaf<GraphCategory>, options?: GraphViewOptions) => View;\n};\n",Oe=`export { type Anchor, graphView, type GraphViewOptions, type GraphStyle, type Label, type LabelOptions, type StyleRules, } from './graph-views';
+`,De="import type { Copresheaf } from '@cod-ts/categories';\nimport { type GraphCategory, type GraphLink, type GraphLayoutEngineOptions, type GraphPart, type NodeSize } from '@cod-ts/graphs';\nimport type { View } from '../view';\n/**\n * Where a label goes: a point `[x, y]`, each from -1 to 1, in the\n * coordinates of what it labels, which also says which way the label\n * extends from that point.\n *\n * - For a node, a point on its box: `[-1, -1]` its top-left corner,\n *   `[0, 0]` its centre, `[1, 1]` its bottom-right corner (y points down).\n * - For a link, a point in its own frame: x along it, from -1 at its start\n *   through 0 at its middle to 1 at its end; y across it, 0 on the line and\n *   -1 to the left of its direction (above a link going right), 1 to the\n *   right.\n *\n * The label extends away from the anchor's centre: at x = 1 it starts at\n * the point, at x = -1 it ends there, at x = 0 it is centred, and so on in\n * between; likewise for y.\n */\nexport type Anchor = readonly [x: number, y: number];\n/**\n * A part's label: its text, and where it goes (see `Anchor`). How it looks\n * is up to `style`. It is HTML in a `foreignObject`, so that the page can\n * typeset its text (e.g. TeX with MathJax), and its colour is `color`.\n */\nexport interface LabelOptions<P> {\n    /** The text. Default the part's name. */\n    readonly text?: (part: P) => string;\n    /** Where it goes. */\n    readonly anchor?: Anchor;\n    /** The gap between the anchor point and the label. Default 4. */\n    readonly gap?: number;\n}\n/** A part's label, or `false` for none. */\nexport type Label<P> = false | LabelOptions<P>;\n/**\n * CSS declarations, with property names in camelCase (`strokeWidth`).\n * Numbers get `px`, except for unitless properties such as `opacity`. A key\n * containing `&` is a nested rule, `&` standing for the enclosing selector:\n * `{ stroke: 'gray', '&:hover': { stroke: 'blue' } }`.\n */\nexport interface StyleRules {\n    readonly [property: string]: string | number | StyleRules;\n}\n/**\n * Style rules by CSS selector, applied to the view alone. Selectors name the\n * view's classes: `.cod-node` (a node's group), `.cod-shape` (its ellipse),\n * `.cod-link` (a link's group), `.cod-line`, `.cod-arrowhead`, `.cod-label`;\n * nodes and links also have `data-object` and `data-part` (and whatever\n * `nodes.data` and `links.data` give them). A selector without `&` is\n * looked for inside the view; with `&`, `&` is the view's element. These\n * rules take precedence over the defaults, so that labels shown on hover\n * become always shown with `{ '.cod-label': { visibility: 'visible' } }`.\n *\n * Colours are CSS variables: `--node-fill`, `--node-stroke` and\n * `--node-highlight` (a hovered node's stroke and label), and `--link-fill`\n * (none by default), `--link-stroke` (lines, arrowheads and labels) and\n * `--link-highlight` (a hovered link's line, arrowhead and label), and\n * `--node-context` and `--link-context`, a quieter colour for what views\n * that link parts highlight as context (see `queryGraphView`). Set them\n * on `.cod-node` or `.cod-link`, e.g. `{ '.cod-node': { '--node-fill':\n * 'white' } }`, rather than `fill` or `stroke` themselves: those would take\n * precedence over the colours of hovered parts too.\n */\nexport type GraphStyle = {\n    readonly [selector: string]: StyleRules;\n};\nexport interface GraphViewOptions {\n    /**\n     * How the graph is laid out, by `graphLayout` from `@cod-ts/graphs`: the\n     * `engine` (`'dagre'` by default, `'elk'`, or a function), and the\n     * `options` passed to it, e.g. `{ rankdir: 'TB' }`.\n     */\n    readonly layout?: GraphLayoutEngineOptions;\n    /**\n     * The nodes of the graph's skeleton (see `graphSkeleton`): their size, a\n     * diameter or a width and height (default 16, also used by the layout),\n     * and their labels (default below the node, anchor [0, 1]).\n     */\n    readonly nodes?: {\n        readonly size?: NodeSize;\n        readonly label?: Label<GraphPart>;\n        /** Classes to add to a node, besides `cod-node`, for `style` to select. */\n        readonly class?: (part: GraphPart) => string | undefined;\n        /**\n         * A node's `data-*` attributes, by name without `data-`, for `style` to\n         * select: by default `object` and `part`, which these replace or add to;\n         * one given as undefined is removed.\n         */\n        readonly data?: (part: GraphPart) => Readonly<Record<string, string | undefined>>;\n        /**\n         * Where a node's loops sit on it: an anchor, a point on its box (see\n         * `Anchor`), towards which loops bulge out. By default, the point\n         * opposite the nodes' labels, so that loops and labels keep apart: above\n         * the node when its label is below (the default), and so on; above when\n         * there are no labels, or they are centred.\n         */\n        readonly loop?: {\n            readonly anchor?: Anchor;\n        };\n    };\n    /**\n     * The links of the graph's skeleton: their margin, the gap between their\n     * ends and the nodes' outlines (default 4); the size of their arrowheads\n     * (default 9); and their labels (default on the middle of the link,\n     * anchor [0, 0]).\n     */\n    readonly links?: {\n        readonly margin?: number;\n        readonly arrow?: number;\n        readonly label?: Label<GraphLink>;\n        /** Classes to add to a link, besides `cod-link`, for `style` to select. */\n        readonly class?: (link: GraphLink) => string | undefined;\n        /**\n         * A link's `data-*` attributes, by name without `data-`, for `style` to\n         * select: by default `object` and `part`, which these replace or add to;\n         * one given as undefined is removed.\n         */\n        readonly data?: (link: GraphLink) => Readonly<Record<string, string | undefined>>;\n    };\n    /**\n     * How the view looks: CSS rules by selector (see `GraphStyle`). By default,\n     * labels show while their part is hovered.\n     */\n    readonly style?: GraphStyle;\n}\nexport declare function compileStyle(style: GraphStyle, scope: string): string;\n/**\n * A graph, a copresheaf on one of the graph categories of @cod-ts/graphs,\n * drawn as SVG: the nodes and links of its skeleton (see `graphSkeleton`),\n * laid out by `graphLayout`, and arrowheads on links that have a direction.\n * Every option is optional:\n *\n * - layout: `layout.engine` and `layout.options`, passed to `graphLayout`\n *   with `nodes.size`;\n * - geometry: `nodes.size`, `links.margin` (between links and nodes),\n *   `links.arrow` (the arrowheads' size);\n * - labels: `nodes.label` and `links.label`, their text and where they go\n *   (see `Anchor`), or `false` for none;\n * - looks: `style`, CSS rules by selector (see `GraphStyle`), and\n *   `nodes.class` and `links.class`, more classes for parts to select. By\n *   default, labels show while their part is hovered.\n *\n * The layout is computed when the view is rendered, and finishes later: the\n * view's element has `data-state` \"pending\", then \"ready\" (or \"error\", with\n * the message shown).\n *\n * Also available as `graphView.graph`, so that this module's views and\n * those of `@cod-ts/views/categories` (`categoryView`) can stand in for each\n * other: `import { graphView as view } from '@cod-ts/views/graphs'`, then\n * `view.graph(g)`.\n */\nexport declare const graphView: ((g: Copresheaf<GraphCategory>, options?: GraphViewOptions) => View) & {\n    graph: (g: Copresheaf<GraphCategory>, options?: GraphViewOptions) => View;\n};\n",Oe=`export { type Anchor, graphView, type GraphViewOptions, type GraphStyle, type Label, type LabelOptions, type StyleRules, } from './graph-views';
 `,ke=`export { type Accessor, effect, memo, type Setter, type Signal, type SignalOptions, type SignalScope, signal, signalBatch, signalScope, signalScopeCurrent, signalScopeOnCleanup, signalScopeRun, signalUntrack, } from './signals';
 `,Ae=`/**
  * Signals: values that change over time, and computations that follow them,
@@ -57879,44 +57879,68 @@ function b(t, n) {
 		}
 	});
 }
-function x(e) {
-	let t = (t) => {
-		let n = e.provenance?.Object?.[t];
-		return n?.kind === "element" ? n : void 0;
-	};
-	return {
-		node(e) {
-			let n = t(e);
-			return n ? {
-				object: n.object.object,
-				part: n.part.part
-			} : {};
-		},
-		link(n, r) {
-			let i = t(n), a = e.provenance?.Arrow?.[n]?.[r];
-			return i && a?.kind === "element" ? {
-				object: i.object.object,
-				arrow: a.arrow.arrow,
-				part: i.part.part
-			} : {};
-		}
+function x(e, t) {
+	let n = e.provenance?.Object?.[t];
+	return n?.kind === "element" ? n : void 0;
+}
+function S(e, t) {
+	let n = x(e, t);
+	return n ? {
+		object: n.object.object,
+		part: n.part.part
+	} : {
+		object: t,
+		part: void 0
 	};
 }
-function S(e, t = {}) {
+function C(e, t, n) {
+	let r = e.provenance?.Arrow?.[t]?.[n];
+	return r?.kind === "element" ? {
+		...S(e, t),
+		arrow: r.arrow.arrow
+	} : {
+		...S(e, t),
+		arrow: n
+	};
+}
+var w = (e) => e.map((e) => e.replace(/[\\\\.]/g, "\\\\$&")).join("."), T = {
+	node: (e, t, n) => ({
+		side: e,
+		...S(t, n)
+	}),
+	link: (e, t, n, r) => ({
+		side: e,
+		...C(t, n, r)
+	}),
+	path: (e, t, n) => ({
+		side: "codomain",
+		...S(e, t),
+		path: w(n)
+	}),
+	map: (e, t) => ({
+		side: "map",
+		...S(e, t)
+	})
+};
+function E(e, t) {
+	let n = (e) => e.replace(/[\\\\",&\\n]/g, (e) => \`\\\\\${e.charCodeAt(0).toString(16)} \`);
+	return \`.cod-\${e}\` + Object.entries(t).map(([e, t]) => t === void 0 ? \`:not([data-\${e}])\` : \`[data-\${e}="\${n(t)}"]\`).join("");
+}
+function D(e, t = {}) {
 	let { names: n, ...r } = t, i = m(e, n), a = y(e), o = new Map(a.map(({ id: e, name: t, source: n }) => [e, i.arrow(n, t)])), s = new Map(a.map(({ id: e, name: t, source: n }) => [e, {
 		name: t,
 		source: n
-	}])), l = x(e), u = (e) => l.node(e), d = (e) => {
-		let t = s.get(e);
-		return t ? l.link(t.source, t.name) : {};
-	}, f = b(e.specification.Object, a);
-	return c(f, {
+	}])), l = (t) => S(e, t), u = (t) => {
+		let n = s.get(t);
+		return n ? C(e, n.source, n.name) : {};
+	}, d = b(e.specification.Object, a);
+	return c(d, {
 		...r,
 		nodes: {
 			...r.nodes,
 			label: v(r.nodes?.label, (e) => i.object(e.part)),
 			data: (e) => ({
-				...u(e.part),
+				...l(e.part),
 				...r.nodes?.data?.(e)
 			})
 		},
@@ -57924,14 +57948,14 @@ function S(e, t = {}) {
 			...r.links,
 			label: v(r.links?.label, (e) => o.get(e.part) ?? e.part),
 			data: (e) => ({
-				...d(e.part),
+				...u(e.part),
 				...r.links?.data?.(e)
 			})
 		}
 	});
 }
-var C = (e, t) => \`\${e}:\${t}\`;
-function w(e) {
+var O = (e, t) => \`\${e}:\${t}\`;
+function k(e) {
 	let t = e.map((e) => e.x), n = e.map((e) => e.y);
 	return {
 		x0: Math.min(...t),
@@ -57957,13 +57981,13 @@ var te = {
 	},
 	".cod-path .cod-line": { strokeDasharray: "8 2" },
 	".cod-faint": { opacity: .35 }
-}, T = (e, t) => \`.cod-\${e}[data-part="\${t.replace(/[\\\\",&\\n]/g, (e) => \`\\\\\${e.charCodeAt(0).toString(16)} \`)}"]\`;
-function E(e, t = "highlight") {
+};
+function A(e, t = "highlight") {
 	let n = {};
 	for (let [r, i] of e) {
 		let e = \`&:has(\${r}:hover)\`;
 		for (let r of i.nodes) {
-			let i = \`\${e} \${T("node", r)}\`;
+			let i = \`\${e} \${r}\`;
 			n[i] = {
 				stroke: \`var(--node-\${t})\`,
 				opacity: 1
@@ -57973,7 +57997,7 @@ function E(e, t = "highlight") {
 			};
 		}
 		for (let r of i.links) {
-			let i = \`\${e} \${T("link", r)}\`;
+			let i = \`\${e} \${r}\`;
 			n[i] = {
 				stroke: \`var(--link-\${t})\`,
 				opacity: 1
@@ -57985,62 +58009,61 @@ function E(e, t = "highlight") {
 	}
 	return n;
 }
-function D(e, t = {}) {
+function j(e, t = {}) {
 	let { names: n, ...r } = t;
 	t = r;
-	let l = e.domain, u = e.codomain, d = m(l, n), f = m(u, n), p = (e, t) => t.length ? f.steps(e, t).join(".") : "id", h = /* @__PURE__ */ new Map(), S = /* @__PURE__ */ new Map(), D = /* @__PURE__ */ new Map(), O = {
-		domain: x(l),
-		codomain: x(u)
-	}, k = (e, t, n) => {
-		let r = C(e, t);
-		return D.set(r, O[e].node(t)), h.set(r, (e === "domain" ? d : f).object(t)), S.set(r, \`cod-\${e}\${n ? " cod-faint" : ""}\`), r;
-	}, A = (e, t, n, r, i) => (h.set(e, t), S.set(e, n), {
+	let l = e.domain, u = e.codomain, d = m(l, n), f = m(u, n), p = (e, t) => t.length ? f.steps(e, t).join(".") : "id", h = /* @__PURE__ */ new Map(), x = /* @__PURE__ */ new Map(), S = /* @__PURE__ */ new Map(), C = (e, t) => E(e, S.get(t)), w = (e, t, n) => {
+		let r = O(e, t);
+		return S.set(r, T.node(e, e === "domain" ? l : u, t)), h.set(r, (e === "domain" ? d : f).object(t)), x.set(r, \`cod-\${e}\${n ? " cod-faint" : ""}\`), r;
+	}, D = (e, t, n, r, i) => (h.set(e, t), x.set(e, n), {
 		id: e,
 		source: r,
 		target: i
-	}), j = new Set(Object.values(e.Object)), ne = /* @__PURE__ */ new Set(), M = /* @__PURE__ */ new Map();
+	}), j = new Set(Object.values(e.Object)), M = /* @__PURE__ */ new Set(), N = /* @__PURE__ */ new Map();
 	for (let t of y(l)) {
 		let n = e.Arrow[t.source][t.name], r = e.Object[t.source];
-		n.length === 1 ? ne.add(_(r, n[0])) : M.set(g(r, n), {
+		n.length === 1 ? M.add(_(r, n[0])) : N.set(g(r, n), {
 			source: r,
 			target: e.Object[t.target],
 			path: n
 		});
 	}
-	let N = l.specification.Object.map((e) => k("domain", e, !1));
-	for (let e of y(l)) D.set(C("domain", e.id), O.domain.link(e.source, e.name));
-	for (let e of y(u)) D.set(C("codomain", e.id), O.codomain.link(e.source, e.name));
-	let P = y(l).map((e) => A(C("domain", e.id), d.arrow(e.source, e.name), "cod-domain", C("domain", e.source), C("domain", e.target))), F = u.specification.Object.map((e) => k("codomain", e, !j.has(e))), I = [...y(u).map((e) => A(C("codomain", e.id), f.arrow(e.source, e.name), \`cod-codomain\${ne.has(e.id) ? "" : " cod-faint"}\`, C("codomain", e.source), C("codomain", e.target))), ...[...M].map(([e, { source: t, target: n, path: r }]) => A(\`path:\${e}\`, p(t, r), "cod-codomain cod-path", C("codomain", t), C("codomain", n)))], L = l.specification.Object.map((t) => A(\`map:\${t}\`, \`\${d.object(t)} ↦ \${f.object(e.Object[t])}\`, "cod-map", C("domain", t), C("codomain", e.Object[t]))), R = /* @__PURE__ */ new Map();
-	for (let t of l.specification.Object) R.set(T("node", C("domain", t)), {
-		nodes: [C("codomain", e.Object[t])],
-		links: [\`map:\${t}\`]
+	let P = l.specification.Object.map((e) => w("domain", e, !1));
+	for (let e of y(l)) S.set(O("domain", e.id), T.link("domain", l, e.source, e.name));
+	for (let e of y(u)) S.set(O("codomain", e.id), T.link("codomain", u, e.source, e.name));
+	for (let [e, { source: t, path: n }] of N) S.set(\`path:\${e}\`, T.path(u, t, n));
+	for (let e of l.specification.Object) S.set(\`map:\${e}\`, T.map(l, e));
+	let F = y(l).map((e) => D(O("domain", e.id), d.arrow(e.source, e.name), "cod-domain", O("domain", e.source), O("domain", e.target))), I = u.specification.Object.map((e) => w("codomain", e, !j.has(e))), L = [...y(u).map((e) => D(O("codomain", e.id), f.arrow(e.source, e.name), \`cod-codomain\${M.has(e.id) ? "" : " cod-faint"}\`, O("codomain", e.source), O("codomain", e.target))), ...[...N].map(([e, { source: t, target: n, path: r }]) => D(\`path:\${e}\`, p(t, r), "cod-codomain cod-path", O("codomain", t), O("codomain", n)))], ne = l.specification.Object.map((t) => D(\`map:\${t}\`, \`\${d.object(t)} ↦ \${f.object(e.Object[t])}\`, "cod-map", O("domain", t), O("codomain", e.Object[t]))), R = /* @__PURE__ */ new Map();
+	for (let t of l.specification.Object) R.set(C("node", O("domain", t)), {
+		nodes: [C("node", O("codomain", e.Object[t]))],
+		links: [C("link", \`map:\${t}\`)]
 	});
 	let z = /* @__PURE__ */ new Map();
 	for (let t of y(l)) {
 		let n = e.Arrow[t.source][t.name], r = e.Object[t.source];
-		if (R.set(T("link", C("domain", t.id)), {
+		if (R.set(C("link", O("domain", t.id)), {
 			nodes: [],
-			links: [n.length === 1 ? C("codomain", _(r, n[0])) : \`path:\${g(r, n)}\`]
+			links: [C("link", n.length === 1 ? O("codomain", _(r, n[0])) : \`path:\${g(r, n)}\`)]
 		}), n.length < 2) continue;
-		let i = r, a = [C("codomain", i)], o = n.map((e) => {
-			let t = C("codomain", _(i, e));
-			return i = u.specification.Arrow[i][e], a.push(C("codomain", i)), t;
+		let i = r, a = [C("node", O("codomain", i))], o = n.map((e) => {
+			let t = C("link", O("codomain", _(i, e)));
+			return i = u.specification.Arrow[i][e], a.push(C("node", O("codomain", i))), t;
 		}), s = {
 			nodes: [...new Set(a)],
 			links: o
 		};
-		z.set(T("link", C("domain", t.id)), s), z.set(T("link", \`path:\${g(r, n)}\`), s);
+		z.set(C("link", O("domain", t.id)), s), z.set(C("link", \`path:\${g(r, n)}\`), s);
 	}
-	let re = b(N, P), ie = b(F, I), B = b([...N, ...F], [
-		...P,
-		...I,
-		...L
-	]), V = async (e, n) => {
+	let re = b(P, F), B = b(I, L), V = b([...P, ...I], [
+		...F,
+		...L,
+		...ne
+	]), H = async (e, n) => {
 		let r = {
 			...t.layout ?? {},
 			nodes: n.nodes
-		}, c = ee(t.layout), [l, u] = await Promise.all([i(re, r), i(ie, r)]), d = (e) => [...Object.values(e.nodes.V), ...Object.values(e.links.E ?? {}).flatMap((e) => e.points)], f = d(l), p = d(u), { width: m, height: h } = a(n), [g, _] = f.length === 0 || p.length === 0 ? [0, 0] : (() => {
-			let e = w(f), t = w(p), [n, r] = [e.x1 - e.x0, e.y1 - e.y0];
+		}, c = ee(t.layout), [l, u] = await Promise.all([i(re, r), i(B, r)]), d = (e) => [...Object.values(e.nodes.V), ...Object.values(e.links.E ?? {}).flatMap((e) => e.points)], f = d(l), p = d(u), { width: m, height: h } = a(n), [g, _] = f.length === 0 || p.length === 0 ? [0, 0] : (() => {
+			let e = k(f), t = k(p), [n, r] = [e.x1 - e.x0, e.y1 - e.y0];
 			return n > r || !(r > n) && c ? [(e.x0 + e.x1) / 2 - (t.x0 + t.x1) / 2, e.y1 - t.y0 + h + 120] : [e.x1 - t.x0 + m + 160, (e.y0 + e.y1) / 2 - (t.y0 + t.y1) / 2];
 		})(), v = (e) => Object.freeze({
 			x: e.x + g,
@@ -58051,7 +58074,7 @@ function D(e, t = {}) {
 		}) }), b = Object.fromEntries(Object.entries(u.links.E ?? {}).map(([e, t]) => [e, Object.freeze({
 			kind: t.kind,
 			points: Object.freeze(t.points.map(v))
-		})])), x = s(B), S = o({
+		})])), x = s(V), S = o({
 			...x,
 			links: x.links.filter((e) => e.part.startsWith("map:"))
 		}, y, n);
@@ -58063,155 +58086,156 @@ function D(e, t = {}) {
 				...S.E
 			}) })
 		});
-	}, H = t.nodes?.class, U = t.links?.class, W = (...e) => e.filter(Boolean).join(" ") || void 0;
-	return c(B, {
+	}, ie = t.nodes?.class, ae = t.links?.class, U = (...e) => e.filter(Boolean).join(" ") || void 0;
+	return c(V, {
 		...t,
 		layout: {
 			...t.layout,
-			engine: V
+			engine: H
 		},
 		style: {
 			...te,
-			...E(R),
-			...E(z, "context"),
+			...A(R),
+			...A(z, "context"),
 			...t.style
 		},
 		nodes: {
 			...t.nodes,
 			label: v(t.nodes?.label, (e) => h.get(e.part) ?? e.part),
-			class: (e) => W(S.get(e.part), H?.(e)),
+			class: (e) => U(x.get(e.part), ie?.(e)),
 			data: (e) => ({
-				...D.get(e.part),
-				...t.nodes?.data?.(e)
+				...t.nodes?.data?.(e),
+				...S.get(e.part)
 			})
 		},
 		links: {
 			...t.links,
 			label: v(t.links?.label, (e) => h.get(e.part) ?? e.part),
-			class: (e) => W(S.get(e.part), U?.(e)),
+			class: (e) => U(x.get(e.part), ae?.(e)),
 			data: (e) => ({
-				...D.get(e.part),
-				...t.links?.data?.(e)
+				...t.links?.data?.(e),
+				...S.get(e.part)
 			})
 		}
 	});
 }
-function O(t, n = {}) {
-	return S(e.pivot(t), {
+function M(t, n = {}) {
+	return D(e.pivot(t), {
 		...n,
-		names: M(n.names)
+		names: L(n.names)
 	});
 }
-function k(e, n = {}) {
-	return D(t.pivot(e), {
+function N(e, n = {}) {
+	return j(t.pivot(e), {
 		...n,
-		names: M(n.names)
+		names: L(n.names)
 	});
 }
-var A = {
+var P = {
 	".cod-apex .cod-shape": { strokeDasharray: "8 2" },
 	".cod-leg .cod-line": { strokeDasharray: "8 2" },
 	".cod-induced .cod-line": { strokeDasharray: "8 2" }
 };
-function j(e, t = {}) {
-	let { category: r, functor: i } = n.completion(e), a = e.domain, o = e.variance === "limit", s = (e, t) => C("codomain", _(e, t)), c = /* @__PURE__ */ new Set(), l = /* @__PURE__ */ new Set(), u = /* @__PURE__ */ new Set(), d = /* @__PURE__ */ new Set(), f = /* @__PURE__ */ new Set(), p = (e, t) => JSON.stringify([e, t]), m = /* @__PURE__ */ new Map(), h = /* @__PURE__ */ new Map(), g = /* @__PURE__ */ new Map();
+function F(e, t = {}) {
+	let { category: r, functor: i } = n.completion(e), a = e.domain, o = e.variance === "limit", s = (e, t) => O("codomain", _(e, t)), c = (e) => E("node", T.node("codomain", r, e)), l = (e, t) => E("link", T.link("codomain", r, e, t)), u = /* @__PURE__ */ new Set(), d = /* @__PURE__ */ new Set(), f = /* @__PURE__ */ new Set(), p = /* @__PURE__ */ new Set(), m = /* @__PURE__ */ new Set(), h = (e, t) => JSON.stringify([e, t]), g = /* @__PURE__ */ new Map(), v = /* @__PURE__ */ new Map(), y = /* @__PURE__ */ new Map();
 	for (let e of r.specification.Object) {
-		r.provenance?.Object?.[e]?.kind === "apex" && c.add(C("codomain", e));
+		r.provenance?.Object?.[e]?.kind === "apex" && u.add(O("codomain", e));
 		for (let [t, n] of Object.entries(r.specification.Arrow[e] ?? {})) {
-			let i = r.provenance?.Arrow?.[e]?.[t], a = s(e, t);
-			if (i?.kind === "induced" && (u.add(a), g.set(p(i.arrow.source, i.arrow.arrow), a)), i?.kind !== "leg") continue;
-			l.add(a), d.add(C("codomain", e)).add(C("codomain", n));
-			let o = i.object.object;
-			m.set(p(o, i.variable.object), a), h.set(o, [...h.get(o) ?? [], a]);
+			let i = r.provenance?.Arrow?.[e]?.[t];
+			if (i?.kind === "induced" && (f.add(s(e, t)), y.set(h(i.arrow.source, i.arrow.arrow), l(e, t))), i?.kind !== "leg") continue;
+			d.add(s(e, t)), p.add(O("codomain", e)).add(O("codomain", n));
+			let a = i.object.object;
+			g.set(h(a, i.variable.object), l(e, t)), v.set(a, [...v.get(a) ?? [], l(e, t)]);
 		}
 	}
-	let v = (t, n) => {
+	let b = (t, n) => {
 		let r = t;
-		return d.add(C("codomain", r)), n.map((t) => {
-			let n = s(r, t);
-			return f.add(n), r = e.codomain.specification.Arrow[r][t], d.add(C("codomain", r)), n;
+		return p.add(O("codomain", r)), n.map((t) => {
+			m.add(s(r, t));
+			let n = l(r, t);
+			return r = e.codomain.specification.Arrow[r][t], p.add(O("codomain", r)), n;
 		});
 	};
 	for (let t of a.specification.Object) {
 		let n = e.Object[t];
 		for (let e of n.domain.specification.Object) {
-			d.add(C("codomain", n.Object[e]));
-			for (let t of Object.keys(n.domain.specification.Arrow[e] ?? {})) v(n.Object[e], n.Arrow[e][t]);
+			p.add(O("codomain", n.Object[e]));
+			for (let t of Object.keys(n.domain.specification.Arrow[e] ?? {})) b(n.Object[e], n.Arrow[e][t]);
 		}
 	}
-	let y = /* @__PURE__ */ new Map(), b = (t, n) => {
+	let x = /* @__PURE__ */ new Map(), S = (t, n) => {
 		let r = t;
-		return [C("codomain", r), ...n.map((t) => C("codomain", r = e.codomain.specification.Arrow[r][t]))];
-	}, x = /* @__PURE__ */ new Map(), S = (e, t) => {
-		e !== void 0 && x.set(e, [...x.get(e) ?? [], t]);
+		return [c(r), ...n.map((t) => c(r = e.codomain.specification.Arrow[r][t]))];
+	}, C = /* @__PURE__ */ new Map(), w = (e, t) => {
+		e !== void 0 && C.set(e, [...C.get(e) ?? [], t]);
 	};
 	for (let t of a.specification.Object) for (let [n, r] of Object.entries(a.specification.Arrow[t] ?? {})) {
-		let a = e.Arrow[t][n], c = a.shape, l = o ? a.target.domain.specification.Object.map((e) => ({
+		let s = e.Arrow[t][n], c = s.shape, u = o ? s.target.domain.specification.Object.map((e) => ({
 			source: c.Object[e],
 			target: e,
-			from: a.source.Object[c.Object[e]],
-			path: a.components[e]
-		})) : a.source.domain.specification.Object.map((e) => ({
+			from: s.source.Object[c.Object[e]],
+			path: s.components[e]
+		})) : s.source.domain.specification.Object.map((e) => ({
 			source: e,
 			target: c.Object[e],
-			from: a.source.Object[e],
-			path: a.components[e]
-		})), u = i.Arrow[t][n].length === 1 ? s(i.Object[t], i.Arrow[t][n][0]) : void 0, d = l.flatMap(({ from: e, path: t }) => b(e, t)), f = l.flatMap(({ source: e, target: i, from: a, path: o }) => {
-			let [s, c] = [m.get(p(t, e)), m.get(p(r, i))], l = C("domain", _(t, n));
-			S(s, l), S(c, l);
-			let d = g.get(p(t, n));
-			return d !== void 0 && (S(s, d), S(c, d)), [
+			from: s.source.Object[e],
+			path: s.components[e]
+		})), d = i.Arrow[t][n].length === 1 ? l(i.Object[t], i.Arrow[t][n][0]) : void 0, f = u.flatMap(({ from: e, path: t }) => S(e, t)), p = E("link", T.link("domain", a, t, n)), m = u.flatMap(({ source: e, target: i, from: a, path: o }) => {
+			let [s, c] = [g.get(h(t, e)), g.get(h(r, i))];
+			w(s, p), w(c, p);
+			let l = y.get(h(t, n));
+			return l !== void 0 && (w(s, l), w(c, l)), [
 				s,
-				...v(a, o),
+				...b(a, o),
 				c
-			].filter((e) => e !== void 0 && e !== u);
+			].filter((e) => e !== void 0 && e !== d);
 		});
-		y.set(p(t, n), {
-			nodes: [...new Set(d)],
-			links: [...new Set(f)]
+		x.set(h(t, n), {
+			nodes: [...new Set(f)],
+			links: [...new Set(m)]
 		});
 	}
-	let w = /* @__PURE__ */ new Map();
+	let D = /* @__PURE__ */ new Map();
 	for (let t of a.specification.Object) {
-		let n = e.Object[t], r = n.domain.specification.Object.map((e) => C("codomain", n.Object[e]));
-		w.set(T("node", C("domain", t)), {
-			nodes: [...new Set(r)].filter((e) => e !== C("codomain", i.Object[t])),
-			links: h.get(t) ?? []
+		let n = e.Object[t], r = n.domain.specification.Object.map((e) => c(n.Object[e]));
+		D.set(E("node", T.node("domain", a, t)), {
+			nodes: [...new Set(r)].filter((e) => e !== c(i.Object[t])),
+			links: v.get(t) ?? []
 		});
 		for (let e of Object.keys(a.specification.Arrow[t] ?? {})) {
-			let n = y.get(p(t, e)) ?? {
+			let n = x.get(h(t, e)) ?? {
 				nodes: [],
 				links: []
 			};
-			w.set(T("link", C("domain", _(t, e))), n);
-			let r = g.get(p(t, e));
-			r !== void 0 && w.set(T("link", r), n);
+			D.set(E("link", T.link("domain", a, t, e)), n);
+			let r = y.get(h(t, e));
+			r !== void 0 && D.set(r, n);
 		}
 	}
-	for (let [e, t] of x) w.set(T("link", e), {
+	for (let [e, t] of C) D.set(e, {
 		nodes: [],
 		links: [...new Set(t)]
 	});
-	let ee = (...e) => e.filter(Boolean).join(" ") || void 0;
-	return D(i, {
+	let k = (...e) => e.filter(Boolean).join(" ") || void 0;
+	return j(i, {
 		...t,
-		names: ne(t.names),
+		names: I(t.names),
 		style: {
-			...A,
-			...E(w, "context"),
+			...P,
+			...A(D, "context"),
 			...t.style
 		},
 		nodes: {
 			...t.nodes,
-			class: (e) => ee(c.has(e.part) ? "cod-apex" : void 0, d.has(e.part) ? "cod-involved" : void 0, t.nodes?.class?.(e))
+			class: (e) => k(u.has(e.part) ? "cod-apex" : void 0, p.has(e.part) ? "cod-involved" : void 0, t.nodes?.class?.(e))
 		},
 		links: {
 			...t.links,
-			class: (e) => ee(l.has(e.part) ? "cod-leg cod-involved" : u.has(e.part) ? "cod-induced" : f.has(e.part) ? "cod-involved" : void 0, t.links?.class?.(e))
+			class: (e) => k(d.has(e.part) ? "cod-leg cod-involved" : f.has(e.part) ? "cod-induced" : m.has(e.part) ? "cod-involved" : void 0, t.links?.class?.(e))
 		}
 	});
 }
-function ne(e) {
+function I(e) {
 	return {
 		...e,
 		object: (t) => {
@@ -58227,66 +58251,66 @@ function ne(e) {
 		}
 	};
 }
-function M(e) {
+function L(e) {
 	return {
 		object: (t) => t.provenance?.kind === "element" ? e?.part?.(t.provenance.part) ?? t.provenance.part.part : e?.object?.(t) ?? t.object,
 		arrow: (t) => t.provenance?.kind === "element" ? e?.arrow?.(t.provenance.arrow) ?? t.provenance.arrow.arrow : e?.arrow?.(t) ?? t.arrow,
 		equation: (t) => t.provenance?.kind === "element" ? e?.equation?.(t.provenance.equation) ?? t.provenance.equation.equation : e?.equation?.(t) ?? t.equation
 	};
 }
-var N = (e) => "domain" in e && "codomain" in e, P = (e) => "meta" in e && "data" in e, F = (e) => "variance" in e && "domain" in e && "codomain" in e, I = (e) => "source" in e && "target" in e && "components" in e && "meta" in e.source, L = Object.assign((e, t) => F(e) ? j(e, t) : I(e) ? k(e, t) : P(e) ? O(e, t) : N(e) ? D(e, t) : S(e, t), {
-	category: S,
-	functor: D,
-	copresheaf: O,
-	copresheafMap: k,
-	query: j
+var ne = (e) => "domain" in e && "codomain" in e, R = (e) => "meta" in e && "data" in e, z = (e) => "variance" in e && "domain" in e && "codomain" in e, re = (e) => "source" in e && "target" in e && "components" in e && "meta" in e.source, B = Object.assign((e, t) => z(e) ? F(e, t) : re(e) ? N(e, t) : R(e) ? M(e, t) : ne(e) ? j(e, t) : D(e, t), {
+	category: D,
+	functor: j,
+	copresheaf: M,
+	copresheafMap: N,
+	query: F
 });
 // src/categories/dom.ts
-function R(e, t, n, r) {
+function V(e, t, n, r) {
 	let i = e.createElement(t);
 	for (let [e, t] of Object.entries(n)) i.setAttribute(e, t);
 	return i.append(...r), i;
 }
-var z = "cod-ts-views-tables", re = "\\n.cod-table-view { margin-bottom: 16px; --row-highlight: #2f5bea; }\\n.cod-table-view > .cod-tables { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }\\n.cod-table-view table { border-collapse: collapse; font-variant-numeric: tabular-nums; }\\n.cod-table-view caption { text-align: left; padding: 0 0 4px; }\\n.cod-table-view .cod-count { color: #6a7182; }\\n.cod-table-view th, .cod-table-view td {\\n  border: 1px solid #dcdad2; padding: 3px 10px; text-align: left;\\n  font-family: ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; font-size: 13px;\\n}\\n.cod-table-view th { background: #f6f5f1; font-weight: 400; }\\n.cod-table-view th strong { font-weight: 600; }\\n.cod-table-view .cod-type { color: #9aa0ad; }\\n.cod-table-view tbody tr:hover td {\\n  color: var(--row-highlight); background: color-mix(in srgb, var(--row-highlight) 8%, transparent);\\n}\\n";
-function ie(e) {
-	if (e.getElementById(z)) return;
-	let t = R(e, "style", { id: z }, [re]);
+var H = "cod-ts-views-tables", ie = "\\n.cod-table-view { margin-bottom: 16px; --row-highlight: #2f5bea; }\\n.cod-table-view > .cod-tables { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }\\n.cod-table-view table { border-collapse: collapse; font-variant-numeric: tabular-nums; }\\n.cod-table-view caption { text-align: left; padding: 0 0 4px; }\\n.cod-table-view .cod-count { color: #6a7182; }\\n.cod-table-view th, .cod-table-view td {\\n  border: 1px solid #dcdad2; padding: 3px 10px; text-align: left;\\n  font-family: ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; font-size: 13px;\\n}\\n.cod-table-view th { background: #f6f5f1; font-weight: 400; }\\n.cod-table-view th strong { font-weight: 600; }\\n.cod-table-view .cod-type { color: #9aa0ad; }\\n.cod-table-view tbody tr:hover td {\\n  color: var(--row-highlight); background: color-mix(in srgb, var(--row-highlight) 8%, transparent);\\n}\\n";
+function ae(e) {
+	if (e.getElementById(H)) return;
+	let t = V(e, "style", { id: H }, [ie]);
 	(e.head ?? e.documentElement).append(t);
 }
-function B(e, t, n) {
-	return [R(e, "strong", {}, [t]), R(e, "span", { class: "cod-type" }, [\` : \${n}\`])];
+function U(e, t, n) {
+	return [V(e, "strong", {}, [t]), V(e, "span", { class: "cod-type" }, [\` : \${n}\`])];
 }
-function V(e, t, n) {
-	return [R(e, "strong", {}, [t]), R(e, "span", { class: "cod-count" }, [\` (\${n})\`])];
+function W(e, t, n) {
+	return [V(e, "strong", {}, [t]), V(e, "span", { class: "cod-count" }, [\` (\${n})\`])];
 }
-function H(e, t, n, r) {
-	return R(e, "table", {}, [
-		R(e, "caption", {}, [...t]),
-		R(e, "thead", {}, [R(e, "tr", {}, n.map((t) => R(e, "th", {}, typeof t == "string" ? [R(e, "strong", {}, [t])] : [...t])))]),
-		R(e, "tbody", {}, r.map((t) => R(e, "tr", {}, t.map((t) => R(e, "td", {}, [t])))))
+function G(e, t, n, r) {
+	return V(e, "table", {}, [
+		V(e, "caption", {}, [...t]),
+		V(e, "thead", {}, [V(e, "tr", {}, n.map((t) => V(e, "th", {}, typeof t == "string" ? [V(e, "strong", {}, [t])] : [...t])))]),
+		V(e, "tbody", {}, r.map((t) => V(e, "tr", {}, t.map((t) => V(e, "td", {}, [t])))))
 	]);
 }
 // src/categories/table-views.ts
-function U(e, t) {
+function K(e, t) {
 	return Object.freeze({ toNode(n) {
-		return ie(n), R(n, "div", { class: \`cod-table-view cod-\${e}\` }, [R(n, "div", { class: "cod-tables" }, [...t(n)])]);
+		return ae(n), V(n, "div", { class: \`cod-table-view cod-\${e}\` }, [V(n, "div", { class: "cod-tables" }, [...t(n)])]);
 	} });
 }
-function W(e, t) {
+function oe(e, t) {
 	let n = e.specification.Arrow;
 	return Object.prototype.hasOwnProperty.call(n, t) ? n[t] : {};
 }
-function G(e) {
-	return e.specification.Object.flatMap((t) => Object.entries(W(e, t)).map(([e, n]) => [
+function q(e) {
+	return e.specification.Object.flatMap((t) => Object.entries(oe(e, t)).map(([e, n]) => [
 		e,
 		t,
 		n
 	]));
 }
-function K(e, t) {
+function J(e, t) {
 	let n = m(e, t?.names);
-	return U("category", (t) => {
-		let r = e.specification.Object, i = G(e).map(([e, t, r]) => [
+	return K("category", (t) => {
+		let r = e.specification.Object, i = q(e).map(([e, t, r]) => [
 			n.arrow(t, e),
 			n.object(t),
 			n.object(r)
@@ -58297,13 +58321,13 @@ function K(e, t) {
 			n.path(e, i)
 		]));
 		return [
-			H(t, V(t, "Object", r.length), ["name"], r.map((e) => [n.object(e)])),
-			H(t, V(t, "Arrow", i.length), [
+			G(t, W(t, "Object", r.length), ["name"], r.map((e) => [n.object(e)])),
+			G(t, W(t, "Arrow", i.length), [
 				"name",
 				"source",
 				"target"
 			], i),
-			...a.length ? [H(t, V(t, "Equation", a.length), [
+			...a.length ? [G(t, W(t, "Equation", a.length), [
 				"name",
 				"source",
 				"left",
@@ -58312,29 +58336,29 @@ function K(e, t) {
 		];
 	});
 }
-function q(e, t) {
-	let n = m(e.meta, t?.names), r = h(e, t?.names);
-	return U("copresheaf", (t) => e.meta.specification.Object.map((i) => {
-		let a = Object.entries(W(e.meta, i)), o = Object.keys(e.data[i].$id);
-		return H(t, V(t, n.object(i), o.length), [B(t, "id", n.object(i)), ...a.map(([e, r]) => B(t, n.arrow(i, e), n.object(r)))], o.map((t) => [r(i, t), ...a.map(([n, a]) => r(a, e.data[i][n][t]))]));
-	}));
-}
-function J(e, t) {
-	let n = m(e.source.meta, t?.names), r = h(e.source, t?.names), i = h(e.target, t?.names);
-	return U("copresheaf-map", (t) => e.source.meta.specification.Object.map((a) => {
-		let o = Object.entries(e.components[a]);
-		return H(t, V(t, n.object(a), o.length), ["source", "target"], o.map(([e, t]) => [r(a, e), i(a, t)]));
-	}));
-}
 function Y(e, t) {
-	let n = m(e.domain, t?.names), r = m(e.codomain, t?.names);
-	return U("functor", (t) => [H(t, V(t, "Object", e.domain.specification.Object.length), ["domain", "codomain"], e.domain.specification.Object.map((t) => [n.object(t), r.object(e.Object[t])])), H(t, V(t, "Arrow", G(e.domain).length), ["domain", "path in codomain"], G(e.domain).map(([t, i]) => [\`\${n.object(i)}.\${n.arrow(i, t)}\`, [r.object(e.Object[i]), ...r.steps(e.Object[i], e.Arrow[i][t])].join(".")]))]);
+	let n = m(e.meta, t?.names), r = h(e, t?.names);
+	return K("copresheaf", (t) => e.meta.specification.Object.map((i) => {
+		let a = Object.entries(oe(e.meta, i)), o = Object.keys(e.data[i].$id);
+		return G(t, W(t, n.object(i), o.length), [U(t, "id", n.object(i)), ...a.map(([e, r]) => U(t, n.arrow(i, e), n.object(r)))], o.map((t) => [r(i, t), ...a.map(([n, a]) => r(a, e.data[i][n][t]))]));
+	}));
 }
 function X(e, t) {
+	let n = m(e.source.meta, t?.names), r = h(e.source, t?.names), i = h(e.target, t?.names);
+	return K("copresheaf-map", (t) => e.source.meta.specification.Object.map((a) => {
+		let o = Object.entries(e.components[a]);
+		return G(t, W(t, n.object(a), o.length), ["source", "target"], o.map(([e, t]) => [r(a, e), i(a, t)]));
+	}));
+}
+function se(e, t) {
+	let n = m(e.domain, t?.names), r = m(e.codomain, t?.names);
+	return K("functor", (t) => [G(t, W(t, "Object", e.domain.specification.Object.length), ["domain", "codomain"], e.domain.specification.Object.map((t) => [n.object(t), r.object(e.Object[t])])), G(t, W(t, "Arrow", q(e.domain).length), ["domain", "path in codomain"], q(e.domain).map(([t, i]) => [\`\${n.object(i)}.\${n.arrow(i, t)}\`, [r.object(e.Object[i]), ...r.steps(e.Object[i], e.Arrow[i][t])].join(".")]))]);
+}
+function ce(e, t) {
 	let n = e.source, r = e.target, i = m(n.domain, t?.names), a = m(n.codomain, t?.names);
-	return U("functor-map", (t) => {
+	return K("functor-map", (t) => {
 		let o = n.domain.specification.Object;
-		return [H(t, V(t, "Component", o.length), [
+		return [G(t, W(t, "Component", o.length), [
 			"object",
 			"from F",
 			"component",
@@ -58347,73 +58371,73 @@ function X(e, t) {
 		]))];
 	});
 }
-var Z = (e) => typeof e == "object" && !!e, Q = (e) => Z(e) && Z(e.specification) && Array.isArray(e.specification.Object), ae = (e) => Z(e) && Q(e.meta) && Z(e.data), oe = (e) => Z(e) && Q(e.domain) && Q(e.codomain), se = (e, t) => Z(e) && t(e.source) && t(e.target) && Z(e.components);
-function ce(e, t) {
-	if (se(e, ae)) return J(e, t);
-	if (se(e, oe)) return X(e, t);
-	if (ae(e)) return q(e, t);
-	if (oe(e)) return Y(e, t);
-	if (Q(e)) return K(e, t);
+var Z = (e) => typeof e == "object" && !!e, Q = (e) => Z(e) && Z(e.specification) && Array.isArray(e.specification.Object), le = (e) => Z(e) && Q(e.meta) && Z(e.data), ue = (e) => Z(e) && Q(e.domain) && Q(e.codomain), de = (e, t) => Z(e) && t(e.source) && t(e.target) && Z(e.components);
+function fe(e, t) {
+	if (de(e, le)) return X(e, t);
+	if (de(e, ue)) return ce(e, t);
+	if (le(e)) return Y(e, t);
+	if (ue(e)) return se(e, t);
+	if (Q(e)) return J(e, t);
 	throw Error("tableView shows categories, copresheaves, copresheaf maps, functors and functor maps");
 }
-var le = Object.freeze(Object.assign((e, t) => ce(e, t), {
-	category: K,
-	copresheaf: q,
-	copresheafMap: J,
-	functor: Y,
-	functorMap: X
-})), ue = "cod-ts-views-trees", de = "\\n.cod-tree-view { margin-bottom: 16px; }\\n.cod-tree-view ul { list-style: none; margin: 0; padding: 0; }\\n.cod-tree-view ul ul { padding-left: 36px; }\\n.cod-tree-view .cod-item { display: flex; align-items: center; gap: 6px; padding: 1px 0;\\n  font: 13px/1.5 ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; }\\n.cod-tree-view summary { list-style: none; cursor: pointer; }\\n.cod-tree-view summary::-webkit-details-marker { display: none; }\\n.cod-tree-view .cod-toggle, .cod-tree-view .cod-icon { flex: none; width: 12px; height: 12px;\\n  fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round;\\n  stroke-linejoin: round; }\\n.cod-tree-view .cod-toggle { color: #9aa0ad; transition: transform 0.1s; }\\n.cod-tree-view details[open] > summary .cod-toggle { transform: rotate(90deg); }\\n.cod-tree-view .cod-object > .cod-item > .cod-icon,\\n.cod-tree-view .cod-object > details > summary > .cod-icon { color: #4c6584; }\\n.cod-tree-view .cod-arrow .cod-icon { color: #3f7d4a; }\\n.cod-tree-view .cod-equation .cod-icon { color: #a0662a; }\\n.cod-tree-view .cod-type { color: #9aa0ad; }\\n.cod-tree-view .cod-count { color: #9aa0ad; }\\n";
-function fe(e) {
-	if (e.getElementById(ue)) return;
-	let t = R(e, "style", { id: ue }, [de]);
+var pe = Object.freeze(Object.assign((e, t) => fe(e, t), {
+	category: J,
+	copresheaf: Y,
+	copresheafMap: X,
+	functor: se,
+	functorMap: ce
+})), me = "cod-ts-views-trees", he = "\\n.cod-tree-view { margin-bottom: 16px; }\\n.cod-tree-view ul { list-style: none; margin: 0; padding: 0; }\\n.cod-tree-view ul ul { padding-left: 36px; }\\n.cod-tree-view .cod-item { display: flex; align-items: center; gap: 6px; padding: 1px 0;\\n  font: 13px/1.5 ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; }\\n.cod-tree-view summary { list-style: none; cursor: pointer; }\\n.cod-tree-view summary::-webkit-details-marker { display: none; }\\n.cod-tree-view .cod-toggle, .cod-tree-view .cod-icon { flex: none; width: 12px; height: 12px;\\n  fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round;\\n  stroke-linejoin: round; }\\n.cod-tree-view .cod-toggle { color: #9aa0ad; transition: transform 0.1s; }\\n.cod-tree-view details[open] > summary .cod-toggle { transform: rotate(90deg); }\\n.cod-tree-view .cod-object > .cod-item > .cod-icon,\\n.cod-tree-view .cod-object > details > summary > .cod-icon { color: #4c6584; }\\n.cod-tree-view .cod-arrow .cod-icon { color: #3f7d4a; }\\n.cod-tree-view .cod-equation .cod-icon { color: #a0662a; }\\n.cod-tree-view .cod-type { color: #9aa0ad; }\\n.cod-tree-view .cod-count { color: #9aa0ad; }\\n";
+function ge(e) {
+	if (e.getElementById(me)) return;
+	let t = V(e, "style", { id: me }, [he]);
 	(e.head ?? e.documentElement).append(t);
 }
-var pe = "http://www.w3.org/2000/svg", me = {
+var _e = "http://www.w3.org/2000/svg", ve = {
 	object: "M6 2.5a3.5 3.5 0 1 1 0 7a3.5 3.5 0 1 1 0-7z",
 	arrow: "M1.5 6h8.5M7 3l3 3l-3 3",
 	equation: "M2 4.25h8M2 7.75h8",
 	toggle: "M4.5 2.5l3.5 3.5l-3.5 3.5"
 };
-function he(e, t) {
-	let n = e.createElementNS(pe, "svg");
+function ye(e, t) {
+	let n = e.createElementNS(_e, "svg");
 	n.setAttribute("class", t === "toggle" ? "cod-toggle" : "cod-icon"), n.setAttribute("viewBox", "0 0 12 12"), n.setAttribute("aria-hidden", "true");
-	let r = e.createElementNS(pe, "path");
-	return r.setAttribute("d", me[t]), n.append(r), n;
+	let r = e.createElementNS(_e, "path");
+	return r.setAttribute("d", ve[t]), n.append(r), n;
 }
 function $(e, t, n, r, i, a) {
-	return R(e, t, { class: "cod-item" }, [
-		...a === "toggle" ? [he(e, "toggle")] : a === "space" ? [R(e, "span", { class: "cod-toggle" }, [])] : [],
-		he(e, n),
-		R(e, "span", { class: "cod-id" }, [r]),
+	return V(e, t, { class: "cod-item" }, [
+		...a === "toggle" ? [ye(e, "toggle")] : a === "space" ? [V(e, "span", { class: "cod-toggle" }, [])] : [],
+		ye(e, n),
+		V(e, "span", { class: "cod-id" }, [r]),
 		...i
 	]);
 }
-var ge = (e, t) => R(e, "span", { class: "cod-type" }, [t]);
-function _e(e, t) {
+var be = (e, t) => V(e, "span", { class: "cod-type" }, [t]);
+function xe(e, t) {
 	return Object.freeze({ toNode(n) {
-		fe(n);
+		ge(n);
 		let { Object: r, Arrow: i, Equation: a } = e.specification, o = m(e, t?.names), s = (e, t) => Object.prototype.hasOwnProperty.call(e, t) ? e[t] : void 0;
-		return R(n, "div", { class: "cod-tree-view cod-category" }, [R(n, "ul", {}, r.map((e) => {
-			let t = Object.entries(s(i, e) ?? {}).map(([t, r]) => R(n, "li", {
+		return V(n, "div", { class: "cod-tree-view cod-category" }, [V(n, "ul", {}, r.map((e) => {
+			let t = Object.entries(s(i, e) ?? {}).map(([t, r]) => V(n, "li", {
 				class: "cod-arrow",
 				"data-id": t
-			}, [$(n, "div", "arrow", o.arrow(e, t), [ge(n, \` : \${o.object(e)} → \${o.object(r)}\`)], "none")])), r = Object.entries(s(a, e) ?? {}).map(([t, { left: r, right: i }]) => R(n, "li", {
+			}, [$(n, "div", "arrow", o.arrow(e, t), [be(n, \` : \${o.object(e)} → \${o.object(r)}\`)], "none")])), r = Object.entries(s(a, e) ?? {}).map(([t, { left: r, right: i }]) => V(n, "li", {
 				class: "cod-equation",
 				"data-id": t
-			}, [$(n, "div", "equation", o.equation(e, t), [ge(n, \` : \${o.path(e, r)} = \${o.path(e, i)}\`)], "none")])), c = [...t, ...r], l = R(n, "span", { class: "cod-count" }, [\`(\${c.length})\`]);
-			return R(n, "li", {
+			}, [$(n, "div", "equation", o.equation(e, t), [be(n, \` : \${o.path(e, r)} = \${o.path(e, i)}\`)], "none")])), c = [...t, ...r], l = V(n, "span", { class: "cod-count" }, [\`(\${c.length})\`]);
+			return V(n, "li", {
 				class: "cod-object",
 				"data-id": e
-			}, [c.length ? R(n, "details", {}, [$(n, "summary", "object", o.object(e), [l], "toggle"), R(n, "ul", {}, c)]) : $(n, "div", "object", o.object(e), [], "space")]);
+			}, [c.length ? V(n, "details", {}, [$(n, "summary", "object", o.object(e), [l], "toggle"), V(n, "ul", {}, c)]) : $(n, "div", "object", o.object(e), [], "space")]);
 		}))]);
 	} });
 }
-var ve = Object.freeze(Object.assign((e, t) => _e(e, t), { category: _e })), ye = Object.freeze({
-	table: le,
-	graph: L,
-	tree: ve
+var Se = Object.freeze(Object.assign((e, t) => xe(e, t), { category: xe })), Ce = Object.freeze({
+	table: pe,
+	graph: B,
+	tree: Se
 });
-export { S as categoryGraphView, K as categoryTableView, _e as categoryTreeView, ye as categoryView, O as copresheafGraphView, k as copresheafMapGraphView, J as copresheafMapTableView, q as copresheafTableView, D as functorGraphView, X as functorMapTableView, Y as functorTableView, L as graphView, j as queryGraphView, le as tableView, ve as treeView };
+export { D as categoryGraphView, J as categoryTableView, xe as categoryTreeView, Ce as categoryView, M as copresheafGraphView, N as copresheafMapGraphView, X as copresheafMapTableView, Y as copresheafTableView, j as functorGraphView, ce as functorMapTableView, se as functorTableView, B as graphView, F as queryGraphView, pe as tableView, Se as treeView };
 `,Fe=`import { graphLayout as e, graphNodeSize as t, graphRoutes as n, graphSkeleton as r, loopRoute as i } from "@cod-ts/graphs";
 // src/graphs/graph-views.ts
 function a(e, t) {
@@ -58464,7 +58488,7 @@ function m(e, t, n, r = []) {
 	for (let [e, t] of Object.entries(n)) i.setAttribute(e, String(t));
 	return i.append(...r), i;
 }
-var h = (e, t) => t ? \`\${e} \${t}\` : e, g = (e) => Object.fromEntries(Object.entries(e).map(([e, t]) => [\`data-\${e}\`, t])), _ = (e) => ({ "aria-label": e }), v = (e, t) => ({
+var h = (e, t) => t ? \`\${e} \${t}\` : e, g = (e) => Object.fromEntries(Object.entries(e).flatMap(([e, t]) => t === void 0 ? [] : [[\`data-\${e}\`, t]])), _ = (e) => ({ "aria-label": e }), v = (e, t) => ({
 	x: e.x + t.x,
 	y: e.y + t.y
 }), y = (e, t) => ({
@@ -59060,4 +59084,4 @@ window.MathJax = {
 ${F(e)}
 <\/script>
 </body>
-</html>`}function We(e,t){let n=n=>{n.source===e.contentWindow&&n.data?.source===`playground`&&t(n.data)};return window.addEventListener(`message`,n),()=>window.removeEventListener(`message`,n)}var I=`cod-ts-playground-theme`,L=window.matchMedia(`(prefers-color-scheme: dark)`),R=new Set;function Ge(){try{let e=localStorage.getItem(I);return e===`light`||e===`dark`?e:void 0}catch{return}}var z=Ge();function B(){return z??(L.matches?`dark`:`light`)}function V(){let e=B();document.documentElement.dataset.theme=e;for(let t of R)t(e)}function Ke(e){z=e;try{localStorage.setItem(I,e)}catch{}V()}function H(e){R.add(e)}L.addEventListener(`change`,()=>{z===void 0&&V()}),V();var qe=`modulepreload`,Je=function(e,t){return new URL(e,t).href},Ye={},Xe=function(e){return e.pathname.endsWith(`.css`)},Ze=function(e,t,n){if(t in e)return e[t];let r=n();if(!r){e[t]=void 0;return}let i=r.then(()=>{e[t]=void 0},n=>{throw e[t]=void 0,n});return e[t]=i,i},U=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=Je(t,n);let r=s(t),i=Xe(r);return Ze(Ye,r.href,()=>{if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let t=document.createElement(`link`);if(t.rel=i?`stylesheet`:qe,i||(t.as=`script`),t.crossOrigin=``,t.href=r.href,a&&t.setAttribute(`nonce`,a),document.head.appendChild(t),i)return new Promise((e,n)=>{t.addEventListener(`load`,e),t.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${r}`)))})})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},W=e=>document.getElementById(e),G=W(`preview`),K=W(`log`),q=W(`diag`),J=W(`loading`),Y=W(`examples`),Qe=W(`auto`),$e=W(`run`),X=W(`share`),Z=W(`theme`);function Q(){let e=`Switch to ${B()===`dark`?`light`:`dark`} theme`;Z.title=e,Z.setAttribute(`aria-label`,e)}Z.addEventListener(`click`,()=>Ke(B()===`dark`?`light`:`dark`)),H(Q),Q();function et(){let e=location.hash.match(/^#code=(.+)$/);if(!e)return null;try{return n.default.decompressFromEncodedURIComponent(e[1])||null}catch{return null}}function tt(e){let t=new URL(location.href);return t.hash=`code=`+n.default.compressToEncodedURIComponent(e),t.href}function nt(e,t){let n=document.createElement(`div`);n.className=`line ${e}`,n.textContent=t,K.appendChild(n),K.scrollTop=K.scrollHeight}We(G,e=>{e.type===`console`&&nt(e.level,e.text)}),W(`clear`).addEventListener(`click`,()=>K.textContent=``);var $=new Map;r.forEach((e,t)=>{let n=$.get(e.module);n||(n=document.createElement(`optgroup`),n.label=e.module,$.set(e.module,n),Y.append(n)),n.append(new Option(e.title,String(t)))});async function rt(){let e=et()??r[0].code,t,n=(e,n=400)=>{window.clearTimeout(t),t=window.setTimeout(e,n)},{createEditor:i}=await U(async()=>{let{createEditor:e}=await import(`./editor-CC1uDrJd.js`);return{createEditor:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url),a=i(W(`editor`),{code:e,onChange(){Qe.checked&&n(()=>void o())},onRun:()=>void o(),onDiagnostics(e){q.textContent=e===0?`No type errors`:`${e} type error${e===1?``:`s`}`,q.dataset.state=e===0?`ok`:`error`}});async function o(){K.textContent=``,G.srcdoc=Ue(await a.getJs())}Y.addEventListener(`change`,()=>{a.setCode(r[Number(Y.value)].code),o()}),$e.addEventListener(`click`,()=>void o()),document.addEventListener(`keydown`,e=>{if(e.target instanceof Node&&W(`editor`).contains(e.target))return;let t=e.ctrlKey||e.metaKey;(e.key===`Enter`&&(e.shiftKey||t)||t&&e.key.toLowerCase()===`s`)&&(e.preventDefault(),o())}),X.addEventListener(`click`,async()=>{await navigator.clipboard.writeText(tt(a.getCode())),X.classList.add(`copied`),X.title=`Link copied`,setTimeout(()=>{X.classList.remove(`copied`),X.title=`Copy link`},1500)}),J.remove(),o()}rt().catch(e=>{J.textContent=`Could not load the editor: `+(e instanceof Error?e.message:String(e))});export{N as i,B as n,H as r,U as t};
+</html>`}function We(e,t){let n=n=>{n.source===e.contentWindow&&n.data?.source===`playground`&&t(n.data)};return window.addEventListener(`message`,n),()=>window.removeEventListener(`message`,n)}var I=`cod-ts-playground-theme`,L=window.matchMedia(`(prefers-color-scheme: dark)`),R=new Set;function Ge(){try{let e=localStorage.getItem(I);return e===`light`||e===`dark`?e:void 0}catch{return}}var z=Ge();function B(){return z??(L.matches?`dark`:`light`)}function V(){let e=B();document.documentElement.dataset.theme=e;for(let t of R)t(e)}function Ke(e){z=e;try{localStorage.setItem(I,e)}catch{}V()}function H(e){R.add(e)}L.addEventListener(`change`,()=>{z===void 0&&V()}),V();var qe=`modulepreload`,Je=function(e,t){return new URL(e,t).href},Ye={},Xe=function(e){return e.pathname.endsWith(`.css`)},Ze=function(e,t,n){if(t in e)return e[t];let r=n();if(!r){e[t]=void 0;return}let i=r.then(()=>{e[t]=void 0},n=>{throw e[t]=void 0,n});return e[t]=i,i},U=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=Je(t,n);let r=s(t),i=Xe(r);return Ze(Ye,r.href,()=>{if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let t=document.createElement(`link`);if(t.rel=i?`stylesheet`:qe,i||(t.as=`script`),t.crossOrigin=``,t.href=r.href,a&&t.setAttribute(`nonce`,a),document.head.appendChild(t),i)return new Promise((e,n)=>{t.addEventListener(`load`,e),t.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${r}`)))})})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},W=e=>document.getElementById(e),G=W(`preview`),K=W(`log`),q=W(`diag`),J=W(`loading`),Y=W(`examples`),Qe=W(`auto`),$e=W(`run`),X=W(`share`),Z=W(`theme`);function Q(){let e=`Switch to ${B()===`dark`?`light`:`dark`} theme`;Z.title=e,Z.setAttribute(`aria-label`,e)}Z.addEventListener(`click`,()=>Ke(B()===`dark`?`light`:`dark`)),H(Q),Q();function et(){let e=location.hash.match(/^#code=(.+)$/);if(!e)return null;try{return n.default.decompressFromEncodedURIComponent(e[1])||null}catch{return null}}function tt(e){let t=new URL(location.href);return t.hash=`code=`+n.default.compressToEncodedURIComponent(e),t.href}function nt(e,t){let n=document.createElement(`div`);n.className=`line ${e}`,n.textContent=t,K.appendChild(n),K.scrollTop=K.scrollHeight}We(G,e=>{e.type===`console`&&nt(e.level,e.text)}),W(`clear`).addEventListener(`click`,()=>K.textContent=``);var $=new Map;r.forEach((e,t)=>{let n=$.get(e.module);n||(n=document.createElement(`optgroup`),n.label=e.module,$.set(e.module,n),Y.append(n)),n.append(new Option(e.title,String(t)))});async function rt(){let e=et()??r[0].code,t,n=(e,n=400)=>{window.clearTimeout(t),t=window.setTimeout(e,n)},{createEditor:i}=await U(async()=>{let{createEditor:e}=await import(`./editor-aDFtMcq2.js`);return{createEditor:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url),a=i(W(`editor`),{code:e,onChange(){Qe.checked&&n(()=>void o())},onRun:()=>void o(),onDiagnostics(e){q.textContent=e===0?`No type errors`:`${e} type error${e===1?``:`s`}`,q.dataset.state=e===0?`ok`:`error`}});async function o(){K.textContent=``,G.srcdoc=Ue(await a.getJs())}Y.addEventListener(`change`,()=>{a.setCode(r[Number(Y.value)].code),o()}),$e.addEventListener(`click`,()=>void o()),document.addEventListener(`keydown`,e=>{if(e.target instanceof Node&&W(`editor`).contains(e.target))return;let t=e.ctrlKey||e.metaKey;(e.key===`Enter`&&(e.shiftKey||t)||t&&e.key.toLowerCase()===`s`)&&(e.preventDefault(),o())}),X.addEventListener(`click`,async()=>{await navigator.clipboard.writeText(tt(a.getCode())),X.classList.add(`copied`),X.title=`Link copied`,setTimeout(()=>{X.classList.remove(`copied`),X.title=`Copy link`},1500)}),J.remove(),o()}rt().catch(e=>{J.textContent=`Could not load the editor: `+(e instanceof Error?e.message:String(e))});export{N as i,B as n,H as r,U as t};
