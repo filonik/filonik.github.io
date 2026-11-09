@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./editor-BGeRH9vI.js","./rolldown-runtime-XKyaHtl9.js","./editor.api-DK0oScYG.js","./editor-g1MJRkXV.css","./editor-CYlBetm9.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./editor-1_Guzen1.js","./rolldown-runtime-XKyaHtl9.js","./editor.api-CSfNnW0T.js","./editor-g1MJRkXV.css","./editor-CYlBetm9.css"])))=>i.map(i=>d[i]);
 import{r as e,t}from"./rolldown-runtime-XKyaHtl9.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var n=e(t(((e,t)=>{var n=(function(){var e=String.fromCharCode,t=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=`,n=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$`,r={};function i(e,t){if(!r[e]){r[e]={};for(var n=0;n<e.length;n++)r[e][e.charAt(n)]=n}return r[e][t]}var a={compressToBase64:function(e){if(e==null)return``;var n=a._compress(e,6,function(e){return t.charAt(e)});switch(n.length%4){default:case 0:return n;case 1:return n+`===`;case 2:return n+`==`;case 3:return n+`=`}},decompressFromBase64:function(e){return e==null?``:e==``?null:a._decompress(e.length,32,function(n){return i(t,e.charAt(n))})},compressToUTF16:function(t){return t==null?``:a._compress(t,15,function(t){return e(t+32)})+` `},decompressFromUTF16:function(e){return e==null?``:e==``?null:a._decompress(e.length,16384,function(t){return e.charCodeAt(t)-32})},compressToUint8Array:function(e){for(var t=a.compress(e),n=new Uint8Array(t.length*2),r=0,i=t.length;r<i;r++){var o=t.charCodeAt(r);n[r*2]=o>>>8,n[r*2+1]=o%256}return n},decompressFromUint8Array:function(t){if(t==null)return a.decompress(t);for(var n=Array(t.length/2),r=0,i=n.length;r<i;r++)n[r]=t[r*2]*256+t[r*2+1];var o=[];return n.forEach(function(t){o.push(e(t))}),a.decompress(o.join(``))},compressToEncodedURIComponent:function(e){return e==null?``:a._compress(e,6,function(e){return n.charAt(e)})},decompressFromEncodedURIComponent:function(e){return e==null?``:e==``?null:(e=e.replace(/ /g,`+`),a._decompress(e.length,32,function(t){return i(n,e.charAt(t))}))},compress:function(t){return a._compress(t,16,function(t){return e(t)})},_compress:function(e,t,n){if(e==null)return``;for(var r,i,a={},o={},s=``,c=``,l=``,u=2,d=3,f=2,p=[],m=0,h=0,g=0;g<e.length;g+=1)if(s=e.charAt(g),Object.prototype.hasOwnProperty.call(a,s)||(a[s]=d++,o[s]=!0),c=l+s,Object.prototype.hasOwnProperty.call(a,c))l=c;else{if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++),a[c]=d++,l=String(s)}if(l!==``){if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++)}for(i=2,r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;for(;;){if(m<<=1,h==t-1){p.push(n(m));break}h++}return p.join(``)},decompress:function(e){return e==null?``:e==``?null:a._decompress(e.length,32768,function(t){return e.charCodeAt(t)})},_decompress:function(t,n,r){var i=[],a=4,o=4,s=3,c=``,l=[],u,d,f,p,m,h,g,_={val:r(0),position:n,index:1};for(u=0;u<3;u+=1)i[u]=u;for(f=0,m=4,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(f){case 0:for(f=0,m=256,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 2:return``}for(i[3]=g,d=g,l.push(g);;){if(_.index>t)return``;for(f=0,m=2**s,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(g=f){case 0:for(f=0,m=256,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 2:return l.join(``)}if(a==0&&(a=2**s,s++),i[g])c=i[g];else if(g===o)c=d+d.charAt(0);else return null;l.push(c),i[o++]=d+c.charAt(0),a--,d=c,a==0&&(a=2**s,s++)}}};return a})();typeof define==`function`&&define.amd?define(function(){return n}):t!==void 0&&t!=null?t.exports=n:typeof angular<`u`&&angular!=null&&angular.module(`LZString`,[]).factory(`LZString`,function(){return n})}))(),1),r=Object.entries(Object.assign({"../../examples/src/categories/01-categories.ts":`import { type Category, category, equation } from '@cod-ts/categories'
 import { type Names, type View, view } from '@cod-ts/views'
 
@@ -10,6 +10,12 @@ const categoryView = (C: Category, { title, ...options }: { title: string; names
     view.table(C, options),
     view.graph(C, { style: { '.cod-label': { visibility: 'visible' } } }),
   )
+
+// Tag arrows in the opposite category with ^{op}
+const opArrowNames: Names = {
+  arrow: (a) =>
+    a.provenance?.kind === 'opposite' ? \`\\$\\\\mathsf{\${a.provenance.arrow.arrow}}^{\\\\mathsf{op}}\\$\` : a.arrow,
+}
 
 // A category is written as its presentation: objects, generating arrows and
 // equations between paths. Arrows and equations are grouped by their source
@@ -63,10 +69,7 @@ export const CatCompanyOp = category.opposite(CatCompany)
 preview.append(
   categoryView(CatCompanyOp, {
     title: '$\\\\mathsf{Company}^{\\\\mathsf{op}}$',
-    names: {
-      arrow: (a) =>
-        a.provenance?.kind === 'opposite' ? \`\\$\\\\mathsf{\${a.provenance.arrow.arrow}}^{\\\\mathsf{op}}\\$\` : a.arrow,
-    },
+    names: opArrowNames,
   }),
 )
 
@@ -99,7 +102,7 @@ preview.append(categoryView(CatPortGraph, { title: '$\\\\mathsf{PortGraph}$' }))
 // qualifiers again where that is unambiguous.
 export const CatPortGraphOp = category.opposite(category.qualifyArrows(CatPortGraph))
 
-preview.append(categoryView(CatPortGraphOp, { title: '$\\\\mathsf{PortGraph}^{\\\\mathsf{op}}$' }))
+preview.append(categoryView(CatPortGraphOp, { title: '$\\\\mathsf{PortGraph}^{\\\\mathsf{op}}$', names: opArrowNames }))
 `,"../../examples/src/categories/02-category-extensions.ts":`import { category, copresheaf, equation, functor } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
@@ -134,24 +137,23 @@ preview.append(view.table(graph))
 
 // category.omit is the dual: it removes objects, arrows and equations, and
 // returns the inclusion of the smaller category into the bigger one.
-// Anything that depends on what is omitted goes too: omitting refl also
-// omits the two equations that use it, giving back graphs.
-export const withoutRefl = category.omit(CatReflGraph, { Arrow: { V: ['refl'] } })
-
-console.log('omitting refl also omits', JSON.stringify(withoutRefl.omitted.Equation))
-
 // Omitting an object takes every arrow into or out of it along, and with
 // those, every equation that uses them: only the vertices are left.
-export const verticesOnly = category.omit(CatReflGraph, { Object: ['E'] })
+export const omitE = category.omit(CatReflGraph, { Object: ['E'] })
 
-console.log('omitting E also omits', JSON.stringify(verticesOnly.omitted.Arrow))
+console.log('omitting E also omits', JSON.stringify(omitE.omitted.Arrow))
 
-preview.append(view.col(view.title('without E'), view.table(verticesOnly.category)))
+preview.append(view.col(view.title('without E'), view.table(omitE.category)))
+
+// Omitting refl also omits the two equations that use it, giving back graphs.
+export const omitRefl = category.omit(CatReflGraph, { Arrow: { V: ['refl'] } })
+
+console.log('omitting refl also omits', JSON.stringify(omitRefl.omitted))
 
 // Along the inclusion of graphs into reflexive graphs, the left Kan
 // extension freely adds the missing loops: a graph with one vertex and no
 // edges gets one chosen loop, refl(a).
-export const lonelyVertex = copresheaf(withoutRefl.category, {
+export const lonelyVertex = copresheaf(omitRefl.category, {
   V: ['a'],
   E: { source: {}, target: {} },
 })
@@ -159,7 +161,7 @@ export const lonelyVertex = copresheaf(withoutRefl.category, {
 preview.append(
   view.col(
     view.title('free reflexive graph on one vertex'),
-    view.table(copresheaf.lan(withoutRefl.inclusion, lonelyVertex).copresheaf),
+    view.table(copresheaf.lan(omitRefl.inclusion, lonelyVertex).copresheaf),
   ),
 )
 `,"../../examples/src/categories/03-category-products.ts":`import { type Category, category, copresheaf, functor } from '@cod-ts/categories'
@@ -200,7 +202,7 @@ preview.append(view.table(diagonal))
 // Projecting the diagonal gives back what was paired.
 console.log(
   'left ∘ diagonal = identity:',
-  JSON.stringify(functor.compose(diagonal, square.projections.left).Arrow) === JSON.stringify(identityArrow.Arrow),
+  JSON.stringify(functor.compose(diagonal, square.projections.left).specification.Arrow) === JSON.stringify(identityArrow.specification.Arrow),
 )
 
 // A copresheaf on CatGraph × CatArrow is two graphs, at 0 and 1, with a map
@@ -263,7 +265,7 @@ preview.append(
 // no functors gives the unique functor into it.
 export const toOne = category.product({}).pair({}, CatGraph)
 
-console.log('one has objects', category.one().specification.Object, '; CatGraph → one:', toOne.Object)
+console.log('one has objects', category.one().specification.Object, '; CatGraph → one:', toOne.specification.Object)
 
 // Factors can also be listed: a list is named by position, so
 // category.product([A, B]) is category.product({ 0: A, 1: B }), with
@@ -278,7 +280,7 @@ export const toVertex = functor(CatArrow, CatGraph, {
 
 export const listedPair = listed.pair([identityArrow, toVertex])
 
-console.log('listed:', listed.category.specification.Object.join(', '), '; f ↦', listedPair.Arrow['0'].f)
+console.log('listed:', listed.category.specification.Object.join(', '), '; f ↦', listedPair.specification.Arrow['0'].f)
 `,"../../examples/src/categories/04-category-coproducts.ts":`import { type Category, category, copresheaf, functor } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { type Names, type View, view } from '@cod-ts/views'
@@ -347,7 +349,7 @@ preview.append(view.table(functor.delta(both, graph)))
 // functor that was copaired.
 console.log(
   'right injection, then copair = reverse:',
-  JSON.stringify(functor.compose(twoGraphs.injections.right, both).Arrow) === JSON.stringify(reverse.Arrow),
+  JSON.stringify(functor.compose(twoGraphs.injections.right, both).specification.Arrow) === JSON.stringify(reverse.specification.Arrow),
 )
 
 // category.sum takes any number of named summands, which become the tags.
@@ -567,7 +569,158 @@ try {
 } catch (error) {
   console.log((error as Error).message)
 }
-`,"../../examples/src/categories/07-category-presentations.ts":`import { type Category, CatPresentation, category, copresheaf, equation, presentation } from '@cod-ts/categories'
+`,"../../examples/src/categories/07-category-limits-colimits.ts":`import { type Category, category, functor } from '@cod-ts/categories'
+import { CatGraph } from '@cod-ts/graphs'
+import { type Names, type View, view } from '@cod-ts/views'
+
+// A category under a title: as tables, and below them as a graph with its
+// names shown.
+const categoryView = (C: Category, { title, ...options }: { title: string; names?: Names }): View =>
+  view.col(
+    view.title(title),
+    view.table(C, options),
+    view.graph(C, { style: { '.cod-label': { visibility: 'visible' } }, ...options }),
+  )
+
+// A limit of categories takes a diagram of categories, its shape written
+// inline as for \`diagram\`: a category at each object, and at each arrow
+// its target object and a functor. The limit keeps the tuples of objects,
+// and of arrows, that every functor sends to the corresponding coordinate.
+// Pullbacks (a cospan) and products (no arrows) are special cases, with the
+// same names; so are equalizers, two parallel arrows.
+
+// Two ways of reading a schema of edges with a marked end, \`head\`, as a
+// graph: the head is the target, or it is the source.
+export const CatArc = category({
+  Object: ['E', 'V'],
+  Arrow: { E: { source: 'V', target: 'V', head: 'V' } },
+})
+
+export const headIsTarget = functor(CatArc, CatGraph, {
+  Object: { E: 'E', V: 'V' },
+  Arrow: { E: { source: ['source'], target: ['target'], head: ['target'] } },
+})
+
+export const headIsSource = functor(CatArc, CatGraph, {
+  Object: { E: 'E', V: 'V' },
+  Arrow: { E: { source: ['source'], target: ['target'], head: ['source'] } },
+})
+
+// Their equalizer keeps what both readings agree on: source and target, but
+// not head. Its objects and arrows are named by the coordinate that
+// determines the rest, here the arc schema's.
+export const agree = category.limit({
+  Object: { arc: CatArc, graph: CatGraph },
+  Arrow: { arc: { asTarget: ['graph', headIsTarget], asSource: ['graph', headIsSource] } },
+})
+
+preview.append(categoryView(agree.category, { title: 'where the two readings agree' }))
+
+// A zigzag: three graph schemas, the first two over one arrow, the last two
+// over another. Each leg sends edges to 0 and vertices to 1, so the limit
+// pairs every edge with edges and every vertex with vertices, following
+// source or target in each. Its provenance records the objects and arrows
+// of every coordinate, so a view can name them by the graphs' alone.
+export const CatArrow = category({ Object: ['0', '1'], Arrow: { '0': { f: '1' } } })
+
+export const level = functor(CatGraph, CatArrow, {
+  Object: { E: '0', V: '1' },
+  Arrow: { E: { source: ['f'], target: ['f'] } },
+})
+
+export const zigzag = category.limit({
+  Object: { x: CatGraph, s: CatArrow, y: CatGraph, t: CatArrow, z: CatGraph },
+  Arrow: { x: { p: ['s', level] }, y: { q: ['s', level], r: ['t', level] }, z: { u: ['t', level] } },
+})
+
+const graphs = ['x', 'y', 'z']
+
+export const limitNames: Names = {
+  object: (o) =>
+    o.provenance?.kind === 'limit'
+      ? graphs.map((key) => o.provenance?.kind === 'limit' && o.provenance.objects[key].object).join('×')
+      : o.object,
+  arrow: (a) =>
+    a.provenance?.kind === 'limit'
+      ? graphs.map((key) => (a.provenance?.kind === 'limit' && a.provenance.arrows[key]?.arrow) || '·').join('×')
+      : a.arrow,
+}
+
+preview.append(
+  categoryView(zigzag.category, { title: 'three graph schemas, zigzagging over the arrow', names: limitNames }),
+)
+
+// pair gives the unique functor into the limit from functors into each
+// category that commute with the diagram's: here the diagonal, from the
+// graph schema itself.
+export const diagonal = zigzag.pair({
+  x: functor.identity(CatGraph),
+  s: level,
+  y: functor.identity(CatGraph),
+  t: level,
+  z: functor.identity(CatGraph),
+})
+
+preview.append(
+  view.col(
+    view.title('the diagonal'),
+    view.table(diagonal, { names: limitNames }),
+    view.graph(diagonal, { names: limitNames }),
+  ),
+)
+
+// Colimits glue instead: the same diagram's colimit identifies each object
+// and arrow with its images. Its coequalizer forces the two readings to
+// agree, so source and target become one arrow, named after its first
+// member. Pushouts (a span) and sums (no arrows) are special cases, and
+// colimits need no conditions.
+export const forced = category.colimit({
+  Object: { arc: CatArc, graph: CatGraph },
+  Arrow: { arc: { asTarget: ['graph', headIsTarget], asSource: ['graph', headIsSource] } },
+})
+
+preview.append(categoryView(forced.category, { title: 'the two readings forced to agree' }))
+
+// descend gives the unique functor out of the colimit from functors out of
+// each category that commute with the diagram's: here onto the walking
+// arrow, sending edges to 0, vertices to 1, and every arrow to f.
+export const toArrow = forced.descend({
+  arc: functor(CatArc, CatArrow, {
+    Object: { E: '0', V: '1' },
+    Arrow: { E: { source: ['f'], target: ['f'], head: ['f'] } },
+  }),
+  graph: level,
+})
+
+preview.append(view.col(view.title('onto the arrow'), view.table(toArrow), view.graph(toArrow)))
+
+// Limits are supported under the conditions of pullbacks, and one more: a
+// functor on a cycle of the shape, such as one of two parallel arrows, must
+// send no arrow to an identity. Otherwise an arrow of the limit could have
+// to move one coordinate along two arrows at once, where two functors agree
+// on a composite but not on its parts.
+export const CatOne = category({ Object: ['*'] })
+
+const collapse = (C: Category) =>
+  functor(C, CatOne, {
+    Object: Object.fromEntries(C.specification.Object.map((o) => [o, '*'])),
+    Arrow: Object.fromEntries(
+      Object.entries(C.specification.Arrow).map(([o, scope]) => [
+        o,
+        Object.fromEntries(Object.keys(scope).map((f) => [f, []])),
+      ]),
+    ),
+  } as never)
+
+try {
+  category.limit({
+    Object: { arc: CatArc, one: CatOne },
+    Arrow: { arc: { first: ['one', collapse(CatArc)], second: ['one', collapse(CatArc)] } },
+  })
+} catch (error) {
+  console.log((error as Error).message)
+}
+`,"../../examples/src/categories/08-category-presentations.ts":`import { type Category, CatPresentation, category, copresheaf, equation, presentation } from '@cod-ts/categories'
 import { type View, view } from '@cod-ts/views'
 
 // A category under a title: as tables, and below them as a graph with its
@@ -659,7 +812,7 @@ export const reflGraphPresentation = copresheaf(CatPresentation, {
 export const CatReflGraph = presentation.category(reflGraphPresentation)
 
 preview.append(view.col(view.title('$\\\\mathsf{category(reflGraphPresentation)}$'), view.table(CatReflGraph)))
-`,"../../examples/src/categories/08-functors.ts":`import { category, copresheaf, functor } from '@cod-ts/categories'
+`,"../../examples/src/categories/09-functors.ts":`import { category, copresheaf, functor } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 
@@ -694,7 +847,7 @@ export const graph = functor.delta(underlyingGraph, portGraph)
 preview.append(
   view.col(view.title('$F:\\\\mathsf{Graph}\\\\to\\\\mathsf{PortGraph}$'), view.graph(underlyingGraph), view.table(graph)),
 )
-`,"../../examples/src/categories/09-functor-composition.ts":`import { category, copresheaf, type Copresheaf, functor, pipe } from '@cod-ts/categories'
+`,"../../examples/src/categories/10-functor-composition.ts":`import { category, copresheaf, type Copresheaf, functor, pipe } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 
@@ -759,7 +912,7 @@ console.log(
 // functor.compose accepts it in second position: composing a functor with a
 // copresheaf is restricting the copresheaf along the functor.
 const sameData = (X: Copresheaf, Y: Copresheaf) =>
-  X.meta === Y.meta && JSON.stringify(X.data) === JSON.stringify(Y.data)
+  X.domain === Y.domain && JSON.stringify(X.specification) === JSON.stringify(Y.specification)
 
 export const graph = functor.compose(underlyingGraph, portGraph)
 
@@ -778,7 +931,7 @@ console.log(
   'pipe(pickEdges, functor.compose(underlyingGraph), functor.compose(portGraph)) = wires:',
   sameData(wiresChained, wiresComposed),
 )
-`,"../../examples/src/categories/10-functor-products-coproducts.ts":`import { category, copresheaf, functor } from '@cod-ts/categories'
+`,"../../examples/src/categories/11-functor-products-coproducts.ts":`import { category, copresheaf, functor } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 
@@ -835,7 +988,7 @@ console.log(
   'functor.mul(F, G) : category.mul(A, C) → category.mul(B, D):',
   product.domain === domain.category && product.codomain === codomain.category,
 )
-console.log('functor.mul(underlyingGraph, edgeSource), on objects:', product.Object)
+console.log('functor.mul(underlyingGraph, edgeSource), on objects:', product.specification.Object)
 
 preview.append(view.table(domain.category))
 
@@ -845,7 +998,7 @@ export const sum = functor.add(underlyingGraph, pickEdges)
 
 preview.append(view.graph(sum, { layout: elkStressLayout }))
 
-console.log('functor.add(underlyingGraph, pickEdges), on objects:', sum.Object)
+console.log('functor.add(underlyingGraph, pickEdges), on objects:', sum.specification.Object)
 
 // Δ along F + G takes data on both parts of the codomain (here a port graph
 // and a graph, side by side) and restricts each part along its own functor.
@@ -871,12 +1024,12 @@ export const triple = functor.product({
   point: pickEdges,
 })
 
-console.log('functor.product of three, objects in its domain:', Object.keys(triple.Object).length)
+console.log('functor.product of three, objects in its domain:', Object.keys(triple.specification.Object).length)
 console.log(
   'functor.one() : category.one() → category.one(), functor.zero() : category.zero() → category.zero():',
   functor.one().domain === category.one() && functor.zero().domain === category.zero(),
 )
-`,"../../examples/src/categories/11-polynomial-functors.ts":`import { category, copresheaf, type Copresheaf, functor, pipe } from '@cod-ts/categories'
+`,"../../examples/src/categories/12-polynomial-functors.ts":`import { category, copresheaf, type Copresheaf, functor, pipe } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { tableView } from '@cod-ts/views/categories'
 
@@ -936,7 +1089,7 @@ console.log(
   copresheaf.parts(applied, 'X').length,
   copresheaf.parts(polynomial(copresheaf(CatSet, { X: ['a', 'b', 'c'] })), 'X').length,
 )
-`,"../../examples/src/categories/12-copresheaves.ts":`import { category, copresheaf, equation } from '@cod-ts/categories'
+`,"../../examples/src/categories/13-copresheaves.ts":`import { category, copresheaf, equation } from '@cod-ts/categories'
 import { view } from '@cod-ts/views'
 
 export const CatCompany = category({
@@ -985,7 +1138,7 @@ preview.append(
     }),
   ),
 )
-`,"../../examples/src/categories/13-copresheaf-pivots.ts":`import { category, copresheaf, copresheafMap, equation, functor } from '@cod-ts/categories'
+`,"../../examples/src/categories/14-copresheaf-pivots.ts":`import { category, copresheaf, copresheafMap, equation, functor } from '@cod-ts/categories'
 import { view } from '@cod-ts/views'
 
 // Pivoting turns data into a category: the category of elements of a
@@ -1011,17 +1164,25 @@ export const company = copresheaf(CatCompany, {
   Department: { secretary: { it: 'bo', ops: 'cy' } },
 })
 
+// Like the other constructions, the pivot returns its category, and the
+// functor that comes with it: the projection, sending each element to its
+// object of CatCompany.
 export const elements = copresheaf.pivot(company)
 
-preview.append(view.col(view.title('company, pivoted'), view.table(elements)))
+preview.append(
+  view.row(
+    view.col(view.title('company, pivoted'), view.table(elements.category)),
+    view.col(view.title('its projection'), view.table(elements.projection)),
+  ),
+)
 
 // The category of elements records what each of its objects and arrows is
 // an element of, as its provenance: that is what the graph view of a
-// copresheaf draws. view.graph(company) is view.graph(elements), with
+// copresheaf draws. view.graph(company) is view.graph(elements.category), with
 // each node named by its part, and data attributes to style it by: the
 // object of CatCompany, the part, and for links the arrow they lie over.
 preview.append(
-  view.graph(elements, {
+  view.graph(elements.category, {
     names: { object: (o) => (o.provenance?.kind === 'element' ? o.provenance.part.part : o.object) },
     style: {
       '.cod-label': { visibility: 'visible' },
@@ -1031,12 +1192,12 @@ preview.append(
   }),
 )
 
-// Unpivoting reads the copresheaf back off a category of elements and its
-// C, the parts and their IDs as the category records them: it is the
-// inverse of pivoting.
-export const unpivoted = copresheaf.unpivot(elements, CatCompany)
+// Unpivoting reads the copresheaf back off the projection, the parts and
+// their IDs as the category of elements records them: it is the inverse of
+// pivoting.
+export const unpivoted = copresheaf.unpivot(elements.projection)
 
-console.log('unpivot(pivot(company)) has the same data:', JSON.stringify(unpivoted.data) === JSON.stringify(company.data))
+console.log('unpivot(pivot(company)) has the same data:', JSON.stringify(unpivoted.specification) === JSON.stringify(company.specification))
 
 // Maps pivot too: a copresheaf map α : X ⇒ Y is a functor between their
 // categories of elements, sending each part to its image and each arrow to
@@ -1068,8 +1229,8 @@ preview.append(
 
 console.log(
   'unpivot(pivot(role)) has the same components:',
-  JSON.stringify(copresheafMap.unpivot(copresheafMap.pivot(role), CatCompany).components) ===
-    JSON.stringify(role.components),
+  JSON.stringify(copresheafMap.unpivot(copresheafMap.pivot(role), CatCompany).specification.Object) ===
+    JSON.stringify(role.specification.Object),
 )
 
 // Any discrete opfibration p : E → C can be unpivoted: a functor along which
@@ -1089,7 +1250,7 @@ export const cycle = copresheaf.unpivot(
 )
 
 preview.append(view.col(view.title('a cycle of three, unpivoted'), view.table(cycle)))
-`,"../../examples/src/categories/14-copresheaf-products.ts":`import { copresheaf, copresheafMap, type CopresheafMap } from '@cod-ts/categories'
+`,"../../examples/src/categories/15-copresheaf-products.ts":`import { copresheaf, copresheafMap, type CopresheafMap } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 import { graphView } from '@cod-ts/views/graphs'
@@ -1132,9 +1293,9 @@ console.log(
 // (its image) is that factor again: here every vertex and edge of \`arrow\`
 // and of \`cycle\` occurs in some pair, because neither factor is empty.
 function image(map: CopresheafMap<typeof CatGraph>) {
-  const hit = (object: 'V' | 'E') => [...new Set(Object.values(map.components[object]))]
+  const hit = (object: 'V' | 'E') => [...new Set(Object.values(map.specification.Object[object]))]
   const edges = hit('E')
-  const ends = (end: 'source' | 'target') => Object.fromEntries(edges.map((e) => [e, map.target.data.E[end][e]]))
+  const ends = (end: 'source' | 'target') => Object.fromEntries(edges.map((e) => [e, map.codomain.specification.E[end][e]]))
   return copresheaf(CatGraph, {
     V: hit('V'),
     E: { source: ends('source'), target: ends('target') },
@@ -1163,7 +1324,7 @@ console.log(
 export const one = copresheaf.one(CatGraph)
 
 preview.append(view.table(one.pair({}, cycle)))
-`,"../../examples/src/categories/15-copresheaf-pullbacks-pushouts.ts":`import { category, copresheaf, copresheafMap } from '@cod-ts/categories'
+`,"../../examples/src/categories/16-copresheaf-pullbacks-pushouts.ts":`import { category, copresheaf, copresheafMap } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 import { tableView } from '@cod-ts/views/categories'
@@ -1222,7 +1383,7 @@ export const collapse = path.descend({
 })
 
 preview.append(view.col(view.title('collapsed onto a loop'), tableView(collapse)))
-`,"../../examples/src/categories/16-copresheaf-limits-colimits.ts":`import { category, copresheaf } from '@cod-ts/categories'
+`,"../../examples/src/categories/17-copresheaf-limits-colimits.ts":`import { category, copresheaf } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { tableView } from '@cod-ts/views/categories'
 
@@ -1294,7 +1455,7 @@ preview.append(tableView(graph))
 
 console.log('components:', copresheaf.colimit(graph).parts)
 console.log('self-loops:', copresheaf.limit(graph).parts)
-`,"../../examples/src/categories/17-copresheaf-kan-extensions.ts":`import { category, copresheaf, equation, functor } from '@cod-ts/categories'
+`,"../../examples/src/categories/18-copresheaf-kan-extensions.ts":`import { category, copresheaf, equation, functor } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 
@@ -1371,7 +1532,7 @@ preview.append(
 // must be confluent and the hom-sets needed must be finite. A boss without
 // boss·boss = boss would give al an endless chain of bosses, and the
 // extension stops with an error instead of running forever.
-`,"../../examples/src/categories/18-copresheaf-person-salary.ts":`import { category, copresheaf, functor, type PartRef } from '@cod-ts/categories'
+`,"../../examples/src/categories/19-copresheaf-person-salary.ts":`import { category, copresheaf, functor, type PartRef } from '@cod-ts/categories'
 import { type Names, view } from '@cod-ts/views'
 
 // The three data migrations along a schema mapping f : C → D, after the
@@ -1461,7 +1622,7 @@ preview.append(
     }),
   ),
 )
-`,"../../examples/src/categories/19-copresheaf-day-convolutions.ts":`import {
+`,"../../examples/src/categories/20-copresheaf-day-convolutions.ts":`import {
   category,
   copresheaf,
   equation,
@@ -1646,7 +1807,7 @@ preview.append(
     view.col(view.title('$S \\\\circledast S$'), view.table(copresheaf.day(multiplication, swap, swap).copresheaf)),
   ),
 )
-`,"../../examples/src/categories/20-nat-transformations.ts":`import { category, equation, functor, functorMap } from '@cod-ts/categories'
+`,"../../examples/src/categories/21-nat-transformations.ts":`import { category, equation, functor, functorMap } from '@cod-ts/categories'
 import { tableView } from '@cod-ts/views/categories'
 
 export const CatCompany = category({
@@ -1716,7 +1877,7 @@ export const CatPoint = category({ Object: ['X'] })
 export const pickA = functor(CatPoint, CatArrow, { Object: { X: 'A' }, Arrow: {} })
 export const atEmployee = functorMap.precompose(pickA, toManager)
 
-console.log('functorMap.precompose(pickA, toManager), components:', atEmployee.components)
+console.log('functorMap.precompose(pickA, toManager), components:', atEmployee.specification.Object)
 
 // After: viaManager sends an employee's department to their manager's (it
 // preserves both equations), and maps every component through it.
@@ -1730,7 +1891,7 @@ export const viaManager = functor(CatCompany, CatCompany, {
 export const throughManager = functorMap.postcompose(toManager, viaManager)
 
 preview.append(tableView(throughManager))
-`,"../../examples/src/categories/21-nat-transformation-raw-and-lawful.ts":`import { category, equation, functor, functorMap, path, rawFunctorMap } from '@cod-ts/categories'
+`,"../../examples/src/categories/22-nat-transformation-raw-and-lawful.ts":`import { category, equation, functor, functorMap, path, rawFunctorMap } from '@cod-ts/categories'
 import { tableView } from '@cod-ts/views/categories'
 
 // Functors and functor maps come in two flavours, as in Agda's standard
@@ -1786,7 +1947,7 @@ export const raw = rawFunctorMap(viaX, viaY, { A: ['a'], B: ['c'] })
 export const trusted = functorMap.assume(raw)
 
 preview.append(tableView(trusted))
-`,"../../examples/src/categories/22-diagrams.ts":`import { copresheaf, diagram, diagramMap, functor } from '@cod-ts/categories'
+`,"../../examples/src/categories/23-diagrams.ts":`import { copresheaf, diagram, diagramMap, functor } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 
@@ -1844,7 +2005,7 @@ console.log('firstEdge then edgeSource = source:', diagramMap.equals(diagramMap.
 export const ends = diagram.sum({ from: vertex, to: vertex })
 export const endpoints = ends.pair({ from: source, to: target })
 
-console.log('pair({ from: source, to: target }), shape:', endpoints.shape.Object)
+console.log('pair({ from: source, to: target }), shape:', endpoints.shape.specification.Object)
 console.log(
   'pair then projection = source:',
   diagramMap.equals(diagramMap.compose(endpoints, ends.projections.from), source),
@@ -1866,9 +2027,9 @@ console.log(
   'components:',
   copresheaf.colimit(functor.delta(glued, chain)).parts,
   'vertex into glued, shape:',
-  vertexInto.shape.Object,
+  vertexInto.shape.specification.Object,
 )
-`,"../../examples/src/categories/23-queries.ts":`import { category, copresheaf, copresheafMap, equation, query } from '@cod-ts/categories'
+`,"../../examples/src/categories/24-queries.ts":`import { category, copresheaf, copresheafMap, equation, query } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 import { graphView, tableView } from '@cod-ts/views/categories'
@@ -2050,7 +2211,7 @@ preview.append(view.col(view.title('double'), graphView(double, { style: showLab
 // are a limit over e1, e2 and the variables where they meet.
 preview.append(view.col(view.title('equal weights'), graphView(equalWeightPaths, { style: showLabels })))
 preview.append(view.col(view.title('components'), graphView(components, { style: showLabels })))
-`,"../../examples/src/categories/24-query-composition.ts":`import { category, copresheaf, equation, functor, pipe, query } from '@cod-ts/categories'
+`,"../../examples/src/categories/25-query-composition.ts":`import { category, copresheaf, equation, functor, pipe, query } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
 
@@ -2076,7 +2237,7 @@ export const paths = query(CatGraph, CatGraph, {
 // where they meet.
 export const paths4 = query.andThen(paths, paths)
 
-console.log('variables of paths4.E:', paths4.Object.E.domain.specification.Object)
+console.log('variables of paths4.E:', paths4.specification.Object.E.domain.specification.Object)
 
 export const chain = copresheaf(CatGraph, {
   V: ['a', 'b', 'c', 'd', 'e'],
@@ -2091,21 +2252,21 @@ preview.append(view.col(view.title('paths4'), view.table(query.evaluate(paths4, 
 
 // The same data as evaluating paths twice, up to the names of the parts:
 // query.comparison gives the isomorphism, checked natural and bijective.
-console.log('paths4 versus paths, then paths:', query.comparison(paths, paths, chain).components.E)
+console.log('paths4 versus paths, then paths:', query.comparison(paths, paths, chain).specification.Object.E)
 
 // In the style of Effect, andThen also has a data-last form, for pipe:
 // paths of length eight.
 export const paths8 = pipe(paths, query.andThen(paths), query.andThen(paths))
 
-console.log('variables of paths8.E:', paths8.Object.E.domain.specification.Object.length)
+console.log('variables of paths8.E:', paths8.specification.Object.E.domain.specification.Object.length)
 
 // The identity query is a unit on either side.
 export const identity = query.identity(CatGraph)
 
 console.log(
   'identity, then paths = paths:',
-  JSON.stringify(query.evaluate(query.andThen(identity, paths), chain).data) ===
-    JSON.stringify(query.evaluate(paths, chain).data),
+  JSON.stringify(query.evaluate(query.andThen(identity, paths), chain).specification) ===
+    JSON.stringify(query.evaluate(paths, chain).specification),
 )
 
 // Colimit queries compose too: two copies of a graph, then its connected
@@ -2158,7 +2319,7 @@ preview.append(
     view.graph(reversedDouble),
   ),
 )
-`,"../../examples/src/categories/25-query-person-salary.ts":`import { category, copresheaf, functor, type PartRef, query } from '@cod-ts/categories'
+`,"../../examples/src/categories/26-query-person-salary.ts":`import { category, copresheaf, functor, type PartRef, query } from '@cod-ts/categories'
 import { type Names, view } from '@cod-ts/views'
 
 // The Person/Salary migrations of the Σ and Π example (18), as queries.
@@ -2246,31 +2407,112 @@ preview.append(
     view.col(view.title('the isomorphism to it'), view.table(renamed.isomorphism)),
   ),
 )
+`,"../../examples/src/categories/27-query-dynamical-system.ts":`import { category, copresheaf, diagram, equation, query } from '@cod-ts/categories'
+import { view } from '@cod-ts/views'
+
+// A query whose arrows are given as maps of diagrams. Arrows given as terms
+// (23) leave the shape functor's arrows to be inferred: each goes to the one
+// path of the other shape that makes its square commute. Where that cannot
+// be done, give the map of diagrams explicitly, with diagram.limitMap (or
+// diagram.colimitMap): its shape functor, arrows included, and its
+// components. That is needed when several paths fit, or when a shape has
+// infinitely many paths to search, as here.
+
+// A dynamical system: a set X with a map next : X → X.
+export const CatDynamical = category({ Object: ['X'], Arrow: { X: { next: 'X' } } })
+
+// A 3-cycle a → b → c → a, d → e, and e and f fixed.
+export const system = copresheaf(CatDynamical, {
+  X: { next: { a: 'b', b: 'c', c: 'a', d: 'e', e: 'e', f: 'f' } },
+})
+
+preview.append(view.col(view.title('a dynamical system'), view.table(system)))
+
+// Its fixed points are the limit of a diagram with one variable x and a
+// loop n in its shape that goes to next: the elements with next(x) = x. Its
+// shape has the arrows n, n.n, n.n.n, …, so no search can find where n
+// goes.
+export const loop = diagram(CatDynamical, { Object: { x: 'X' }, Arrow: { x: { n: ['x', ['next']] } } })
+
+// next, on the fixed points: x goes to x and n to n, and the component at x
+// is next, which on a fixed point is the identity.
+export const step = diagram.limitMap(loop, loop, { Object: { x: 'x' }, Arrow: { x: { n: ['n'] } } }, { x: ['next'] })
+
+// The fixed points, as a dynamical system: X goes to the limit of the loop
+// (query.limit(loop); the diagram on its own would say as much), and next to
+// step. Given as terms instead, next: ['x', 'next'], the query would fail,
+// as there are more arrows out of x than a search can try.
+export const fixedPoints = query(CatDynamical, CatDynamical, {
+  Object: { X: query.limit(loop) },
+  Arrow: { X: { next: step } },
+})
+
+// e and f, on which next is the identity.
+preview.append(view.col(view.title('fixed points'), view.table(query.evaluate(fixedPoints, system))))
+
+// Dually, its orbits are the colimit of the same diagram: each element
+// glued to its next. query.colimit(loop) makes the query a colimit query,
+// and next goes to a colimit map, glue: x goes to x and n to n, and each
+// element goes along next, into the same orbit.
+export const glue = diagram.colimitMap(loop, loop, { Object: { x: 'x' }, Arrow: { x: { n: ['n'] } } }, { x: ['next'] })
+
+export const orbits = query(CatDynamical, CatDynamical, {
+  Object: { X: query.colimit(loop) },
+  Arrow: { X: { next: glue } },
+})
+
+// Three: the 3-cycle, d with e, and f, on which next is the identity too.
+preview.append(view.col(view.title('orbits'), view.table(query.evaluate(orbits, system))))
+
+// A query object written with variables and equations stands for a
+// diagram too, which query.objectDiagram gives, to build a map on. The
+// fixed points again: the equation x.next = x makes an arrow of the shape
+// from x to x, named after the equation.
+export const fixedObject = query.limit({ x: 'X' }, { fixed: equation(['x', 'next'], ['x']) })
+export const fixedDiagram = query.objectDiagram(CatDynamical, fixedObject)
+
+export const fixedPointsAgain = query(CatDynamical, CatDynamical, {
+  Object: { X: fixedObject },
+  Arrow: {
+    X: {
+      next: diagram.limitMap(
+        fixedDiagram,
+        fixedDiagram,
+        { Object: { x: 'x' }, Arrow: { x: { fixed: ['fixed'] } } },
+        { x: ['next'] },
+      ),
+    },
+  },
+})
+
+console.log('fixed points, again:', copresheaf.parts(query.evaluate(fixedPointsAgain, system), 'X'))
 `,"../../examples/src/complexes/01-globes.ts":`import { type Category, type Copresheaf, copresheaf } from '@cod-ts/categories'
 import { CatGlobe, CatReflexiveGlobe } from '@cod-ts/complexes'
 import { type Names, type View, view } from '@cod-ts/views'
+import { cellsInColumns } from '@cod-ts/views/graphs'
 
-// Cells C0, C1, … are shown as C₀, C₁, ….
-const names: Names = { object: ({ object }) => \`$C_{\${object.slice(1)}}$\` }
+// Cells 0, 1, … (named by their dimension) are shown as C₀, C₁, ….
+const names: Names = { object: ({ object }) => \`$C_{\${object}}$\` }
 
 // A category or a copresheaf under a title: as tables, and below them as a
-// graph with its names shown.
+// graph with its names shown, its cells in columns by dimension
+// (cellsInColumns, from @cod-ts/views/graphs).
 const titledView = (X: Category | Copresheaf, title: string): View =>
   view.col(
     view.title(title),
     view.table(X, { names }),
-    view.graph(X, { names, style: { '.cod-label': { visibility: 'visible' } } }),
+    view.graph(X, { names, layout: { engine: cellsInColumns }, style: { '.cod-label': { visibility: 'visible' } } }),
   )
 
 // @cod-ts/complexes has categories of cell shapes truncated at a dimension
-// n: objects C0 to Cn, the cells of each dimension, and arrows from each cell
+// n: objects 0 to n, the cells of each dimension, and arrows from each cell
 // to its faces. A copresheaf on one of them is a complex of such cells.
 //
 // Globes: every k-cell (k > 0) has a source and a target (k-1)-cell, and
 // these share their source and their target (the globular identities).
 // Globular sets are the shapes of higher categories: objects, arrows between
 // objects, arrows between arrows, …. In dimension 1 this is the category of
-// graphs, with C0 and C1 for vertices and edges.
+// graphs, with 0 and 1 for vertices and edges.
 export const CatGlobe2 = CatGlobe(2)
 
 preview.append(titledView(CatGlobe2, '$\\\\mathbb{G}_{\\\\leq 2}^{\\\\mathsf{op}}$'))
@@ -2278,12 +2520,12 @@ preview.append(titledView(CatGlobe2, '$\\\\mathbb{G}_{\\\\leq 2}^{\\\\mathsf{op}
 // A globular set: two parallel arrows f, g : x → y, and a 2-cell α : f ⇒ g
 // between them.
 export const twoCell = copresheaf(CatGlobe2, {
-  C0: ['x', 'y'],
-  C1: {
+  0: ['x', 'y'],
+  1: {
     source: { f: 'x', g: 'x' },
     target: { f: 'y', g: 'y' },
   },
-  C2: {
+  2: {
     source: { α: 'f' },
     target: { α: 'g' },
   },
@@ -2301,15 +2543,15 @@ preview.append(titledView(CatReflexiveGlobe2, '$\\\\mathbb{G}_{\\\\leq 2}^{\\\\m
 // A reflexive globular set: one arrow f : x → y, with the identities it
 // needs: 1x and 1y on its ends, and 2-cells 1f, 11x and 11y on every arrow.
 export const arrow = copresheaf(CatReflexiveGlobe2, {
-  C0: {
+  0: {
     refl: { x: '1x', y: '1y' },
   },
-  C1: {
+  1: {
     source: { f: 'x', '1x': 'x', '1y': 'y' },
     target: { f: 'y', '1x': 'x', '1y': 'y' },
     refl: { f: '1f', '1x': '11x', '1y': '11y' },
   },
-  C2: {
+  2: {
     source: { '1f': 'f', '11x': '1x', '11y': '1y' },
     target: { '1f': 'f', '11x': '1x', '11y': '1y' },
   },
@@ -2320,8 +2562,8 @@ preview.append(titledView(arrow, 'An arrow, with its identities'))
 import { CatGlobe, CatReflexiveGlobe } from '@cod-ts/complexes'
 import { type Names, type View, view } from '@cod-ts/views'
 
-// Cells C0, C1, … are shown as C₀, C₁, ….
-const names: Names = { object: ({ object }) => \`$C_{\${object.slice(1)}}$\` }
+// Cells 0, 1, … (named by their dimension) are shown as C₀, C₁, ….
+const names: Names = { object: ({ object }) => \`$C_{\${object}}$\` }
 
 // A complex under a title: as tables, and below them as a graph of its
 // cells, each with arrows to its source and target.
@@ -2333,7 +2575,7 @@ const titledView = (X: Copresheaf, title: string): View =>
   )
 
 const sizes = (X: Copresheaf) =>
-  X.meta.specification.Object.map((o) => \`\${o}: \${copresheaf.parts(X, o).length}\`).join(', ')
+  X.domain.specification.Object.map((o) => \`\${o}: \${copresheaf.parts(X, o).length}\`).join(', ')
 
 // Simplices have the join and cubes the product as monoidal structures,
 // whose Day convolutions build triangles and squares (05-simplex-products,
@@ -2350,9 +2592,9 @@ const sizes = (X: Copresheaf) =>
 // An arrow f : x → y, and an arrow g : u → v.
 const arrow = (f: string, x: string, y: string) =>
   copresheaf(CatGlobe(2), {
-    C0: [x, y],
-    C1: { source: { [f]: x }, target: { [f]: y } },
-    C2: { source: {}, target: {} },
+    0: [x, y],
+    1: { source: { [f]: x }, target: { [f]: y } },
+    2: { source: {}, target: {} },
   })
 
 // In globular sets, the product of two arrows is a single diagonal arrow
@@ -2367,13 +2609,13 @@ console.log('globular:', sizes(product))
 // 01-globes).
 const reflexiveArrow = (f: string, x: string, y: string) =>
   copresheaf(CatReflexiveGlobe(2), {
-    C0: { refl: { [x]: \`1\${x}\`, [y]: \`1\${y}\` } },
-    C1: {
+    0: { refl: { [x]: \`1\${x}\`, [y]: \`1\${y}\` } },
+    1: {
       source: { [f]: x, [\`1\${x}\`]: x, [\`1\${y}\`]: y },
       target: { [f]: y, [\`1\${x}\`]: x, [\`1\${y}\`]: y },
       refl: { [f]: \`1\${f}\`, [\`1\${x}\`]: \`11\${x}\`, [\`1\${y}\`]: \`11\${y}\` },
     },
-    C2: {
+    2: {
       source: { [\`1\${f}\`]: f, [\`11\${x}\`]: \`1\${x}\`, [\`11\${y}\`]: \`1\${y}\` },
       target: { [\`1\${f}\`]: f, [\`11\${x}\`]: \`1\${x}\`, [\`11\${y}\`]: \`1\${y}\` },
     },
@@ -2393,20 +2635,23 @@ console.log('reflexive globular:', sizes(reflexiveProduct))
 `,"../../examples/src/complexes/03-simplices.ts":`import { type Category, type Copresheaf, copresheaf } from '@cod-ts/categories'
 import { CatAugmentedSimplex, CatSemiSimplex, CatSimplex } from '@cod-ts/complexes'
 import { type Names, type View, view } from '@cod-ts/views'
+import { cellsInColumns } from '@cod-ts/views/graphs'
 
-// Cells C0, C1, … are shown as C₀, C₁, …, and arrows d00, s00, … as d₀, s₀, ….
+// Cells 0, 1, … (named by their dimension) are shown as C₀, C₁, …, and
+// arrows d00, s00, … as d₀, s₀, ….
 const names: Names = {
-  object: ({ object }) => \`$C_{\${object.slice(1)}}$\`,
-  arrow: ({ arrow }) => \`$\${arrow[0]}_{\${Number(arrow.slice(1))}}$\`,
+  object: ({ object }) => \`\\$C_{\${object}}\\$\`,
+  arrow: ({ arrow }) => \`\\$\${arrow[0]}_{\${Number(arrow.slice(1))}}\\$\`,
 }
 
 // A category or a copresheaf under a title: as tables, and below them as a
-// graph with its names shown.
+// graph with its names shown, its cells in columns by dimension
+// (cellsInColumns, from @cod-ts/views/graphs).
 const titledView = (X: Category | Copresheaf, title: string): View =>
   view.col(
     view.title(title),
     view.table(X, { names }),
-    view.graph(X, { names, style: { '.cod-label': { visibility: 'visible' } } }),
+    view.graph(X, { names, layout: { engine: cellsInColumns }, style: { '.cod-label': { visibility: 'visible' } } }),
   )
 
 // Semi-simplices: every k-simplex (k > 0) has k + 1 faces d00 to dk, di
@@ -2420,12 +2665,12 @@ preview.append(titledView(CatSemiSimplex2, '$\\\\Delta_{\\\\mathsf{inj}, \\\\leq
 // A semi-simplicial set: a filled triangle abc, with edges ab, bc and ac.
 // Each simplex is named by its vertices, and di drops the i-th of them.
 export const triangle = copresheaf(CatSemiSimplex2, {
-  C0: ['a', 'b', 'c'],
-  C1: {
+  0: ['a', 'b', 'c'],
+  1: {
     d00: { ab: 'b', bc: 'c', ac: 'c' },
     d01: { ab: 'a', bc: 'b', ac: 'a' },
   },
-  C2: {
+  2: {
     d00: { abc: 'bc' },
     d01: { abc: 'ac' },
     d02: { abc: 'ab' },
@@ -2446,16 +2691,16 @@ preview.append(titledView(CatSimplex2, '$\\\\Delta_{\\\\leq 2}^{\\\\mathsf{op}}$
 // for a k-simplex: di drops the i-th letter and si repeats it. All but 0, 1
 // and 01 are degenerate.
 const interval = {
-  C0: {
+  0: {
     s00: { '0': '00', '1': '11' },
   },
-  C1: {
+  1: {
     d00: { '00': '0', '01': '1', '11': '1' },
     d01: { '00': '0', '01': '0', '11': '1' },
     s00: { '00': '000', '01': '001', '11': '111' },
     s01: { '00': '000', '01': '011', '11': '111' },
   },
-  C2: {
+  2: {
     d00: { '000': '00', '001': '01', '011': '11', '111': '11' },
     d01: { '000': '00', '001': '01', '011': '01', '111': '11' },
     d02: { '000': '00', '001': '00', '011': '01', '111': '11' },
@@ -2466,7 +2711,7 @@ export const Δ1 = copresheaf(CatSimplex2, interval)
 
 preview.append(titledView(Δ1, 'The interval $\\\\Delta[1]$'))
 
-// Augmented simplices add the empty simplex: C-1, the face d00 of every
+// Augmented simplices add the empty simplex: cell -1, the face d00 of every
 // 0-simplex. A copresheaf on it is a simplicial set over a set, its
 // (-1)-simplices, which its vertices lie over.
 export const CatAugmentedSimplex2 = CatAugmentedSimplex(2)
@@ -2475,13 +2720,13 @@ preview.append(titledView(CatAugmentedSimplex2, '$\\\\Delta_{+, \\\\leq 2}^{\\\\
 
 // The interval again, augmented by its one component, the empty word ∅.
 export const Δ1Augmented = copresheaf(CatAugmentedSimplex2, {
-  'C-1': ['∅'],
-  C0: {
+  '-1': ['∅'],
+  0: {
     d00: { '0': '∅', '1': '∅' },
-    ...interval.C0,
+    ...interval['0'],
   },
-  C1: interval.C1,
-  C2: interval.C2,
+  1: interval['1'],
+  2: interval['2'],
 })
 
 preview.append(titledView(Δ1Augmented, 'The interval $\\\\Delta[1]$, augmented'))
@@ -2489,8 +2734,8 @@ preview.append(titledView(Δ1Augmented, 'The interval $\\\\Delta[1]$, augmented'
 import { CatAugmentedSemiSimplex, CatAugmentedSimplex, complexDay, simplexJoin } from '@cod-ts/complexes'
 import { type Names, type View, view } from '@cod-ts/views'
 
-// Cells C-1, C0, C1, … are shown as C₋₁, C₀, C₁, ….
-const names: Names = { object: ({ object }) => \`$C_{\${object.slice(1)}}$\` }
+// Cells -1, 0, 1, … (named by their dimension) are shown as C₋₁, C₀, C₁, ….
+const names: Names = { object: ({ object }) => \`$C_{\${object}}$\` }
 
 // A complex under a title: as tables, and below them as a graph of its
 // cells, each with arrows to its faces.
@@ -2502,7 +2747,7 @@ const titledView = (X: Copresheaf, title: string): View =>
   )
 
 const sizes = (X: Copresheaf) =>
-  X.meta.specification.Object.map((o) => \`\${o}: \${copresheaf.parts(X, o).length}\`).join(', ')
+  X.domain.specification.Object.map((o) => \`\${o}: \${copresheaf.parts(X, o).length}\`).join(', ')
 
 // The join of simplices puts one after the other: [a] ⋆ [b] = [a + b + 1],
 // the vertices of [a] followed by those of [b]. With the empty simplex [-1]
@@ -2524,10 +2769,10 @@ export const semiJoin = simplexJoin(CatSemi)
 // A vertex v, over the empty simplex ∅.
 const vertex = (v: string) =>
   copresheaf(CatSemi, {
-    'C-1': ['∅'],
-    C0: { d00: { [v]: '∅' } },
-    C1: { d00: {}, d01: {} },
-    C2: { d00: {}, d01: {}, d02: {} },
+    '-1': ['∅'],
+    0: { d00: { [v]: '∅' } },
+    1: { d00: {}, d01: {} },
+    2: { d00: {}, d01: {}, d02: {} },
   })
 
 // The join of two vertices is a line: a, b and the edge a⋆b between them.
@@ -2556,15 +2801,15 @@ export const fullJoin = simplexJoin(CatFull)
 // vvv.
 const point = (v: string) =>
   copresheaf(CatFull, {
-    'C-1': ['∅'],
-    C0: { d00: { [v]: '∅' }, s00: { [v]: v + v } },
-    C1: {
+    '-1': ['∅'],
+    0: { d00: { [v]: '∅' }, s00: { [v]: v + v } },
+    1: {
       d00: { [v + v]: v },
       d01: { [v + v]: v },
       s00: { [v + v]: v + v + v },
       s01: { [v + v]: v + v + v },
     },
-    C2: {
+    2: {
       d00: { [v + v + v]: v + v },
       d01: { [v + v + v]: v + v },
       d02: { [v + v + v]: v + v },
@@ -2583,24 +2828,26 @@ console.log('Δ[2]:', sizes(Δ2))
 `,"../../examples/src/complexes/05-cubes.ts":`import { type Category, type Copresheaf, copresheaf } from '@cod-ts/categories'
 import { CatCube, CatSemiCube } from '@cod-ts/complexes'
 import { type Names, type View, view } from '@cod-ts/views'
+import { cellsInColumns } from '@cod-ts/views/graphs'
 
-// Cells C0, C1, … are shown as C₀, C₁, …, faces d00_0, d00_1, … as d₀⁰,
-// d₀¹, …, and degeneracies s00, … as s₀, ….
+// Cells 0, 1, … (named by their dimension) are shown as C₀, C₁, …, faces
+// d00_0, d00_1, … as d₀⁰, d₀¹, …, and degeneracies s00, … as s₀, ….
 const names: Names = {
-  object: ({ object }) => \`$C_{\${object.slice(1)}}$\`,
+  object: ({ object }) => \`\\$C_{\${object}}\\$\`,
   arrow: ({ arrow }) => {
     const [name, e] = arrow.split('_')
-    return \`$\${name[0]}_{\${Number(name.slice(1))}}\${e === undefined ? '' : \`^{\${e}}\`}$\`
+    return \`\\$\${name[0]}_{\${Number(name.slice(1))}}\${e === undefined ? '' : \`^{\${e}}\`}\\$\`
   },
 }
 
 // A category or a copresheaf under a title: as tables, and below them as a
-// graph with its names shown.
+// graph with its names shown, its cells in columns by dimension
+// (cellsInColumns, from @cod-ts/views/graphs).
 const titledView = (X: Category | Copresheaf, title: string): View =>
   view.col(
     view.title(title),
     view.table(X, { names }),
-    view.graph(X, { names, style: { '.cod-label': { visibility: 'visible' } } }),
+    view.graph(X, { names, layout: { engine: cellsInColumns }, style: { '.cod-label': { visibility: 'visible' } } }),
   )
 
 // Semi-cubes: every k-cube has 2k faces, di_0 and di_1 for each coordinate
@@ -2614,12 +2861,12 @@ preview.append(titledView(CatSemiCube2, '$\\\\square_{\\\\mathsf{inj}, \\\\leq 2
 // coordinates, 0, 1 or * for a free one, and di_e sets the i-th free
 // coordinate to e.
 export const square = copresheaf(CatSemiCube2, {
-  C0: ['00', '01', '10', '11'],
-  C1: {
+  0: ['00', '01', '10', '11'],
+  1: {
     d00_0: { '*0': '00', '*1': '01', '0*': '00', '1*': '10' },
     d00_1: { '*0': '10', '*1': '11', '0*': '01', '1*': '11' },
   },
-  C2: {
+  2: {
     d00_0: { '**': '0*' },
     d00_1: { '**': '1*' },
     d01_0: { '**': '*0' },
@@ -2640,18 +2887,18 @@ preview.append(titledView(CatCube2, '$\\\\square_{\\\\leq 2}^{\\\\mathsf{op}}$')
 // Its k-cubes are the maps from the k-cube to the interval: the constants
 // 0 and 1, and the coordinates x0 to x(k-1). Fixing coordinate i at e sends
 // xi to e and renumbers the coordinates after it; adding coordinate i
-// renumbers those from it on. All but 0, 1 and x0 in C1 are degenerate.
+// renumbers those from it on. All but 0, 1 and x0 in cell 1 are degenerate.
 export const interval = copresheaf(CatCube2, {
-  C0: {
+  0: {
     s00: { '0': '0', '1': '1' },
   },
-  C1: {
+  1: {
     d00_0: { '0': '0', '1': '1', x0: '0' },
     d00_1: { '0': '0', '1': '1', x0: '1' },
     s00: { '0': '0', '1': '1', x0: 'x1' },
     s01: { '0': '0', '1': '1', x0: 'x0' },
   },
-  C2: {
+  2: {
     d00_0: { '0': '0', '1': '1', x0: '0', x1: 'x0' },
     d00_1: { '0': '0', '1': '1', x0: '1', x1: 'x0' },
     d01_0: { '0': '0', '1': '1', x0: 'x0', x1: '0' },
@@ -2664,8 +2911,8 @@ preview.append(titledView(interval, 'The interval $\\\\square[1]$'))
 import { CatCube, CatSemiCube, complexDay, cubeProduct } from '@cod-ts/complexes'
 import { type Names, type View, view } from '@cod-ts/views'
 
-// Cells C0, C1, … are shown as C₀, C₁, ….
-const names: Names = { object: ({ object }) => \`$C_{\${object.slice(1)}}$\` }
+// Cells 0, 1, … (named by their dimension) are shown as C₀, C₁, ….
+const names: Names = { object: ({ object }) => \`$C_{\${object}}$\` }
 
 // A complex under a title: as tables, and below them as a graph of its
 // cells, each with arrows to its faces.
@@ -2677,7 +2924,7 @@ const titledView = (X: Copresheaf, title: string): View =>
   )
 
 const sizes = (X: Copresheaf) =>
-  X.meta.specification.Object.map((o) => \`\${o}: \${copresheaf.parts(X, o).length}\`).join(', ')
+  X.domain.specification.Object.map((o) => \`\${o}: \${copresheaf.parts(X, o).length}\`).join(', ')
 
 // The product of cubes puts their coordinates side by side: □a ⊗ □b =
 // □(a + b). With the point □0 as its unit, it is a monoidal structure on the
@@ -2697,9 +2944,9 @@ export const semiProduct = cubeProduct(CatSemi)
 
 // A line: vertices 0 and 1, and the edge x from 0 to 1.
 export const line = copresheaf(CatSemi, {
-  C0: ['0', '1'],
-  C1: { d00_0: { x: '0' }, d00_1: { x: '1' } },
-  C2: { d00_0: {}, d00_1: {}, d01_0: {}, d01_1: {} },
+  0: ['0', '1'],
+  1: { d00_0: { x: '0' }, d00_1: { x: '1' } },
+  2: { d00_0: {}, d00_1: {}, d01_0: {}, d01_1: {} },
 })
 
 // The product of the line with itself is a filled square: four vertices
@@ -2721,14 +2968,14 @@ export const fullProduct = cubeProduct(CatFull)
 // The interval □[1]: the constants 0 and 1, and the coordinates x0, x1 of
 // the k-cubes that map onto it (see 03-cubes).
 export const interval = copresheaf(CatFull, {
-  C0: { s00: { '0': '0', '1': '1' } },
-  C1: {
+  0: { s00: { '0': '0', '1': '1' } },
+  1: {
     d00_0: { '0': '0', '1': '1', x0: '0' },
     d00_1: { '0': '0', '1': '1', x0: '1' },
     s00: { '0': '0', '1': '1', x0: 'x1' },
     s01: { '0': '0', '1': '1', x0: 'x0' },
   },
-  C2: {
+  2: {
     d00_0: { '0': '0', '1': '1', x0: '0', x1: 'x0' },
     d00_1: { '0': '0', '1': '1', x0: '1', x1: 'x0' },
     d01_0: { '0': '0', '1': '1', x0: 'x0', x1: '0' },
@@ -3291,12 +3538,17 @@ export interface Equation {
 }
 /** Named equations, grouped by their source object. */
 export type EquationScopes = Readonly<Record<string, Readonly<Record<string, Equation>>>>;
+/**
+ * A category's specification: its objects, its generating arrows by source
+ * object (each name to its target), and its equations by source object.
+ */
+export type CategorySpec<O extends readonly string[] = readonly string[], A extends ArrowScopes = ArrowScopes, E extends EquationScopes = EquationScopes> = {
+    readonly Object: O;
+    readonly Arrow: A;
+    readonly Equation: E;
+};
 export interface Category<O extends readonly string[] = readonly string[], A extends ArrowScopes = ArrowScopes, E extends EquationScopes = EquationScopes> {
-    readonly specification: {
-        readonly Object: O;
-        readonly Arrow: A;
-        readonly Equation: E;
-    };
+    readonly specification: CategorySpec<O, A, E>;
     /**
      * What the objects, arrows and equations are made of, for categories built
      * by a construction (products, …), where recorded. IDs identify them;
@@ -3313,7 +3565,13 @@ export type ArrowName<C extends Category, O extends string> = Extract<keyof Arro
  * the identity path on that object.
  */
 export declare function equation(left: Path, right: Path): Equation;
-export declare function category<const O extends readonly string[], const A extends ArrowScopes = {}, const E extends EquationScopes = {}>(spec: {
+/**
+ * What \`category\` is built from: its objects, and optionally its generating
+ * arrows and equations by source object, as in \`CategorySpec\`. Checked
+ * against the objects: arrows and equations are grouped by objects, and
+ * arrows go to objects.
+ */
+export type CategoryInput<O extends readonly string[], A extends ArrowScopes = {}, E extends EquationScopes = {}> = {
     readonly Object: O;
     readonly Arrow?: A & {
         readonly [K in keyof A]: Readonly<Record<string, NoInfer<O[number]>>>;
@@ -3321,9 +3579,79 @@ export declare function category<const O extends readonly string[], const A exte
     readonly Equation?: E & {
         readonly [K in keyof E]: Readonly<Record<string, Equation>>;
     } & Record<Exclude<keyof E, O[number]>, never>;
-}): Category<O, A, E>;
+};
+export declare function category<const O extends readonly string[], const A extends ArrowScopes = {}, const E extends EquationScopes = {}>(spec: CategoryInput<O, A, E>): Category<O, A, E>;
 export {};
 `,a=`import { type Category } from './categories';
+import type { Categories } from './category-products';
+import { type CategoryDiagram, type CategoryDiagramArrow } from './category-limits';
+import { type Functor, type RawFunctor } from './functors';
+export interface CategoryColimit<O extends Categories = Categories> {
+    /** The diagram the colimit was taken of. */
+    readonly diagram: CategoryDiagram<O>;
+    /** The diagram's shape J: its objects and arrows. */
+    readonly shape: Category;
+    /** The categories of the diagram glued along its functors. */
+    readonly category: Category;
+    /** One injection from each category of the diagram, under its object's name. */
+    readonly injections: {
+        readonly [K in keyof O]: Functor<O[K], Category>;
+    };
+    /** The unique functor out of the colimit with the given injections. */
+    readonly descend: CategoryColimitDescend<O>;
+}
+/** A cocone: one functor out of each category of the diagram, into a shared category. */
+export type CategoryColimitCocone<O extends Categories> = {
+    readonly [K in keyof O]: RawFunctor<O[K], Category>;
+};
+type CoconeCodomain<Cocone, K extends PropertyKey> = Cocone[K & keyof Cocone] extends RawFunctor<Category, infer C> ? C : Category;
+/**
+ * \`descend(cocone)\`: functors out of each category of the diagram that
+ * commute with its functors give the functor out of the colimit. Lawful
+ * when every functor in the cocone is.
+ */
+export type CategoryColimitDescend<O extends Categories> = <Cocone extends CategoryColimitCocone<O>>(cocone: Cocone) => [Cocone[keyof O & keyof Cocone]] extends [Functor<Category, Category>] ? Functor<Category, CoconeCodomain<Cocone, keyof O>> : RawFunctor<Category, CoconeCodomain<Cocone, keyof O>>;
+/**
+ * The colimit of a diagram of categories, with its shape written inline as
+ * for \`category.limit\`: a category at each object, and for each arrow its
+ * target object and a functor, e.g. for the coequalizer of F, G : A → B
+ *
+ *   category.colimit({ Object: { a: A, b: B }, Arrow: { a: { f: ['b', F], g: ['b', G] } } })
+ *
+ * The categories are glued along the functors: each object and arrow is
+ * identified with its images. Every finite diagram has a colimit; there are
+ * no conditions.
+ *
+ * The colimit keeps the categories at the sinks of the shape (objects no
+ * arrow leaves), and those on cycles that reach no sink, tagged with their
+ * objects' names: objects \`b.x\`, arrows \`b.f\`, equations \`b.e\`. Every other
+ * category is named by its images along the first arrow towards the
+ * nearest sink. Then:
+ *
+ * - the images of each object along every arrow of the shape are
+ *   identified;
+ * - where an arrow has a single generating arrow as its image along two
+ *   arrows of the shape, those are identified; otherwise an equation,
+ *   \`f.a.h\` for the arrow h out of a and the shape's arrow f, says its
+ *   image along f is the one it is named by.
+ *
+ * Something identified is named after its first member, in the order of the
+ * diagram's objects. So a span gives the names of \`category.pushout\`, when
+ * the categories are named like the legs, and the coequalizer above B's.
+ *
+ * The colimit records its provenance (\`kind: 'colimit'\`, and \`'glue'\` for
+ * gluing equations). The injections are lawful when the functors are.
+ * \`descend(cocone)\` checks that the cocone commutes (on objects, and on
+ * arrows up to provable equality) and is lawful when every functor in it is.
+ */
+export declare function categoryColimit<const O extends Categories, const A extends Readonly<Record<string, Readonly<Record<string, CategoryDiagramArrow>>>> = {}>(diagram: {
+    readonly Object: O;
+    readonly Arrow?: A & {
+        readonly [S in keyof A]: Readonly<Record<string, CategoryDiagramArrow<keyof O & string>>>;
+    } & Record<Exclude<keyof A, keyof O>, never>;
+}): CategoryColimit<O>;
+export {};
+`,o=`import { type Category } from './categories';
 import type { Categories, Named } from './category-products';
 import { type Functor, type RawFunctor } from './functors';
 export interface CategoryCoproduct<Ss extends Categories = Categories> {
@@ -3372,7 +3700,7 @@ export type CategorySum<Ss extends Categories = Categories> = CategoryCoproduct<
 /** The sum of named categories: \`categoryCoproduct\`, by the name of the other sums. */
 export declare const categorySum: typeof categoryCoproduct;
 export {};
-`,o=`import { type ArrowScopes, type Category, type EquationScopes, type Equation, type ObjectName } from './categories';
+`,s=`import { type ArrowScopes, type Category, type EquationScopes, type Equation, type ObjectName } from './categories';
 import { type Functor } from './functors';
 export interface CategoryExtension<B extends Category = Category, C extends Category = Category> {
     /** The base category plus the new objects, arrows and equations. */
@@ -3404,7 +3732,109 @@ export declare function categoryExtend<B extends Category, const O extends reado
     } & Record<Exclude<keyof E, ObjectName<B> | O[number]>, never>;
 }): CategoryExtension<B, ExtendedCategory<B, O, A, E>>;
 export {};
-`,s=`import { type ArrowName, type ArrowScopes, type Category, type EquationScopes, type ObjectName } from './categories';
+`,c=`import { type Category, type Equation } from './categories';
+import type { Categories } from './category-products';
+import { type Functor, type RawFunctor } from './functors';
+/** An arrow of a diagram of categories: its target object, and the functor there. */
+export type CategoryDiagramArrow<V extends string = string> = readonly [target: V, functor: RawFunctor];
+/** The arrows of a diagram of categories, by source object and name. */
+export type CategoryDiagramArrows<V extends string = string> = Readonly<Partial<Record<V, Readonly<Record<string, CategoryDiagramArrow<V>>>>>>;
+/**
+ * A diagram of categories, with its shape written inline: a category for
+ * each object, and for each arrow its target and a functor between them.
+ */
+export interface CategoryDiagram<O extends Categories = Categories> {
+    readonly Object: O;
+    readonly Arrow?: CategoryDiagramArrows<keyof O & string>;
+}
+export interface CategoryLimit<O extends Categories = Categories> {
+    /** The diagram the limit was taken of. */
+    readonly diagram: CategoryDiagram<O>;
+    /** The diagram's shape J: its objects and arrows. */
+    readonly shape: Category;
+    /** The limit: the tuples of objects and arrows compatible along every functor. */
+    readonly category: Category;
+    /** One projection onto each category of the diagram, under its object's name. */
+    readonly projections: {
+        readonly [K in keyof O]: Functor<Category, O[K]>;
+    };
+    /** The unique functor into the limit with the given projections. */
+    readonly pair: CategoryLimitPair<O>;
+}
+/** A cone: one functor into each category of the diagram, out of a shared category. */
+export type CategoryLimitCone<O extends Categories> = {
+    readonly [K in keyof O]: RawFunctor<Category, O[K]>;
+};
+type ConeDomain<Cone, K extends PropertyKey> = Cone[K & keyof Cone] extends RawFunctor<infer D, Category> ? D : Category;
+/**
+ * \`pair(cone)\`: functors into each category of the diagram that commute
+ * with its functors give the functor into the limit. Lawful when every
+ * functor in the cone is.
+ */
+export type CategoryLimitPair<O extends Categories> = <Cone extends CategoryLimitCone<O>>(cone: Cone) => [Cone[keyof O & keyof Cone]] extends [Functor<Category, Category>] ? Functor<ConeDomain<Cone, keyof O>, Category> : RawFunctor<ConeDomain<Cone, keyof O>, Category>;
+/** An arrow of the shape, with its functor (not part of the public API). */
+export interface Edge {
+    readonly source: number;
+    readonly name: string;
+    readonly target: number;
+    readonly functor: RawFunctor;
+}
+/**
+ * A diagram of categories, read and checked: its objects in order, their
+ * categories, its arrows with their functors, and its shape (not part of
+ * the public API).
+ */
+export declare function readCategoryDiagram(diagram: CategoryDiagram, kind: 'limit' | 'colimit'): {
+    keys: string[];
+    cats: Category<readonly string[], Readonly<Record<string, Readonly<Record<string, string>>>>, Readonly<Record<string, Readonly<Record<string, Equation>>>>>[];
+    edges: Edge[];
+    arrowSpec: Readonly<Record<string, Readonly<Record<string, CategoryDiagramArrow<string>>>>>;
+    shape: Category<readonly string[], Readonly<Record<string, Readonly<Record<string, string>>>>, Readonly<Record<string, Readonly<Record<string, Equation>>>>>;
+};
+/**
+ * The limit of a diagram of categories, with its shape written inline: a
+ * category for each object, and for each arrow its target object and a
+ * functor, e.g. for the equalizer of F, G : A → B
+ *
+ *   category.limit({ Object: { a: A, b: B }, Arrow: { a: { f: ['b', F], g: ['b', G] } } })
+ *
+ * The limit has the tuples of objects, and of arrows, that every functor
+ * sends to the corresponding coordinate. Objects and arrows are named by
+ * the coordinates that determine the rest: the roots of the shape (objects
+ * no arrow ends at), and one object of each cycle no arrow enters, so the
+ * names are those of \`category.pullback\` for a cospan and of
+ * \`category.product\` for a discrete shape; the equalizer above names them
+ * by A's.
+ *
+ * Arrows are generated by steps: each coordinate moves along a generating
+ * arrow or stays, compatibly along every functor, and the coordinates that
+ * move are connected in the shape. A step is named by the arrows the naming
+ * coordinates move along, and the objects of those that stay: \`(f,g)\` and
+ * \`(f,b)\` in a pullback. Equations are interchange laws, for steps moving
+ * disjoint coordinates, and each root's equations, lifted along every way
+ * the other coordinates can follow them: \`(e,b)\` where they stay,
+ * \`(e,(g…))\` where they follow along g….
+ *
+ * Supported when every functor sends each generating arrow to a generating
+ * arrow or an identity; every category a functor ends at has confluent
+ * equations, and no functor sends a path onto the larger side of one; no
+ * coordinate can make a step part-way along the lift of a root's equation
+ * that the lift then waits for; and the functors on cycles of the shape
+ * (ignoring direction) send no arrow to an identity. Other diagrams are
+ * rejected, with the reason.
+ *
+ * The limit records its provenance (\`kind: 'limit'\`, and \`'interchange'\`
+ * for interchange laws). The projections are lawful. \`pair(cone)\` checks
+ * that the cone commutes, and is lawful when every functor in it is.
+ */
+export declare function categoryLimit<const O extends Categories, const A extends Readonly<Record<string, Readonly<Record<string, CategoryDiagramArrow>>>> = {}>(diagram: {
+    readonly Object: O;
+    readonly Arrow?: A & {
+        readonly [S in keyof A]: Readonly<Record<string, CategoryDiagramArrow<keyof O & string>>>;
+    } & Record<Exclude<keyof A, keyof O>, never>;
+}): CategoryLimit<O>;
+export {};
+`,l=`import { type ArrowName, type ArrowScopes, type Category, type EquationScopes, type ObjectName } from './categories';
 import { type Functor } from './functors';
 /** What to omit: objects by name, arrows and equations by name under their source. */
 export type CategoryOmission<C extends Category> = {
@@ -3464,7 +3894,7 @@ export declare function categoryOmit<C extends Category, const OO extends readon
     [S in keyof OA]: OA[S] extends readonly (infer N)[] ? N : never;
 }>>;
 export {};
-`,c=`import { type ArrowScopes, type Category, type EquationScopes } from './categories';
+`,u=`import { type ArrowScopes, type Category, type EquationScopes } from './categories';
 /** Every arrow of an arrow-scope type, as [source, name, target]. */
 type ArrowTriples<A> = {
     [S in keyof A & string]: {
@@ -3521,7 +3951,7 @@ export declare function categoryQualifyArrows<C extends Category>(C: C): Categor
  */
 export declare function categoryUnqualifyArrows<C extends Category>(C: C): Category<Objects<C>, Extract<UnqualifiedArrows<Arrows<C>>, ArrowScopes>, EquationScopes>;
 export {};
-`,l=`import { type Category } from './categories';
+`,d=`import { type Category } from './categories';
 import { type Functor, type RawFunctor } from './functors';
 /** Named categories: the factors of a product, or the summands of a sum. */
 export type Categories = Readonly<Record<string, Category>>;
@@ -3586,9 +4016,10 @@ export declare function categoryMul<A extends Category, B extends Category>(A: A
  */
 export declare function categoryOne(): Category;
 export {};
-`,u=`import { type Category } from './categories';
+`,f=`import { type Category } from './categories';
 import type { Named } from './category-products';
 import { type Functor, type RawFunctor } from './functors';
+import { type Rule } from './paths';
 /** Named functors into one category: the legs of a cospan. */
 export type Cospan = Readonly<Record<string, RawFunctor>>;
 export interface CategoryPullback<Ls extends Cospan = Cospan> {
@@ -3614,6 +4045,12 @@ type ConeDomain<Cone, K extends PropertyKey> = Cone[K & keyof Cone] extends RawF
  * functor in the cone is.
  */
 export type CategoryPullbackPair<Ls extends Cospan> = <Cone extends CategoryPullbackCone<Ls>>(cone: Cone) => [Cone[keyof Ls & keyof Cone]] extends [Functor<Category, Category>] ? Functor<ConeDomain<Cone, keyof Ls>, Category> : RawFunctor<ConeDomain<Cone, keyof Ls>, Category>;
+/**
+ * Whether some path of F's domain is sent onto \`rule.from\`: a search over
+ * the objects of the domain and how much of \`rule.from\` has been matched,
+ * where silent arrows match nothing.
+ */
+export declare function sendsOnto(F: RawFunctor, rule: Rule): boolean;
 /**
  * The pullback of a cospan of named functors into one category C, e.g.
  * \`{ left: F, right: G }\` with F : A → C and G : B → C (or a list, named by
@@ -3646,7 +4083,7 @@ export type CategoryPullbackPair<Ls extends Cospan> = <Cone extends CategoryPull
  */
 export declare function categoryPullback<const Ls extends Cospan | readonly RawFunctor[]>(cospan: Ls): CategoryPullback<Extract<Named<Ls>, Cospan>>;
 export {};
-`,d=`import { type Category } from './categories';
+`,p=`import { type Category } from './categories';
 import type { Named } from './category-products';
 import { type Functor, type RawFunctor } from './functors';
 /** Named functors out of one category: the legs of a span. */
@@ -3703,7 +4140,7 @@ export type CategoryPushoutDescend<Ls extends Span> = <Cocone extends CategoryPu
  */
 export declare function categoryPushout<const Ls extends Span | readonly RawFunctor[]>(span: Ls): CategoryPushout<Extract<Named<Ls>, Span>>;
 export {};
-`,f=`import type { Category } from './categories';
+`,m=`import type { Category } from './categories';
 import type { Named } from './category-products';
 import { type Copresheaves } from './copresheaf-products';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
@@ -3741,7 +4178,7 @@ export declare function copresheafZero<C extends Category>(C: C): CopresheafCopr
 export type CopresheafSum<C extends Category = Category, K extends string = string> = CopresheafCoproduct<C, K>;
 /** The sum of named copresheaves: \`copresheafCoproduct\`, by the name of the other sums. */
 export declare const copresheafSum: typeof copresheafCoproduct;
-`,p=`import type { Category, ObjectName } from './categories';
+`,h=`import type { Category, ObjectName } from './categories';
 import { type KanExtensionOptions } from './copresheaf-lans';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
 import { type RawFunctor } from './functors';
@@ -3839,7 +4276,7 @@ export declare function copresheafTruncatedDay<C extends Category>(M: TruncatedM
  * must be finite and its equations confluent.
  */
 export declare function copresheafDayUnit<C extends Category>(M: MonoidalStructure<C>, options?: KanExtensionOptions): Copresheaf<C>;
-`,m=`import type { Category } from './categories';
+`,g=`import type { Category } from './categories';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
 import { type PartRef } from './provenance';
 /**
@@ -3877,7 +4314,7 @@ export interface CopresheafRenaming<C extends Category = Category> {
  * part's provenance, and the isomorphism from X to it.
  */
 export declare function copresheafRename<C extends Category>(X: Copresheaf<C>, name: (part: PartRef) => string): CopresheafRenaming<C>;
-`,h=`import type { Category, Path } from './categories';
+`,_=`import type { Category, Path } from './categories';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
 import type { RawFunctor } from './functors';
 import { type PartProvenance } from './provenance';
@@ -3936,7 +4373,7 @@ export declare function isCopresheafArgument(value: unknown): value is Copreshea
 export declare function functorSigma<C extends Category, D extends Category>(F: RawFunctor<C, D>, X: Copresheaf<NoInfer<C>>, options?: KanExtensionOptions): Copresheaf<D>;
 /** Data-last form for \`pipe\`: \`functorSigma(F)\` returns \`X => functorSigma(F, X)\`. */
 export declare function functorSigma<C extends Category, D extends Category>(F: RawFunctor<C, D>, options?: KanExtensionOptions): (X: Copresheaf<C>) => Copresheaf<D>;
-`,g=`import type { Category, ObjectName } from './categories';
+`,v=`import type { Category, ObjectName } from './categories';
 import { type KanExtensionOptions } from './copresheaf-lans';
 import { type Copresheaf } from './copresheaves';
 /** A function between finite sets of parts: where each part goes. */
@@ -3993,7 +4430,7 @@ export declare function copresheafLimit<J extends Category>(X: Copresheaf<J>, op
  * \`KanExtensionOptions\`).
  */
 export declare function copresheafColimit<J extends Category>(X: Copresheaf<J>, options?: KanExtensionOptions): CopresheafColimit<J>;
-`,_=`import type { Category } from './categories';
+`,ee=`import type { Category } from './categories';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
 import { type Functor, type RawFunctor } from './functors';
 /**
@@ -4007,13 +4444,20 @@ import { type Functor, type RawFunctor } from './functors';
  * - Equations: each equation of C at c, at every part x of X(c), under its
  *   name. Its paths end at the same part because X satisfies it.
  *
- * ∫X records its provenance (\`kind: 'element'\`): the part and object of
- * each object, and the arrow or equation of C each arrow or equation lies
- * over. That is its projection to C, a discrete opfibration: every arrow of
- * C out of c lifts to exactly one arrow out of \`c.x\`. \`copresheafUnpivot(∫X,
- * C)\` gives X back.
+ * Returns ∫X, as \`category\`, and its \`projection\` ∫X → C, sending \`c.x\` to
+ * c and each arrow to the one it lies over: a discrete opfibration, along
+ * which every arrow of C out of c lifts to exactly one arrow out of \`c.x\`.
+ * ∫X also records its provenance (\`kind: 'element'\`): the part and object
+ * of each object, and the arrow or equation of C each arrow or equation
+ * lies over. \`copresheafUnpivot\` of the projection gives X back.
  */
-export declare function copresheafPivot<C extends Category>(X: Copresheaf<C>): Category;
+export declare function copresheafPivot<C extends Category>(X: Copresheaf<C>): CopresheafPivot<C>;
+export interface CopresheafPivot<C extends Category = Category> {
+    /** The category of elements ∫X: an object \`c.x\` for each part x of X(c). */
+    readonly category: Category;
+    /** The projection ∫X → C: each element to its object, each arrow to the one it lies over. */
+    readonly projection: Functor<Category, C>;
+}
 /**
  * The copresheaf on C that a discrete opfibration p : E → C is the category
  * of elements of: X(c) has a part for each object of E over c, and X(f)
@@ -4039,7 +4483,7 @@ export declare function copresheafUnpivot<C extends Category>(p: RawFunctor<Cate
  * α : X ⇒ Y pivots to: each element \`c.x\` to \`c.α_c(x)\`, and each arrow f
  * out of \`c.x\` to the arrow f out of \`c.α_c(x)\`, which ends at the image of
  * f's target because α is natural. It starts and ends at
- * \`copresheafPivot(X)\` and \`copresheafPivot(Y)\`, and commutes with their
+ * the categories of \`copresheafPivot(X)\` and \`copresheafPivot(Y)\`, and commutes with their
  * projections to C. \`copresheafMapUnpivot\` of it, with C, gives α back.
  */
 export declare function copresheafMapPivot<C extends Category>(alpha: CopresheafMap<C>): Functor<Category, Category>;
@@ -4052,7 +4496,7 @@ export declare function copresheafMapPivot<C extends Category>(alpha: Copresheaf
  * lift of the same arrow of C. Unpivoting a map's pivot gives the map back.
  */
 export declare function copresheafMapUnpivot<C extends Category>(phi: RawFunctor, C: C): CopresheafMap<C>;
-`,ee=`import type { Category } from './categories';
+`,te=`import type { Category } from './categories';
 import type { Named } from './category-products';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
 /** Named copresheaves on one category: factors of a product, or summands of a sum. */
@@ -4090,7 +4534,7 @@ export declare function copresheafMul<C extends Category>(X: Copresheaf<C>, Y: C
  * object. \`copresheafOne(C).pair({}, X)\` is the unique map X → one.
  */
 export declare function copresheafOne<C extends Category>(C: C): CopresheafProduct<C, never>;
-`,te=`import type { Category } from './categories';
+`,ne=`import type { Category } from './categories';
 import type { Named } from './category-products';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
 /** Named copresheaf maps: the legs of a span or cospan. */
@@ -4124,7 +4568,7 @@ export interface CopresheafPullback<C extends Category = Category, K extends str
  * building the map.
  */
 export declare function copresheafPullback<const Ls extends CopresheafMaps | readonly CopresheafMap[]>(cospan: Ls): CopresheafPullback<MapsCategory<Ls>, Extract<keyof Named<Ls>, string>>;
-`,ne=`import type { Category } from './categories';
+`,re=`import type { Category } from './categories';
 import type { Named } from './category-products';
 import type { CopresheafMaps, MapsCategory } from './copresheaf-pullbacks';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
@@ -4158,7 +4602,7 @@ export interface CopresheafPushout<C extends Category = Category, K extends stri
  * building the map.
  */
 export declare function copresheafPushout<const Ls extends CopresheafMaps | readonly CopresheafMap[]>(span: Ls): CopresheafPushout<MapsCategory<Ls>, Extract<keyof Named<Ls>, string>>;
-`,re=`import type { Category } from './categories';
+`,ie=`import type { Category } from './categories';
 import { type KanExtensionOptions } from './copresheaf-lans';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
 import type { RawFunctor } from './functors';
@@ -4193,7 +4637,7 @@ export declare function copresheafRan<C extends Category, D extends Category>(F:
 export declare function functorPi<C extends Category, D extends Category>(F: RawFunctor<C, D>, X: Copresheaf<NoInfer<C>>, options?: KanExtensionOptions): Copresheaf<D>;
 /** Data-last form for \`pipe\`: \`functorPi(F)\` returns \`X => functorPi(F, X)\`. */
 export declare function functorPi<C extends Category, D extends Category>(F: RawFunctor<C, D>, options?: KanExtensionOptions): (X: Copresheaf<C>) => Copresheaf<D>;
-`,ie=`import type { ArrowName, Category, ObjectName } from './categories';
+`,ae=`import type { ArrowName, Category, ObjectName } from './categories';
 import type { RawFunctor } from './functors';
 import type { CopresheafProvenance, PartProvenance } from './provenance';
 export type CopresheafInput<C extends Category> = string extends ObjectName<C> ? Readonly<Record<string, readonly string[] | Readonly<Record<string, Readonly<Record<string, string>>>>>> : {
@@ -4201,10 +4645,14 @@ export type CopresheafInput<C extends Category> = string extends ObjectName<C> ?
         readonly [A in ArrowName<C, O>]: Readonly<Record<string, string>>;
     };
 };
-export type CopresheafData = Readonly<Record<string, Readonly<Record<string, Readonly<Record<string, string>>>>>>;
+export type CopresheafSpec = Readonly<Record<string, Readonly<Record<string, Readonly<Record<string, string>>>>>>;
 export interface Copresheaf<C extends Category = Category> {
-    readonly meta: C;
-    readonly data: CopresheafData;
+    readonly domain: C;
+    /**
+     * The parts and arrows: for each object, its parts (\`$id\`) and, for each
+     * generating arrow out of it, where each part goes.
+     */
+    readonly specification: CopresheafSpec;
     /**
      * What the parts are made of, for copresheaves built by a construction
      * (products, sums, Kan extensions, …): by object and part, where recorded.
@@ -4213,21 +4661,29 @@ export interface Copresheaf<C extends Category = Category> {
     readonly provenance?: CopresheafProvenance;
 }
 /** For each object, where each part of the source goes in the target. */
-export type CopresheafMapComponents<C extends Category> = {
-    readonly [O in ObjectName<C>]: Readonly<Record<string, string>>;
+export type CopresheafMapSpec<C extends Category = Category> = {
+    readonly Object: {
+        readonly [O in ObjectName<C>]: Readonly<Record<string, string>>;
+    };
 };
+/**
+ * What \`copresheafMap\` is built from: the component at each object, where
+ * each part of the domain goes in the codomain, as in \`CopresheafMapSpec\`.
+ */
+export type CopresheafMapInput<C extends Category> = CopresheafMapSpec<C>['Object'];
 /** A natural transformation between two copresheaves on one category. */
 export interface CopresheafMap<C extends Category = Category> {
-    readonly source: Copresheaf<C>;
-    readonly target: Copresheaf<C>;
-    readonly components: Readonly<Record<string, Readonly<Record<string, string>>>>;
+    readonly domain: Copresheaf<C>;
+    readonly codomain: Copresheaf<C>;
+    /** The component at each object: where each part of the domain goes in the codomain. */
+    readonly specification: CopresheafMapSpec;
 }
 /**
  * Validates untyped input and builds a copresheaf, with the provenance of
  * its parts if given. Used by other modules.
  */
-export declare function makeCopresheaf<C extends Category>(meta: C, input: unknown, provenance?: CopresheafProvenance): Copresheaf<C>;
-export declare function copresheaf<C extends Category>(meta: C, data: CopresheafInput<NoInfer<C>>): Copresheaf<C>;
+export declare function makeCopresheaf<C extends Category>(domain: C, input: unknown, provenance?: CopresheafProvenance): Copresheaf<C>;
+export declare function copresheaf<C extends Category>(domain: C, data: CopresheafInput<NoInfer<C>>): Copresheaf<C>;
 /**
  * What \`part\` of \`instance\` at \`object\` is made of, if a construction built
  * it and recorded it (see \`PartProvenance\`).
@@ -4243,12 +4699,12 @@ export declare function functorDelta<D extends Category, C extends Category>(F: 
 /** Data-last form for \`pipe\`: \`functorDelta(F)\` returns \`X => functorDelta(F, X)\`. */
 export declare function functorDelta<D extends Category, C extends Category>(F: RawFunctor<D, C>): (X: Copresheaf<C>) => Copresheaf<D>;
 /**
- * A copresheaf map from \`source\` to \`target\`: one total function per object
+ * A copresheaf map from \`domain\` to \`codomain\`: one total function per object
  * that commutes with every generating arrow (naturality).
  */
-export declare function copresheafMap<C extends Category>(source: Copresheaf<C>, target: Copresheaf<NoInfer<C>>, components: CopresheafMapComponents<NoInfer<C>>): CopresheafMap<C>;
-/** Validates untyped components and builds a map. Used by other modules. */
-export declare function makeCopresheafMap<C extends Category>(source: Copresheaf<C>, target: Copresheaf<C>, components: unknown): CopresheafMap<C>;
+export declare function copresheafMap<C extends Category>(domain: Copresheaf<C>, codomain: Copresheaf<NoInfer<C>>, components: CopresheafMapInput<NoInfer<C>>): CopresheafMap<C>;
+/** Validates untyped components and builds a map X → Y. Used by other modules. */
+export declare function makeCopresheafMap<C extends Category>(X: Copresheaf<C>, Y: Copresheaf<C>, components: unknown): CopresheafMap<C>;
 /** The identity map on X: every part to itself. */
 export declare function copresheafMapIdentity<C extends Category>(X: Copresheaf<C>): CopresheafMap<C>;
 /** Apply a copresheaf map to one part: α_object(part). */
@@ -4261,7 +4717,7 @@ export declare function copresheafMapApplyPart<C extends Category>(map: Copreshe
  */
 export declare function copresheafMapCompose<C extends Category>(f: CopresheafMap<C>, g: CopresheafMap<NoInfer<C>>): CopresheafMap<C>;
 export declare function copresheafMapCompose<C extends Category>(g: CopresheafMap<C>): (f: CopresheafMap<C>) => CopresheafMap<C>;
-`,ae=`import { type Category, type Equation, type ObjectName, type Path } from './categories';
+`,oe=`import { type Category, type Equation, type ObjectName, type Path } from './categories';
 import type { Named } from './category-products';
 import { type Functor, type FunctorSpec, type RawFunctor } from './functors';
 import { type RawFunctorMap } from './functor-maps';
@@ -4279,10 +4735,11 @@ export type Variance = 'limit' | 'colimit';
  */
 export interface DiagramMap<V extends Variance = Variance> {
     readonly variance: V;
-    readonly source: Diagram;
-    readonly target: Diagram;
+    readonly domain: Diagram;
+    readonly codomain: Diagram;
     readonly shape: Functor;
-    readonly components: Readonly<Record<string, Path>>;
+    /** The component at each variable: a path in C (see \`diagramLimitMap\`, \`diagramColimitMap\`). */
+    readonly specification: DiagramMapSpec;
 }
 /** A map of diagrams read for limits. */
 export type LimitMap = DiagramMap<'limit'>;
@@ -4298,6 +4755,19 @@ export type DiagramShape<O, A> = Category<readonly Variables<O>[], {
     };
 }>;
 /**
+ * What \`diagram\` is built from: the object of C each variable goes to, and
+ * optionally the shape's arrows, by source variable (each to its target
+ * variable and its image, a path in C), and its equations. Checked: arrows
+ * are grouped by variables, and go to variables.
+ */
+export type DiagramInput<C extends Category, O extends Readonly<Record<string, ObjectName<C>>>, A extends Readonly<Record<string, Readonly<Record<string, DiagramArrow>>>> = {}> = {
+    readonly Object: O;
+    readonly Arrow?: A & {
+        readonly [S in keyof A]: Readonly<Record<string, DiagramArrow<Variables<O>>>>;
+    } & Record<Exclude<keyof A, keyof O>, never>;
+    readonly Equation?: Readonly<Partial<Record<Variables<O>, Readonly<Record<string, Equation>>>>>;
+};
+/**
  * A diagram in C with its shape written inline. Each object of the shape is
  * a variable, mapped to an object of C:
  *
@@ -4311,13 +4781,7 @@ export type DiagramShape<O, A> = Category<readonly Variables<O>[], {
  * equations, also grouped by source, hold in the shape. The result is a
  * lawful functor from the generated shape to C.
  */
-export declare function diagram<C extends Category, const O extends Readonly<Record<string, ObjectName<C>>>, const A extends Readonly<Record<string, Readonly<Record<string, DiagramArrow>>>> = {}>(C: C, spec: {
-    readonly Object: O;
-    readonly Arrow?: A & {
-        readonly [S in keyof A]: Readonly<Record<string, DiagramArrow<Variables<O>>>>;
-    } & Record<Exclude<keyof A, keyof O>, never>;
-    readonly Equation?: Readonly<Partial<Record<Variables<O>, Readonly<Record<string, Equation>>>>>;
-}): Diagram<DiagramShape<O, A>, C>;
+export declare function diagram<C extends Category, const O extends Readonly<Record<string, ObjectName<C>>>, const A extends Readonly<Record<string, Readonly<Record<string, DiagramArrow>>>> = {}>(C: C, spec: DiagramInput<C, O, A>): Diagram<DiagramShape<O, A>, C>;
 /**
  * The diagram on one object c of C: a shape with one object, the variable
  * (named after c by default), and no arrows. The unit of the diagram monad.
@@ -4333,9 +4797,18 @@ export type ShapeMap<A extends Category, B extends Category> = RawFunctor<A, B> 
  * The components of a diagram map: a path for each variable, or the
  * functor map they form (D ⇒ u;E for a colimit map, u;D ⇒ E for a limit map).
  */
-export type DiagramMapComponents<K extends Category> = {
-    readonly [O in ObjectName<K>]: Path;
-} | RawFunctorMap<K, Category>;
+export type DiagramMapSpec<K extends Category = Category> = {
+    readonly Object: {
+        readonly [O in ObjectName<K>]: Path;
+    };
+};
+/**
+ * What \`diagramLimitMap\` and \`diagramColimitMap\` are built from, with their
+ * shape functor: the components, a path for each variable as in
+ * \`DiagramMapSpec\`, or the functor map they form (D ⇒ u;E for a colimit map,
+ * u;D ⇒ E for a limit map).
+ */
+export type DiagramMapInput<K extends Category> = DiagramMapSpec<K>['Object'] | RawFunctorMap<K, Category>;
 /**
  * A colimit map from D : J → C to E : K → C: a shape functor u : J → K (or
  * its specification), and components α : D ⇒ u;E, natural in j: for each
@@ -4343,7 +4816,7 @@ export type DiagramMapComponents<K extends Category> = {
  * induces colim XD → colim XE, sending the class of x ∈ X(D(j)) to the
  * class of its image in X(E(u(j))).
  */
-export declare function diagramColimitMap<D extends Diagram, E extends Diagram>(D: D, E: E, shape: ShapeMap<ShapeOf<D>, ShapeOf<E>>, components: DiagramMapComponents<ShapeOf<D>>): ColimitMap;
+export declare function diagramColimitMap<D extends Diagram, E extends Diagram>(D: D, E: E, shape: ShapeMap<ShapeOf<D>, ShapeOf<E>>, components: DiagramMapInput<ShapeOf<D>>): ColimitMap;
 /**
  * A limit map from D : J → C to E : K → C: a shape functor u : K → J (or its
  * specification), and components α : u;D ⇒ E, natural in k: for each
@@ -4351,7 +4824,7 @@ export declare function diagramColimitMap<D extends Diagram, E extends Diagram>(
  * induces lim XD → lim XE: each coordinate k of the result is coordinate
  * u(k) of the family, moved along the component.
  */
-export declare function diagramLimitMap<D extends Diagram, E extends Diagram>(D: D, E: E, shape: ShapeMap<ShapeOf<E>, ShapeOf<D>>, components: DiagramMapComponents<ShapeOf<E>>): LimitMap;
+export declare function diagramLimitMap<D extends Diagram, E extends Diagram>(D: D, E: E, shape: ShapeMap<ShapeOf<E>, ShapeOf<D>>, components: DiagramMapInput<ShapeOf<E>>): LimitMap;
 /** The identity map on D, of the given variance: identity shape, empty components. */
 export declare function diagramMapIdentity<V extends Variance>(D: Diagram, variance: V): DiagramMap<V>;
 /**
@@ -4366,7 +4839,7 @@ export declare function diagramMapIdentity<V extends Variance>(D: Diagram, varia
 export declare function diagramMapCompose<V extends Variance>(f: DiagramMap<V>, g: DiagramMap<NoInfer<V>>): DiagramMap<V>;
 export declare function diagramMapCompose<V extends Variance>(g: DiagramMap<V>): (f: DiagramMap<V>) => DiagramMap<V>;
 /**
- * Whether two diagram maps are equal: the same variance, source and target,
+ * Whether two diagram maps are equal: the same variance, domain and codomain,
  * shape functors that agree on objects and send each arrow to provably
  * equal paths, and provably equal components.
  */
@@ -4439,7 +4912,7 @@ export declare function diagramOne(C: Category): DiagramCoproduct<never>;
 /** The empty diagram in C: the same as \`diagramOne\`. */
 export declare function diagramZero(C: Category): DiagramCoproduct<never>;
 export {};
-`,oe=`import type { Category } from './categories';
+`,se=`import type { Category } from './categories';
 import type { Named } from './category-products';
 import type { FunctorArithmetic, Functors } from './functor-products';
 import { type Functor, type RawFunctor } from './functors';
@@ -4460,21 +4933,29 @@ export declare function functorAdd<F extends RawFunctor, G extends RawFunctor>(F
 export declare function functorZero(): Functor<Category, Category>;
 /** The sum of named functors: \`functorCoproduct\`, by the name of the other sums. */
 export declare const functorSum: typeof functorCoproduct;
-`,se=`import type { Category, ObjectName, Path } from './categories';
+`,ce=`import type { Category, ObjectName, Path } from './categories';
 import { type Functor, type RawFunctor } from './functors';
 /** For each object d of the domain, a path from F(d) to G(d). */
-export type FunctorMapComponents<D extends Category> = {
-    readonly [O in ObjectName<D>]: Path;
+export type FunctorMapSpec<D extends Category = Category> = {
+    readonly Object: {
+        readonly [O in ObjectName<D>]: Path;
+    };
 };
+/**
+ * What \`functorMap\` and \`rawFunctorMap\` are built from: the component at
+ * each object d of D, a path from F(d) to G(d), as in \`FunctorMapSpec\`.
+ */
+export type FunctorMapInput<D extends Category> = FunctorMapSpec<D>['Object'];
 /**
  * A functor map's data, α : F ⇒ G between functors D → C: for each object d
  * of D, a path in C from F(d) to G(d). Naturality has not been checked; see
  * \`FunctorMap\`.
  */
 export interface RawFunctorMap<D extends Category = Category, C extends Category = Category> {
-    readonly source: RawFunctor<D, C>;
-    readonly target: RawFunctor<D, C>;
-    readonly components: Readonly<Record<string, Path>>;
+    readonly domain: RawFunctor<D, C>;
+    readonly codomain: RawFunctor<D, C>;
+    /** The component at each object d of the domain, a path from F(d) to G(d). */
+    readonly specification: FunctorMapSpec;
 }
 declare const functorMapLaws: unique symbol;
 /**
@@ -4489,14 +4970,14 @@ export type FunctorMap<D extends Category = Category, C extends Category = Categ
  * A functor map's data from F to G, checked only for shape and endpoints:
  * each component must be a path from F(d) to G(d).
  */
-export declare function rawFunctorMap<D extends Category, C extends Category>(F: RawFunctor<D, C>, G: RawFunctor<NoInfer<D>, NoInfer<C>>, components: FunctorMapComponents<NoInfer<D>>): RawFunctorMap<D, C>;
+export declare function rawFunctorMap<D extends Category, C extends Category>(F: RawFunctor<D, C>, G: RawFunctor<NoInfer<D>, NoInfer<C>>, components: FunctorMapInput<NoInfer<D>>): RawFunctorMap<D, C>;
 /**
  * A functor map (natural transformation) from F to G, checked against its
  * laws: like \`rawFunctorMap\`, and for every generating arrow f : d → d′ of
  * the domain the square F(f)·α_{d′} = α_d·G(f) must provably commute (see
  * \`pathEquals\`).
  */
-export declare function functorMap<D extends Category, C extends Category>(F: RawFunctor<D, C>, G: RawFunctor<NoInfer<D>, NoInfer<C>>, components: FunctorMapComponents<NoInfer<D>>): FunctorMap<D, C>;
+export declare function functorMap<D extends Category, C extends Category>(F: RawFunctor<D, C>, G: RawFunctor<NoInfer<D>, NoInfer<C>>, components: FunctorMapInput<NoInfer<D>>): FunctorMap<D, C>;
 /** Check a raw functor map's naturality, returning it as lawful or throwing. */
 export declare function functorMapCheck<D extends Category, C extends Category>(alpha: RawFunctorMap<D, C>): FunctorMap<D, C>;
 /**
@@ -4545,7 +5026,7 @@ export declare function functorMapPrecompose<A extends Category, D extends Categ
 export declare function functorMapPostcompose<D extends Category, C extends Category, E extends Category, M extends RawFunctorMap<D, C>, K extends RawFunctor<C, E>>(alpha: M, K: K): [M, K] extends [FunctorMap<D, C>, Functor<C, E>] ? FunctorMap<D, E> : RawFunctorMap<D, E>;
 export declare function functorMapPostcompose<C extends Category, E extends Category, K extends RawFunctor<C, E>>(K: K): <D extends Category, M extends RawFunctorMap<D, C>>(alpha: M) => [M, K] extends [FunctorMap<D, C>, Functor<C, E>] ? FunctorMap<D, E> : RawFunctorMap<D, E>;
 export {};
-`,ce=`import type { Category } from './categories';
+`,le=`import type { Category } from './categories';
 import { type Named } from './category-products';
 import { type Functor, type RawFunctor } from './functors';
 /** Named functors: the factors of a product, or the summands of a sum. */
@@ -4568,12 +5049,18 @@ export declare function functorMul<F extends RawFunctor, G extends RawFunctor>(F
 }>;
 /** The empty product of functors: the identity on \`category.one()\`. The same functor every time. */
 export declare function functorOne(): Functor<Category, Category>;
-`,le=`import type { ArrowName, Category, ObjectName, Path } from './categories';
+`,ue=`import type { ArrowName, Category, ObjectName, Path } from './categories';
 import { type Copresheaf } from './copresheaves';
 type ArrowSources<C extends Category> = {
     [O in ObjectName<C>]: ArrowName<C, O> extends never ? never : O;
 }[ObjectName<C>];
-export type FunctorSpec<D extends Category, C extends Category> = {
+/**
+ * A functor's specification: the image of each object, and of each
+ * generating arrow (as a path), grouped by source object. Typed by the
+ * functor's domain and codomain where they are known; with the defaults,
+ * any functor's.
+ */
+export type FunctorSpec<D extends Category = Category, C extends Category = Category> = {
     readonly Object: {
         readonly [O in ObjectName<D>]: ObjectName<C>;
     };
@@ -4584,6 +5071,12 @@ export type FunctorSpec<D extends Category, C extends Category> = {
     };
 };
 /**
+ * What \`functor\` and \`rawFunctor\` are built from: the image of each object
+ * of D (an object of C), and of each generating arrow (a path in C), as in
+ * \`FunctorSpec\`, typed by D and C.
+ */
+export type FunctorInput<D extends Category, C extends Category> = FunctorSpec<D, C>;
+/**
  * A functor's data: object images and arrow images (as paths), with
  * well-formed endpoints. Whether it respects the domain's equations has not
  * been checked; see \`Functor\`.
@@ -4591,8 +5084,8 @@ export type FunctorSpec<D extends Category, C extends Category> = {
 export interface RawFunctor<D extends Category = Category, C extends Category = Category> {
     readonly domain: D;
     readonly codomain: C;
-    readonly Object: Readonly<Record<string, string>>;
-    readonly Arrow: Readonly<Record<string, Readonly<Record<string, Path>>>>;
+    /** The image of each object, and of each generating arrow (as a path). */
+    readonly specification: FunctorSpec;
 }
 declare const functorLaws: unique symbol;
 /**
@@ -4607,7 +5100,7 @@ export type Functor<D extends Category = Category, C extends Category = Category
  * A functor that is checked against its laws: like \`rawFunctor\`, and every
  * equation of the domain must map to provably equal paths (see \`pathEquals\`).
  */
-export declare function functor<D extends Category, C extends Category>(domain: D, codomain: C, maps: FunctorSpec<NoInfer<D>, NoInfer<C>>): Functor<D, C>;
+export declare function functor<D extends Category, C extends Category>(domain: D, codomain: C, maps: FunctorInput<NoInfer<D>, NoInfer<C>>): Functor<D, C>;
 /** The path in F's codomain that \`path\` (from \`source\` in F's domain) maps to. */
 export declare function functorApplyPath(F: RawFunctor, source: string, path: Path): Path;
 /** Check a raw functor's laws, returning it as a \`Functor\` or throwing. */
@@ -4621,7 +5114,7 @@ export declare function functorAssume<D extends Category, C extends Category>(F:
  * A functor's data, checked only for shape and endpoints: objects map to
  * objects, and each generating arrow to a path between the right objects.
  */
-export declare function rawFunctor<D extends Category, C extends Category>(domain: D, codomain: C, maps: FunctorSpec<NoInfer<D>, NoInfer<C>>): RawFunctor<D, C>;
+export declare function rawFunctor<D extends Category, C extends Category>(domain: D, codomain: C, maps: FunctorInput<NoInfer<D>, NoInfer<C>>): RawFunctor<D, C>;
 /** The identity functor on C: every object and arrow maps to itself. */
 export declare function functorIdentity<C extends Category>(C: C): Functor<C, C>;
 /**
@@ -4652,24 +5145,26 @@ export declare function functorCompose<B extends Category>(X: Copresheaf<B>): <F
 export declare function functorCompose<B extends Category, C extends Category>(G: Functor<B, C>): FunctorComposeWith<B, C>;
 export declare function functorCompose<B extends Category, C extends Category>(G: RawFunctor<B, C>): <F extends RawFunctor<Category, B>>(F: F) => RawFunctor<F['domain'], C>;
 export {};
-`,ue=`export { category, copresheaf, copresheafMap, diagram, diagramMap, functor, query, functorMap, path, presentation, } from './namespaces';
-export { type ArrowName, type ArrowScopes, type Category, type Equation, type EquationScopes, equation, type ObjectName, type Path, } from './categories';
-export { functorAssume, functorCheck, type Functor, type FunctorComposeWith, type FunctorSpec, functorCompose, functorIdentity, functorApplyPath, type RawFunctor, rawFunctor, } from './functors';
-export { type FunctorArithmetic, type Functors, functorMul, functorOne, functorProduct, } from './functor-products';
+`,de=`export { category, copresheaf, copresheafMap, diagram, diagramMap, functor, query, functorMap, path, presentation, } from './namespaces';
+export { type ArrowName, type ArrowScopes, type Category, type CategoryInput, type CategorySpec, type Equation, type EquationScopes, equation, type ObjectName, type Path, } from './categories';
+export { functorAssume, functorCheck, type Functor, type FunctorComposeWith, type FunctorInput, type FunctorSpec, functorCompose, functorIdentity, functorApplyPath, type RawFunctor, rawFunctor, } from './functors';
+export { type FunctorArithmetic, type Functors, functorMul, functorOne, functorProduct } from './functor-products';
 export { functorAdd, functorCoproduct, functorSum, functorZero } from './functor-coproducts';
 export { pipe } from './pipe';
-export { type CategoryExtension, categoryExtend, type ExtendedCategory, } from './category-extensions';
+export { type CategoryExtension, categoryExtend, type ExtendedCategory } from './category-extensions';
 export { type CategoryOmission, type CategoryOmissionResult, type CategoryOmitted, categoryOmit, type OmittedCategory, } from './category-omissions';
 export { categoryOpposite, categoryQualifyArrows, categoryUnqualifyArrows, type OppositeArrows, type QualifiedArrows, type UnqualifiedArrows, } from './category-opposites';
 export { type CategoryCocone, type CategoryCoproduct, type CategorySum, type CategorySumCopair, categoryAdd, categoryCoproduct, categorySum, categoryZero, } from './category-coproducts';
 export { type Categories, type CategoryCone, type CategoryProduct, type CategoryProductPair, categoryMul, categoryOne, categoryProduct, type Named, } from './category-products';
 export { type CategoryPullback, type CategoryPullbackCone, type CategoryPullbackPair, categoryPullback, type Cospan, } from './category-pullbacks';
+export { type CategoryDiagram, type CategoryDiagramArrow, type CategoryDiagramArrows, type CategoryLimit, type CategoryLimitCone, type CategoryLimitPair, categoryLimit, } from './category-limits';
+export { type CategoryColimit, type CategoryColimitCocone, type CategoryColimitDescend, categoryColimit, } from './category-colimits';
 export { type CategoryPushout, type CategoryPushoutCocone, type CategoryPushoutDescend, categoryPushout, type Span, } from './category-pushouts';
-export { type Copresheaf, type CopresheafData, type CopresheafInput, type CopresheafMap, type CopresheafMapComponents, copresheafMapApplyPart, copresheafMapCompose, copresheafMapIdentity, functorDelta, copresheafParts, copresheafProvenance, } from './copresheaves';
+export { type Copresheaf, type CopresheafSpec, type CopresheafInput, type CopresheafMap, type CopresheafMapInput, type CopresheafMapSpec, copresheafMapApplyPart, copresheafMapCompose, copresheafMapIdentity, functorDelta, copresheafParts, copresheafProvenance, } from './copresheaves';
 export { type ArrowProvenance, type ArrowRef, type CategoryProvenance, type CopresheafProvenance, type EquationProvenance, type EquationRef, type ObjectProvenance, type ObjectRef, type PartProvenance, type PartRef, type QueryTerm, } from './provenance';
-export { functorMapAssume, functorMapCheck, type FunctorMapComposeWith, functorMapCompose, functorMapPostcompose, functorMapPrecompose, type FunctorMap, type FunctorMapComponents, functorMapIdentity, type RawFunctorMap, rawFunctorMap, } from './functor-maps';
-export { type ColimitMap, type Diagram, type DiagramArrow, diagramColimitMap, diagramLimitMap, type DiagramMap, type DiagramMapComponents, diagramMapCompose, diagramMapEquals, diagramMapIdentity, type Diagrams, type DiagramShape, diagramAdd, type DiagramCoproduct, diagramCoproduct, diagramMul, diagramOne, diagramProduct, type DiagramSum, diagramSum, diagramUnit, diagramZero, type LimitMap, type ShapeMap, type Variance, } from './diagrams';
-export { type ColimitTerm, type FactorVariables, type LimitTerm, type Query, type QueryArrowSpec, queryColimit, queryCoproduct, queryEvaluate, queryEvaluateMap, type QueryFactors, queryLimit, type QueryObject, type QueryObjectSpec, queryAdd, queryMul, queryOne, queryProduct, querySum, queryZero, } from './queries';
+export { functorMapAssume, functorMapCheck, type FunctorMapComposeWith, functorMapCompose, functorMapPostcompose, functorMapPrecompose, type FunctorMap, type FunctorMapInput, type FunctorMapSpec, functorMapIdentity, type RawFunctorMap, rawFunctorMap, } from './functor-maps';
+export { type ColimitMap, type Diagram, type DiagramArrow, diagramColimitMap, diagramLimitMap, type DiagramMap, type DiagramMapInput, type DiagramMapSpec, diagramMapCompose, diagramMapEquals, diagramMapIdentity, type Diagrams, type DiagramShape, diagramAdd, type DiagramCoproduct, diagramCoproduct, diagramMul, diagramOne, diagramProduct, type DiagramSum, diagramSum, diagramUnit, diagramZero, type LimitMap, type ShapeMap, type Variance, } from './diagrams';
+export { type ColimitTerm, type FactorVariables, type LimitTerm, type Query, type QueryArrowInput, queryColimit, queryCoproduct, queryEvaluate, queryEvaluateMap, type QueryFactors, queryLimit, queryObjectDiagram, type QueryObject, type QueryInput, type QueryObjectInput, type QuerySpec, queryAdd, queryMul, queryOne, queryProduct, querySum, queryZero, } from './queries';
 export { queryAndThen, queryComparison, queryFromFunctor, queryIdentity } from './query-composition';
 export { type QueryCompletion, queryCompletion } from './query-completions';
 export { type CriticalPair, pathCriticalPair, pathEquals, pathNormalize } from './paths';
@@ -4678,13 +5173,13 @@ export { type Copresheaves, type CopresheafProduct, copresheafMul, copresheafOne
 export { type CopresheafCoproduct, copresheafAdd, copresheafCoproduct, type CopresheafSum, copresheafSum, copresheafZero, } from './copresheaf-coproducts';
 export { type CopresheafMaps, type CopresheafPullback, copresheafPullback, type MapsCategory, } from './copresheaf-pullbacks';
 export { type CopresheafPushout, copresheafPushout } from './copresheaf-pushouts';
-export { type CopresheafLan, copresheafLan, functorSigma, type KanExtensionOptions, } from './copresheaf-lans';
+export { type CopresheafLan, copresheafLan, functorSigma, type KanExtensionOptions } from './copresheaf-lans';
 export { type CopresheafRan, copresheafRan, functorPi } from './copresheaf-rans';
 export { copresheafIsomorphism, copresheafMapInverse, type CopresheafRenaming, copresheafRename, } from './copresheaf-isomorphisms';
-export { copresheafMapPivot, copresheafMapUnpivot, copresheafPivot, copresheafUnpivot, } from './copresheaf-pivots';
+export { copresheafMapPivot, copresheafMapUnpivot, type CopresheafPivot, copresheafPivot, copresheafUnpivot, } from './copresheaf-pivots';
 export { type CopresheafDay, copresheafDay, copresheafDayUnit, copresheafTruncatedDay, type MonoidalStructure, type TruncatedMonoidalStructure, } from './copresheaf-day-convolutions';
 export { type CopresheafColimit, copresheafColimit, type CopresheafLimit, copresheafLimit, type PartFunction, type PartFunctions, } from './copresheaf-limits';
-`,de=`import type { ArrowScopes, Category, Path } from './categories';
+`,fe=`import type { ArrowScopes, Category, Path } from './categories';
 export declare function assert(condition: unknown, message: string): asserts condition;
 export declare function isRecord(value: unknown): value is Record<string, unknown>;
 export declare function has(record: object, key: string): boolean;
@@ -4722,7 +5217,7 @@ interface MemoNode<T> {
  */
 export declare function memoize<T>(cache: Memo<T>, names: readonly string[], objects: readonly object[], make: () => T): T;
 export {};
-`,fe="import { category as categoryConstructor } from './categories';\nimport { categoryAdd, categoryCoproduct, categoryZero } from './category-coproducts';\nimport { categoryExtend } from './category-extensions';\nimport { categoryOmit } from './category-omissions';\nimport { categoryOpposite, categoryQualifyArrows, categoryUnqualifyArrows } from './category-opposites';\nimport { categoryMul, categoryOne, categoryProduct } from './category-products';\nimport { categoryPullback } from './category-pullbacks';\nimport { categoryPushout } from './category-pushouts';\nimport { functorAdd, functorCoproduct, functorZero } from './functor-coproducts';\nimport { functorMul, functorOne, functorProduct } from './functor-products';\nimport { copresheafAdd, copresheafCoproduct, copresheafZero } from './copresheaf-coproducts';\nimport { copresheafDay, copresheafDayUnit, copresheafTruncatedDay } from './copresheaf-day-convolutions';\nimport { copresheafIsomorphism, copresheafMapInverse, copresheafRename } from './copresheaf-isomorphisms';\nimport { copresheafLan, functorSigma } from './copresheaf-lans';\nimport { copresheafMapPivot, copresheafMapUnpivot, copresheafPivot, copresheafUnpivot } from './copresheaf-pivots';\nimport { copresheafRan, functorPi } from './copresheaf-rans';\nimport { copresheafColimit, copresheafLimit } from './copresheaf-limits';\nimport { copresheafMul, copresheafOne, copresheafProduct } from './copresheaf-products';\nimport { copresheafPullback } from './copresheaf-pullbacks';\nimport { copresheafPushout } from './copresheaf-pushouts';\nimport { copresheaf as copresheafConstructor, copresheafMap as copresheafMapConstructor, copresheafMapApplyPart, copresheafMapCompose, copresheafMapIdentity, copresheafParts, copresheafProvenance, functorDelta } from './copresheaves';\nimport { functorMap as functorMapConstructor, functorMapAssume, functorMapCheck, functorMapCompose, functorMapPostcompose, functorMapPrecompose, functorMapIdentity } from './functor-maps';\nimport { functor as functorConstructor, functorApplyPath, functorAssume, functorCheck, functorCompose, functorIdentity } from './functors';\nimport { pathEquals, pathNormalize } from './paths';\nimport { categoryPresentation, presentationCategory } from './presentations';\nimport { query as queryConstructor, queryColimit, queryCoproduct, queryEvaluate, queryEvaluateMap, queryAdd, queryLimit, queryMul, queryOne, queryProduct, queryZero } from './queries';\nimport { queryAndThen, queryComparison, queryFromFunctor, queryIdentity } from './query-composition';\nimport { queryCompletion } from './query-completions';\nimport { diagram as diagramConstructor, diagramColimitMap, diagramLimitMap, diagramMapCompose, diagramMapEquals, diagramMapIdentity, diagramAdd, diagramCoproduct, diagramMul, diagramOne, diagramUnit, diagramZero } from './diagrams';\n/**\n * `copresheafMap`, with `copresheafMap.identity`, `.applyPart` and `.compose`, and the\n * functor between categories of elements a map pivots to, `.pivot`, and\n * back, `.unpivot`; and its inverse, if it is an isomorphism, `.inverse`.\n */\nexport declare const copresheafMap: typeof copresheafMapConstructor & Readonly<{\n    identity: typeof copresheafMapIdentity;\n    applyPart: typeof copresheafMapApplyPart;\n    compose: typeof copresheafMapCompose;\n    pivot: typeof copresheafMapPivot;\n    unpivot: typeof copresheafMapUnpivot;\n    inverse: typeof copresheafMapInverse;\n}>;\n/**\n * `copresheaf`, with `copresheaf.parts` and `.provenance`, and the arithmetic of copresheaves\n * on one category: n-ary `.product` and `.coproduct` (also `.sum`), binary\n * `.mul` and `.add`, and `.one(C)` and `.zero(C)`; `.pullback` and `.pushout` of named legs;\n * `.limit` and `.colimit` of a copresheaf itself, as a diagram of sets; and\n * the Kan extensions along a functor, `.lan` (Σ) and `.ran` (Π); and Day\n * convolution on a monoidal category, `.day` and its unit `.dayUnit`, and\n * on a truncated one, `.truncatedDay`; and\n * its category of elements, `.pivot`, and back, `.unpivot`; an isomorphism\n * between two, if there is one, `.isomorphism`; and new part IDs, with the\n * isomorphism to them, `.rename`.\n */\nexport declare const copresheaf: typeof copresheafConstructor & Readonly<{\n    parts: typeof copresheafParts;\n    provenance: typeof copresheafProvenance;\n    product: typeof copresheafProduct;\n    coproduct: typeof copresheafCoproduct;\n    sum: typeof copresheafCoproduct;\n    mul: typeof copresheafMul;\n    add: typeof copresheafAdd;\n    one: typeof copresheafOne;\n    zero: typeof copresheafZero;\n    pullback: typeof copresheafPullback;\n    pushout: typeof copresheafPushout;\n    limit: typeof copresheafLimit;\n    colimit: typeof copresheafColimit;\n    lan: typeof copresheafLan;\n    ran: typeof copresheafRan;\n    day: typeof copresheafDay;\n    dayUnit: typeof copresheafDayUnit;\n    truncatedDay: typeof copresheafTruncatedDay;\n    pivot: typeof copresheafPivot;\n    unpivot: typeof copresheafUnpivot;\n    isomorphism: typeof copresheafIsomorphism;\n    rename: typeof copresheafRename;\n}>;\n/**\n * `functorMap`, with `functorMap.check`, `.assume`, `.identity`, `.compose`\n * and whiskering by a functor, `.precompose` and `.postcompose`. The raw\n * constructor stays separate, as `rawFunctorMap`.\n */\nexport declare const functorMap: typeof functorMapConstructor & Readonly<{\n    check: typeof functorMapCheck;\n    assume: typeof functorMapAssume;\n    identity: typeof functorMapIdentity;\n    compose: typeof functorMapCompose;\n    precompose: typeof functorMapPrecompose;\n    postcompose: typeof functorMapPostcompose;\n}>;\n/**\n * `functor`, with `functor.check`, `.assume`, `.identity`, `.compose`,\n * `.applyPath`; the data migrations along a functor, `.delta` (Δ), `.sigma`\n * (Σ) and `.pi` (Π); and the arithmetic of functors: n-ary `.product` and\n * `.coproduct` (also `.sum`), binary `.mul` and `.add`, and `.one()` and\n * `.zero()`. The constructors\n * `rawFunctor` and `functorMap` stay separate: they build other kinds of\n * values, not operations on functors.\n */\nexport declare const functor: typeof functorConstructor & Readonly<{\n    check: typeof functorCheck;\n    assume: typeof functorAssume;\n    identity: typeof functorIdentity;\n    compose: typeof functorCompose;\n    delta: typeof functorDelta;\n    sigma: typeof functorSigma;\n    pi: typeof functorPi;\n    applyPath: typeof functorApplyPath;\n    product: typeof functorProduct;\n    coproduct: typeof functorCoproduct;\n    sum: typeof functorCoproduct;\n    mul: typeof functorMul;\n    add: typeof functorAdd;\n    one: typeof functorOne;\n    zero: typeof functorZero;\n}>;\n/**\n * `category`, with `category.extend`, `.omit`, `.opposite`, `.qualifyArrows`,\n * `.unqualifyArrows`, `.presentation`, and the arithmetic\n * of categories: n-ary `.product` and `.coproduct` (also `.sum`) of named\n * categories, binary `.mul` and `.add`, and `.one()` and `.zero()`; and `.pushout` and `.pullback` of named legs. `equation` stays\n * a standalone function: it builds part of a specification, not an\n * operation on categories.\n */\nexport declare const category: typeof categoryConstructor & Readonly<{\n    extend: typeof categoryExtend;\n    omit: typeof categoryOmit;\n    opposite: typeof categoryOpposite;\n    qualifyArrows: typeof categoryQualifyArrows;\n    unqualifyArrows: typeof categoryUnqualifyArrows;\n    product: typeof categoryProduct;\n    coproduct: typeof categoryCoproduct;\n    sum: typeof categoryCoproduct;\n    mul: typeof categoryMul;\n    add: typeof categoryAdd;\n    one: typeof categoryOne;\n    zero: typeof categoryZero;\n    pullback: typeof categoryPullback;\n    pushout: typeof categoryPushout;\n    presentation: typeof categoryPresentation;\n}>;\n/**\n * `diagram`, a diagram with its shape written inline, with `diagram.unit`;\n * the arithmetic of diagrams in one category: n-ary `.product` and\n * `.coproduct` (also `.sum`), binary `.mul` and `.add`, and `.one(C)` and\n * `.zero(C)`, where the product and the coproduct are the same diagrams\n * side by side (their product under limit maps, their coproduct under\n * colimit maps); and the maps between diagrams of either variance,\n * `.limitMap` and `.colimitMap`.\n */\nexport declare const diagram: typeof diagramConstructor & Readonly<{\n    unit: typeof diagramUnit;\n    product: typeof diagramCoproduct;\n    coproduct: typeof diagramCoproduct;\n    sum: typeof diagramCoproduct;\n    mul: typeof diagramMul;\n    add: typeof diagramAdd;\n    one: typeof diagramOne;\n    zero: typeof diagramZero;\n    limitMap: typeof diagramLimitMap;\n    colimitMap: typeof diagramColimitMap;\n}>;\n/**\n * Operations on maps between diagrams: `diagramMap.identity`, `.compose` and\n * `.equals`. Maps are built with `diagram.limitMap` and `diagram.colimitMap`.\n */\nexport declare const diagramMap: Readonly<{\n    identity: typeof diagramMapIdentity;\n    compose: typeof diagramMapCompose;\n    equals: typeof diagramMapEquals;\n}>;\n/**\n * `query`, a query from B to C specified like a functor, with its objects\n * `query.one()`, n-ary `.product`, binary `.mul` and `.limit` (for limit\n * queries) or `query.zero()`, n-ary `.coproduct` (also `.sum`), binary `.add`\n * and `.colimit` (for colimit queries), named as in the other arithmetics;\n * and its evaluation on copresheaves and their maps, `.evaluate` and\n * `.evaluateMap`. Queries\n * compose with `.andThen` (also data-last, for `pipe`), with `.identity`\n * and `.fromFunctor` among them; `.comparison` is the isomorphism between\n * evaluating a composite and evaluating its parts in turn. `.completion`\n * adds the limits (or colimits) a query asks for to its codomain, formally,\n * making the query a functor, as views draw it.\n */\nexport declare const query: typeof queryConstructor & Readonly<{\n    one: typeof queryOne;\n    product: typeof queryProduct;\n    mul: typeof queryMul;\n    limit: typeof queryLimit;\n    zero: typeof queryZero;\n    coproduct: typeof queryCoproduct;\n    sum: typeof queryCoproduct;\n    add: typeof queryAdd;\n    colimit: typeof queryColimit;\n    evaluate: typeof queryEvaluate;\n    evaluateMap: typeof queryEvaluateMap;\n    andThen: typeof queryAndThen;\n    identity: typeof queryIdentity;\n    fromFunctor: typeof queryFromFunctor;\n    comparison: typeof queryComparison;\n    completion: typeof queryCompletion;\n}>;\n/** Operations on paths: `path.normalize` and `path.equals`. */\nexport declare const path: Readonly<{\n    normalize: typeof pathNormalize;\n    equals: typeof pathEquals;\n}>;\n/** Operations on presentations: `presentation.category` decodes one. */\nexport declare const presentation: Readonly<{\n    category: typeof presentationCategory;\n}>;\n",pe=`import type { Category, Path } from './categories';
+`,pe="import { category as categoryConstructor } from './categories';\nimport { categoryAdd, categoryCoproduct, categoryZero } from './category-coproducts';\nimport { categoryExtend } from './category-extensions';\nimport { categoryOmit } from './category-omissions';\nimport { categoryOpposite, categoryQualifyArrows, categoryUnqualifyArrows } from './category-opposites';\nimport { categoryMul, categoryOne, categoryProduct } from './category-products';\nimport { categoryColimit } from './category-colimits';\nimport { categoryLimit } from './category-limits';\nimport { categoryPullback } from './category-pullbacks';\nimport { categoryPushout } from './category-pushouts';\nimport { functorAdd, functorCoproduct, functorZero } from './functor-coproducts';\nimport { functorMul, functorOne, functorProduct } from './functor-products';\nimport { copresheafAdd, copresheafCoproduct, copresheafZero } from './copresheaf-coproducts';\nimport { copresheafDay, copresheafDayUnit, copresheafTruncatedDay } from './copresheaf-day-convolutions';\nimport { copresheafIsomorphism, copresheafMapInverse, copresheafRename } from './copresheaf-isomorphisms';\nimport { copresheafLan, functorSigma } from './copresheaf-lans';\nimport { copresheafMapPivot, copresheafMapUnpivot, copresheafPivot, copresheafUnpivot } from './copresheaf-pivots';\nimport { copresheafRan, functorPi } from './copresheaf-rans';\nimport { copresheafColimit, copresheafLimit } from './copresheaf-limits';\nimport { copresheafMul, copresheafOne, copresheafProduct } from './copresheaf-products';\nimport { copresheafPullback } from './copresheaf-pullbacks';\nimport { copresheafPushout } from './copresheaf-pushouts';\nimport { copresheaf as copresheafConstructor, copresheafMap as copresheafMapConstructor, copresheafMapApplyPart, copresheafMapCompose, copresheafMapIdentity, copresheafParts, copresheafProvenance, functorDelta } from './copresheaves';\nimport { functorMap as functorMapConstructor, functorMapAssume, functorMapCheck, functorMapCompose, functorMapPostcompose, functorMapPrecompose, functorMapIdentity } from './functor-maps';\nimport { functor as functorConstructor, functorApplyPath, functorAssume, functorCheck, functorCompose, functorIdentity } from './functors';\nimport { pathEquals, pathNormalize } from './paths';\nimport { categoryPresentation, presentationCategory } from './presentations';\nimport { query as queryConstructor, queryColimit, queryCoproduct, queryEvaluate, queryEvaluateMap, queryAdd, queryLimit, queryObjectDiagram, queryMul, queryOne, queryProduct, queryZero } from './queries';\nimport { queryAndThen, queryComparison, queryFromFunctor, queryIdentity } from './query-composition';\nimport { queryCompletion } from './query-completions';\nimport { diagram as diagramConstructor, diagramColimitMap, diagramLimitMap, diagramMapCompose, diagramMapEquals, diagramMapIdentity, diagramAdd, diagramCoproduct, diagramMul, diagramOne, diagramUnit, diagramZero } from './diagrams';\n/**\n * `copresheafMap`, with `copresheafMap.identity`, `.applyPart` and `.compose`, and the\n * functor between categories of elements a map pivots to, `.pivot`, and\n * back, `.unpivot`; and its inverse, if it is an isomorphism, `.inverse`.\n */\nexport declare const copresheafMap: typeof copresheafMapConstructor & Readonly<{\n    identity: typeof copresheafMapIdentity;\n    applyPart: typeof copresheafMapApplyPart;\n    compose: typeof copresheafMapCompose;\n    pivot: typeof copresheafMapPivot;\n    unpivot: typeof copresheafMapUnpivot;\n    inverse: typeof copresheafMapInverse;\n}>;\n/**\n * `copresheaf`, with `copresheaf.parts` and `.provenance`, and the arithmetic of copresheaves\n * on one category: n-ary `.product` and `.coproduct` (also `.sum`), binary\n * `.mul` and `.add`, and `.one(C)` and `.zero(C)`; `.pullback` and `.pushout` of named legs;\n * `.limit` and `.colimit` of a copresheaf itself, as a diagram of sets; and\n * the Kan extensions along a functor, `.lan` (Σ) and `.ran` (Π); and Day\n * convolution on a monoidal category, `.day` and its unit `.dayUnit`, and\n * on a truncated one, `.truncatedDay`; and\n * its category of elements, `.pivot`, and back, `.unpivot`; an isomorphism\n * between two, if there is one, `.isomorphism`; and new part IDs, with the\n * isomorphism to them, `.rename`.\n */\nexport declare const copresheaf: typeof copresheafConstructor & Readonly<{\n    parts: typeof copresheafParts;\n    provenance: typeof copresheafProvenance;\n    product: typeof copresheafProduct;\n    coproduct: typeof copresheafCoproduct;\n    sum: typeof copresheafCoproduct;\n    mul: typeof copresheafMul;\n    add: typeof copresheafAdd;\n    one: typeof copresheafOne;\n    zero: typeof copresheafZero;\n    pullback: typeof copresheafPullback;\n    pushout: typeof copresheafPushout;\n    limit: typeof copresheafLimit;\n    colimit: typeof copresheafColimit;\n    lan: typeof copresheafLan;\n    ran: typeof copresheafRan;\n    day: typeof copresheafDay;\n    dayUnit: typeof copresheafDayUnit;\n    truncatedDay: typeof copresheafTruncatedDay;\n    pivot: typeof copresheafPivot;\n    unpivot: typeof copresheafUnpivot;\n    isomorphism: typeof copresheafIsomorphism;\n    rename: typeof copresheafRename;\n}>;\n/**\n * `functorMap`, with `functorMap.check`, `.assume`, `.identity`, `.compose`\n * and whiskering by a functor, `.precompose` and `.postcompose`. The raw\n * constructor stays separate, as `rawFunctorMap`.\n */\nexport declare const functorMap: typeof functorMapConstructor & Readonly<{\n    check: typeof functorMapCheck;\n    assume: typeof functorMapAssume;\n    identity: typeof functorMapIdentity;\n    compose: typeof functorMapCompose;\n    precompose: typeof functorMapPrecompose;\n    postcompose: typeof functorMapPostcompose;\n}>;\n/**\n * `functor`, with `functor.check`, `.assume`, `.identity`, `.compose`,\n * `.applyPath`; the data migrations along a functor, `.delta` (Δ), `.sigma`\n * (Σ) and `.pi` (Π); and the arithmetic of functors: n-ary `.product` and\n * `.coproduct` (also `.sum`), binary `.mul` and `.add`, and `.one()` and\n * `.zero()`. The constructors\n * `rawFunctor` and `functorMap` stay separate: they build other kinds of\n * values, not operations on functors.\n */\nexport declare const functor: typeof functorConstructor & Readonly<{\n    check: typeof functorCheck;\n    assume: typeof functorAssume;\n    identity: typeof functorIdentity;\n    compose: typeof functorCompose;\n    delta: typeof functorDelta;\n    sigma: typeof functorSigma;\n    pi: typeof functorPi;\n    applyPath: typeof functorApplyPath;\n    product: typeof functorProduct;\n    coproduct: typeof functorCoproduct;\n    sum: typeof functorCoproduct;\n    mul: typeof functorMul;\n    add: typeof functorAdd;\n    one: typeof functorOne;\n    zero: typeof functorZero;\n}>;\n/**\n * `category`, with `category.extend`, `.omit`, `.opposite`, `.qualifyArrows`,\n * `.unqualifyArrows`, `.presentation`, and the arithmetic\n * of categories: n-ary `.product` and `.coproduct` (also `.sum`) of named\n * categories, binary `.mul` and `.add`, and `.one()` and `.zero()`; `.pushout` and `.pullback` of named legs; and\n * `.limit` and `.colimit` of a diagram of categories. `equation` stays\n * a standalone function: it builds part of a specification, not an\n * operation on categories.\n */\nexport declare const category: typeof categoryConstructor & Readonly<{\n    extend: typeof categoryExtend;\n    omit: typeof categoryOmit;\n    opposite: typeof categoryOpposite;\n    qualifyArrows: typeof categoryQualifyArrows;\n    unqualifyArrows: typeof categoryUnqualifyArrows;\n    product: typeof categoryProduct;\n    coproduct: typeof categoryCoproduct;\n    sum: typeof categoryCoproduct;\n    mul: typeof categoryMul;\n    add: typeof categoryAdd;\n    one: typeof categoryOne;\n    zero: typeof categoryZero;\n    pullback: typeof categoryPullback;\n    pushout: typeof categoryPushout;\n    limit: typeof categoryLimit;\n    colimit: typeof categoryColimit;\n    presentation: typeof categoryPresentation;\n}>;\n/**\n * `diagram`, a diagram with its shape written inline, with `diagram.unit`;\n * the arithmetic of diagrams in one category: n-ary `.product` and\n * `.coproduct` (also `.sum`), binary `.mul` and `.add`, and `.one(C)` and\n * `.zero(C)`, where the product and the coproduct are the same diagrams\n * side by side (their product under limit maps, their coproduct under\n * colimit maps); and the maps between diagrams of either variance,\n * `.limitMap` and `.colimitMap`.\n */\nexport declare const diagram: typeof diagramConstructor & Readonly<{\n    unit: typeof diagramUnit;\n    product: typeof diagramCoproduct;\n    coproduct: typeof diagramCoproduct;\n    sum: typeof diagramCoproduct;\n    mul: typeof diagramMul;\n    add: typeof diagramAdd;\n    one: typeof diagramOne;\n    zero: typeof diagramZero;\n    limitMap: typeof diagramLimitMap;\n    colimitMap: typeof diagramColimitMap;\n}>;\n/**\n * Operations on maps between diagrams: `diagramMap.identity`, `.compose` and\n * `.equals`. Maps are built with `diagram.limitMap` and `diagram.colimitMap`.\n */\nexport declare const diagramMap: Readonly<{\n    identity: typeof diagramMapIdentity;\n    compose: typeof diagramMapCompose;\n    equals: typeof diagramMapEquals;\n}>;\n/**\n * `query`, a query from B to C specified like a functor, with its objects\n * `query.one()`, n-ary `.product`, binary `.mul` and `.limit` (for limit\n * queries) or `query.zero()`, n-ary `.coproduct` (also `.sum`), binary `.add`\n * and `.colimit` (for colimit queries), named as in the other arithmetics,\n * `.limit` and `.colimit` also of a diagram written out, and\n * `.objectDiagram`, the diagram an object stands for;\n * and its evaluation on copresheaves and their maps, `.evaluate` and\n * `.evaluateMap`. Queries\n * compose with `.andThen` (also data-last, for `pipe`), with `.identity`\n * and `.fromFunctor` among them; `.comparison` is the isomorphism between\n * evaluating a composite and evaluating its parts in turn. `.completion`\n * adds the limits (or colimits) a query asks for to its codomain, formally,\n * making the query a functor, as views draw it.\n */\nexport declare const query: typeof queryConstructor & Readonly<{\n    one: typeof queryOne;\n    product: typeof queryProduct;\n    mul: typeof queryMul;\n    limit: typeof queryLimit;\n    zero: typeof queryZero;\n    coproduct: typeof queryCoproduct;\n    sum: typeof queryCoproduct;\n    add: typeof queryAdd;\n    colimit: typeof queryColimit;\n    objectDiagram: typeof queryObjectDiagram;\n    evaluate: typeof queryEvaluate;\n    evaluateMap: typeof queryEvaluateMap;\n    andThen: typeof queryAndThen;\n    identity: typeof queryIdentity;\n    fromFunctor: typeof queryFromFunctor;\n    comparison: typeof queryComparison;\n    completion: typeof queryCompletion;\n}>;\n/** Operations on paths: `path.normalize` and `path.equals`. */\nexport declare const path: Readonly<{\n    normalize: typeof pathNormalize;\n    equals: typeof pathEquals;\n}>;\n/** Operations on presentations: `presentation.category` decodes one. */\nexport declare const presentation: Readonly<{\n    category: typeof presentationCategory;\n}>;\n",me=`import type { Category, Path } from './categories';
 /** A rewrite rule \`from → to\`, applicable where \`from\` starts at \`source\`. */
 export interface Rule {
     readonly source: string;
@@ -4774,7 +5269,7 @@ export declare function normalPaths(D: Category, maxArrows: number): (from: stri
     readonly path: Path;
     readonly target: string;
 }[];
-`,me=`/**
+`,he=`/**
  * Pass a value through a sequence of functions, left to right, as in
  * Effect: \`pipe(a, f, g)\` is \`g(f(a))\`. Operations with a data-last form,
  * such as \`functorCompose(G)\` or \`functorDelta(F)\`, slot straight in.
@@ -4787,7 +5282,7 @@ export declare function pipe<A, B, C, D, E>(a: A, ab: (a: A) => B, bc: (b: B) =>
 export declare function pipe<A, B, C, D, E, F>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F): F;
 export declare function pipe<A, B, C, D, E, F, G>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G): G;
 export declare function pipe<A, B, C, D, E, F, G, H>(a: A, ab: (a: A) => B, bc: (b: B) => C, cd: (c: C) => D, de: (d: D) => E, ef: (e: E) => F, fg: (f: F) => G, gh: (g: G) => H): H;
-`,he=`import { type Category, type Equation } from './categories';
+`,ge=`import { type Category, type Equation } from './categories';
 import { type Copresheaf } from './copresheaves';
 /**
  * The category of category presentations: a copresheaf on CatPresentation
@@ -4856,7 +5351,7 @@ export declare function categoryPresentation(C: Category): Copresheaf<typeof Cat
  * equations as C.
  */
 export declare function presentationCategory(X: Copresheaf<typeof CatPresentation>): Category;
-`,ge=`import type { Category, Path } from './categories';
+`,_e=`import type { Category, Path } from './categories';
 import type { Copresheaf } from './copresheaves';
 import type { Variance } from './diagrams';
 /**
@@ -4964,9 +5459,10 @@ export declare function provenanceTable(): {
 };
 /**
  * A term of a diagram map, as a query writes it: the variable \`target\` of
- * the map's target diagram is computed from the variable \`source\` of its
- * source diagram along \`path\` (for a limit map), or the variable \`source\`
- * goes along \`path\` into the variable \`target\` (for a colimit map).
+ * the map's codomain diagram is computed from the variable \`source\` of its
+ * domain diagram along \`path\` (for a limit map), or the variable \`source\`
+ * goes along \`path\` into the variable \`target\` (for a colimit map). Like an
+ * arrow, a term goes from a source to a target.
  */
 export interface QueryTerm {
     readonly source: string;
@@ -5014,6 +5510,11 @@ export type ObjectProvenance =
     readonly kind: 'pullback';
     readonly legs: Readonly<Record<string, ObjectRef>>;
 }
+/** An object of a limit of categories: one object of each category, under its object's name. */
+ | {
+    readonly kind: 'limit';
+    readonly objects: Readonly<Record<string, ObjectRef>>;
+}
 /**
  * An object of a category of elements: a part of a copresheaf, and the
  * object of its category the part is at.
@@ -5045,6 +5546,16 @@ export type ObjectProvenance =
     readonly kind: 'pushout';
     readonly key: string;
     readonly object: ObjectRef;
+}
+/**
+ * An object of a colimit of categories: its class's first member, an
+ * object of one of the diagram's categories, and that category's object
+ * of the shape.
+ */
+ | {
+    readonly kind: 'colimit';
+    readonly key: string;
+    readonly object: ObjectRef;
 };
 /** What a generating arrow built by a construction is made of. */
 export type ArrowProvenance = 
@@ -5071,6 +5582,17 @@ export type ArrowProvenance =
  */
  | {
     readonly kind: 'pullback';
+    readonly arrows: Readonly<Record<string, ArrowRef>>;
+}
+/**
+ * An arrow of a limit of categories, a step: the coordinates that move,
+ * each along an arrow of its category, under its object's name; the
+ * others stay. Every functor of the diagram sends a moving coordinate's
+ * arrow to the arrow its target coordinate moves along, or to an identity
+ * where that one stays.
+ */
+ | {
+    readonly kind: 'limit';
     readonly arrows: Readonly<Record<string, ArrowRef>>;
 }
 /**
@@ -5116,6 +5638,16 @@ export type ArrowProvenance =
     readonly kind: 'pushout';
     readonly key: string;
     readonly arrow: ArrowRef;
+}
+/**
+ * An arrow of a colimit of categories: its class's first member, an arrow
+ * of one of the diagram's categories, and that category's object of the
+ * shape.
+ */
+ | {
+    readonly kind: 'colimit';
+    readonly key: string;
+    readonly arrow: ArrowRef;
 };
 /** What an equation built by a construction is made of. */
 export type EquationProvenance = 
@@ -5126,8 +5658,9 @@ export type EquationProvenance =
     readonly equation: EquationRef;
 }
 /**
- * An interchange law of a product: moving two coordinates, each along an
- * arrow of its factor, commutes. The arrows are under their factors' names.
+ * An interchange law of a product, pullback or limit: moving two
+ * coordinates (or two disjoint sets of them), each along an arrow of its
+ * category, commutes. The arrows are under their coordinates' names.
  */
  | {
     readonly kind: 'interchange';
@@ -5146,6 +5679,17 @@ export type EquationProvenance =
  */
  | {
     readonly kind: 'pullback';
+    readonly key: string;
+    readonly equation: EquationRef;
+    readonly partners: Readonly<Record<string, Path>>;
+}
+/**
+ * An equation of a limit of categories: an equation of the category at a
+ * root \`key\` of the diagram's shape, lifted with the other coordinates
+ * following it along the given paths (\`partners\`).
+ */
+ | {
+    readonly kind: 'limit';
     readonly key: string;
     readonly equation: EquationRef;
     readonly partners: Readonly<Record<string, Path>>;
@@ -5186,9 +5730,16 @@ export type EquationProvenance =
     readonly key: string;
     readonly equation: EquationRef;
 }
+/** An equation of a colimit of categories, from the category at the shape's object \`key\`. */
+ | {
+    readonly kind: 'colimit';
+    readonly key: string;
+    readonly equation: EquationRef;
+}
 /**
- * A gluing equation of a pushout: the image of an arrow of the common
- * domain in leg \`key\` equals its image in the first leg.
+ * A gluing equation of a pushout or colimit: the image of an arrow along
+ * leg (or arrow of the shape) \`key\` equals the image it is named by: in a
+ * pushout, its image in the first leg.
  */
  | {
     readonly kind: 'glue';
@@ -5216,7 +5767,7 @@ export declare function categoryProvenanceTable(): {
     equation(source: string, equation: string, provenance: EquationProvenance): void;
     freeze(): CategoryProvenance;
 };
-`,_e=`import type { ArrowName, Category, Equation, ObjectName } from './categories';
+`,ve=`import type { ArrowName, Category, Equation, ObjectName } from './categories';
 import { type CopresheafColimit, type CopresheafLimit } from './copresheaf-limits';
 import { type KanExtensionOptions } from './copresheaf-lans';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
@@ -5281,7 +5832,13 @@ export declare function queryZero(): QueryObject<never, 'colimit'>;
  * An equation whose side is a single variable makes the other side's path
  * land on that variable; otherwise the two sides meet at a new variable,
  * named after the equation.
+ *
+ * Or the limit of a diagram written out (see \`diagram\`), its variables the
+ * objects of its shape: \`query.limit(D)\`. A diagram given to \`query\` as it
+ * is stands for its limit too; this says so explicitly, as \`query.colimit\`
+ * does for colimits.
  */
+export declare function queryLimit<J extends Category, C extends Category>(diagram: Diagram<J, C>): QueryObject<ObjectName<J>, 'limit'>;
 export declare function queryLimit<const O extends Readonly<Record<string, string>>, const E extends Readonly<Record<string, Equation>> = {}>(variables: O, equations?: E): QueryObject<Extract<keyof O | keyof E, string>, 'limit'>;
 /**
  * A colimit: named variables, each an object of C, glued by named equations
@@ -5292,8 +5849,34 @@ export declare function queryLimit<const O extends Readonly<Record<string, strin
  *       start: equation(['e', 'source'], ['v']),
  *       end: equation(['e', 'target'], ['v']),
  *     })
+ *
+ * Or the colimit of a diagram written out (see \`diagram\`), its variables
+ * the objects of its shape: \`query.colimit(D)\`. Its maps can then be given
+ * explicitly, with \`diagram.colimitMap\` between the diagrams themselves.
  */
+export declare function queryColimit<J extends Category, C extends Category>(diagram: Diagram<J, C>): QueryObject<ObjectName<J>, 'colimit'>;
 export declare function queryColimit<const O extends Readonly<Record<string, string>>, const E extends Readonly<Record<string, Equation>> = {}>(variables: O, equations?: E): QueryObject<Extract<keyof O, string>, 'colimit'>;
+/**
+ * The diagram in C that a query object stands for: the one \`query(B, C, …)\`
+ * builds for it, so that a map of diagrams built on it (\`diagram.limitMap\`,
+ * \`diagram.colimitMap\`) can be an arrow's image. Its variables are the
+ * objects of its shape; the arrows of its shape are named as the object
+ * says: for an equation whose side is a single variable, after the
+ * equation. Its shape is typed as any category: which equations add
+ * variables, and which arrows, is known when the object is built.
+ */
+export declare function queryObjectDiagram<C extends Category>(C: C, object: QueryObject): Diagram<Category, C>;
+/**
+ * A query's specification, as stored: the diagram of each object of B, and
+ * the diagram map of each generating arrow, grouped by source object. (What
+ * a query is built from is \`QueryInput\`.)
+ */
+export type QuerySpec<B extends Category = Category, C extends Category = Category, V extends Variance = Variance> = {
+    readonly Object: {
+        readonly [O in ObjectName<B>]: Diagram<Category, C>;
+    };
+    readonly Arrow: Readonly<Record<string, Readonly<Record<string, DiagramMap<V>>>>>;
+};
 /**
  * A query from B to C: for each object of B a diagram in C, and for each
  * arrow a map of diagrams, all of one variance.
@@ -5302,13 +5885,11 @@ export interface Query<B extends Category = Category, C extends Category = Categ
     readonly variance: V;
     readonly domain: B;
     readonly codomain: C;
-    readonly Object: {
-        readonly [O in ObjectName<B>]: Diagram<Category, C>;
-    };
-    readonly Arrow: Readonly<Record<string, Readonly<Record<string, DiagramMap<V>>>>>;
+    /** The diagram of each object, and the diagram map of each generating arrow. */
+    readonly specification: QuerySpec<B, C, V>;
 }
 /** What a query sends an object to: an object of C, a query object, or a diagram. */
-export type QueryObjectSpec<C extends Category> = ObjectName<C> | QueryObject | Diagram<Category, C>;
+export type QueryObjectInput<C extends Category> = ObjectName<C> | QueryObject | Diagram<Category, C>;
 type VariablesOf<S, K> = S extends string ? K : S extends QueryObject<infer Vs> ? Vs : S extends RawFunctor<infer J, Category> ? ObjectName<J> : string;
 type VarianceOf<O> = [Extract<O[keyof O], QueryObject<string, 'colimit'>>] extends [never] ? 'limit' : 'colimit';
 type ArrowTarget<B extends Category, S extends string, A extends string> = S extends keyof B['specification']['Arrow'] ? A extends keyof B['specification']['Arrow'][S] ? B['specification']['Arrow'][S][A] : never : never;
@@ -5325,10 +5906,21 @@ type Sources<B extends Category> = {
     [O in ObjectName<B>]: ArrowName<B, O> extends never ? never : O;
 }[ObjectName<B>];
 /** The images of B's arrows, as terms (or diagram maps), grouped by source. */
-export type QueryArrowSpec<B extends Category, O, V extends Variance> = {
+export type QueryArrowInput<B extends Category, O, V extends Variance> = {
     readonly [S in Sources<B>]: {
         readonly [A in ArrowName<B, S>]: ArrowImage<V, VariablesOf<O[S & keyof O], S>, VariablesOf<O[ArrowTarget<B, S, A> & keyof O], ArrowTarget<B, S, A>>>;
     };
+};
+/**
+ * What \`query\` is built from: what each object of B goes to (see
+ * \`QueryObjectInput\`), and optionally the images of B's arrows, as terms or
+ * diagram maps (see \`QueryArrowInput\`), of the variance the objects give.
+ */
+export type QueryInput<B extends Category, C extends Category, O extends {
+    readonly [K in ObjectName<B>]: QueryObjectInput<C>;
+}> = {
+    readonly Object: O;
+    readonly Arrow?: QueryArrowInput<B, O, VarianceOf<O>>;
 };
 /**
  * A query from B to C, specified like a functor: each object of B goes to
@@ -5353,11 +5945,8 @@ export type QueryArrowSpec<B extends Category, O, V extends Variance> = {
  * inferred. The query must preserve B's equations, which is checked.
  */
 export declare function query<B extends Category, C extends Category, const O extends {
-    readonly [K in ObjectName<B>]: QueryObjectSpec<C>;
-}>(B: B, C: C, spec: {
-    readonly Object: O;
-    readonly Arrow?: QueryArrowSpec<B, O, VarianceOf<O>>;
-}): Query<B, C, VarianceOf<O>>;
+    readonly [K in ObjectName<B>]: QueryObjectInput<C>;
+}>(B: B, C: C, spec: QueryInput<B, C, O>): Query<B, C, VarianceOf<O>>;
 export interface Evaluation {
     readonly copresheaf: Copresheaf;
     /** Per object of B: the limit or colimit of the data over its diagram. */
@@ -5390,7 +5979,7 @@ export declare function queryEvaluate<B extends Category, C extends Category>(Q:
 export declare function queryEvaluateMap<B extends Category, C extends Category>(Q: Query<B, C>, h: CopresheafMap<NoInfer<C>>, options?: KanExtensionOptions): CopresheafMap<B>;
 export declare function queryEvaluateMap<B extends Category, C extends Category>(Q: Query<B, C>): (h: CopresheafMap<C>) => CopresheafMap<B>;
 export {};
-`,ve=`import { type Category } from './categories';
+`,ye=`import { type Category } from './categories';
 import { type Functor, type RawFunctor } from './functors';
 import type { Query } from './queries';
 export interface QueryCompletion<B extends Category = Category, C extends Category = Category> {
@@ -5422,7 +6011,7 @@ export interface QueryCompletion<B extends Category = Category, C extends Catego
  * \`'leg'\` and \`'induced'\` (for arrows and equations), and \`'cone'\`.
  */
 export declare function queryCompletion<B extends Category, C extends Category>(Q: Query<B, C>): QueryCompletion<B, C>;
-`,ye=`import type { Category } from './categories';
+`,be=`import type { Category } from './categories';
 import type { KanExtensionOptions } from './copresheaf-lans';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
 import { type Functor } from './functors';
@@ -5458,7 +6047,7 @@ export declare function queryIdentity<C extends Category>(C: C): Query<C, C>;
  * class of x at k. Checked natural and bijective.
  */
 export declare function queryComparison<B extends Category, C extends Category, D extends Category>(first: Query<C, D>, second: Query<B, NoInfer<C>>, X: Copresheaf<NoInfer<D>>, options?: KanExtensionOptions): CopresheafMap<B>;
-`,be=`/**
+`,xe=`/**
  * Graphs: vertices V and edges E, each edge with a source and a target
  * vertex. Several edges may join the same vertices, and an edge may be a
  * self-loop.
@@ -5558,10 +6147,10 @@ export declare const CatBipartiteGraph: import("@cod-ts/categories").Category<re
         readonly target: "V2";
     };
 }, {}>;
-`,xe=`export { CatBipartiteGraph, CatGraph, CatHalfEdgeGraph, CatReflexiveGraph, CatSymmetricGraph, CatSymmetricReflexiveGraph, } from './categories';
+`,y=`export { CatBipartiteGraph, CatGraph, CatHalfEdgeGraph, CatReflexiveGraph, CatSymmetricGraph, CatSymmetricReflexiveGraph, } from './categories';
 export { type DagreOptions, type ElkOptions, type GraphCategory, type GraphLink, type GraphLayout, type GraphLayoutEngine, type GraphLayoutEngineOptions, type GraphLayoutFunction, graphLayout, type GraphLayoutOptions, graphNodeSize, type GraphPart, type GraphPositions, type GraphRoute, type GraphRoutes, graphRoutes, loopRoute, type GraphSkeleton, graphSkeleton, type NodeSize, type Position, } from './layouts/index';
 export { graphBoxProduct, graphPath, type PathCategory, type ReflexiveCategory } from './products';
-`,Se=`import type { DagreOptions, GraphLayout } from './index';
+`,b=`import type { DagreOptions, GraphLayout } from './index';
 import { type GraphSkeleton, type NodeSize } from './skeletons';
 /** The options dagre's layout takes: its own, and the size of the nodes. */
 type Options = {
@@ -5573,7 +6162,7 @@ type Options = {
 /** Lay out a graph's skeleton with dagre. */
 export declare function dagreLayout(graph: GraphSkeleton, options: Options): Promise<GraphLayout>;
 export {};
-`,v=`import type { ElkOptions, GraphLayout } from './index';
+`,x=`import type { ElkOptions, GraphLayout } from './index';
 import { type GraphSkeleton, type NodeSize } from './skeletons';
 /** The options ELK's layout takes: its own, and the size of the nodes. */
 type Options = {
@@ -5585,7 +6174,7 @@ type Options = {
 /** Lay out a graph's skeleton with ELK. */
 export declare function elkLayout(graph: GraphSkeleton, options: Options): Promise<GraphLayout>;
 export {};
-`,y=`import type { Copresheaf } from '@cod-ts/categories';
+`,S=`import type { Copresheaf } from '@cod-ts/categories';
 import type { GraphPositions, GraphRoutes } from './routes';
 import { type GraphCategory, type GraphSkeleton, type NodeSize } from './skeletons';
 export { type GraphPositions, type GraphRoute, type GraphRoutes, graphRoutes, loopRoute } from './routes';
@@ -5675,7 +6264,7 @@ export type GraphLayoutOptions = GraphLayoutEngineOptions & {
  * sees the graph's skeleton (see \`graphSkeleton\`).
  */
 export declare function graphLayout(g: Copresheaf<GraphCategory>, options?: GraphLayoutOptions): Promise<GraphLayout>;
-`,b=`import type { GraphPart, GraphSkeleton, NodeSize, Position } from './skeletons';
+`,C=`import type { GraphPart, GraphSkeleton, NodeSize, Position } from './skeletons';
 /**
  * A link's route, from its source's outline to its target's: a polyline
  * through its points (\`'polyline'\`), or a chain of cubic Bézier curves
@@ -5722,7 +6311,7 @@ export declare function graphRoutes(graph: GraphSkeleton, nodes: GraphPositions,
         readonly size?: NodeSize;
     };
 }): GraphRoutes;
-`,x=`import type { Copresheaf } from '@cod-ts/categories';
+`,w=`import type { Copresheaf } from '@cod-ts/categories';
 import { CatBipartiteGraph, CatGraph, CatHalfEdgeGraph, CatReflexiveGraph, CatSymmetricGraph, CatSymmetricReflexiveGraph } from '../categories';
 /** The categories of graphs a layout can be computed for. */
 export type GraphCategory = typeof CatGraph | typeof CatReflexiveGraph | typeof CatSymmetricGraph | typeof CatSymmetricReflexiveGraph | typeof CatHalfEdgeGraph | typeof CatBipartiteGraph;
@@ -5776,7 +6365,7 @@ export interface GraphSkeleton {
  * one link for each pair of distinct half-edges, named by the first.
  */
 export declare function graphSkeleton(g: Copresheaf<GraphCategory>): GraphSkeleton;
-`,S=`import { type Copresheaf } from '@cod-ts/categories';
+`,T=`import { type Copresheaf } from '@cod-ts/categories';
 import { CatGraph, CatReflexiveGraph, CatSymmetricGraph, CatSymmetricReflexiveGraph } from './categories';
 /** The categories of graphs with vertices V and edges E. */
 export type PathCategory = typeof CatGraph | typeof CatReflexiveGraph | typeof CatSymmetricGraph | typeof CatSymmetricReflexiveGraph;
@@ -5801,14 +6390,14 @@ export declare function graphPath<C extends PathCategory>(C: C, n: number): Copr
  * edge along G or H.
  */
 export declare function graphBoxProduct<C extends ReflexiveCategory>(G: Copresheaf<C>, H: Copresheaf<NoInfer<C>>): Copresheaf<C>;
-`,C="import { type Category, type EquationScopes } from '@cod-ts/categories';\ntype Tuple<N extends number, T extends unknown[] = []> = T['length'] extends N ? T : Tuple<N, [...T, unknown]>;\ntype Inc<N extends number> = [...Tuple<N>, unknown] extends {\n    length: infer L extends number;\n} ? L : never;\ntype Dec<N extends number> = Tuple<N> extends [unknown, ...infer R] ? R['length'] : -1;\n/** 0, 1, …, N - 1. */\ntype Below<N extends number, T extends number[] = []> = T['length'] extends N ? T[number] : Below<N, [...T, T['length']]>;\n/** 0, 1, …, N. */\ntype UpTo<N extends number> = Below<Inc<N>>;\n/** An index of an arrow name, with two digits: 00, 01, …, 99. */\ntype Index<I extends number> = I extends Below<10> ? `0${I}` : `${I}`;\n/** The objects `C0`, `C1`, …, `CN`: the cells of each dimension. */\nexport type Cells<N extends number, T extends string[] = []> = T['length'] extends Inc<N> ? T : Cells<N, [...T, `C${T['length']}`]>;\n/** The objects `C-1`, `C0`, …, `CN`. */\ntype AugmentedCells<N extends number> = Cells<N> extends infer T extends string[] ? ['C-1', ...T] : never;\n/** The arrows out of each dimension that has any. */\ntype Scopes<D extends number, Arrows> = {\n    readonly [K in D as keyof Arrows[K & keyof Arrows] extends never ? never : `C${K}`]: Arrows[K & keyof Arrows];\n};\n/** The faces `source` and `target` of a K-globe, for K > 0. */\ntype GlobeFaces<K extends number> = K extends 0 ? {} : {\n    readonly source: `C${Dec<K>}`;\n    readonly target: `C${Dec<K>}`;\n};\n/** The faces `d00` to `dK` of a K-simplex, for K above the lowest dimension. */\ntype SimplexFaces<K extends number, Lowest extends number> = K extends Lowest ? {} : {\n    readonly [I in `d${Index<UpTo<K>>}`]: `C${Dec<K>}`;\n};\n/** The faces `d00_0`, `d00_1` to `d(K-1)_0`, `d(K-1)_1` of a K-cube, for K > 0. */\ntype CubeFaces<K extends number> = K extends 0 ? {} : {\n    readonly [I in `d${Index<Below<K>>}_${0 | 1}`]: `C${Dec<K>}`;\n};\n/** The degeneracies `s00` to `sK` of a K-simplex or K-cube, for K < N. */\ntype Degeneracies<K extends number, N extends number> = K extends N ? {} : {\n    readonly [I in `s${Index<UpTo<K>>}`]: `C${Inc<K>}`;\n};\n/** Whether N is a literal whole number, so that its cells can be named in types. */\ntype Literal<N extends number> = number extends N ? false : `${N}` extends `-${string}` | `${string}.${string}` | `${string}e${string}` ? false : true;\n/** The globe category truncated at dimension N (opposite): see `CatGlobe`. */\nexport type GlobeCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: GlobeFaces<K>;\n}>, EquationScopes> : Category;\n/** The reflexive globe category truncated at dimension N (opposite): see `CatReflexiveGlobe`. */\nexport type ReflexiveGlobeCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: GlobeFaces<K> & (K extends N ? {} : {\n        readonly refl: `C${Inc<K>}`;\n    });\n}>, EquationScopes> : Category;\n/** The semi-simplex category truncated at dimension N (opposite): see `CatSemiSimplex`. */\nexport type SemiSimplexCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: SimplexFaces<K, 0>;\n}>, EquationScopes> : Category;\n/** The simplex category truncated at dimension N (opposite): see `CatSimplex`. */\nexport type SimplexCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: SimplexFaces<K, 0> & Degeneracies<K, N>;\n}>, EquationScopes> : Category;\n/** The augmented semi-simplex category truncated at dimension N (opposite): see `CatAugmentedSemiSimplex`. */\nexport type AugmentedSemiSimplexCategory<N extends number> = Literal<N> extends true ? Category<AugmentedCells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: SimplexFaces<K, -1>;\n}>, EquationScopes> : Category;\n/** The augmented simplex category truncated at dimension N (opposite): see `CatAugmentedSimplex`. */\nexport type AugmentedSimplexCategory<N extends number> = Literal<N> extends true ? Category<AugmentedCells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: SimplexFaces<K, -1> & Degeneracies<K, N>;\n}>, EquationScopes> : Category;\n/** The semi-cube category truncated at dimension N (opposite): see `CatSemiCube`. */\nexport type SemiCubeCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: CubeFaces<K>;\n}>, EquationScopes> : Category;\n/** The cube category truncated at dimension N (opposite): see `CatCube`. */\nexport type CubeCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: CubeFaces<K> & Degeneracies<K, N>;\n}>, EquationScopes> : Category;\n/**\n * Globular sets up to dimension n: cells `C0` to `Cn`, each k-cell (k > 0)\n * with a `source` and a `target` (k-1)-cell, which share their source and\n * their target. `CatGlobe(1)` is the category of graphs.\n */\nexport declare function CatGlobe<const N extends number>(n: N): GlobeCategory<N>;\n/**\n * Reflexive globular sets up to dimension n: globular sets with an identity\n * `refl` on every k-cell (k < n), a (k+1)-cell from it to itself.\n * `CatReflexiveGlobe(1)` is the category of reflexive graphs.\n */\nexport declare function CatReflexiveGlobe<const N extends number>(n: N): ReflexiveGlobeCategory<N>;\n/**\n * Semi-simplicial sets up to dimension n (the injective maps of the simplex\n * category Δ, truncated, opposite): cells `C0` to `Cn`, each k-simplex (k > 0) with faces `d00` to\n * `dk`, `di` dropping its vertex i (indices with two digits, as in `d07`).\n * `CatSemiSimplex(1)` is the category of graphs, with `d01` the source and\n * `d00` the target.\n */\nexport declare function CatSemiSimplex<const N extends number>(n: N): SemiSimplexCategory<N>;\n/**\n * Simplicial sets up to dimension n (the simplex category Δ truncated,\n * opposite): semi-simplicial sets with degeneracies `s00` to `sk` on every\n * k-simplex (k < n), `si` repeating its vertex i. `CatSimplex(1)` is the\n * category of reflexive graphs.\n */\nexport declare function CatSimplex<const N extends number>(n: N): SimplexCategory<N>;\n/**\n * Augmented semi-simplicial sets up to dimension n: semi-simplicial sets with\n * a set `C-1` of (-1)-simplices, the face `d00` of each 0-simplex.\n */\nexport declare function CatAugmentedSemiSimplex<const N extends number>(n: N): AugmentedSemiSimplexCategory<N>;\n/**\n * Augmented simplicial sets up to dimension n (the augmented simplex\n * category truncated, opposite): simplicial sets with a set `C-1` of\n * (-1)-simplices, the face `d00` of each 0-simplex. n may be -1.\n */\nexport declare function CatAugmentedSimplex<const N extends number>(n: N): AugmentedSimplexCategory<N>;\n/**\n * Semi-cubical sets up to dimension n: cells `C0` to `Cn`, each k-cube with\n * faces `di_0` and `di_1` for each coordinate i (0 ≤ i < k), fixing it at 0\n * or 1. `CatSemiCube(1)` is the category of graphs, with `d00_0` the\n * source and `d00_1` the target.\n */\nexport declare function CatSemiCube<const N extends number>(n: N): SemiCubeCategory<N>;\n/**\n * Cubical sets up to dimension n (the cube category □ truncated, opposite,\n * without connections): semi-cubical sets with degeneracies `s00` to `sk` on\n * every k-cube (k < n), `si` adding a coordinate i on which it is constant.\n * `CatCube(1)` is the category of reflexive graphs.\n */\nexport declare function CatCube<const N extends number>(n: N): CubeCategory<N>;\nexport {};\n",w=`import { type Category, type Copresheaf, type KanExtensionOptions, type TruncatedMonoidalStructure } from '@cod-ts/categories';
+`,E="import { type Category, type EquationScopes } from '@cod-ts/categories';\ntype Tuple<N extends number, T extends unknown[] = []> = T['length'] extends N ? T : Tuple<N, [...T, unknown]>;\ntype Inc<N extends number> = [...Tuple<N>, unknown] extends {\n    length: infer L extends number;\n} ? L : never;\ntype Dec<N extends number> = Tuple<N> extends [unknown, ...infer R] ? R['length'] : -1;\n/** 0, 1, …, N - 1. */\ntype Below<N extends number, T extends number[] = []> = T['length'] extends N ? T[number] : Below<N, [...T, T['length']]>;\n/** 0, 1, …, N. */\ntype UpTo<N extends number> = Below<Inc<N>>;\n/** An index of an arrow name, with two digits: 00, 01, …, 99. */\ntype Index<I extends number> = I extends Below<10> ? `0${I}` : `${I}`;\n/**\n * The objects `0`, `1`, …, `N`: the cells of each dimension, named by their\n * dimension. Views name them as they are asked to, e.g. C₀ or Δ₀.\n */\nexport type Cells<N extends number, T extends string[] = []> = T['length'] extends Inc<N> ? T : Cells<N, [...T, `${T['length']}`]>;\n/** The objects `-1`, `0`, …, `N`. */\ntype AugmentedCells<N extends number> = Cells<N> extends infer T extends string[] ? ['-1', ...T] : never;\n/** The arrows out of each dimension that has any. */\ntype Scopes<D extends number, Arrows> = {\n    readonly [K in D as keyof Arrows[K & keyof Arrows] extends never ? never : `${K}`]: Arrows[K & keyof Arrows];\n};\n/** The faces `source` and `target` of a K-globe, for K > 0. */\ntype GlobeFaces<K extends number> = K extends 0 ? {} : {\n    readonly source: `${Dec<K>}`;\n    readonly target: `${Dec<K>}`;\n};\n/** The faces `d00` to `dK` of a K-simplex, for K above the lowest dimension. */\ntype SimplexFaces<K extends number, Lowest extends number> = K extends Lowest ? {} : {\n    readonly [I in `d${Index<UpTo<K>>}`]: `${Dec<K>}`;\n};\n/** The faces `d00_0`, `d00_1` to `d(K-1)_0`, `d(K-1)_1` of a K-cube, for K > 0. */\ntype CubeFaces<K extends number> = K extends 0 ? {} : {\n    readonly [I in `d${Index<Below<K>>}_${0 | 1}`]: `${Dec<K>}`;\n};\n/** The degeneracies `s00` to `sK` of a K-simplex or K-cube, for K < N. */\ntype Degeneracies<K extends number, N extends number> = K extends N ? {} : {\n    readonly [I in `s${Index<UpTo<K>>}`]: `${Inc<K>}`;\n};\n/** Whether N is a literal whole number, so that its cells can be named in types. */\ntype Literal<N extends number> = number extends N ? false : `${N}` extends `-${string}` | `${string}.${string}` | `${string}e${string}` ? false : true;\n/** The globe category truncated at dimension N (opposite): see `CatGlobe`. */\nexport type GlobeCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: GlobeFaces<K>;\n}>, EquationScopes> : Category;\n/** The reflexive globe category truncated at dimension N (opposite): see `CatReflexiveGlobe`. */\nexport type ReflexiveGlobeCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: GlobeFaces<K> & (K extends N ? {} : {\n        readonly refl: `${Inc<K>}`;\n    });\n}>, EquationScopes> : Category;\n/** The semi-simplex category truncated at dimension N (opposite): see `CatSemiSimplex`. */\nexport type SemiSimplexCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: SimplexFaces<K, 0>;\n}>, EquationScopes> : Category;\n/** The simplex category truncated at dimension N (opposite): see `CatSimplex`. */\nexport type SimplexCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: SimplexFaces<K, 0> & Degeneracies<K, N>;\n}>, EquationScopes> : Category;\n/** The augmented semi-simplex category truncated at dimension N (opposite): see `CatAugmentedSemiSimplex`. */\nexport type AugmentedSemiSimplexCategory<N extends number> = Literal<N> extends true ? Category<AugmentedCells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: SimplexFaces<K, -1>;\n}>, EquationScopes> : Category;\n/** The augmented simplex category truncated at dimension N (opposite): see `CatAugmentedSimplex`. */\nexport type AugmentedSimplexCategory<N extends number> = Literal<N> extends true ? Category<AugmentedCells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: SimplexFaces<K, -1> & Degeneracies<K, N>;\n}>, EquationScopes> : Category;\n/** The semi-cube category truncated at dimension N (opposite): see `CatSemiCube`. */\nexport type SemiCubeCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: CubeFaces<K>;\n}>, EquationScopes> : Category;\n/** The cube category truncated at dimension N (opposite): see `CatCube`. */\nexport type CubeCategory<N extends number> = Literal<N> extends true ? Category<Cells<N>, Scopes<UpTo<N>, {\n    readonly [K in UpTo<N>]: CubeFaces<K> & Degeneracies<K, N>;\n}>, EquationScopes> : Category;\n/**\n * Globular sets up to dimension n: cells `0` to `n`, each k-cell (k > 0)\n * with a `source` and a `target` (k-1)-cell, which share their source and\n * their target. `CatGlobe(1)` is the category of graphs.\n */\nexport declare function CatGlobe<const N extends number>(n: N): GlobeCategory<N>;\n/**\n * Reflexive globular sets up to dimension n: globular sets with an identity\n * `refl` on every k-cell (k < n), a (k+1)-cell from it to itself.\n * `CatReflexiveGlobe(1)` is the category of reflexive graphs.\n */\nexport declare function CatReflexiveGlobe<const N extends number>(n: N): ReflexiveGlobeCategory<N>;\n/**\n * Semi-simplicial sets up to dimension n (the injective maps of the simplex\n * category Δ, truncated, opposite): cells `0` to `n`, each k-simplex (k > 0) with faces `d00` to\n * `dk`, `di` dropping its vertex i (indices with two digits, as in `d07`).\n * `CatSemiSimplex(1)` is the category of graphs, with `d01` the source and\n * `d00` the target.\n */\nexport declare function CatSemiSimplex<const N extends number>(n: N): SemiSimplexCategory<N>;\n/**\n * Simplicial sets up to dimension n (the simplex category Δ truncated,\n * opposite): semi-simplicial sets with degeneracies `s00` to `sk` on every\n * k-simplex (k < n), `si` repeating its vertex i. `CatSimplex(1)` is the\n * category of reflexive graphs.\n */\nexport declare function CatSimplex<const N extends number>(n: N): SimplexCategory<N>;\n/**\n * Augmented semi-simplicial sets up to dimension n: semi-simplicial sets with\n * a set `-1` of (-1)-simplices, the face `d00` of each 0-simplex.\n */\nexport declare function CatAugmentedSemiSimplex<const N extends number>(n: N): AugmentedSemiSimplexCategory<N>;\n/**\n * Augmented simplicial sets up to dimension n (the augmented simplex\n * category truncated, opposite): simplicial sets with a set `-1` of\n * (-1)-simplices, the face `d00` of each 0-simplex. n may be -1.\n */\nexport declare function CatAugmentedSimplex<const N extends number>(n: N): AugmentedSimplexCategory<N>;\n/**\n * Semi-cubical sets up to dimension n: cells `0` to `n`, each k-cube with\n * faces `di_0` and `di_1` for each coordinate i (0 ≤ i < k), fixing it at 0\n * or 1. `CatSemiCube(1)` is the category of graphs, with `d00_0` the\n * source and `d00_1` the target.\n */\nexport declare function CatSemiCube<const N extends number>(n: N): SemiCubeCategory<N>;\n/**\n * Cubical sets up to dimension n (the cube category □ truncated, opposite,\n * without connections): semi-cubical sets with degeneracies `s00` to `sk` on\n * every k-cube (k < n), `si` adding a coordinate i on which it is constant.\n * `CatCube(1)` is the category of reflexive graphs.\n */\nexport declare function CatCube<const N extends number>(n: N): CubeCategory<N>;\nexport {};\n",D=`import { type Category, type Copresheaf, type KanExtensionOptions, type TruncatedMonoidalStructure } from '@cod-ts/categories';
 /**
  * The join of simplices, [a] ⋆ [b] = [a + b + 1], on an augmented
  * (semi-)simplex category \`CatAugmentedSimplex(n)\` or
  * \`CatAugmentedSemiSimplex(n)\`: the vertices of [a] followed by those of
  * [b]. A face or degeneracy at vertex i of the left factor stays at i, and
  * one of the right factor moves to a + 1 + i. Its unit is the empty simplex,
- * \`C-1\`. The join of two simplicial sets has a k-simplex for each pair of
+ * \`-1\`. The join of two simplicial sets has a k-simplex for each pair of
  * an a-simplex and a b-simplex with a + b + 1 = k, so X ⋆ Y contains X (as
  * the pairs with the empty simplex of Y) and Y, and a simplex joining each
  * simplex of X to each of Y.
@@ -5818,7 +6407,7 @@ export declare function simplexJoin<C extends Category>(C: C): TruncatedMonoidal
  * The product of cubes, □a ⊗ □b = □(a + b), on a cube category \`CatCube(n)\`
  * or \`CatSemiCube(n)\`: the coordinates of □a followed by those of □b. A face
  * or degeneracy at coordinate i of the left factor stays at i, and one of
- * the right factor moves to a + i. Its unit is the point, \`C0\`. The product
+ * the right factor moves to a + i. Its unit is the point, \`0\`. The product
  * of two cubical sets has a k-cube for each pair of an a-cube and a b-cube
  * with a + b = k.
  */
@@ -5839,13 +6428,13 @@ export interface ComplexDay<C extends Category = Category> {
 export declare function complexDay<C extends Category>(M: TruncatedMonoidalStructure<C>, X: Copresheaf<NoInfer<C>>, Y: Copresheaf<NoInfer<C>>, options?: KanExtensionOptions & {
     readonly symbol?: string;
 }): ComplexDay<C>;
-`,T=`export { type AugmentedSemiSimplexCategory, type AugmentedSimplexCategory, CatAugmentedSemiSimplex, CatAugmentedSimplex, CatCube, CatGlobe, CatReflexiveGlobe, CatSemiCube, CatSemiSimplex, CatSimplex, type Cells, type CubeCategory, type GlobeCategory, type ReflexiveGlobeCategory, type SemiCubeCategory, type SemiSimplexCategory, type SimplexCategory, } from './categories';
+`,O=`export { type AugmentedSemiSimplexCategory, type AugmentedSimplexCategory, CatAugmentedSemiSimplex, CatAugmentedSimplex, CatCube, CatGlobe, CatReflexiveGlobe, CatSemiCube, CatSemiSimplex, CatSimplex, type Cells, type CubeCategory, type GlobeCategory, type ReflexiveGlobeCategory, type SemiCubeCategory, type SemiSimplexCategory, type SimplexCategory, } from './categories';
 export { type ComplexDay, complexDay, cubeProduct, simplexJoin } from './day-convolutions';
-`,E=`export type { View } from './view';
+`,k=`export type { View } from './view';
 export { type Layout, view, type ViewOptions } from './views';
 export type { Names } from '@cod-ts/views/categories';
 export { type Accessor, effect, memo, type Setter, type Signal, type SignalOptions, type SignalScope, signal, signalBatch, signalScope, signalScopeCurrent, signalScopeOnCleanup, signalScopeRun, signalUntrack, } from '@cod-ts/views/signals';
-`,D=`/**
+`,A=`/**
  * A view: a description of how to show a value, built into DOM nodes only
  * when rendered. Creating one needs no DOM, so views can be made anywhere.
  *
@@ -5855,7 +6444,7 @@ export interface View {
     /** Build the view's nodes in \`document\`. */
     toNode(document: Document): Node;
 }
-`,O=`import { tableView, treeView } from '@cod-ts/views/categories';
+`,j=`import { tableView, treeView } from '@cod-ts/views/categories';
 import type { GraphViewOptions } from '@cod-ts/views/graphs';
 import type { View } from './view';
 /** How \`row\` and \`col\` arrange views. */
@@ -5915,7 +6504,7 @@ export declare const view: Readonly<{
     col: (...views: readonly View[]) => View;
 }>;
 export {};
-`,k=`/**
+`,M=`/**
  * The views of \`@cod-ts/views/categories\`, generic for the values of
  * \`@cod-ts/categories\`: \`categoryView.table(x)\` (\`tableView\`),
  * \`categoryView.graph(x)\` (\`graphView\`: categories, functors as collages,
@@ -5944,7 +6533,7 @@ export declare const categoryView: Readonly<{
         category: typeof import("./tree-views").categoryTreeView;
     };
 }>;
-`,A=`export type Child = Node | string;
+`,Se=`export type Child = Node | string;
 export declare function el(document: Document, tag: string, attributes: Readonly<Record<string, string>>, children: readonly Child[]): HTMLElement;
 /** Add the table stylesheet to \`document\`, once. */
 export declare function ensureStyles(document: Document): void;
@@ -5955,12 +6544,12 @@ export declare function typed(document: Document, name: string, type: string): r
 /** A table caption: a bold title, then its number of rows, subtle: "Object (3)". */
 export declare function caption(document: Document, title: string, n: number): readonly Child[];
 export declare function table(document: Document, captionParts: readonly Child[], headers: readonly Header[], rows: readonly (readonly string[])[]): HTMLElement;
-`,j="import { type Category, type Copresheaf, type CopresheafMap, type Query, type RawFunctor } from '@cod-ts/categories';\nimport { type GraphViewOptions } from '@cod-ts/views/graphs';\nimport type { View } from '../view';\nimport { type Names } from './names';\n/**\n * Options of the graph views of categories, functors and copresheaves:\n * those of `graphView` from `@cod-ts/views/graphs`, and `names`.\n */\nexport interface CategoryGraphViewOptions extends GraphViewOptions {\n    /**\n     * The names shown for objects, arrows and parts on their nodes and links\n     * (unless `nodes.label` or `links.label` sets the text), from their IDs\n     * and provenance (see `Names`). Each defaults to the ID; data attributes\n     * keep the IDs.\n     */\n    readonly names?: Names;\n}\n/** The values `graphView` can show. */\nexport type GraphViewable = Category | RawFunctor | Copresheaf | CopresheafMap | Query;\n/**\n * A category drawn as a graph: its objects as nodes, and its generating\n * arrows as links between them. Equations are not drawn; `tableView` shows\n * them. Options are those of `graphView` from `@cod-ts/views/graphs`; links\n * are labelled with their arrows' names by default.\n *\n * Nodes and links have data attributes saying what they draw, for `style`\n * to select: a node `data-object`, its object; a link `data-object` and\n * `data-arrow`, its source and its name. In a category of elements\n * (`copresheaf.pivot`), as its provenance records them, a node has\n * `data-object` and `data-part`, the object of the copresheaf's category and\n * the part, and a link also `data-arrow`, the arrow it lies over.\n */\nexport declare function categoryGraphView(C: Category, options?: CategoryGraphViewOptions): View;\n/**\n * A functor F : D → C drawn as its collage: D's objects and generating\n * arrows on one side, C's on the other, and a dotted arrow from each object\n * d of D to F(d). Where F takes an arrow of D to a path of C that is not a\n * single generating arrow (an identity or a composite), C gets a link\n * for that path, labelled with it. Objects of C that are not F(d) for any d,\n * and generating arrows that are not F(f) for any f, are drawn faintly.\n *\n * While a part of the domain is hovered, what it maps to is highlighted\n * too: for an object, its image and the dotted arrow there; for an arrow,\n * its image, a generating arrow or the link for a path. For a path, the\n * generating arrows it runs along, and their objects, are highlighted as\n * context, in a quieter colour (`--node-context`, `--link-context`) and in\n * full even where faint, also while the link for the path is hovered.\n *\n * Each side is laid out on its own, and C is put next to D along D's\n * shorter extent: below a D laid out wider than tall, right of one taller\n * than wide. That is across the way the layouts run, for categories whose\n * arrows set their shape; for others, such as discrete categories laid out\n * in a row, it keeps the two sides apart. When D is as wide as tall, C goes\n * below it when the layouts run left to right (dagre's default), and right\n * of it when they run top to bottom. Options are those of\n * `graphView` from\n * `@cod-ts/views/graphs`; parts have the classes `cod-domain` or\n * `cod-codomain`, and `cod-map` (the mapping of objects), `cod-path` (the\n * links for paths) and `cod-faint` (outside the image), for `style` to select.\n * Nodes and links have data attributes saying what they draw, as in\n * `categoryGraphView` (for categories of elements too), and `data-side`,\n * `domain` or `codomain`; a link for a path, the `data-object` (and\n * `data-part`) it starts at and `data-path`, its steps joined by `.`; and a\n * dotted arrow, `data-side` `map` and the `data-object` (and `data-part`) of\n * the object of D it starts at. The linked highlighting selects by them.\n * Lines are solid for the two categories' own arrows, dashed for the links\n * for paths, which the collage adds, and dotted for the mapping of objects\n * across the two.\n */\nexport declare function functorGraphView(F: RawFunctor, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf drawn as a graph, its category of elements: the category\n * view of `copresheaf.pivot(X)`, with a node for every part, and a link for\n * every arrow from every part, from the part to its image (`a : o → o'`\n * takes part p of o to part a(p) of o'). Nodes are\n * labelled with their parts' names and links with their arrows' names. A\n * node has `data-object` and `data-part`, its object and part, and a link\n * `data-object`, `data-arrow` and `data-part`, its arrow's source, its\n * arrow and the part it starts from, so that `style` can select them, e.g.\n * `'.cod-link[data-object=\"Employee\"][data-arrow=\"worksIn\"]'`. Options are\n * those of `graphView` from `@cod-ts/views/graphs`, and `names` (see\n * `CategoryGraphViewOptions`).\n *\n * Copresheaves on the graph categories of `@cod-ts/graphs` are graphs\n * already, and `graphView` from `@cod-ts/views/graphs` draws them as such,\n * a node for every vertex and a link for every edge.\n */\nexport declare function copresheafGraphView(X: Copresheaf, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf map α : X ⇒ Y drawn as the collage of the functor between\n * categories of elements it pivots to (`copresheafMap.pivot(α)`, see\n * `functorGraphView`): X's category of elements on one side, Y's on the\n * other, and a dotted arrow from each part of X to its image. Nodes are\n * named by their parts and links by their arrows, and have the data\n * attributes of a copresheaf's graph view (see `copresheafGraphView`).\n * Options are those of `functorGraphView`, with `names` for the parts and\n * arrows of the copresheaves.\n */\nexport declare function copresheafMapGraphView(alpha: CopresheafMap, options?: CategoryGraphViewOptions): View;\n/**\n * A query Q : B → C drawn as a functor collage, of the query as a functor\n * into its codomain's completion (`query.completion`): B on one side, and\n * on the other C with the limits (or colimits) of the query's diagrams\n * added as apexes, with their legs. Each object of B goes to its apex (or\n * to its single object), and each arrow to the arrow between apexes its\n * diagram map induces (or to a path).\n *\n * Apexes are named `lim b` (or `colim b`), legs by their variables, and\n * induced arrows by the arrow of B and the terms of its map, `h: v = e.f`\n * (or `h: j ↦ f.k` for colimits). Unlike a functor's collage, what the\n * diagrams use is not faint: the legs, the objects they reach, and the\n * arrows along the diagrams' arrows and the maps' components. What the\n * completion adds is dashed, like a collage's paths: apexes' outlines, legs\n * and induced arrows.\n *\n * What B goes to is drawn in full; what the diagrams use (`cod-involved`)\n * and the rest of C are faint, as in a functor's collage. Hovering\n * highlights, as there, what a part of B goes to; and in a quieter colour\n * (`--node-context`, `--link-context`), and in full, what it is made of:\n * for an object of B, its apex's legs and their objects; for an arrow of\n * B, or the arrow it induces, the square of each of its terms (the leg of\n * the term's source variable, the component's arrows and objects in C,\n * and the leg of its target variable); and for a leg, the arrows whose\n * terms use its variable.\n *\n * Options are those of `functorGraphView`. Parts have the classes of a\n * functor's collage, and `cod-apex` (apexes), `cod-leg` (legs),\n * `cod-induced` (induced arrows) and `cod-involved` (what the diagrams\n * use), for `style` to select. `names`\n * gets the completion's objects and arrows with their provenance (see\n * `ObjectProvenance`'s `'apex'`, `ArrowProvenance`'s `'leg'` and `'induced'`).\n */\nexport declare function queryGraphView(Q: Query, options?: CategoryGraphViewOptions): View;\n/**\n * A value drawn as a graph: a category (see `categoryGraphView`, also\n * `graphView.category`); a functor, as its collage (see `functorGraphView`,\n * also `graphView.functor`); or any copresheaf, graphs included, as its\n * category of elements (see `copresheafGraphView`, also\n * `graphView.copresheaf`); a copresheaf map, as the collage of its pivot\n * (see `copresheafMapGraphView`, also `graphView.copresheafMap`); or a\n * query, as the collage of its completion (see `queryGraphView`, also\n * `graphView.query`). Each also takes `names`, the names shown (see\n * `CategoryGraphViewOptions`). `graphView` from `@cod-ts/views/graphs`\n * draws graphs as graphs.\n */\nexport declare const graphView: ((x: GraphViewable, options?: CategoryGraphViewOptions) => View) & {\n    category: typeof categoryGraphView;\n    functor: typeof functorGraphView;\n    copresheaf: typeof copresheafGraphView;\n    copresheafMap: typeof copresheafMapGraphView;\n    query: typeof queryGraphView;\n};\n",Ce=`export { categoryView } from './category-view';
+`,Ce="import { type Category, type Copresheaf, type CopresheafMap, type Query, type RawFunctor } from '@cod-ts/categories';\nimport { type GraphViewOptions } from '@cod-ts/views/graphs';\nimport type { View } from '../view';\nimport { type Names } from './names';\n/**\n * Options of the graph views of categories, functors and copresheaves:\n * those of `graphView` from `@cod-ts/views/graphs`, and `names`.\n */\nexport interface CategoryGraphViewOptions extends GraphViewOptions {\n    /**\n     * The names shown for objects, arrows and parts on their nodes and links\n     * (unless `nodes.label` or `links.label` sets the text), from their IDs\n     * and provenance (see `Names`). Each defaults to the ID; data attributes\n     * keep the IDs.\n     */\n    readonly names?: Names;\n}\n/** The values `graphView` can show. */\nexport type GraphViewable = Category | RawFunctor | Copresheaf | CopresheafMap | Query;\n/**\n * A category drawn as a graph: its objects as nodes, and its generating\n * arrows as links between them. Equations are not drawn; `tableView` shows\n * them. Options are those of `graphView` from `@cod-ts/views/graphs`; links\n * are labelled with their arrows' names by default.\n *\n * Nodes and links have data attributes saying what they draw, for `style`\n * to select: a node `data-object`, its object; a link `data-object` and\n * `data-arrow`, its source and its name. In a category of elements\n * (`copresheaf.pivot`), as its provenance records them, a node has\n * `data-object` and `data-part`, the object of the copresheaf's category and\n * the part, and a link also `data-arrow`, the arrow it lies over.\n */\nexport declare function categoryGraphView(C: Category, options?: CategoryGraphViewOptions): View;\n/**\n * A functor F : D → C drawn as its collage: D's objects and generating\n * arrows on one side, C's on the other, and a dotted arrow from each object\n * d of D to F(d). Where F takes an arrow of D to a path of C that is not a\n * single generating arrow (an identity or a composite), C gets a link\n * for that path, labelled with it. Objects of C that are not F(d) for any d,\n * and generating arrows that are not F(f) for any f, are drawn faintly.\n *\n * While a part of the domain is hovered, what it maps to is highlighted\n * too: for an object, its image and the dotted arrow there; for an arrow,\n * its image, a generating arrow or the link for a path. For a path, the\n * generating arrows it runs along, and their objects, are highlighted as\n * context, in a quieter colour (`--node-context`, `--link-context`) and in\n * full even where faint, also while the link for the path is hovered.\n *\n * Each side is laid out on its own, and C is put next to D along D's\n * shorter extent: below a D laid out wider than tall, right of one taller\n * than wide. That is across the way the layouts run, for categories whose\n * arrows set their shape; for others, such as discrete categories laid out\n * in a row, it keeps the two sides apart. When D is as wide as tall, C goes\n * below it when the layouts run left to right (dagre's default), and right\n * of it when they run top to bottom. Options are those of\n * `graphView` from\n * `@cod-ts/views/graphs`; parts have the classes `cod-domain` or\n * `cod-codomain`, and `cod-map` (the mapping of objects), `cod-path` (the\n * links for paths) and `cod-faint` (outside the image), for `style` to select.\n * Nodes and links have data attributes saying what they draw, as in\n * `categoryGraphView` (for categories of elements too), and `data-side`,\n * `domain` or `codomain`; a link for a path, the `data-object` (and\n * `data-part`) it starts at and `data-path`, its steps joined by `.`; and a\n * dotted arrow, `data-side` `map` and the `data-object` (and `data-part`) of\n * the object of D it starts at. The linked highlighting selects by them.\n * Lines are solid for the two categories' own arrows, dashed for the links\n * for paths, which the collage adds, and dotted for the mapping of objects\n * across the two.\n */\nexport declare function functorGraphView(F: RawFunctor, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf drawn as a graph, its category of elements: the category\n * view of `copresheaf.pivot(X).category`, with a node for every part, and a link for\n * every arrow from every part, from the part to its image (`a : o → o'`\n * takes part p of o to part a(p) of o'). Nodes are\n * labelled with their parts' names and links with their arrows' names. A\n * node has `data-object` and `data-part`, its object and part, and a link\n * `data-object`, `data-arrow` and `data-part`, its arrow's source, its\n * arrow and the part it starts from, so that `style` can select them, e.g.\n * `'.cod-link[data-object=\"Employee\"][data-arrow=\"worksIn\"]'`. Options are\n * those of `graphView` from `@cod-ts/views/graphs`, and `names` (see\n * `CategoryGraphViewOptions`).\n *\n * Copresheaves on the graph categories of `@cod-ts/graphs` are graphs\n * already, and `graphView` from `@cod-ts/views/graphs` draws them as such,\n * a node for every vertex and a link for every edge.\n */\nexport declare function copresheafGraphView(X: Copresheaf, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf map α : X ⇒ Y drawn as the collage of the functor between\n * categories of elements it pivots to (`copresheafMap.pivot(α)`, see\n * `functorGraphView`): X's category of elements on one side, Y's on the\n * other, and a dotted arrow from each part of X to its image. Nodes are\n * named by their parts and links by their arrows, and have the data\n * attributes of a copresheaf's graph view (see `copresheafGraphView`).\n * Options are those of `functorGraphView`, with `names` for the parts and\n * arrows of the copresheaves.\n */\nexport declare function copresheafMapGraphView(alpha: CopresheafMap, options?: CategoryGraphViewOptions): View;\n/**\n * A query Q : B → C drawn as a functor collage, of the query as a functor\n * into its codomain's completion (`query.completion`): B on one side, and\n * on the other C with the limits (or colimits) of the query's diagrams\n * added as apexes, with their legs. Each object of B goes to its apex (or\n * to its single object), and each arrow to the arrow between apexes its\n * diagram map induces (or to a path).\n *\n * Apexes are named `lim b` (or `colim b`), legs by their variables, and\n * induced arrows by the arrow of B and the terms of its map, `h: v = e.f`\n * (or `h: j ↦ f.k` for colimits). Unlike a functor's collage, what the\n * diagrams use is not faint: the legs, the objects they reach, and the\n * arrows along the diagrams' arrows and the maps' components. What the\n * completion adds is dashed, like a collage's paths: apexes' outlines, legs\n * and induced arrows.\n *\n * What B goes to is drawn in full; what the diagrams use (`cod-involved`)\n * and the rest of C are faint, as in a functor's collage. Hovering\n * highlights, as there, what a part of B goes to; and in a quieter colour\n * (`--node-context`, `--link-context`), and in full, what it is made of:\n * for an object of B, its apex's legs and their objects; for an arrow of\n * B, or the arrow it induces, the square of each of its terms (the leg of\n * the term's source variable, the component's arrows and objects in C,\n * and the leg of its target variable); and for a leg, the arrows whose\n * terms use its variable.\n *\n * Options are those of `functorGraphView`. Parts have the classes of a\n * functor's collage, and `cod-apex` (apexes), `cod-leg` (legs),\n * `cod-induced` (induced arrows) and `cod-involved` (what the diagrams\n * use), for `style` to select. `names`\n * gets the completion's objects and arrows with their provenance (see\n * `ObjectProvenance`'s `'apex'`, `ArrowProvenance`'s `'leg'` and `'induced'`).\n */\nexport declare function queryGraphView(Q: Query, options?: CategoryGraphViewOptions): View;\n/**\n * A value drawn as a graph: a category (see `categoryGraphView`, also\n * `graphView.category`); a functor, as its collage (see `functorGraphView`,\n * also `graphView.functor`); or any copresheaf, graphs included, as its\n * category of elements (see `copresheafGraphView`, also\n * `graphView.copresheaf`); a copresheaf map, as the collage of its pivot\n * (see `copresheafMapGraphView`, also `graphView.copresheafMap`); or a\n * query, as the collage of its completion (see `queryGraphView`, also\n * `graphView.query`). Each also takes `names`, the names shown (see\n * `CategoryGraphViewOptions`). `graphView` from `@cod-ts/views/graphs`\n * draws graphs as graphs.\n */\nexport declare const graphView: ((x: GraphViewable, options?: CategoryGraphViewOptions) => View) & {\n    category: typeof categoryGraphView;\n    functor: typeof functorGraphView;\n    copresheaf: typeof copresheafGraphView;\n    copresheafMap: typeof copresheafMapGraphView;\n    query: typeof queryGraphView;\n};\n",we=`export { categoryView } from './category-view';
 export { type Names } from './names';
 export { categoryGraphView, copresheafGraphView, copresheafMapGraphView, queryGraphView, type CategoryGraphViewOptions, functorGraphView, graphView, type GraphViewable, } from './graph-views';
 export { categoryTableView, copresheafMapTableView, copresheafTableView, functorMapTableView, functorTableView, type TableViewable, type TableViewOptions, tableView, } from './table-views';
 export { categoryTreeView, treeView, type TreeViewable, type TreeViewOptions } from './tree-views';
-`,we=`import type { ArrowRef, Category, Copresheaf, EquationRef, ObjectRef, PartRef, Path } from '@cod-ts/categories';
+`,Te=`import type { ArrowRef, Category, Copresheaf, EquationRef, ObjectRef, PartRef, Path } from '@cod-ts/categories';
 /**
  * The names a view shows, each from a reference with the ID and, if a
  * construction recorded it, the provenance (see \`@cod-ts/categories\`).
@@ -5995,7 +6584,7 @@ export declare function namesIn(C: Category, names: Names | undefined): {
 };
 /** The names to show, as \`names\` says, for the parts of X. */
 export declare function partNamesOf(X: Copresheaf, names: Names | undefined): (object: string, part: string) => string;
-`,Te=`import type { Category, Copresheaf, CopresheafMap, RawFunctor, RawFunctorMap } from '@cod-ts/categories';
+`,Ee=`import type { Category, Copresheaf, CopresheafMap, RawFunctor, RawFunctorMap } from '@cod-ts/categories';
 import type { View } from '../view';
 import { type Names } from './names';
 export interface TableViewOptions {
@@ -6029,7 +6618,7 @@ export declare const tableView: ((value: TableViewable, options?: TableViewOptio
     functor: typeof functorTableView;
     functorMap: typeof functorMapTableView;
 };
-`,Ee=`import type { Category } from '@cod-ts/categories';
+`,De=`import type { Category } from '@cod-ts/categories';
 import type { View } from '../view';
 import { type Names } from './names';
 export interface TreeViewOptions {
@@ -6055,9 +6644,33 @@ export declare function categoryTreeView(C: Category, options?: TreeViewOptions)
 export declare const treeView: ((x: TreeViewable, options?: TreeViewOptions) => View) & {
     category: typeof categoryTreeView;
 };
-`,De="import type { Copresheaf } from '@cod-ts/categories';\nimport { type GraphCategory, type GraphLink, type GraphLayoutEngineOptions, type GraphPart, type NodeSize } from '@cod-ts/graphs';\nimport type { View } from '../view';\n/**\n * Where a label goes: a point `[x, y]`, each from -1 to 1, in the\n * coordinates of what it labels, which also says which way the label\n * extends from that point.\n *\n * - For a node, a point on its box: `[-1, -1]` its top-left corner,\n *   `[0, 0]` its centre, `[1, 1]` its bottom-right corner (y points down).\n * - For a link, a point in its own frame: x along it, from -1 at its start\n *   through 0 at its middle to 1 at its end; y across it, 0 on the line and\n *   -1 to the left of its direction (above a link going right), 1 to the\n *   right.\n *\n * The label extends away from the anchor's centre: at x = 1 it starts at\n * the point, at x = -1 it ends there, at x = 0 it is centred, and so on in\n * between; likewise for y.\n */\nexport type Anchor = readonly [x: number, y: number];\n/**\n * A part's label: its text, and where it goes (see `Anchor`). How it looks\n * is up to `style`. It is HTML in a `foreignObject`, so that the page can\n * typeset its text (e.g. TeX with MathJax), and its colour is `color`.\n */\nexport interface LabelOptions<P> {\n    /** The text. Default the part's name. */\n    readonly text?: (part: P) => string;\n    /** Where it goes. */\n    readonly anchor?: Anchor;\n    /** The gap between the anchor point and the label. Default 4. */\n    readonly gap?: number;\n}\n/** A part's label, or `false` for none. */\nexport type Label<P> = false | LabelOptions<P>;\n/**\n * CSS declarations, with property names in camelCase (`strokeWidth`).\n * Numbers get `px`, except for unitless properties such as `opacity`. A key\n * containing `&` is a nested rule, `&` standing for the enclosing selector:\n * `{ stroke: 'gray', '&:hover': { stroke: 'blue' } }`.\n */\nexport interface StyleRules {\n    readonly [property: string]: string | number | StyleRules;\n}\n/**\n * Style rules by CSS selector, applied to the view alone. Selectors name the\n * view's classes: `.cod-node` (a node's group), `.cod-shape` (its ellipse),\n * `.cod-link` (a link's group), `.cod-line`, `.cod-arrowhead`, `.cod-label`;\n * nodes and links also have `data-object` and `data-part` (and whatever\n * `nodes.data` and `links.data` give them). A selector without `&` is\n * looked for inside the view; with `&`, `&` is the view's element. These\n * rules take precedence over the defaults, so that labels shown on hover\n * become always shown with `{ '.cod-label': { visibility: 'visible' } }`.\n *\n * Colours are CSS variables: `--node-fill`, `--node-stroke` and\n * `--node-highlight` (a hovered node's stroke and label), and `--link-fill`\n * (none by default), `--link-stroke` (lines, arrowheads and labels) and\n * `--link-highlight` (a hovered link's line, arrowhead and label), and\n * `--node-context` and `--link-context`, a quieter colour for what views\n * that link parts highlight as context (see `queryGraphView`). Set them\n * on `.cod-node` or `.cod-link`, e.g. `{ '.cod-node': { '--node-fill':\n * 'white' } }`, rather than `fill` or `stroke` themselves: those would take\n * precedence over the colours of hovered parts too.\n */\nexport type GraphStyle = {\n    readonly [selector: string]: StyleRules;\n};\nexport interface GraphViewOptions {\n    /**\n     * How the graph is laid out, by `graphLayout` from `@cod-ts/graphs`: the\n     * `engine` (`'dagre'` by default, `'elk'`, or a function), and the\n     * `options` passed to it, e.g. `{ rankdir: 'TB' }`.\n     */\n    readonly layout?: GraphLayoutEngineOptions;\n    /**\n     * The nodes of the graph's skeleton (see `graphSkeleton`): their size, a\n     * diameter or a width and height (default 16, also used by the layout),\n     * and their labels (default below the node, anchor [0, 1]).\n     */\n    readonly nodes?: {\n        readonly size?: NodeSize;\n        readonly label?: Label<GraphPart>;\n        /** Classes to add to a node, besides `cod-node`, for `style` to select. */\n        readonly class?: (part: GraphPart) => string | undefined;\n        /**\n         * A node's `data-*` attributes, by name without `data-`, for `style` to\n         * select: by default `object` and `part`, which these replace or add to;\n         * one given as undefined is removed.\n         */\n        readonly data?: (part: GraphPart) => Readonly<Record<string, string | undefined>>;\n        /**\n         * Where a node's loops sit on it: an anchor, a point on its box (see\n         * `Anchor`), towards which loops bulge out. By default, the point\n         * opposite the nodes' labels, so that loops and labels keep apart: above\n         * the node when its label is below (the default), and so on; above when\n         * there are no labels, or they are centred.\n         */\n        readonly loop?: {\n            readonly anchor?: Anchor;\n        };\n    };\n    /**\n     * The links of the graph's skeleton: their margin, the gap between their\n     * ends and the nodes' outlines (default 4); the size of their arrowheads\n     * (default 9); and their labels (default on the middle of the link,\n     * anchor [0, 0]).\n     */\n    readonly links?: {\n        readonly margin?: number;\n        readonly arrow?: number;\n        readonly label?: Label<GraphLink>;\n        /** Classes to add to a link, besides `cod-link`, for `style` to select. */\n        readonly class?: (link: GraphLink) => string | undefined;\n        /**\n         * A link's `data-*` attributes, by name without `data-`, for `style` to\n         * select: by default `object` and `part`, which these replace or add to;\n         * one given as undefined is removed.\n         */\n        readonly data?: (link: GraphLink) => Readonly<Record<string, string | undefined>>;\n    };\n    /**\n     * How the view looks: CSS rules by selector (see `GraphStyle`). By default,\n     * labels show while their part is hovered.\n     */\n    readonly style?: GraphStyle;\n}\nexport declare function compileStyle(style: GraphStyle, scope: string): string;\n/**\n * A graph, a copresheaf on one of the graph categories of @cod-ts/graphs,\n * drawn as SVG: the nodes and links of its skeleton (see `graphSkeleton`),\n * laid out by `graphLayout`, and arrowheads on links that have a direction.\n * Every option is optional:\n *\n * - layout: `layout.engine` and `layout.options`, passed to `graphLayout`\n *   with `nodes.size`;\n * - geometry: `nodes.size`, `links.margin` (between links and nodes),\n *   `links.arrow` (the arrowheads' size);\n * - labels: `nodes.label` and `links.label`, their text and where they go\n *   (see `Anchor`), or `false` for none;\n * - looks: `style`, CSS rules by selector (see `GraphStyle`), and\n *   `nodes.class` and `links.class`, more classes for parts to select. By\n *   default, labels show while their part is hovered.\n *\n * The layout is computed when the view is rendered, and finishes later: the\n * view's element has `data-state` \"pending\", then \"ready\" (or \"error\", with\n * the message shown).\n *\n * Also available as `graphView.graph`, so that this module's views and\n * those of `@cod-ts/views/categories` (`categoryView`) can stand in for each\n * other: `import { graphView as view } from '@cod-ts/views/graphs'`, then\n * `view.graph(g)`.\n */\nexport declare const graphView: ((g: Copresheaf<GraphCategory>, options?: GraphViewOptions) => View) & {\n    graph: (g: Copresheaf<GraphCategory>, options?: GraphViewOptions) => View;\n};\n",Oe=`export { type Anchor, graphView, type GraphViewOptions, type GraphStyle, type Label, type LabelOptions, type StyleRules, } from './graph-views';
-`,ke=`export { type Accessor, effect, memo, type Setter, type Signal, type SignalOptions, type SignalScope, signal, signalBatch, signalScope, signalScopeCurrent, signalScopeOnCleanup, signalScopeRun, signalUntrack, } from './signals';
-`,Ae=`/**
+`,Oe=`import type { GraphLayout, GraphLayoutOptions, GraphSkeleton } from '@cod-ts/graphs';
+/** The options of \`cellsInColumns\`, all optional. */
+export type CellsInColumnsOptions = {
+    /** The distance between the centres of neighbouring columns (default 150). */
+    readonly columnSpacing?: number;
+    /** The distance between the centres of neighbouring nodes in a column (default 100). */
+    readonly rowSpacing?: number;
+};
+/**
+ * A layout engine for complexes (see @cod-ts/complexes), whose cells are
+ * named by their dimension: cells in columns, by dimension, from left to
+ * right. A node's cell is the dimension its part starts with: \`1\` for the
+ * object 1 of a schema, and for the element \`1.ab\` of a simplicial set. The
+ * nodes of a cell are stacked in its column in the order of their names,
+ * centred, so that a schema's cells are in a row. Links are routed as for
+ * any layout that leaves them out: fanned out between the same two nodes.
+ *
+ *     view.graph(X, { layout: { engine: cellsInColumns, options: { columnSpacing: 200 } } })
+ *
+ * Its options are \`CellsInColumnsOptions\`: the spacing of columns and of
+ * the nodes in a column.
+ */
+export declare function cellsInColumns(graph: GraphSkeleton, options: GraphLayoutOptions): Promise<GraphLayout>;
+`,ke="import type { Copresheaf } from '@cod-ts/categories';\nimport { type GraphCategory, type GraphLink, type GraphLayoutEngineOptions, type GraphPart, type NodeSize } from '@cod-ts/graphs';\nimport type { View } from '../view';\n/**\n * Where a label goes: a point `[x, y]`, each from -1 to 1, in the\n * coordinates of what it labels, which also says which way the label\n * extends from that point.\n *\n * - For a node, a point on its box: `[-1, -1]` its top-left corner,\n *   `[0, 0]` its centre, `[1, 1]` its bottom-right corner (y points down).\n * - For a link, a point in its own frame: x along it, from -1 at its start\n *   through 0 at its middle to 1 at its end; y across it, 0 on the line and\n *   -1 to the left of its direction (above a link going right), 1 to the\n *   right.\n *\n * The label extends away from the anchor's centre: at x = 1 it starts at\n * the point, at x = -1 it ends there, at x = 0 it is centred, and so on in\n * between; likewise for y.\n */\nexport type Anchor = readonly [x: number, y: number];\n/**\n * A part's label: its text, and where it goes (see `Anchor`). How it looks\n * is up to `style`. It is HTML in a `foreignObject`, so that the page can\n * typeset its text (e.g. TeX with MathJax), and its colour is `color`.\n */\nexport interface LabelOptions<P> {\n    /** The text. Default the part's name. */\n    readonly text?: (part: P) => string;\n    /** Where it goes. */\n    readonly anchor?: Anchor;\n    /** The gap between the anchor point and the label. Default 4. */\n    readonly gap?: number;\n}\n/** A part's label, or `false` for none. */\nexport type Label<P> = false | LabelOptions<P>;\n/**\n * CSS declarations, with property names in camelCase (`strokeWidth`).\n * Numbers get `px`, except for unitless properties such as `opacity`. A key\n * containing `&` is a nested rule, `&` standing for the enclosing selector:\n * `{ stroke: 'gray', '&:hover': { stroke: 'blue' } }`.\n */\nexport interface StyleRules {\n    readonly [property: string]: string | number | StyleRules;\n}\n/**\n * Style rules by CSS selector, applied to the view alone. Selectors name the\n * view's classes: `.cod-node` (a node's group), `.cod-shape` (its ellipse),\n * `.cod-link` (a link's group), `.cod-line`, `.cod-arrowhead`, `.cod-label`;\n * nodes and links also have `data-object` and `data-part` (and whatever\n * `nodes.data` and `links.data` give them). A selector without `&` is\n * looked for inside the view; with `&`, `&` is the view's element. These\n * rules take precedence over the defaults, so that labels shown on hover\n * become always shown with `{ '.cod-label': { visibility: 'visible' } }`.\n *\n * Colours are CSS variables: `--node-fill`, `--node-stroke` and\n * `--node-highlight` (a hovered node's stroke and label), and `--link-fill`\n * (none by default), `--link-stroke` (lines, arrowheads and labels) and\n * `--link-highlight` (a hovered link's line, arrowhead and label), and\n * `--node-context` and `--link-context`, a quieter colour for what views\n * that link parts highlight as context (see `queryGraphView`). Set them\n * on `.cod-node` or `.cod-link`, e.g. `{ '.cod-node': { '--node-fill':\n * 'white' } }`, rather than `fill` or `stroke` themselves: those would take\n * precedence over the colours of hovered parts too.\n */\nexport type GraphStyle = {\n    readonly [selector: string]: StyleRules;\n};\nexport interface GraphViewOptions {\n    /**\n     * How the graph is laid out, by `graphLayout` from `@cod-ts/graphs`: the\n     * `engine` (`'dagre'` by default, `'elk'`, or a function), and the\n     * `options` passed to it, e.g. `{ rankdir: 'TB' }`.\n     */\n    readonly layout?: GraphLayoutEngineOptions;\n    /**\n     * The nodes of the graph's skeleton (see `graphSkeleton`): their size, a\n     * diameter or a width and height (default 16, also used by the layout),\n     * and their labels (default below the node, anchor [0, 1]).\n     */\n    readonly nodes?: {\n        readonly size?: NodeSize;\n        readonly label?: Label<GraphPart>;\n        /** Classes to add to a node, besides `cod-node`, for `style` to select. */\n        readonly class?: (part: GraphPart) => string | undefined;\n        /**\n         * A node's `data-*` attributes, by name without `data-`, for `style` to\n         * select: by default `object` and `part`, which these replace or add to;\n         * one given as undefined is removed.\n         */\n        readonly data?: (part: GraphPart) => Readonly<Record<string, string | undefined>>;\n        /**\n         * Where a node's loops sit on it: an anchor, a point on its box (see\n         * `Anchor`), towards which loops bulge out. By default, the point\n         * opposite the nodes' labels, so that loops and labels keep apart: above\n         * the node when its label is below (the default), and so on; above when\n         * there are no labels, or they are centred.\n         */\n        readonly loop?: {\n            readonly anchor?: Anchor;\n        };\n    };\n    /**\n     * The links of the graph's skeleton: their margin, the gap between their\n     * ends and the nodes' outlines (default 4); the size of their arrowheads\n     * (default 9); and their labels (default on the middle of the link,\n     * anchor [0, 0]).\n     */\n    readonly links?: {\n        readonly margin?: number;\n        readonly arrow?: number;\n        readonly label?: Label<GraphLink>;\n        /** Classes to add to a link, besides `cod-link`, for `style` to select. */\n        readonly class?: (link: GraphLink) => string | undefined;\n        /**\n         * A link's `data-*` attributes, by name without `data-`, for `style` to\n         * select: by default `object` and `part`, which these replace or add to;\n         * one given as undefined is removed.\n         */\n        readonly data?: (link: GraphLink) => Readonly<Record<string, string | undefined>>;\n    };\n    /**\n     * How the view looks: CSS rules by selector (see `GraphStyle`). By default,\n     * labels show while their part is hovered.\n     */\n    readonly style?: GraphStyle;\n}\nexport declare function compileStyle(style: GraphStyle, scope: string): string;\n/**\n * A graph, a copresheaf on one of the graph categories of @cod-ts/graphs,\n * drawn as SVG: the nodes and links of its skeleton (see `graphSkeleton`),\n * laid out by `graphLayout`, and arrowheads on links that have a direction.\n * Every option is optional:\n *\n * - layout: `layout.engine` and `layout.options`, passed to `graphLayout`\n *   with `nodes.size`;\n * - geometry: `nodes.size`, `links.margin` (between links and nodes),\n *   `links.arrow` (the arrowheads' size);\n * - labels: `nodes.label` and `links.label`, their text and where they go\n *   (see `Anchor`), or `false` for none;\n * - looks: `style`, CSS rules by selector (see `GraphStyle`), and\n *   `nodes.class` and `links.class`, more classes for parts to select. By\n *   default, labels show while their part is hovered.\n *\n * The layout is computed when the view is rendered, and finishes later: the\n * view's element has `data-state` \"pending\", then \"ready\" (or \"error\", with\n * the message shown).\n *\n * Also available as `graphView.graph`, so that this module's views and\n * those of `@cod-ts/views/categories` (`categoryView`) can stand in for each\n * other: `import { graphView as view } from '@cod-ts/views/graphs'`, then\n * `view.graph(g)`.\n */\nexport declare const graphView: ((g: Copresheaf<GraphCategory>, options?: GraphViewOptions) => View) & {\n    graph: (g: Copresheaf<GraphCategory>, options?: GraphViewOptions) => View;\n};\n",Ae=`export { type CellsInColumnsOptions, cellsInColumns } from './graph-layouts';
+export { type Anchor, graphView, type GraphViewOptions, type GraphStyle, type Label, type LabelOptions, type StyleRules, } from './graph-views';
+`,je=`export { type Accessor, effect, memo, type Setter, type Signal, type SignalOptions, type SignalScope, signal, signalBatch, signalScope, signalScopeCurrent, signalScopeOnCleanup, signalScopeRun, signalUntrack, } from './signals';
+`,Me=`/**
  * Signals: values that change over time, and computations that follow them,
  * in the style of SolidJS.
  *
@@ -6183,7 +6796,7 @@ export declare const signalScope: typeof signalScopeConstructor & {
     run: typeof signalScopeRun;
 };
 export {};
-`,je=`// src/internal.ts
+`,Ne=`// src/internal.ts
 function e(e, t) {
 	if (!e) throw Error(t);
 }
@@ -6318,11 +6931,11 @@ function y(a, s, c) {
 		e(o === s, \`Equation \${t}.\${r} fails on \${n}: [\${i.join(", ")}] gives \${o}, [\${a.join(", ")}] gives \${s}\`);
 	}
 	return Object.freeze(c === void 0 ? {
-		meta: a,
-		data: u
+		domain: a,
+		specification: u
 	} : {
-		meta: a,
-		data: u,
+		domain: a,
+		specification: u,
 		provenance: c
 	});
 }
@@ -6330,66 +6943,66 @@ function b(e, t) {
 	return y(e, t);
 }
 function x(t, r, i) {
-	return e(n(t.data, r), \`Unknown object \${r}\`), e(n(t.data[r].$id, i), \`\${i} is not a part of \${r}\`), t.provenance?.[r]?.[i];
+	return e(n(t.specification, r), \`Unknown object \${r}\`), e(n(t.specification[r].$id, i), \`\${i} is not a part of \${r}\`), t.provenance?.[r]?.[i];
 }
 function S(t, r) {
-	return e(n(t.data, r), \`Unknown object \${r}\`), Object.freeze(Object.keys(t.data[r].$id));
+	return e(n(t.specification, r), \`Unknown object \${r}\`), Object.freeze(Object.keys(t.specification[r].$id));
 }
 function C(e, t) {
 	return t === void 0 ? (t) => w(e, t) : w(e, t);
 }
 function w(t, r) {
-	e(r.meta === t.codomain, "Delta requires a copresheaf of the functor codomain");
+	e(r.domain === t.codomain, "Delta requires a copresheaf of the functor codomain");
 	let a = [];
 	for (let e of t.domain.specification.Object) {
-		let n = Object.keys(r.data[t.Object[e]].$id), s = Object.keys(o(t.domain, e));
+		let n = Object.keys(r.specification[t.specification.Object[e]].$id), s = Object.keys(o(t.domain, e));
 		if (s.length === 0) {
 			a.push([e, n]);
 			continue;
 		}
-		let c = s.map((a) => [a, i(n.map((n) => [n, v(t.codomain, r.data, t.Object[e], t.Arrow[e][a], n)]))]);
+		let c = s.map((a) => [a, i(n.map((n) => [n, v(t.codomain, r.specification, t.specification.Object[e], t.specification.Arrow[e][a], n)]))]);
 		a.push([e, i(c)]);
 	}
 	let s = r.provenance;
-	return y(t.domain, i(a), s === void 0 ? void 0 : i(t.domain.specification.Object.flatMap((e) => n(s, t.Object[e]) ? [[e, s[t.Object[e]]]] : [])));
+	return y(t.domain, i(a), s === void 0 ? void 0 : i(t.domain.specification.Object.flatMap((e) => n(s, t.specification.Object[e]) ? [[e, s[t.specification.Object[e]]]] : [])));
 }
 function T(e, t, n) {
 	return E(e, t, n);
 }
 function E(a, s, c) {
-	e(a.meta === s.meta, "A copresheaf map needs a source and target on one category");
-	let l = a.meta;
+	e(a.domain === s.domain, "A copresheaf map needs a domain and codomain on one category");
+	let l = a.domain;
 	e(t(c), "Components must be a record"), r(c, l.specification.Object, "Components");
 	let u = [];
 	for (let o of l.specification.Object) {
 		let l = c[o];
 		e(t(l), \`Component \${o} must be a record\`);
-		let d = Object.keys(a.data[o].$id);
+		let d = Object.keys(a.specification[o].$id);
 		r(l, d, \`Component \${o}\`);
 		let f = d.map((t) => {
 			let r = l[t];
-			return e(typeof r == "string" && n(s.data[o].$id, r), \`Component \${o} sends \${t} to unknown part \${String(r)}\`), [t, r];
+			return e(typeof r == "string" && n(s.specification[o].$id, r), \`Component \${o} sends \${t} to unknown part \${String(r)}\`), [t, r];
 		});
 		u.push([o, i(f)]);
 	}
 	let d = i(u);
-	for (let t of l.specification.Object) for (let [n, r] of Object.entries(o(l, t))) for (let i of Object.keys(a.data[t].$id)) {
-		let o = d[r][a.data[t][n][i]], c = s.data[t][n][d[t][i]];
+	for (let t of l.specification.Object) for (let [n, r] of Object.entries(o(l, t))) for (let i of Object.keys(a.specification[t].$id)) {
+		let o = d[r][a.specification[t][n][i]], c = s.specification[t][n][d[t][i]];
 		e(o === c, \`Not natural at \${t}.\${n} on \${i}: \${o} versus \${c}\`);
 	}
 	return Object.freeze({
-		source: a,
-		target: s,
-		components: d
+		domain: a,
+		codomain: s,
+		specification: Object.freeze({ Object: d })
 	});
 }
 function D(e) {
-	return E(e, e, i(e.meta.specification.Object.map((t) => [t, i(Object.keys(e.data[t].$id).map((e) => [e, e]))])));
+	return E(e, e, i(e.domain.specification.Object.map((t) => [t, i(Object.keys(e.specification[t].$id).map((e) => [e, e]))])));
 }
 function O(t, r, i) {
-	e(n(t.components, r), \`Unknown object \${r}\`);
-	let a = t.components[r];
-	return e(n(a, i), \`\${i} is not a part of the map's source at \${r}\`), a[i];
+	e(n(t.specification.Object, r), \`Unknown object \${r}\`);
+	let a = t.specification.Object[r];
+	return e(n(a, i), \`\${i} is not a part of the map's domain at \${r}\`), a[i];
 }
 function k(...e) {
 	if (e.length === 1) {
@@ -6399,7 +7012,7 @@ function k(...e) {
 	return A(e[0], e[1]);
 }
 function A(t, n) {
-	return e(t.target === n.source, "Compose f : X → Y with g : Y → Z (g must start where f ends)"), E(t.source, n.target, i(Object.entries(t.components).map(([e, t]) => [e, i(Object.entries(t).map(([t, r]) => [t, n.components[e][r]]))])));
+	return e(t.codomain === n.domain, "Compose f : X → Y with g : Y → Z (g must start where f ends)"), E(t.domain, n.codomain, i(Object.entries(t.specification.Object).map(([e, t]) => [e, i(Object.entries(t).map(([t, r]) => [t, n.specification.Object[e][r]]))])));
 }
 // src/paths.ts
 function j(e, t) {
@@ -6445,7 +7058,7 @@ function P(e, t, n, r) {
 	let i = e.specification.Arrow;
 	return a(i, t, n) === a(i, t, r) && j(N(e, t, n), N(e, t, r)) === 0;
 }
-function ee(e) {
+function F(e) {
 	let t = e.specification.Arrow, n = M(e), r = (e, n, r) => a(t, e, n.slice(0, r)), i = (t, n, r, i) => j(N(e, t, r), N(e, t, i)) === 0 ? void 0 : {
 		source: t,
 		path: n,
@@ -6471,15 +7084,15 @@ function ee(e) {
 		}
 	}
 }
-var te = (e) => JSON.stringify(e), ne = (e) => \`[\${e.join(", ")}]\`;
-function re(t, n) {
-	let r = ee(t);
-	e(r === void 0, \`Enumerating the arrows of a category needs confluent equations, but these are not: \${ne(r?.left ?? [])} and \${ne(r?.right ?? [])} from \${r?.source} are both rewrites of \${ne(r?.path ?? [])} with different normal forms\`);
+var ee = (e) => JSON.stringify(e), te = (e) => \`[\${e.join(", ")}]\`;
+function I(t, n) {
+	let r = F(t);
+	e(r === void 0, \`Enumerating the arrows of a category needs confluent equations, but these are not: \${te(r?.left ?? [])} and \${te(r?.right ?? [])} from \${r?.source} are both rewrites of \${te(r?.path ?? [])} with different normal forms\`);
 	let i = /* @__PURE__ */ new Map();
 	return (r) => {
 		let a = i.get(r);
 		if (a) return a;
-		let s = /* @__PURE__ */ new Set([te([])]), c = [{
+		let s = /* @__PURE__ */ new Set([ee([])]), c = [{
 			path: [],
 			target: r
 		}];
@@ -6487,7 +7100,7 @@ function re(t, n) {
 			let { path: a, target: l } = c[i];
 			for (let [i, u] of Object.entries(o(t, l))) {
 				let o = N(t, r, [...a, i]);
-				s.has(te(o)) || (s.add(te(o)), e(c.length < n, \`More than \${n} arrows out of \${r}: the category may be infinite (raise maxArrows if it is just large)\`), c.push({
+				s.has(ee(o)) || (s.add(ee(o)), e(c.length < n, \`More than \${n} arrows out of \${r}: the category may be infinite (raise maxArrows if it is just large)\`), c.push({
 					path: o,
 					target: u
 				}));
@@ -6497,26 +7110,26 @@ function re(t, n) {
 	};
 }
 // src/functors.ts
-function F(e, t, n) {
-	return L(R(e, t, n));
+function L(e, t, n) {
+	return z(B(e, t, n));
 }
-function I(e, t, n) {
+function R(e, t, n) {
 	let r = [], i = t;
-	for (let t of n) r.push(...e.Arrow[i][t]), i = o(e.domain, i)[t];
+	for (let t of n) r.push(...e.specification.Arrow[i][t]), i = o(e.domain, i)[t];
 	return Object.freeze(r);
 }
-function L(t) {
+function z(t) {
 	if (l(t)) return t;
 	for (let [n, r] of Object.entries(t.domain.specification.Equation)) for (let [i, { left: a, right: o }] of Object.entries(r)) {
-		let r = t.Object[n], s = I(t, n, a), c = I(t, n, o);
+		let r = t.specification.Object[n], s = R(t, n, a), c = R(t, n, o);
 		e(P(t.codomain, r, s, c), \`Functor does not provably preserve equation \${n}.\${i}: [\${s.join(", ")}] and [\${c.join(", ")}] (normal forms [\${N(t.codomain, r, s).join(", ")}] and [\${N(t.codomain, r, c).join(", ")}])\`);
 	}
 	return c(t);
 }
-function ie(e) {
+function ne(e) {
 	return c(e);
 }
-function R(n, s, c) {
+function B(n, s, c) {
 	e(t(c), "Functor specification must be a record"), r(c, ["Object", "Arrow"], "Functor specification");
 	let l = c.Object, u = c.Arrow;
 	e(t(l) && t(u), "Functor mappings must be records"), r(l, n.specification.Object, "Functor object mapping");
@@ -6543,34 +7156,36 @@ function R(n, s, c) {
 	return Object.freeze({
 		domain: n,
 		codomain: s,
-		Object: f,
-		Arrow: i(m)
+		specification: Object.freeze({
+			Object: f,
+			Arrow: i(m)
+		})
 	});
 }
-function ae(e) {
+function V(e) {
 	let t = e.specification;
-	return c(R(e, e, {
+	return c(B(e, e, {
 		Object: Object.fromEntries(t.Object.map((e) => [e, e])),
 		Arrow: Object.fromEntries(Object.entries(t.Arrow).filter(([, e]) => Object.keys(e).length > 0).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((e) => [e, [e]]))]))
 	}));
 }
-var oe = /* @__PURE__ */ new Map();
-function se(t, n) {
+var re = /* @__PURE__ */ new Map();
+function ie(t, n) {
 	e(t.codomain === n.domain, "Compose F : A → B with G : B → C (G must start where F ends)");
-	let r = m(oe, [], [t, n], () => ce(t, n));
+	let r = m(re, [], [t, n], () => ae(t, n));
 	return l(t) && l(n) ? c(r) : r;
 }
-function ce(e, t) {
-	return R(e.domain, t.codomain, {
-		Object: Object.fromEntries(e.domain.specification.Object.map((n) => [n, t.Object[e.Object[n]]])),
-		Arrow: Object.fromEntries(Object.entries(e.Arrow).map(([n, r]) => [n, Object.fromEntries(Object.entries(r).map(([r, i]) => [r, I(t, e.Object[n], i)]))]))
+function ae(e, t) {
+	return B(e.domain, t.codomain, {
+		Object: Object.fromEntries(e.domain.specification.Object.map((n) => [n, t.specification.Object[e.specification.Object[n]]])),
+		Arrow: Object.fromEntries(Object.entries(e.specification.Arrow).map(([n, r]) => [n, Object.fromEntries(Object.entries(r).map(([r, i]) => [r, R(t, e.specification.Object[n], i)]))]))
 	});
 }
-function le(e) {
-	return "meta" in e && "data" in e;
+function oe(e) {
+	return "domain" in e && "specification" in e && !("codomain" in e);
 }
-function z(...e) {
-	let t = (e, t) => le(t) ? C(e, t) : se(e, t);
+function H(...e) {
+	let t = (e, t) => oe(t) ? C(e, t) : ie(e, t);
 	if (e.length === 1) {
 		let [n] = e;
 		return (e) => t(e, n);
@@ -6578,7 +7193,7 @@ function z(...e) {
 	return t(e[0], e[1]);
 }
 // src/provenance.ts
-function B(e, t, n) {
+function U(e, t, n) {
 	let r = e.provenance?.[t]?.[n];
 	return Object.freeze(r === void 0 ? {
 		object: t,
@@ -6589,7 +7204,7 @@ function B(e, t, n) {
 		provenance: r
 	});
 }
-function V() {
+function W() {
 	let e = {};
 	return {
 		add(t, n, r) {
@@ -6600,16 +7215,16 @@ function V() {
 		}
 	};
 }
-var ue = (e, t) => e !== void 0 && n(e, t) ? e[t] : void 0;
-function H(e, t) {
-	let n = ue(e.provenance?.Object, t);
+var se = (e, t) => e !== void 0 && n(e, t) ? e[t] : void 0;
+function G(e, t) {
+	let n = se(e.provenance?.Object, t);
 	return Object.freeze(n === void 0 ? { object: t } : {
 		object: t,
 		provenance: n
 	});
 }
-function U(e, t, n) {
-	let r = ue(ue(e.provenance?.Arrow, t), n);
+function K(e, t, n) {
+	let r = se(se(e.provenance?.Arrow, t), n);
 	return Object.freeze(r === void 0 ? {
 		source: t,
 		arrow: n
@@ -6619,8 +7234,8 @@ function U(e, t, n) {
 		provenance: r
 	});
 }
-function W(e, t, n) {
-	let r = ue(ue(e.provenance?.Equation, t), n);
+function q(e, t, n) {
+	let r = se(se(e.provenance?.Equation, t), n);
 	return Object.freeze(r === void 0 ? {
 		source: t,
 		equation: n
@@ -6630,13 +7245,13 @@ function W(e, t, n) {
 		provenance: r
 	});
 }
-function G(t, n) {
+function J(t, n) {
 	return e(t.provenance === void 0, "This category already records its provenance"), Object.freeze({
 		...t,
 		provenance: Object.freeze(n)
 	});
 }
-function K() {
+function ce() {
 	let e = {}, t = {}, n = {}, r = (e) => Object.freeze(Object.fromEntries(Object.entries(e).map(([e, t]) => [e, Object.freeze(t)])));
 	return {
 		object(t, n) {
@@ -6658,35 +7273,35 @@ function K() {
 	};
 }
 // src/category-coproducts.ts
-function q(e) {
+function Y(e) {
 	let t = Object.keys(e);
-	return m(de, t, t.map((t) => e[t]), () => fe(e));
+	return m(le, t, t.map((t) => e[t]), () => ue(e));
 }
-var de = /* @__PURE__ */ new Map();
-function fe(t) {
-	let r = Object.keys(t), i = t, a = r.map((e) => [e, i[e]]), o = K();
+var le = /* @__PURE__ */ new Map();
+function ue(t) {
+	let r = Object.keys(t), i = t, a = r.map((e) => [e, i[e]]), o = ce();
 	for (let [e, t] of a) {
 		for (let n of t.specification.Object) o.object(d(e, n), {
 			kind: "sum",
 			key: e,
-			object: H(t, n)
+			object: G(t, n)
 		});
 		for (let [n, r] of Object.entries(t.specification.Arrow)) for (let i of Object.keys(r)) o.arrow(d(e, n), i, {
 			kind: "sum",
 			key: e,
-			arrow: U(t, n, i)
+			arrow: K(t, n, i)
 		});
 		for (let [n, r] of Object.entries(t.specification.Equation)) for (let i of Object.keys(r)) o.equation(d(e, n), i, {
 			kind: "sum",
 			key: e,
-			equation: W(t, n, i)
+			equation: q(t, n, i)
 		});
 	}
-	let s = G(_({
+	let s = J(_({
 		Object: a.flatMap(([e, t]) => t.specification.Object.map((t) => d(e, t))),
 		Arrow: Object.fromEntries(a.flatMap(([e, t]) => Object.entries(t.specification.Arrow).map(([t, n]) => [d(e, t), Object.fromEntries(Object.entries(n).map(([t, n]) => [t, d(e, n)]))]))),
 		Equation: Object.fromEntries(a.flatMap(([e, t]) => Object.entries(t.specification.Equation).map(([t, n]) => [d(e, t), n])))
-	}), o.freeze()), u = (e) => Object.fromEntries(Object.entries(e.specification.Arrow).filter(([, e]) => Object.keys(e).length > 0).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((e) => [e, [e]]))])), f = Object.fromEntries(a.map(([e, t]) => [e, F(t, s, {
+	}), o.freeze()), u = (e) => Object.fromEntries(Object.entries(e.specification.Arrow).filter(([, e]) => Object.keys(e).length > 0).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((e) => [e, [e]]))])), f = Object.fromEntries(a.map(([e, t]) => [e, L(t, s, {
 		Object: Object.fromEntries(t.specification.Object.map((t) => [t, d(e, t)])),
 		Arrow: u(t)
 	})]));
@@ -6697,32 +7312,32 @@ function fe(t) {
 			e(Object.keys(t).length === r.length && r.every((e) => n(t, e)), \`A cocone needs one functor for each summand: \${r.join(", ")}\`);
 			let u = a.map(([e]) => [e, t[e]]), f = u.length > 0 ? u[0][1].codomain : o;
 			e(f !== void 0, "Copairing no functors needs the codomain: copair({}, C)"), e(u.every(([e, t]) => t.domain === i[e] && t.codomain === f) && (o === void 0 || o === f), "A cocone needs functors from the summands of this sum into one codomain");
-			let p = R(s, f, {
-				Object: Object.fromEntries(u.flatMap(([e, t]) => Object.entries(t.Object).map(([t, n]) => [d(e, t), n]))),
-				Arrow: Object.fromEntries(u.flatMap(([e, t]) => Object.entries(t.Arrow).map(([t, n]) => [d(e, t), n])))
+			let p = B(s, f, {
+				Object: Object.fromEntries(u.flatMap(([e, t]) => Object.entries(t.specification.Object).map(([t, n]) => [d(e, t), n]))),
+				Arrow: Object.fromEntries(u.flatMap(([e, t]) => Object.entries(t.specification.Arrow).map(([t, n]) => [d(e, t), n])))
 			});
 			return u.every(([, e]) => l(e)) ? c(p) : p;
 		}
 	});
 }
-function pe(e, t) {
-	return q({
+function de(e, t) {
+	return Y({
 		left: e,
 		right: t
 	});
 }
-function me() {
-	return q({}).category;
+function fe() {
+	return Y({}).category;
 }
-var he = q;
+var pe = Y;
 // src/category-extensions.ts
-function ge(n, r) {
+function me(n, r) {
 	e(t(r), "Category extension must be a record"), e(Object.keys(r).every((e) => e === "Object" || e === "Arrow" || e === "Equation"), "Unknown category extension field");
 	let i = n.specification, a = _({
 		Object: [...i.Object, ...r.Object ?? []],
-		Arrow: _e(i.Arrow, r.Arrow ?? {}, "Arrow"),
-		Equation: _e(i.Equation, r.Equation ?? {}, "Equation")
-	}), o = F(n, a, {
+		Arrow: he(i.Arrow, r.Arrow ?? {}, "Arrow"),
+		Equation: he(i.Equation, r.Equation ?? {}, "Equation")
+	}), o = L(n, a, {
 		Object: Object.fromEntries(i.Object.map((e) => [e, e])),
 		Arrow: Object.fromEntries(Object.entries(i.Arrow).filter(([, e]) => Object.keys(e).length > 0).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((e) => [e, [e]]))]))
 	});
@@ -6731,7 +7346,7 @@ function ge(n, r) {
 		inclusion: o
 	});
 }
-function _e(r, i, a) {
+function he(r, i, a) {
 	e(t(i), \`Extension \${a} must be a record\`);
 	let o = {};
 	for (let [e, t] of Object.entries(r)) o[e] = { ...t };
@@ -6747,7 +7362,7 @@ function _e(r, i, a) {
 	return o;
 }
 // src/category-omissions.ts
-function ve(r, i) {
+function ge(r, i) {
 	e(t(i), "Category omission must be a record"), e(Object.keys(i).every((e) => e === "Object" || e === "Arrow" || e === "Equation"), "Unknown category omission field");
 	let a = r.specification, s = (t, n) => (e(Array.isArray(t) && t.every((e) => typeof e == "string"), \`\${n} must be a list of names\`), t), c = (i, c) => {
 		let l = /* @__PURE__ */ new Map();
@@ -6776,7 +7391,7 @@ function ve(r, i) {
 		Object: a.Object.filter((e) => !l.has(e)),
 		Arrow: g(a.Arrow, u),
 		Equation: g(a.Equation, d)
-	}), y = F(v, r, {
+	}), y = L(v, r, {
 		Object: Object.fromEntries(v.specification.Object.map((e) => [e, e])),
 		Arrow: Object.fromEntries(Object.entries(v.specification.Arrow).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((e) => [e, [e]]))]))
 	}), b = (e) => Object.freeze(Object.fromEntries([...e].filter(([, e]) => e.size > 0).map(([e, t]) => [e, Object.freeze([...t])])));
@@ -6791,7 +7406,7 @@ function ve(r, i) {
 	});
 }
 // src/category-opposites.ts
-function ye(t, r, i) {
+function _e(t, r, i) {
 	let a = {};
 	return {
 		result: a,
@@ -6801,33 +7416,33 @@ function ye(t, r, i) {
 		}
 	};
 }
-function be(e) {
-	let t = e.specification, n = K();
+function ve(e) {
+	let t = e.specification, n = ce();
 	for (let r of t.Object) n.object(r, {
 		kind: "opposite",
-		object: H(e, r)
+		object: G(e, r)
 	});
-	let r = ye("Arrow", "in the opposite category", "qualify the arrows first (category.qualifyArrows)");
+	let r = _e("Arrow", "in the opposite category", "qualify the arrows first (category.qualifyArrows)");
 	for (let [i, a] of Object.entries(t.Arrow)) for (let [t, o] of Object.entries(a)) r.add(o, t, i), n.arrow(o, t, {
 		kind: "opposite",
-		arrow: U(e, i, t)
+		arrow: K(e, i, t)
 	});
-	let i = ye("Equation", "in the opposite category", "rename one of the equations");
+	let i = _e("Equation", "in the opposite category", "rename one of the equations");
 	for (let [r, o] of Object.entries(t.Equation)) for (let [s, { left: c, right: l }] of Object.entries(o)) {
 		let o = a(t.Arrow, r, c);
 		i.add(o, s, h([...c].reverse(), [...l].reverse())), n.equation(o, s, {
 			kind: "opposite",
-			equation: W(e, r, s)
+			equation: q(e, r, s)
 		});
 	}
-	return G(_({
+	return J(_({
 		Object: t.Object,
 		Arrow: r.result,
 		Equation: i.result
 	}), n.freeze());
 }
-function xe(e, t, n) {
-	let r = e.specification, i = ye("Arrow", "after renaming", n);
+function ye(e, t, n) {
+	let r = e.specification, i = _e("Arrow", "after renaming", n);
 	for (let [e, n] of Object.entries(r.Arrow)) for (let [r, a] of Object.entries(n)) i.add(e, t(e, r), a);
 	let a = (e, n) => {
 		let i = e;
@@ -6843,18 +7458,18 @@ function xe(e, t, n) {
 		Equation: o
 	});
 }
-function Se(e) {
-	return xe(e, (e, t) => d(e, t), "");
+function be(e) {
+	return ye(e, (e, t) => d(e, t), "");
 }
-function Ce(t) {
-	return xe(t, (t, n) => {
+function xe(t) {
+	return ye(t, (t, n) => {
 		for (let e = 0; e < n.length; e++) if (n[e] === "\\\\") e++;
 		else if (n[e] === ".") return n.slice(e + 1);
 		e(!1, \`Arrow \${n} at \${t} is not qualified\`);
 	}, "the unqualified names are not unique");
 }
 // src/category-products.ts
-function we(t) {
+function Se(t) {
 	let r = {};
 	return {
 		result: r,
@@ -6864,18 +7479,18 @@ function we(t) {
 		}
 	};
 }
-function Te(e) {
+function Ce(e) {
 	let t = Object.keys(e);
-	return m(Ee, t, t.map((t) => e[t]), () => De(e));
+	return m(we, t, t.map((t) => e[t]), () => Te(e));
 }
-var Ee = /* @__PURE__ */ new Map();
-function De(t) {
-	let r = Object.keys(t), i = r.map((e) => t[e]), a = [], s = we("Arrow"), d = we("Equation"), m = r.map(() => ({})), g = r.map(() => we("Arrow")), v = {}, y = {}, b = {}, x = (e, t, n) => n.map((n) => u(f(e, t, n)));
+var we = /* @__PURE__ */ new Map();
+function Te(t) {
+	let r = Object.keys(t), i = r.map((e) => t[e]), a = [], s = Se("Arrow"), d = Se("Equation"), m = r.map(() => ({})), g = r.map(() => Se("Arrow")), v = {}, y = {}, b = {}, x = (e, t, n) => n.map((n) => u(f(e, t, n)));
 	for (let e of p(i.map((e) => e.specification.Object))) {
 		let t = u(e);
 		a.push(t), v[t] = Object.freeze({
 			kind: "product",
-			factors: Object.freeze(Object.fromEntries(r.map((t, n) => [t, H(i[n], e[n])])))
+			factors: Object.freeze(Object.fromEntries(r.map((t, n) => [t, G(i[n], e[n])])))
 		}), i.forEach((n, i) => {
 			m[i][t] = e[i];
 			for (let [a, c] of Object.entries(o(n, e[i]))) {
@@ -6883,7 +7498,7 @@ function De(t) {
 				s.add(t, o, u(f(e, i, c))), (y[t] ??= {})[o] = Object.freeze({
 					kind: "product",
 					key: r[i],
-					arrow: U(n, e[i], a)
+					arrow: K(n, e[i], a)
 				}), g.forEach((e, n) => e.add(t, o, n === i ? [a] : []));
 			}
 		});
@@ -6892,8 +7507,8 @@ function De(t) {
 			(b[t] ??= {})[o] = Object.freeze({
 				kind: "interchange",
 				arrows: Object.freeze({
-					[r[n]]: U(i[n], e[n], s),
-					[r[a]]: U(i[a], e[a], l)
+					[r[n]]: K(i[n], e[n], s),
+					[r[a]]: K(i[a], e[a], l)
 				})
 			}), d.add(t, o, h([...x(e, n, [s]), ...x(f(e, n, c), a, [l])], [...x(e, a, [l]), ...x(f(e, a, p), n, [s])]));
 		}
@@ -6904,12 +7519,12 @@ function De(t) {
 				(b[t] ??= {})[a] = Object.freeze({
 					kind: "product",
 					key: r[i],
-					equation: W(n, e[i], o)
+					equation: q(n, e[i], o)
 				}), d.add(t, a, h(x(e, i, s), x(e, i, c)));
 			}
 		});
 	}
-	let S = G(_({
+	let S = J(_({
 		Object: a,
 		Arrow: s.result,
 		Equation: d.result
@@ -6917,7 +7532,7 @@ function De(t) {
 		Object: Object.freeze(v),
 		Arrow: Object.freeze(Object.fromEntries(Object.entries(y).map(([e, t]) => [e, Object.freeze(t)]))),
 		Equation: Object.freeze(Object.fromEntries(Object.entries(b).map(([e, t]) => [e, Object.freeze(t)])))
-	}), C = Object.fromEntries(r.map((e, t) => [e, F(S, i[t], {
+	}), C = Object.fromEntries(r.map((e, t) => [e, L(S, i[t], {
 		Object: m[t],
 		Arrow: g[t].result
 	})]));
@@ -6928,14 +7543,14 @@ function De(t) {
 			e(Object.keys(t).length === r.length && r.every((e) => n(t, e)), \`A cone needs one functor for each factor: \${r.join(", ")}\`);
 			let s = r.map((e) => t[e]), d = s.length > 0 ? s[0].domain : a;
 			e(d !== void 0, "Pairing no functors needs the domain: pair({}, D)"), e(s.every((e, t) => e.domain === d && e.codomain === i[t]) && (a === void 0 || a === d), "A cone needs functors from one domain into the factors of this product");
-			let p = (e) => s.map((t) => t.Object[e]), m = {};
+			let p = (e) => s.map((t) => t.specification.Object[e]), m = {};
 			for (let e of d.specification.Object) for (let t of Object.keys(o(d, e))) {
 				let n = p(e), r = [];
 				s.forEach((a, s) => {
-					for (let c of a.Arrow[e][t]) r.push(u(f(n, s, c))), n = f(n, s, o(i[s], n[s])[c]);
+					for (let c of a.specification.Arrow[e][t]) r.push(u(f(n, s, c))), n = f(n, s, o(i[s], n[s])[c]);
 				}), (m[e] ??= {})[t] = r;
 			}
-			let h = R(d, S, {
+			let h = B(d, S, {
 				Object: Object.fromEntries(d.specification.Object.map((e) => [e, u(p(e))])),
 				Arrow: m
 			});
@@ -6943,17 +7558,17 @@ function De(t) {
 		}
 	});
 }
-function Oe(e, t) {
-	return Te({
+function Ee(e, t) {
+	return Ce({
 		left: e,
 		right: t
 	});
 }
-function ke() {
-	return Te({}).category;
+function De() {
+	return Ce({}).category;
 }
 // src/category-pullbacks.ts
-function Ae(t) {
+function Oe(t) {
 	let r = {};
 	return {
 		result: r,
@@ -6963,9 +7578,9 @@ function Ae(t) {
 		}
 	};
 }
-var J = (e) => \`[\${e.join(", ")}]\`;
-function je(e, t) {
-	let n = e.domain, r = /* @__PURE__ */ new Set(), i = n.specification.Object.filter((n) => e.Object[n] === t.source).map((e) => [e, 0]);
+var X = (e) => \`[\${e.join(", ")}]\`;
+function ke(e, t) {
+	let n = e.domain, r = /* @__PURE__ */ new Set(), i = n.specification.Object.filter((n) => e.specification.Object[n] === t.source).map((e) => [e, 0]);
 	for (; i.length;) {
 		let [a, s] = i.pop();
 		if (s === t.from.length) return !0;
@@ -6973,57 +7588,57 @@ function je(e, t) {
 		if (!r.has(c)) {
 			r.add(c);
 			for (let [r, c] of Object.entries(o(n, a))) {
-				let n = e.Arrow[a][r];
+				let n = e.specification.Arrow[a][r];
 				n.length === 0 ? i.push([c, s]) : n[0] === t.from[s] && i.push([c, s + 1]);
 			}
 		}
 	}
 	return !1;
 }
-function Me(t) {
+function Ae(t) {
 	let r = Object.keys(t), i = r.map((e) => t[e]);
 	e(i.length > 0, "A pullback needs at least one leg");
 	let a = i[0].codomain;
 	e(i.every((e) => e.codomain === a), "A pullback cospan needs functors into one category");
 	let s = i.map((e) => e.domain);
 	i.forEach((t, n) => {
-		for (let [i, a] of Object.entries(t.Arrow)) for (let [t, o] of Object.entries(a)) e(o.length <= 1, \`Pullbacks need legs that send each generating arrow to a generating arrow or an identity, but \${r[n]} sends \${i}.\${t} to \${J(o)}\`);
+		for (let [i, a] of Object.entries(t.specification.Arrow)) for (let [t, o] of Object.entries(a)) e(o.length <= 1, \`Pullbacks need legs that send each generating arrow to a generating arrow or an identity, but \${r[n]} sends \${i}.\${t} to \${X(o)}\`);
 	});
-	let d = ee(a);
-	e(d === void 0, \`Pullbacks need the codomain's equations to be confluent, but \${J(d?.left ?? [])} and \${J(d?.right ?? [])} from \${d?.source} are both rewrites of \${J(d?.path ?? [])} with different normal forms\`);
+	let d = F(a);
+	e(d === void 0, \`Pullbacks need the codomain's equations to be confluent, but \${X(d?.left ?? [])} and \${X(d?.right ?? [])} from \${d?.source} are both rewrites of \${X(d?.path ?? [])} with different normal forms\`);
 	for (let t of M(a)) i.forEach((n, i) => {
-		e(!je(n, t), \`Pullbacks need the legs' images to avoid the codomain's equations, but \${r[i]} sends a path onto \${J(t.from)} at \${t.source}, which equals \${J(t.to)}: arrows of the pullback could then agree only up to that equation, and not be reached step by step\`);
+		e(!ke(n, t), \`Pullbacks need the legs' images to avoid the codomain's equations, but \${r[i]} sends a path onto \${X(t.from)} at \${t.source}, which equals \${X(t.to)}: arrows of the pullback could then agree only up to that equation, and not be reached step by step\`);
 	});
-	let m = (e, t, n) => i[e].Arrow[t][n][0], g = (e, t, n) => {
+	let m = (e, t, n) => i[e].specification.Arrow[t][n][0], g = (e, t, n) => {
 		let r = [], i = t;
 		for (let t of n) {
 			let n = m(e, i, t);
 			n !== void 0 && r.push(n), i = o(s[e], i)[t];
 		}
 		return r;
-	}, v = (e, t, n) => u(f(e, t, n)), y = p(s.map((e) => e.specification.Object)).filter((e) => e.every((t, n) => i[n].Object[t] === i[0].Object[e[0]])), b = Ae("Arrow"), x = Ae("Equation"), S = r.map(() => Ae("Arrow")), C = K();
+	}, v = (e, t, n) => u(f(e, t, n)), y = p(s.map((e) => e.specification.Object)).filter((e) => e.every((t, n) => i[n].specification.Object[t] === i[0].specification.Object[e[0]])), b = Oe("Arrow"), x = Oe("Equation"), S = r.map(() => Oe("Arrow")), C = ce();
 	for (let e of y) {
 		let t = u(e);
 		C.object(t, {
 			kind: "pullback",
-			legs: Object.fromEntries(r.map((t, n) => [t, H(s[n], e[n])]))
+			legs: Object.fromEntries(r.map((t, n) => [t, G(s[n], e[n])]))
 		}), s.forEach((n, i) => {
 			for (let [a, s] of Object.entries(o(n, e[i]))) {
 				if (m(i, e[i], a) !== void 0) continue;
 				let o = v(e, i, a);
 				b.add(t, o, u(f(e, i, s))), C.arrow(t, o, {
 					kind: "pullback",
-					arrows: { [r[i]]: U(n, e[i], a) }
+					arrows: { [r[i]]: K(n, e[i], a) }
 				}), S.forEach((e, n) => e.add(t, o, n === i ? [a] : []));
 			}
 		});
-		for (let n of Object.keys(o(a, i[0].Object[e[0]]))) {
+		for (let n of Object.keys(o(a, i[0].specification.Object[e[0]]))) {
 			let i = s.map((t, r) => Object.keys(o(t, e[r])).filter((t) => m(r, e[r], t) === n));
 			for (let n of p(i)) {
 				let i = u(n);
 				b.add(t, i, u(n.map((t, n) => o(s[n], e[n])[t]))), C.arrow(t, i, {
 					kind: "pullback",
-					arrows: Object.fromEntries(r.map((t, r) => [t, U(s[r], e[r], n[r])]))
+					arrows: Object.fromEntries(r.map((t, r) => [t, K(s[r], e[r], n[r])]))
 				}), S.forEach((e, r) => e.add(t, i, [n[r]]));
 			}
 		}
@@ -7033,8 +7648,8 @@ function Me(t) {
 			x.add(t, o, h([v(e, n, a), v(f(e, n, c), i, l)], [v(e, i, l), v(f(e, i, d), n, a)])), C.equation(t, o, {
 				kind: "interchange",
 				arrows: {
-					[r[n]]: U(s[n], e[n], a),
-					[r[i]]: U(s[i], e[i], l)
+					[r[n]]: K(s[n], e[n], a),
+					[r[i]]: K(s[i], e[i], l)
 				}
 			});
 		}
@@ -7046,7 +7661,7 @@ function Me(t) {
 			let c = i.specification.Equation[t[a]] ?? {};
 			for (let [l, { left: d, right: _ }] of Object.entries(c)) {
 				let c = g(a, t[a], d);
-				e(J(c) === J(g(a, t[a], _)), \`Leg \${r[a]} does not preserve equation \${t[a]}.\${l}: its sides go to \${J(c)} and \${J(g(a, t[a], _))}\`);
+				e(X(c) === X(g(a, t[a], _)), \`Leg \${r[a]} does not preserve equation \${t[a]}.\${l}: its sides go to \${X(c)} and \${X(g(a, t[a], _))}\`);
 				let y = s.map((e, n) => n === a ? [[]] : w(n, t[n], c));
 				c.length >= 2 && y.forEach((n, i) => {
 					if (i !== a) for (let c of n) {
@@ -7054,7 +7669,7 @@ function Me(t) {
 						c.slice(0, -1).forEach((u, d) => {
 							n = o(s[i], n)[u];
 							let f = Object.keys(o(s[i], n)).find((e) => m(i, n, e) === void 0);
-							e(f === void 0, \`Pullbacks need no silent arrows part-way along a path that follows an equation, but \${r[i]} has \${n}.\${f}, sent to an identity, after \${J(c.slice(0, d + 1))}, which follows \${r[a]}'s equation \${t[a]}.\${l}: the pullback could need an equation for every number of silent steps there\`);
+							e(f === void 0, \`Pullbacks need no silent arrows part-way along a path that follows an equation, but \${r[i]} has \${n}.\${f}, sent to an identity, after \${X(c.slice(0, d + 1))}, which follows \${r[a]}'s equation \${t[a]}.\${l}: the pullback could need an equation for every number of silent steps there\`);
 						});
 					}
 				});
@@ -7074,18 +7689,18 @@ function Me(t) {
 					x.add(n, g, h(p(d), p(_))), C.equation(n, g, {
 						kind: "pullback",
 						key: r[a],
-						equation: W(i, t[a], l),
+						equation: q(i, t[a], l),
 						partners: Object.fromEntries(r.flatMap((t, n) => n === a ? [] : [[t, Object.freeze([...e[n]])]]))
 					});
 				}
 			}
 		});
 	}
-	let T = G(_({
+	let T = J(_({
 		Object: y.map(u),
 		Arrow: b.result,
 		Equation: x.result
-	}), C.freeze()), E = Object.fromEntries(r.map((e, t) => [e, F(T, s[t], {
+	}), C.freeze()), E = Object.fromEntries(r.map((e, t) => [e, L(T, s[t], {
 		Object: Object.fromEntries(y.map((e) => [u(e), e[t]])),
 		Arrow: S[t].result
 	})]));
@@ -7098,11 +7713,11 @@ function Me(t) {
 			let a = r.map((e) => t[e]), d = a[0].domain;
 			e(a.every((e, t) => e.domain === d && e.codomain === s[t]), "A pullback cone needs functors from one category into the legs’ domains");
 			let p = (t) => {
-				let n = a.map((e) => e.Object[t]);
-				return e(n.every((e, t) => i[t].Object[e] === i[0].Object[n[0]]), \`The cone does not commute at object \${t}\`), n;
+				let n = a.map((e) => e.specification.Object[t]);
+				return e(n.every((e, t) => i[t].specification.Object[e] === i[0].specification.Object[n[0]]), \`The cone does not commute at object \${t}\`), n;
 			}, h = {};
 			for (let t of d.specification.Object) for (let n of Object.keys(o(d, t))) {
-				let r = a.map((e) => e.Arrow[t][n]), i = r.map(() => 0), c = p(t), l = [];
+				let r = a.map((e) => e.specification.Arrow[t][n]), i = r.map(() => 0), c = p(t), l = [];
 				for (; r.forEach((e, t) => {
 					for (; i[t] < e.length && m(t, c[t], e[i[t]]) === void 0;) {
 						let n = e[i[t]++];
@@ -7114,7 +7729,7 @@ function Me(t) {
 				}
 				(h[t] ??= {})[n] = l;
 			}
-			let g = R(d, T, {
+			let g = B(d, T, {
 				Object: Object.fromEntries(d.specification.Object.map((e) => [e, u(p(e))])),
 				Arrow: h
 			});
@@ -7122,8 +7737,272 @@ function Me(t) {
 		}
 	});
 }
-// src/category-pushouts.ts
-function Ne(e) {
+// src/category-limits.ts
+function je(t) {
+	let r = {};
+	return {
+		result: r,
+		add: (i, a, o) => {
+			let s = r[i] ??= {};
+			e(!n(s, a), \`\${t} name \${a} occurs twice at \${i} in the limit; rename an arrow or object of one of the diagram’s categories\`), s[a] = o;
+		}
+	};
+}
+var Z = (e) => \`[\${e.join(", ")}]\`;
+function Me(t, n) {
+	let r = Object.keys(t.Object);
+	e(r.length > 0, n === "limit" ? "A limit needs a diagram with at least one object; the empty limit is category.one()" : "A colimit needs a diagram with at least one object; the empty colimit is category.zero()");
+	let i = r.map((e) => t.Object[e]), a = new Map(r.map((e, t) => [e, t])), o = [], s = t.Arrow ?? {};
+	for (let [t, n] of Object.entries(s)) {
+		e(a.has(t), \`Unknown object \${t} in the diagram's arrows\`);
+		for (let [r, s] of Object.entries(n)) {
+			e(Array.isArray(s) && s.length === 2, \`Diagram arrow \${t}.\${r} must be [target object, functor]\`);
+			let [n, c] = s;
+			e(a.has(n), \`Unknown target \${n} of diagram arrow \${t}.\${r}\`);
+			let [l, u] = [a.get(t), a.get(n)];
+			e(c.domain === i[l] && c.codomain === i[u], \`The functor of diagram arrow \${t}.\${r} must go from \${t}'s category to \${n}'s\`), o.push({
+				source: l,
+				name: r,
+				target: u,
+				functor: c
+			});
+		}
+	}
+	return {
+		keys: r,
+		cats: i,
+		edges: o,
+		arrowSpec: s,
+		shape: _({
+			Object: r,
+			Arrow: Object.fromEntries(Object.entries(s).map(([e, t]) => [e, Object.fromEntries(Object.entries(t).map(([e, [t]]) => [e, t]))]))
+		})
+	};
+}
+function Ne(t) {
+	let { keys: r, cats: i, edges: a, arrowSpec: s, shape: d } = Me(t, "limit"), f = r.map((e, t) => a.filter((e) => e.target === t)), m = (e) => \`\${r[e.source]}.\${e.name}\`;
+	for (let t of a) for (let [n, r] of Object.entries(t.functor.specification.Arrow)) for (let [i, a] of Object.entries(r)) e(a.length <= 1, \`Limits need functors that send each generating arrow to a generating arrow or an identity, but \${m(t)} sends \${n}.\${i} to \${Z(a)}\`);
+	r.forEach((t, n) => {
+		if (f[n].length === 0) return;
+		let r = F(i[n]);
+		e(r === void 0, \`Limits need the equations of every category a functor ends at to be confluent, but at \${t}, \${Z(r?.left ?? [])} and \${Z(r?.right ?? [])} from \${r?.source} are both rewrites of \${Z(r?.path ?? [])} with different normal forms\`);
+		for (let t of M(i[n])) for (let r of f[n]) e(!ke(r.functor, t), \`Limits need the functors' images to avoid their codomains' equations, but \${m(r)} sends a path onto \${Z(t.from)} at \${t.source}, which equals \${Z(t.to)}: arrows of the limit could then agree only up to that equation, and not be reached step by step\`);
+	});
+	let g = (e) => {
+		if (e.source === e.target) return !0;
+		let t = /* @__PURE__ */ new Set([e.source]), n = [e.source];
+		for (; n.length;) {
+			let r = n.pop();
+			for (let i of a) if (i !== e) for (let [e, a] of [[i.source, i.target], [i.target, i.source]]) e === r && !t.has(a) && (t.add(a), n.push(a));
+		}
+		return t.has(e.target);
+	};
+	for (let t of a.filter(g)) for (let [n, r] of Object.entries(t.functor.specification.Arrow)) for (let [i, a] of Object.entries(r)) e(a.length === 1, \`Limits need the functors on cycles of the shape to send no arrow to an identity, but \${m(t)}, on a cycle, sends \${n}.\${i} to []: an arrow of the limit could then move one coordinate along several arrows at once\`);
+	let v = r.map((e, t) => {
+		let n = /* @__PURE__ */ new Set([t]), r = [t];
+		for (; r.length;) {
+			let e = r.pop();
+			for (let t of a) t.source === e && !n.has(t.target) && (n.add(t.target), r.push(t.target));
+		}
+		return n;
+	}), y = r.map((e, t) => t).filter((e) => r.every((t, n) => !v[n].has(e) || v[e].has(n)) && r.every((t, n) => n >= e || !(v[n].has(e) && v[e].has(n)))), b = r.map((e, t) => t).filter((e) => f[e].length === 0), x = (e, t, n) => e.functor.specification.Arrow[t]?.[n]?.[0], S = (e, t, n) => {
+		let r = [], a = t;
+		for (let t of n) {
+			let n = x(e, a, t);
+			n !== void 0 && r.push(n), a = o(i[e.source], a)[t];
+		}
+		return r;
+	}, C = [];
+	for (let e of p(y.map((e) => i[e].specification.Object))) {
+		let t = r.map(() => void 0);
+		y.forEach((n, r) => t[n] = e[r]);
+		let n = !0;
+		for (let e = !0; e && n;) {
+			e = !1;
+			for (let r of a) {
+				let i = t[r.source];
+				if (i === void 0) continue;
+				let a = r.functor.specification.Object[i];
+				t[r.target] === void 0 ? (t[r.target] = a, e = !0) : t[r.target] !== a && (n = !1);
+			}
+		}
+		n && C.push(t);
+	}
+	let w = (e) => u(y.map((t) => e[t])), T = (e, t) => u(y.map((n) => t[n] ?? e[n])), E = (e, t) => e.map((e, n) => t[n] === void 0 ? e : o(i[n], e)[t[n]]), D = (e) => r.map((e, t) => t).filter((t) => e[t] !== void 0), O = (e, t, n, i) => {
+		let o = [], s = (t) => {
+			let n = (e, n) => s(t.map((t, r) => r === e ? n : t));
+			for (let r of a) {
+				let [a, o] = [t[r.source], t[r.target]];
+				if (typeof a == "string") {
+					let t = x(r, e[r.source], a);
+					if (t === void 0) {
+						if (typeof o == "string") return;
+						if (o === void 0) return n(r.target, null);
+					} else {
+						if (o === null) return;
+						if (o === void 0) return i(r.target).includes(t) ? n(r.target, t) : void 0;
+						if (o !== t) return;
+					}
+				} else if (typeof o == "string") {
+					if (a === null) return;
+					for (let t of i(r.source)) x(r, e[r.source], t) === o && n(r.source, t);
+					return;
+				}
+			}
+			o.push(t.map((e) => e ?? void 0));
+		};
+		return s(r.map((e, r) => r === t ? n : void 0)), o;
+	}, k = (e) => (t) => Object.keys(o(i[t], e[t])), A = (e) => {
+		let t = /* @__PURE__ */ new Set(), n = [];
+		return r.forEach((r, i) => {
+			for (let r of k(e)(i)) for (let a of O(e, i, r, k(e))) {
+				let e = JSON.stringify(a);
+				t.has(e) || (t.add(e), n.push(a));
+			}
+		}), n;
+	}, j = (t, n, i) => {
+		let a = r.map(() => 0), o = [], s = [...t];
+		for (; n.some((e, t) => a[t] < e.length);) {
+			let t = (e) => a[e] < n[e].length ? [n[e][a[e]]] : [], c = r.map((e, t) => t).filter((e) => a[e] < n[e].length).map((e) => O(s, e, n[e][a[e]], t)[0]).find((e) => e !== void 0);
+			e(c !== void 0, \`\${i}: its coordinates cannot be followed step by step\`), o.push({
+				from: s,
+				step: c
+			}), s = E(s, c);
+			for (let e of D(c)) a[e]++;
+		}
+		return o;
+	}, P = je("Arrow"), ee = je("Equation"), te = r.map(() => je("Arrow")), I = ce(), R = /* @__PURE__ */ new Map();
+	for (let e of C) {
+		let t = w(e);
+		I.object(t, {
+			kind: "limit",
+			objects: Object.fromEntries(r.map((t, n) => [t, G(i[n], e[n])]))
+		});
+		let n = A(e);
+		R.set(t, n);
+		for (let a of n) {
+			let n = T(e, a);
+			P.add(t, n, w(E(e, a))), I.arrow(t, n, {
+				kind: "limit",
+				arrows: Object.fromEntries(D(a).map((t) => [r[t], K(i[t], e[t], a[t])]))
+			}), te.forEach((e, r) => e.add(t, n, a[r] === void 0 ? [] : [a[r]]));
+		}
+		n.forEach((a, o) => {
+			for (let s of n.slice(o + 1)) {
+				if (D(a).some((e) => s[e] !== void 0)) continue;
+				let n = a.map((e, t) => e ?? s[t]), o = T(e, n);
+				ee.add(t, o, h([T(e, a), T(E(e, a), s)], [T(e, s), T(E(e, s), a)])), I.equation(t, o, {
+					kind: "interchange",
+					arrows: Object.fromEntries(D(n).map((t) => [r[t], K(i[t], e[t], n[t])]))
+				});
+			}
+		});
+	}
+	for (let t of C) {
+		let n = w(t);
+		for (let o of b) {
+			let s = i[o].specification.Equation[t[o]] ?? {};
+			for (let [c, { left: l, right: d }] of Object.entries(s)) {
+				let s = \`\${r[o]}'s equation \${t[o]}.\${c}\`;
+				for (let n of a.filter((e) => e.source === o)) e(Z(S(n, t[o], l)) === Z(S(n, t[o], d)), \`\${m(n)} does not preserve \${s}: its sides go to \${Z(S(n, t[o], l))} and \${Z(S(n, t[o], d))}\`);
+				let f = (e) => {
+					let n = [], r = (t, i, a) => {
+						if (i === e.length) return void n.push(a);
+						for (let n of O(t, o, e[i], k(t))) r(E(t, n), i + 1, [...a, {
+							from: t,
+							step: n
+						}]);
+					};
+					return r([...t], 0, []), n;
+				}, p = (t) => {
+					for (let n = 1; n < t.length; n++) {
+						let i = new Set(t.slice(0, n).flatMap(({ step: e }) => D(e))), a = new Set(t.slice(n).flatMap(({ step: e }) => D(e))), c = t[n].from, l = /* @__PURE__ */ new Set(), u = [[c, i]];
+						for (; u.length;) {
+							let [t, n] = u.pop(), i = JSON.stringify([t, [...n].sort()]);
+							if (!l.has(i)) {
+								l.add(i);
+								for (let i of A(t)) {
+									if (i[o] !== void 0 || !D(i).some((e) => n.has(e))) continue;
+									let c = D(i).find((e) => a.has(e));
+									e(c === void 0, \`Limits need nothing to come between the steps of a lifted equation, but \${r[c ?? 0]} can move along \${i[c ?? 0]} at \${t[c ?? 0]} part-way along \${s}, after it has moved with it and before it moves with it again: the limit could need an equation for every number of such steps\`), u.push([E(t, i), /* @__PURE__ */ new Set([...n, ...D(i)])]);
+								}
+							}
+						}
+					}
+				}, g = /* @__PURE__ */ new Map(), _ = (e) => e.map(({ from: e, step: t }) => T(e, t));
+				for (let [e, n] of [[l, d], [d, l]]) for (let i of f(e)) {
+					p(i);
+					let a = r.map((e, t) => t === o ? [] : i.flatMap(({ step: e }) => e[t] === void 0 ? [] : [e[t]])), c = JSON.stringify(a);
+					if (g.has(c)) continue;
+					let u = _(j(t, a.map((e, t) => t === o ? n : e), \`Lifting \${s}\`));
+					g.set(c, e === l ? {
+						partners: a,
+						left: _(i),
+						right: u
+					} : {
+						partners: a,
+						left: u,
+						right: _(i)
+					});
+				}
+				for (let { partners: e, left: a, right: s } of g.values()) {
+					let l = u(y.map((n) => n === o ? c : e[n].length === 0 ? t[n] : u(e[n])));
+					ee.add(n, l, h(a, s)), I.equation(n, l, {
+						kind: "limit",
+						key: r[o],
+						equation: q(i[o], t[o], c),
+						partners: Object.fromEntries(r.flatMap((t, n) => n === o ? [] : [[t, Object.freeze([...e[n]])]]))
+					});
+				}
+			}
+		}
+	}
+	let z = J(_({
+		Object: C.map(w),
+		Arrow: P.result,
+		Equation: ee.result
+	}), I.freeze()), ne = Object.fromEntries(r.map((e, t) => [e, L(z, i[t], {
+		Object: Object.fromEntries(C.map((e) => [w(e), e[t]])),
+		Arrow: te[t].result
+	})])), V = (t) => {
+		e(Object.keys(t).length === r.length && r.every((e) => n(t, e)), \`A cone needs one functor for each object of the diagram: \${r.join(", ")}\`);
+		let s = r.map((e) => t[e]), u = s[0].domain;
+		e(s.every((e, t) => e.domain === u && e.codomain === i[t]), "A limit cone needs functors from one category into the diagram’s categories");
+		let d = (t) => {
+			let n = s.map((e) => e.specification.Object[t]);
+			for (let r of a) e(r.functor.specification.Object[n[r.source]] === n[r.target], \`The cone does not commute with \${m(r)} at object \${t}\`);
+			return n;
+		}, p = {};
+		for (let t of u.specification.Object) {
+			let n = d(t);
+			for (let r of Object.keys(o(u, t))) {
+				let o = s.map((e, a) => {
+					let o = e.specification.Arrow[t][r];
+					return f[a].length === 0 ? o : N(i[a], n[a], o);
+				});
+				for (let i of a) e(Z(S(i, n[i.source], o[i.source])) === Z(o[i.target]), \`The cone does not commute with \${m(i)} along \${t}.\${r}\`);
+				(p[t] ??= {})[r] = j(n, o, \`The cone along \${t}.\${r}\`).map(({ from: e, step: t }) => T(e, t));
+			}
+		}
+		let h = B(u, z, {
+			Object: Object.fromEntries(u.specification.Object.map((e) => [e, w(d(e))])),
+			Arrow: p
+		});
+		return s.every((e) => l(e)) ? c(h) : h;
+	};
+	return Object.freeze({
+		diagram: Object.freeze({
+			Object: Object.freeze({ ...t.Object }),
+			Arrow: s
+		}),
+		shape: d,
+		category: z,
+		projections: Object.freeze(ne),
+		pair: V
+	});
+}
+// src/category-colimits.ts
+function Pe(e) {
 	let t = Array.from({ length: e }, (e, t) => t), n = (e) => {
 		for (; t[e] !== e;) e = t[e] = t[t[e]];
 		return e;
@@ -7136,30 +8015,208 @@ function Ne(e) {
 		}
 	};
 }
-var Pe = z, Fe = (e) => \`[\${e.join(", ")}]\`;
+var Fe = (e) => \`[\${e.join(", ")}]\`;
 function Ie(t) {
+	let { keys: r, cats: i, edges: a, arrowSpec: s, shape: u } = Me(t, "colimit"), f = r.map((e, t) => a.filter((e) => e.source === t)), p = (e) => \`\${r[e.source]}.\${e.name}\`, m = r.map((e, t) => f[t].length === 0 ? 0 : Infinity);
+	for (let e = !0; e;) {
+		e = !1;
+		for (let t of a) m[t.target] + 1 < m[t.source] && (m[t.source] = m[t.target] + 1, e = !0);
+	}
+	let g = r.map((e, t) => m[t] === 0 || m[t] === Infinity), v = r.map((e, t) => g[t] ? void 0 : f[t].find((e) => m[e.target] === m[t] - 1)), y = [], b = [], x = /* @__PURE__ */ new Map(), S = [], C = /* @__PURE__ */ new Map(), w = (e, t, n) => JSON.stringify([
+		e,
+		t,
+		n
+	]);
+	r.forEach((e, t) => {
+		if (g[t]) {
+			for (let n of i[t].specification.Object) x.set(d(e, n), y.length), y.push(d(e, n)), b.push({
+				j: t,
+				o: n
+			});
+			for (let e of i[t].specification.Object) for (let [n, r] of Object.entries(o(i[t], e))) C.set(w(t, e, n), S.length), S.push({
+				j: t,
+				s: e,
+				name: n,
+				target: r
+			});
+		}
+	});
+	let T = (e, t) => {
+		let n = v[e];
+		return n === void 0 ? x.get(d(r[e], t)) : T(n.target, n.functor.specification.Object[t]);
+	}, E = (e, t, n) => {
+		let r = e.functor.specification.Object[t];
+		return e.functor.specification.Arrow[t][n].flatMap((t) => {
+			let n = O(e.target, r, t);
+			return r = o(i[e.target], r)[t], n;
+		});
+	}, D = /* @__PURE__ */ new Map(), O = (e, t, n) => {
+		let r = w(e, t, n), i = D.get(r);
+		if (i === void 0) {
+			let a = v[e];
+			i = a === void 0 ? [C.get(r)] : E(a, t, n), D.set(r, i);
+		}
+		return i;
+	}, k = Pe(y.length);
+	for (let e of a) for (let t of i[e.source].specification.Object) k.union(T(e.source, t), T(e.target, e.functor.specification.Object[t]));
+	let A = (e) => y[k.find(e)], j = Pe(S.length);
+	r.forEach((e, t) => {
+		for (let e of i[t].specification.Object) for (let n of Object.keys(o(i[t], e))) {
+			let r = [O(t, e, n), ...f[t].map((t) => E(t, e, n))].filter((e) => e.length === 1).map(([e]) => e);
+			for (let e of r.slice(1)) j.union(r[0], e);
+		}
+	});
+	let M = (e) => {
+		let t = S[j.find(e)];
+		return d(r[t.j], t.name);
+	}, N = (e) => e.map(M), F = ce(), ee = {}, te = {};
+	S.forEach(({ j: t, s: a, target: o }, s) => {
+		let c = A(x.get(d(r[t], a))), l = M(s), u = ee[c] ??= {}, f = te[c] ??= {};
+		if (n(u, l)) {
+			e(f[l] === j.find(s), \`Arrow name \${l} occurs twice at \${c} in the colimit: the diagram identifies the sources of two arrows of one category with the same name\`);
+			return;
+		}
+		u[l] = A(x.get(d(r[t], o))), f[l] = j.find(s);
+		let p = S[j.find(s)];
+		F.arrow(c, l, {
+			kind: "colimit",
+			key: r[p.j],
+			arrow: K(i[p.j], p.s, p.name)
+		});
+	});
+	let I = {}, L = (t, r, i, a, o) => {
+		let s = I[t] ??= {};
+		if (n(s, r)) {
+			let n = s[r];
+			e(Fe(n.left) === Fe(i) && Fe(n.right) === Fe(a), \`Equation name \${r} occurs twice at \${t} in the colimit\`);
+		} else s[r] = h(i, a), F.equation(t, r, o());
+	}, z = (e, t, n) => {
+		let r = t;
+		return n.flatMap((t) => {
+			let n = O(e, r, t);
+			return r = o(i[e], r)[t], n;
+		});
+	};
+	r.forEach((e, t) => {
+		if (g[t]) for (let [n, r] of Object.entries(i[t].specification.Equation)) for (let [a, { left: o, right: s }] of Object.entries(r)) L(A(T(t, n)), d(e, a), N(z(t, n, o)), N(z(t, n, s)), () => ({
+			kind: "colimit",
+			key: e,
+			equation: q(i[t], n, a)
+		}));
+	});
+	for (let e of a) {
+		if (e === v[e.source]) continue;
+		let t = e.source;
+		for (let n of i[t].specification.Object) for (let r of Object.keys(o(i[t], n))) {
+			let a = N(E(e, n, r)), o = N(O(t, n, r));
+			Fe(a) !== Fe(o) && L(A(T(t, n)), d(e.name, d(n, r)), a, o, () => ({
+				kind: "glue",
+				key: e.name,
+				arrow: K(i[t], n, r)
+			}));
+		}
+	}
+	let ne = y.filter((e, t) => k.find(t) === t);
+	ne.forEach((e) => {
+		let { j: t, o: n } = b[x.get(e)];
+		F.object(e, {
+			kind: "colimit",
+			key: r[t],
+			object: G(i[t], n)
+		});
+	});
+	let V = J(_({
+		Object: ne,
+		Arrow: Object.fromEntries(Object.entries(ee).filter(([, e]) => Object.keys(e).length)),
+		Equation: I
+	}), F.freeze()), re = r.map(() => !0);
+	for (let [e] of m.map((e, t) => [t, e]).sort((e, t) => e[1] - t[1])) {
+		let t = v[e];
+		t !== void 0 && (re[e] = l(t.functor) && re[t.target]);
+	}
+	let ie = r.map((e, t) => {
+		let n = B(i[t], V, {
+			Object: Object.fromEntries(i[t].specification.Object.map((e) => [e, A(T(t, e))])),
+			Arrow: Object.fromEntries(i[t].specification.Object.filter((e) => Object.keys(o(i[t], e)).length).map((e) => [e, Object.fromEntries(Object.keys(o(i[t], e)).map((n) => [n, N(O(t, e, n))]))]))
+		});
+		return re[t] ? c(n) : n;
+	}), ae = (t) => {
+		e(Object.keys(t).length === r.length && r.every((e) => n(t, e)), \`A cocone needs one functor for each object of the diagram: \${r.join(", ")}\`);
+		let s = r.map((e) => t[e]), u = s[0].codomain;
+		e(s.every((e, t) => e.domain === i[t] && e.codomain === u), "A colimit cocone needs functors from the diagram’s categories into one category");
+		for (let t of a) {
+			let [n, r, a] = [
+				s[t.source],
+				s[t.target],
+				t.functor
+			];
+			for (let s of i[t.source].specification.Object) {
+				let c = n.specification.Object[s];
+				e(r.specification.Object[a.specification.Object[s]] === c, \`The cocone does not commute with \${p(t)} at object \${s}\`);
+				for (let l of Object.keys(o(i[t.source], s))) e(P(u, c, n.specification.Arrow[s][l], R(r, a.specification.Object[s], a.specification.Arrow[s][l])), \`The cocone does not (provably) commute with \${p(t)} along \${s}.\${l}\`);
+			}
+		}
+		let d = B(V, u, {
+			Object: Object.fromEntries(ne.map((e) => {
+				let { j: t, o: n } = b[x.get(e)];
+				return [e, s[t].specification.Object[n]];
+			})),
+			Arrow: Object.fromEntries(Object.entries(V.specification.Arrow).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((t) => {
+				let n = S[te[e][t]];
+				return [t, s[n.j].specification.Arrow[n.s][n.name]];
+			}))]))
+		});
+		return s.every((e) => l(e)) ? c(d) : d;
+	};
+	return Object.freeze({
+		diagram: Object.freeze({
+			Object: Object.freeze({ ...t.Object }),
+			Arrow: s
+		}),
+		shape: u,
+		category: V,
+		injections: Object.freeze(Object.fromEntries(r.map((e, t) => [e, ie[t]]))),
+		descend: ae
+	});
+}
+// src/category-pushouts.ts
+function Le(e) {
+	let t = Array.from({ length: e }, (e, t) => t), n = (e) => {
+		for (; t[e] !== e;) e = t[e] = t[t[e]];
+		return e;
+	};
+	return {
+		find: n,
+		union: (e, r) => {
+			let [i, a] = [n(e), n(r)];
+			i !== a && (t[Math.max(i, a)] = Math.min(i, a));
+		}
+	};
+}
+var Re = H, ze = (e) => \`[\${e.join(", ")}]\`;
+function Be(t) {
 	let r = Object.keys(t), i = r.map((e) => t[e]);
 	e(i.length > 0, "A pushout needs at least one leg");
 	let a = i[0].domain;
 	e(i.every((e) => e.domain === a), "A pushout span needs functors with one common domain");
-	let s = q(Object.fromEntries(r.map((e, t) => [e, i[t].codomain]))), u = s.category, f = s.injections, p = i.map((e, t) => Pe(e, f[r[t]])), m = /* @__PURE__ */ new Map();
+	let s = Y(Object.fromEntries(r.map((e, t) => [e, i[t].codomain]))), u = s.category, f = s.injections, p = i.map((e, t) => Re(e, f[r[t]])), m = /* @__PURE__ */ new Map();
 	r.forEach((e, t) => {
-		for (let n of i[t].codomain.specification.Object) m.set(f[e].Object[n], {
+		for (let n of i[t].codomain.specification.Object) m.set(f[e].specification.Object[n], {
 			tag: e,
 			leg: t,
 			o: n
 		});
 	});
-	let g = K(), v = u.specification.Object, y = new Map(v.map((e, t) => [e, t])), b = Ne(v.length);
-	for (let e of a.specification.Object) for (let t of p.slice(1)) b.union(y.get(p[0].Object[e]), y.get(t.Object[e]));
+	let g = ce(), v = u.specification.Object, y = new Map(v.map((e, t) => [e, t])), b = Le(v.length);
+	for (let e of a.specification.Object) for (let t of p.slice(1)) b.union(y.get(p[0].specification.Object[e]), y.get(t.specification.Object[e]));
 	let x = (e) => v[b.find(y.get(e))], S = v.flatMap((e) => Object.entries(o(u, e)).map(([t, n]) => ({
 		s: e,
 		name: t,
 		target: n
-	}))), C = new Map(S.map(({ s: e, name: t }, n) => [\`\${e}\\u0000\${t}\`, n])), w = Ne(S.length);
+	}))), C = new Map(S.map(({ s: e, name: t }, n) => [\`\${e}\\u0000\${t}\`, n])), w = Le(S.length);
 	for (let e of a.specification.Object) for (let t of Object.keys(o(a, e))) {
-		let n = p.filter((n) => n.Arrow[e][t].length === 1);
-		for (let r of n.slice(1)) w.union(C.get(\`\${n[0].Object[e]}\\u0000\${n[0].Arrow[e][t][0]}\`), C.get(\`\${r.Object[e]}\\u0000\${r.Arrow[e][t][0]}\`));
+		let n = p.filter((n) => n.specification.Arrow[e][t].length === 1);
+		for (let r of n.slice(1)) w.union(C.get(\`\${n[0].specification.Object[e]}\\u0000\${n[0].specification.Arrow[e][t][0]}\`), C.get(\`\${r.specification.Object[e]}\\u0000\${r.specification.Arrow[e][t][0]}\`));
 	}
 	let T = (e, t) => {
 		let n = S[w.find(C.get(\`\${e}\\u0000\${t}\`))];
@@ -7176,7 +8233,7 @@ function Ie(t) {
 		g.arrow(s, c, {
 			kind: "pushout",
 			key: f.tag,
-			arrow: U(i[f.leg].codomain, f.o, d.name)
+			arrow: K(i[f.leg].codomain, f.o, d.name)
 		});
 	});
 	let O = (e, t) => {
@@ -7189,7 +8246,7 @@ function Ie(t) {
 		let s = k[t] ??= {};
 		if (n(s, r)) {
 			let n = s[r];
-			e(Fe(n.left) === Fe(i) && Fe(n.right) === Fe(a), \`Equation name \${r} occurs twice at \${t} in the pushout\`);
+			e(ze(n.left) === ze(i) && ze(n.right) === ze(a), \`Equation name \${r} occurs twice at \${t} in the pushout\`);
 		} else s[r] = h(i, a), g.equation(t, r, o());
 	};
 	for (let [e, t] of Object.entries(u.specification.Equation)) for (let [n, { left: r, right: a }] of Object.entries(t)) A(x(e), d(m.get(e).tag, n), O(e, r), O(e, a), () => {
@@ -7197,18 +8254,18 @@ function Ie(t) {
 		return {
 			kind: "pushout",
 			key: t.tag,
-			equation: W(i[t.leg].codomain, t.o, n)
+			equation: q(i[t.leg].codomain, t.o, n)
 		};
 	});
 	for (let e of a.specification.Object) for (let t of Object.keys(o(a, e))) {
-		let n = O(p[0].Object[e], p[0].Arrow[e][t]);
+		let n = O(p[0].specification.Object[e], p[0].specification.Arrow[e][t]);
 		p.forEach((i, o) => {
 			if (o === 0) return;
-			let s = O(i.Object[e], i.Arrow[e][t]);
-			Fe(n) !== Fe(s) && A(x(p[0].Object[e]), d(r[o], d(e, t)), s, n, () => ({
+			let s = O(i.specification.Object[e], i.specification.Arrow[e][t]);
+			ze(n) !== ze(s) && A(x(p[0].specification.Object[e]), d(r[o], d(e, t)), s, n, () => ({
 				kind: "glue",
 				key: r[o],
-				arrow: U(a, e, t)
+				arrow: K(a, e, t)
 			}));
 		});
 	}
@@ -7218,41 +8275,41 @@ function Ie(t) {
 		g.object(e, {
 			kind: "pushout",
 			key: t.tag,
-			object: H(i[t.leg].codomain, t.o)
+			object: G(i[t.leg].codomain, t.o)
 		});
 	}
-	let M = G(_({
+	let M = J(_({
 		Object: j,
 		Arrow: Object.fromEntries(Object.entries(E).filter(([, e]) => Object.keys(e).length)),
 		Equation: k
-	}), g.freeze()), N = F(u, M, {
+	}), g.freeze()), N = L(u, M, {
 		Object: Object.fromEntries(v.map((e) => [e, x(e)])),
 		Arrow: Object.fromEntries(v.filter((e) => Object.keys(o(u, e)).length).map((e) => [e, Object.fromEntries(Object.keys(o(u, e)).map((t) => [t, [T(e, t)]]))]))
-	}), ee = r.map((e) => Pe(f[e], N)), te = (e, t) => {
+	}), F = r.map((e) => Re(f[e], N)), ee = (e, t) => {
 		for (let n of a.specification.Object) {
-			let s = e[0].Object[i[0].Object[n]];
-			for (let t = 1; t < i.length; t++) if (e[t].Object[i[t].Object[n]] !== s) return \`object \${n} (leg \${r[t]})\`;
+			let s = e[0].specification.Object[i[0].specification.Object[n]];
+			for (let t = 1; t < i.length; t++) if (e[t].specification.Object[i[t].specification.Object[n]] !== s) return \`object \${n} (leg \${r[t]})\`;
 			for (let c of Object.keys(o(a, n))) {
-				let a = I(e[0], i[0].Object[n], i[0].Arrow[n][c]);
-				for (let o = 1; o < i.length; o++) if (!P(t, s, a, I(e[o], i[o].Object[n], i[o].Arrow[n][c]))) return \`arrow \${n}.\${c} (leg \${r[o]})\`;
+				let a = R(e[0], i[0].specification.Object[n], i[0].specification.Arrow[n][c]);
+				for (let o = 1; o < i.length; o++) if (!P(t, s, a, R(e[o], i[o].specification.Object[n], i[o].specification.Arrow[n][c]))) return \`arrow \${n}.\${c} (leg \${r[o]})\`;
 			}
 		}
 	};
-	return e(te(ee, M) === void 0, "Pushout injections do not commute"), Object.freeze({
+	return Object.freeze({
 		span: Object.freeze(Object.fromEntries(r.map((e, t) => [e, i[t]]))),
 		category: M,
-		injections: Object.freeze(Object.fromEntries(r.map((e, t) => [e, ee[t]]))),
+		injections: Object.freeze(Object.fromEntries(r.map((e, t) => [e, F[t]]))),
 		descend: (t) => {
 			e(Object.keys(t).length === r.length && r.every((e) => n(t, e)), \`A cocone needs one functor for each leg: \${r.join(", ")}\`);
 			let a = r.map((e) => t[e]), o = a[0].codomain;
 			e(a.every((e, t) => e.domain === i[t].codomain && e.codomain === o), "A pushout cocone needs functors from the legs’ codomains into one category");
-			let u = te(a, o);
+			let u = ee(a, o);
 			e(u === void 0, \`The cocone does not (provably) commute at \${u}\`);
-			let d = s.copair, f = d(t), p = R(M, o, {
-				Object: Object.fromEntries(M.specification.Object.map((e) => [e, f.Object[e]])),
+			let d = s.copair, f = d(t), p = B(M, o, {
+				Object: Object.fromEntries(M.specification.Object.map((e) => [e, f.specification.Object[e]])),
 				Arrow: Object.fromEntries(Object.entries(M.specification.Arrow).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((t) => {
 					let n = S[D[e][t]];
-					return [t, f.Arrow[n.s][n.name]];
+					return [t, f.specification.Arrow[n.s][n.name]];
 				}))]))
 			});
 			return a.every((e) => l(e)) ? c(p) : p;
@@ -7260,111 +8317,111 @@ function Ie(t) {
 	});
 }
 // src/functor-coproducts.ts
-var Le = z;
-function Re(e) {
-	let t = Object.keys(e), n = t.map((t) => e[t]), r = q(Object.fromEntries(t.map((e, t) => [e, n[t].domain]))), i = q(Object.fromEntries(t.map((e, t) => [e, n[t].codomain]))), a = i.injections, o = r.copair;
-	return o(Object.fromEntries(t.map((e, t) => [e, Le(n[t], a[e])])), i.category);
+var Ve = H;
+function He(e) {
+	let t = Object.keys(e), n = t.map((t) => e[t]), r = Y(Object.fromEntries(t.map((e, t) => [e, n[t].domain]))), i = Y(Object.fromEntries(t.map((e, t) => [e, n[t].codomain]))), a = i.injections, o = r.copair;
+	return o(Object.fromEntries(t.map((e, t) => [e, Ve(n[t], a[e])])), i.category);
 }
-function ze(e, t) {
-	return Re({
+function Ue(e, t) {
+	return He({
 		left: e,
 		right: t
 	});
 }
-var Be;
-function Ve() {
-	return Be ??= Re({});
+var We;
+function Ge() {
+	return We ??= He({});
 }
-var He = Re, Ue = z;
-function We(e) {
-	let t = Object.keys(e), n = t.map((t) => e[t]), r = Te(Object.fromEntries(t.map((e, t) => [e, n[t].domain]))), i = Te(Object.fromEntries(t.map((e, t) => [e, n[t].codomain]))), a = r.projections, o = i.pair;
-	return o(Object.fromEntries(t.map((e, t) => [e, Ue(a[e], n[t])])), r.category);
+var Ke = He, qe = H;
+function Je(e) {
+	let t = Object.keys(e), n = t.map((t) => e[t]), r = Ce(Object.fromEntries(t.map((e, t) => [e, n[t].domain]))), i = Ce(Object.fromEntries(t.map((e, t) => [e, n[t].codomain]))), a = r.projections, o = i.pair;
+	return o(Object.fromEntries(t.map((e, t) => [e, qe(a[e], n[t])])), r.category);
 }
-function Ge(e, t) {
-	return We({
+function Ye(e, t) {
+	return Je({
 		left: e,
 		right: t
 	});
 }
-var Ke;
-function qe() {
-	return Ke ??= We({});
+var Xe;
+function Ze() {
+	return Xe ??= Je({});
 }
 // src/copresheaf-products.ts
-function Y(e, t, n) {
+function Q(e, t, n) {
 	return i(e.specification.Object.map((r) => {
 		let a = Object.keys(o(e, r));
 		return [r, a.length === 0 ? t(r) : i(a.map((e) => [e, n(r, e)]))];
 	}));
 }
-function Je(t, r) {
+function Qe(t, r) {
 	let a = Object.keys(r), o = a.map((e) => r[e]);
-	e(o.every((e) => e.meta === t), "Products require copresheaves on one fixed category");
-	let s = t.specification.Object, c = i(s.map((e) => [e, p(o.map((t) => S(t, e)))])), l = V();
+	e(o.every((e) => e.domain === t), "Products require copresheaves on one fixed category");
+	let s = t.specification.Object, c = i(s.map((e) => [e, p(o.map((t) => S(t, e)))])), l = W();
 	for (let e of s) for (let t of c[e]) l.add(e, u(t), {
 		kind: "product",
-		factors: i(a.map((n, r) => [n, B(o[r], e, t[r])]))
+		factors: i(a.map((n, r) => [n, U(o[r], e, t[r])]))
 	});
-	let d = y(t, Y(t, (e) => c[e].map(u), (e, t) => i(c[e].map((n) => [u(n), u(n.map((n, r) => o[r].data[e][t][n]))]))), l.freeze()), f = Object.fromEntries(a.map((e, t) => [e, E(d, o[t], i(s.map((e) => [e, i(c[e].map((e) => [u(e), e[t]]))])))]));
+	let d = y(t, Q(t, (e) => c[e].map(u), (e, t) => i(c[e].map((n) => [u(n), u(n.map((n, r) => o[r].specification[e][t][n]))]))), l.freeze()), f = Object.fromEntries(a.map((e, t) => [e, E(d, o[t], i(s.map((e) => [e, i(c[e].map((e) => [u(e), e[t]]))])))]));
 	return Object.freeze({
 		copresheaf: d,
 		projections: Object.freeze(f),
 		pair: (t, r) => {
 			e(Object.keys(t).length === a.length && a.every((e) => n(t, e)), \`A cone needs one map for each factor: \${a.join(", ")}\`);
-			let c = a.map((e) => t[e]), l = c.length > 0 ? c[0].source : r;
-			return e(l !== void 0, "Pairing no maps needs the source: pair({}, X)"), e(c.every((e, t) => e.source === l && e.target === o[t]) && (r === void 0 || r === l), "A cone needs maps from one source into the factors of this product"), E(l, d, i(s.map((e) => [e, i(S(l, e).map((t) => [t, u(c.map((n) => n.components[e][t]))]))])));
+			let c = a.map((e) => t[e]), l = c.length > 0 ? c[0].domain : r;
+			return e(l !== void 0, "Pairing no maps needs the source: pair({}, X)"), e(c.every((e, t) => e.domain === l && e.codomain === o[t]) && (r === void 0 || r === l), "A cone needs maps from one source into the factors of this product"), E(l, d, i(s.map((e) => [e, i(S(l, e).map((t) => [t, u(c.map((n) => n.specification.Object[e][t]))]))])));
 		}
 	});
 }
-function Ye(e, t) {
-	return Je(e.meta, {
+function $e(e, t) {
+	return Qe(e.domain, {
 		left: e,
 		right: t
 	});
 }
-function Xe(e) {
-	return Je(e, {});
+function et(e) {
+	return Qe(e, {});
 }
 // src/copresheaf-coproducts.ts
-function Ze(t, r) {
+function tt(t, r) {
 	let a = Object.keys(r), o = a.map((e) => r[e]);
-	e(o.every((e) => e.meta === t), "Sums require copresheaves on one fixed category");
-	let s = t.specification.Object, c = V();
+	e(o.every((e) => e.domain === t), "Sums require copresheaves on one fixed category");
+	let s = t.specification.Object, c = W();
 	a.forEach((e, t) => {
 		for (let n of s) for (let r of S(o[t], n)) c.add(n, d(e, r), {
 			kind: "sum",
 			key: e,
-			part: B(o[t], n, r)
+			part: U(o[t], n, r)
 		});
 	});
-	let l = y(t, Y(t, (e) => a.flatMap((t, n) => S(o[n], e).map((e) => d(t, e))), (e, t) => i(a.flatMap((n, r) => S(o[r], e).map((i) => [d(n, i), d(n, o[r].data[e][t][i])])))), c.freeze()), u = Object.fromEntries(a.map((e, t) => [e, E(o[t], l, i(s.map((n) => [n, i(S(o[t], n).map((t) => [t, d(e, t)]))])))]));
+	let l = y(t, Q(t, (e) => a.flatMap((t, n) => S(o[n], e).map((e) => d(t, e))), (e, t) => i(a.flatMap((n, r) => S(o[r], e).map((i) => [d(n, i), d(n, o[r].specification[e][t][i])])))), c.freeze()), u = Object.fromEntries(a.map((e, t) => [e, E(o[t], l, i(s.map((n) => [n, i(S(o[t], n).map((t) => [t, d(e, t)]))])))]));
 	return Object.freeze({
 		copresheaf: l,
 		injections: Object.freeze(u),
 		copair: (t, r) => {
 			e(Object.keys(t).length === a.length && a.every((e) => n(t, e)), \`A cocone needs one map for each summand: \${a.join(", ")}\`);
-			let c = a.map((e) => t[e]), u = c.length > 0 ? c[0].target : r;
-			return e(u !== void 0, "Copairing no maps needs the target: copair({}, X)"), e(c.every((e, t) => e.source === o[t] && e.target === u) && (r === void 0 || r === u), "A cocone needs maps from the summands of this sum into one target"), E(l, u, i(s.map((e) => [e, i(a.flatMap((t, n) => S(o[n], e).map((r) => [d(t, r), c[n].components[e][r]])))])));
+			let c = a.map((e) => t[e]), u = c.length > 0 ? c[0].codomain : r;
+			return e(u !== void 0, "Copairing no maps needs the target: copair({}, X)"), e(c.every((e, t) => e.domain === o[t] && e.codomain === u) && (r === void 0 || r === u), "A cocone needs maps from the summands of this sum into one target"), E(l, u, i(s.map((e) => [e, i(a.flatMap((t, n) => S(o[n], e).map((r) => [d(t, r), c[n].specification.Object[e][r]])))])));
 		}
 	});
 }
-function Qe(e, t) {
-	return Ze(e.meta, {
+function nt(e, t) {
+	return tt(e.domain, {
 		left: e,
 		right: t
 	});
 }
-function $e(e) {
-	return Ze(e, {});
+function rt(e) {
+	return tt(e, {});
 }
-var et = Ze, tt = (e) => JSON.stringify(e);
-function nt(t, n) {
-	e(n.meta === t.domain, "Kan extensions need a copresheaf on the domain of the functor");
+var it = tt, at = (e) => JSON.stringify(e);
+function ot(t, n) {
+	e(n.domain === t.domain, "Kan extensions need a copresheaf on the domain of the functor");
 }
-function rt(e, t, n = {}) {
-	return it(e, t, n);
+function st(e, t, n = {}) {
+	return ct(e, t, n);
 }
-function it(t, n, r = {}, a = {
+function ct(t, n, r = {}, a = {
 	name: (e, t, n) => u([
 		e,
 		...t,
@@ -7372,15 +8429,15 @@ function it(t, n, r = {}, a = {
 	]),
 	provenance: (e, t, r) => ({
 		kind: "lan",
-		part: B(n, e, r),
+		part: U(n, e, r),
 		path: t
 	})
 }) {
 	let { name: s } = a;
-	nt(t, n);
-	let c = t.domain, l = t.codomain, d = re(l, r.maxArrows ?? 1e3), f = r.maxParts ?? 1e5, p = /* @__PURE__ */ new Map(), m = /* @__PURE__ */ new Map(), h = (e, t, n, r) => \`\${e}|\${t}|\${tt(n)}|\${r}\`;
+	ot(t, n);
+	let c = t.domain, l = t.codomain, d = I(l, r.maxArrows ?? 1e3), f = r.maxParts ?? 1e5, p = /* @__PURE__ */ new Map(), m = /* @__PURE__ */ new Map(), h = (e, t, n, r) => \`\${e}|\${t}|\${at(n)}|\${r}\`;
 	for (let e of l.specification.Object) p.set(e, []);
-	for (let e of c.specification.Object) for (let { path: r, target: i } of d(t.Object[e])) for (let t of S(n, e)) {
+	for (let e of c.specification.Object) for (let { path: r, target: i } of d(t.specification.Object[e])) for (let t of S(n, e)) {
 		let n = p.get(i);
 		m.set(h(i, e, r, t), n.length), n.push({
 			c: e,
@@ -7394,11 +8451,11 @@ function it(t, n, r = {}, a = {
 		return t;
 	};
 	for (let [e, t] of p) g.set(e, t.map((e, t) => t));
-	for (let e of p.keys()) for (let r of c.specification.Object) for (let [i, a] of Object.entries(o(c, r))) for (let { path: o, target: s } of d(t.Object[a])) {
+	for (let e of p.keys()) for (let r of c.specification.Object) for (let [i, a] of Object.entries(o(c, r))) for (let { path: o, target: s } of d(t.specification.Object[a])) {
 		if (s !== e) continue;
-		let c = N(l, t.Object[r], [...t.Arrow[r][i], ...o]);
+		let c = N(l, t.specification.Object[r], [...t.specification.Arrow[r][i], ...o]);
 		for (let t of S(n, r)) {
-			let s = _(e, m.get(h(e, r, c, t))), l = _(e, m.get(h(e, a, o, n.data[r][i][t])));
+			let s = _(e, m.get(h(e, r, c, t))), l = _(e, m.get(h(e, a, o, n.specification[r][i][t])));
 			s !== l && (g.get(e)[Math.max(s, l)] = Math.min(s, l));
 		}
 	}
@@ -7411,37 +8468,37 @@ function it(t, n, r = {}, a = {
 			let n = p.get(t)[e];
 			return s(n.c, n.g, n.x);
 		});
-	}, x = V();
+	}, x = W();
 	for (let [e, t] of p) t.forEach((t, n) => {
 		_(e, n) === n && x.add(e, s(t.c, t.g, t.x), a.provenance(t.c, t.g, t.x));
 	});
-	let w = y(l, Y(l, b, (e, n) => i(p.get(e).flatMap((r, i) => _(e, i) === i ? [[s(r.c, r.g, r.x), v(o(l, e)[n], r.c, N(l, t.Object[r.c], [...r.g, n]), r.x)]] : []))), x.freeze()), T = E(n, C(t, w), i(c.specification.Object.map((e) => [e, i(S(n, e).map((n) => [n, v(t.Object[e], e, [], n)]))])));
+	let w = y(l, Q(l, b, (e, n) => i(p.get(e).flatMap((r, i) => _(e, i) === i ? [[s(r.c, r.g, r.x), v(o(l, e)[n], r.c, N(l, t.specification.Object[r.c], [...r.g, n]), r.x)]] : []))), x.freeze()), T = E(n, C(t, w), i(c.specification.Object.map((e) => [e, i(S(n, e).map((n) => [n, v(t.specification.Object[e], e, [], n)]))])));
 	return Object.freeze({
 		copresheaf: w,
 		unit: T
 	});
 }
-function at(e) {
-	return typeof e == "object" && !!e && "meta" in e && "data" in e;
+function lt(e) {
+	return typeof e == "object" && !!e && "domain" in e && "specification" in e && !("codomain" in e);
 }
-function ot(e, t, n) {
-	return at(t) ? rt(e, t, n).copresheaf : (n) => rt(e, n, t).copresheaf;
+function ut(e, t, n) {
+	return lt(t) ? st(e, t, n).copresheaf : (n) => st(e, n, t).copresheaf;
 }
 // src/copresheaf-day-convolutions.ts
-function st(t) {
+function dt(t) {
 	let n = t.category;
-	e(t.tensor.domain === Oe(n, n).category, "The tensor of a monoidal structure must start at category.mul(C, C)"), e(t.tensor.codomain === n, "The tensor of a monoidal structure must end at its category"), e(n.specification.Object.includes(t.unit), \`Unknown unit object \${t.unit}\`);
+	e(t.tensor.domain === Ee(n, n).category, "The tensor of a monoidal structure must start at category.mul(C, C)"), e(t.tensor.codomain === n, "The tensor of a monoidal structure must end at its category"), e(n.specification.Object.includes(t.unit), \`Unknown unit object \${t.unit}\`);
 }
-function ct(e, t, n, r, i, a) {
-	let o = e.domain, s = Je(o, [C(t, r), C(n, i)]).copresheaf, c = /* @__PURE__ */ new Map(), l = (e, t) => JSON.stringify([e, t]);
+function ft(e, t, n, r, i, a) {
+	let o = e.domain, s = Qe(o, [C(t, r), C(n, i)]).copresheaf, c = /* @__PURE__ */ new Map(), l = (e, t) => JSON.stringify([e, t]);
 	for (let e of o.specification.Object) {
-		let a = t.Object[e], o = n.Object[e];
+		let a = t.specification.Object[e], o = n.specification.Object[e];
 		for (let [t, n] of p([S(r, a), S(i, o)])) c.set(l(e, u([t, n])), {
-			left: B(r, a, t),
-			right: B(i, o, n)
+			left: U(r, a, t),
+			right: U(i, o, n)
 		});
 	}
-	let { copresheaf: f, unit: m } = it(e, s, a, {
+	let { copresheaf: f, unit: m } = ct(e, s, a, {
 		name: (e, t, n) => {
 			let { left: r, right: i } = c.get(l(e, n));
 			return u([
@@ -7462,33 +8519,33 @@ function ct(e, t, n, r, i, a) {
 		unit: m
 	});
 }
-function lt(t, n, r, i = {}) {
-	st(t);
+function pt(t, n, r, i = {}) {
+	dt(t);
 	let a = t.category;
-	e(n.meta === a && r.meta === a, "Day convolution needs copresheaves on the category of the monoidal structure");
-	let { left: o, right: s } = Oe(a, a).projections;
-	return ct(t.tensor, o, s, n, r, i);
+	e(n.domain === a && r.domain === a, "Day convolution needs copresheaves on the category of the monoidal structure");
+	let { left: o, right: s } = Ee(a, a).projections;
+	return ft(t.tensor, o, s, n, r, i);
 }
-function ut(t) {
-	let n = t.category, r = Oe(n, n).category;
+function mt(t) {
+	let n = t.category, r = Ee(n, n).category;
 	e(t.inclusion.codomain === r, "The inclusion of a truncated monoidal structure must end at category.mul(C, C)"), e(t.tensor.domain === t.inclusion.domain, "The tensor must start where the inclusion does"), e(t.tensor.codomain === n, "The tensor of a truncated monoidal structure must end at its category");
-	let i = t.tensor.domain.specification.Object.map((e) => t.inclusion.Object[e]);
+	let i = t.tensor.domain.specification.Object.map((e) => t.inclusion.specification.Object[e]);
 	e(new Set(i).size === i.length, "The inclusion must be injective on objects"), e(i.includes(u([t.unit, t.unit])), "The tensor must be defined on (I,I)"), e(n.specification.Object.includes(t.unit), \`Unknown unit object \${t.unit}\`);
 }
-function dt(t, n, r, i = {}) {
-	ut(t);
+function ht(t, n, r, i = {}) {
+	mt(t);
 	let a = t.category;
-	e(n.meta === a && r.meta === a, "Day convolution needs copresheaves on the category of the monoidal structure");
-	let { left: o, right: s } = Oe(a, a).projections;
-	return ct(t.tensor, z(t.inclusion, o), z(t.inclusion, s), n, r, i);
+	e(n.domain === a && r.domain === a, "Day convolution needs copresheaves on the category of the monoidal structure");
+	let { left: o, right: s } = Ee(a, a).projections;
+	return ft(t.tensor, H(t.inclusion, o), H(t.inclusion, s), n, r, i);
 }
-function ft(e, t = {}) {
-	st(e);
-	let n = R(ke(), e.category, {
+function gt(e, t = {}) {
+	dt(e);
+	let n = B(De(), e.category, {
 		Object: { "()": e.unit },
 		Arrow: {}
-	}), r = Xe(ke()).copresheaf;
-	return it(n, r, t, {
+	}), r = et(De()).copresheaf;
+	return ct(n, r, t, {
 		name: (e, t) => u(t),
 		provenance: (e, t) => ({
 			kind: "dayUnit",
@@ -7497,10 +8554,10 @@ function ft(e, t = {}) {
 	}).copresheaf;
 }
 // src/copresheaf-isomorphisms.ts
-function pt(e) {
-	let { source: t, target: r } = e, i = {};
-	for (let a of t.meta.specification.Object) {
-		let t = e.components[a], o = {};
+function _t(e) {
+	let { domain: t, codomain: r } = e, i = {};
+	for (let a of t.domain.specification.Object) {
+		let t = e.specification.Object[a], o = {};
 		for (let [e, r] of Object.entries(t)) {
 			if (n(o, r)) return;
 			o[r] = e;
@@ -7510,9 +8567,9 @@ function pt(e) {
 	}
 	return E(r, t, i);
 }
-function mt(t, n) {
-	e(t.meta === n.meta, "An isomorphism needs copresheaves on one category");
-	let r = t.meta, a = r.specification.Object;
+function vt(t, n) {
+	e(t.domain === n.domain, "An isomorphism needs copresheaves on one category");
+	let r = t.domain, a = r.specification.Object;
 	for (let e of a) if (S(t, e).length !== S(n, e).length) return;
 	let s = [t, n], c = (e, t, n) => JSON.stringify([
 		e,
@@ -7522,13 +8579,13 @@ function mt(t, n) {
 	for (let [e, t] of s.entries()) for (let n of a) for (let r of S(t, n)) l.set(c(e, n, r), a.indexOf(n));
 	let u = /* @__PURE__ */ new Map();
 	for (let [e, t] of s.entries()) for (let n of a) for (let [i, a] of Object.entries(o(r, n))) for (let r of S(t, n)) {
-		let o = c(e, a, t.data[n][i][r]);
+		let o = c(e, a, t.specification[n][i][r]);
 		u.set(o, [...u.get(o) ?? [], [JSON.stringify([n, i]), c(e, n, r)]]);
 	}
 	for (let e = 0; e < 100; e++) {
 		let e = /* @__PURE__ */ new Map();
 		for (let [t, n] of s.entries()) for (let i of a) for (let a of S(n, i)) {
-			let s = c(t, i, a), d = Object.entries(o(r, i)).map(([e, r]) => \`\${e}>\${l.get(c(t, r, n.data[i][e][a]))}\`), f = (u.get(s) ?? []).map(([e, t]) => \`\${e}<\${l.get(t)}\`).sort();
+			let s = c(t, i, a), d = Object.entries(o(r, i)).map(([e, r]) => \`\${e}>\${l.get(c(t, r, n.specification[i][e][a]))}\`), f = (u.get(s) ?? []).map(([e, t]) => \`\${e}<\${l.get(t)}\`).sort();
 			e.set(s, JSON.stringify([
 				l.get(s),
 				d,
@@ -7559,8 +8616,8 @@ function mt(t, n) {
 				u.set(m(e, i), a), d.set(m(e, a), i);
 				for (let [s, c] of Object.entries(o(r, e))) f.push([
 					c,
-					t.data[e][s][i],
-					n.data[e][s][a]
+					t.specification[e][s][i],
+					n.specification[e][s][a]
 				]);
 			}
 		}
@@ -7584,53 +8641,60 @@ function mt(t, n) {
 	}, 0);
 	if (v) return E(t, n, i(a.map((e) => [e, i(S(t, e).map((t) => [t, v.forward.get(m(e, t))]))])));
 }
-function ht(t, n) {
-	let r = t.meta, a = {}, s = V();
+function yt(t, n) {
+	let r = t.domain, a = {}, s = W();
 	for (let i of r.specification.Object) {
 		let r = {}, o = /* @__PURE__ */ new Map();
 		for (let a of S(t, i)) {
-			let c = B(t, i, a), l = n(c);
+			let c = U(t, i, a), l = n(c);
 			e(typeof l == "string", \`The new ID of \${a} at \${i} must be a string\`), e(!o.has(l), \`Parts \${o.get(l)} and \${a} at \${i} would both be renamed \${l}\`), o.set(l, a), r[a] = l, c.provenance !== void 0 && s.add(i, l, c.provenance);
 		}
 		a[i] = r;
 	}
-	let c = s.freeze(), l = y(r, Y(r, (e) => S(t, e).map((t) => a[e][t]), (e, n) => i(S(t, e).map((i) => [a[e][i], a[o(r, e)[n]][t.data[e][n][i]]]))), Object.keys(c).length > 0 ? c : void 0);
+	let c = s.freeze(), l = y(r, Q(r, (e) => S(t, e).map((t) => a[e][t]), (e, n) => i(S(t, e).map((i) => [a[e][i], a[o(r, e)[n]][t.specification[e][n][i]]]))), Object.keys(c).length > 0 ? c : void 0);
 	return Object.freeze({
 		copresheaf: l,
 		isomorphism: E(t, l, a)
 	});
 }
 // src/copresheaf-pivots.ts
-function gt(e) {
-	let t = _t.get(e);
-	return t === void 0 && _t.set(e, t = vt(e)), t;
+function bt(e) {
+	let t = xt.get(e);
+	if (t === void 0) {
+		let n = St(e);
+		t = Object.freeze({
+			category: n,
+			projection: Ct(n, e.domain)
+		}), xt.set(e, t);
+	}
+	return t;
 }
-var _t = /* @__PURE__ */ new WeakMap();
-function vt(e) {
-	let t = e.meta, n = (e, t) => d(e, t), r = [], i = {}, a = {}, s = K();
+var xt = /* @__PURE__ */ new WeakMap();
+function St(e) {
+	let t = e.domain, n = (e, t) => d(e, t), r = [], i = {}, a = {}, s = ce();
 	for (let c of t.specification.Object) for (let l of S(e, c)) {
 		let u = n(c, l);
 		r.push(u), s.object(u, {
 			kind: "element",
-			object: H(t, c),
-			part: B(e, c, l)
+			object: G(t, c),
+			part: U(e, c, l)
 		});
-		for (let [r, a] of Object.entries(o(t, c))) (i[u] ??= {})[r] = n(a, e.data[c][r][l]), s.arrow(u, r, {
+		for (let [r, a] of Object.entries(o(t, c))) (i[u] ??= {})[r] = n(a, e.specification[c][r][l]), s.arrow(u, r, {
 			kind: "element",
-			arrow: U(t, c, r)
+			arrow: K(t, c, r)
 		});
 		for (let [e, { left: n, right: r }] of Object.entries(t.specification.Equation[c] ?? {})) (a[u] ??= {})[e] = h(n, r), s.equation(u, e, {
 			kind: "element",
-			equation: W(t, c, e)
+			equation: q(t, c, e)
 		});
 	}
-	return G(_({
+	return J(_({
 		Object: r,
 		Arrow: i,
 		Equation: a
 	}), s.freeze());
 }
-function yt(t, n) {
+function Ct(t, n) {
 	let r = (r) => {
 		let i = t.provenance?.Object?.[r];
 		return e(i?.kind === "element" && n.specification.Object.includes(i.object.object), \`Object \${r} does not record itself as an element of a copresheaf on this category\`), i.object.object;
@@ -7639,25 +8703,25 @@ function yt(t, n) {
 		let i = t.provenance?.Arrow?.[n]?.[r];
 		e(i?.kind === "element", \`Arrow \${n}.\${r} does not record the arrow it lies over\`), (a[n] ??= {})[r] = [i.arrow.arrow];
 	}
-	return F(t, n, {
+	return L(t, n, {
 		Object: i,
 		Arrow: a
 	});
 }
-function bt(...e) {
-	return xt(e.length === 2 ? yt(e[0], e[1]) : e[0]);
+function wt(...e) {
+	return Tt(e.length === 2 ? Ct(e[0], e[1]) : e[0]);
 }
-function xt(t) {
+function Tt(t) {
 	let r = t.domain, a = t.codomain, s = new Map(a.specification.Object.map((e) => [e, []]));
-	for (let e of r.specification.Object) s.get(t.Object[e]).push(e);
+	for (let e of r.specification.Object) s.get(t.specification.Object[e]).push(e);
 	let c = /* @__PURE__ */ new Map();
 	for (let i of r.specification.Object) {
 		let s = {};
 		for (let a of Object.keys(o(r, i))) {
-			let r = t.Arrow[i][a];
-			e(r.length === 1, \`Unpivoting needs a functor that sends each generating arrow to a generating arrow, but \${i}.\${a} goes to [\${r.join(", ")}]\`), e(!n(s, r[0]), \`Unpivoting needs a discrete opfibration, but \${i}.\${s[r[0]]} and \${i}.\${a} both lie over \${t.Object[i]}.\${r[0]}\`), s[r[0]] = a;
+			let r = t.specification.Arrow[i][a];
+			e(r.length === 1, \`Unpivoting needs a functor that sends each generating arrow to a generating arrow, but \${i}.\${a} goes to [\${r.join(", ")}]\`), e(!n(s, r[0]), \`Unpivoting needs a discrete opfibration, but \${i}.\${s[r[0]]} and \${i}.\${a} both lie over \${t.specification.Object[i]}.\${r[0]}\`), s[r[0]] = a;
 		}
-		for (let r of Object.keys(o(a, t.Object[i]))) e(n(s, r), \`Unpivoting needs a discrete opfibration, but no arrow out of \${i} lies over \${t.Object[i]}.\${r}\`);
+		for (let r of Object.keys(o(a, t.specification.Object[i]))) e(n(s, r), \`Unpivoting needs a discrete opfibration, but no arrow out of \${i} lies over \${t.specification.Object[i]}.\${r}\`);
 		c.set(i, s);
 	}
 	let l = (e, t) => {
@@ -7668,7 +8732,7 @@ function xt(t) {
 		});
 	};
 	for (let [t, n] of Object.entries(a.specification.Equation)) for (let [i, { left: a, right: o }] of Object.entries(n)) for (let n of s.get(t)) e(P(r, n, l(n, a), l(n, o)), \`Unpivoting needs a discrete opfibration, but the lifts out of \${n} of the sides of \${t}.\${i}, [\${l(n, a).join(", ")}] and [\${l(n, o).join(", ")}], are not provably equal\`);
-	let u = (e) => St(r, e, t.Object[e]), d = (e) => u(e)?.part ?? e, f = V();
+	let u = (e) => Et(r, e, t.specification.Object[e]), d = (e) => u(e)?.part ?? e, f = W();
 	for (let [t, n] of s) {
 		let r = /* @__PURE__ */ new Map();
 		for (let i of n) {
@@ -7679,50 +8743,50 @@ function xt(t) {
 		}
 	}
 	let p = f.freeze();
-	return y(a, Y(a, (e) => s.get(e).map(d), (e, t) => i(s.get(e).map((e) => [d(e), d(o(r, e)[c.get(e)[t]])]))), Object.keys(p).length > 0 ? p : void 0);
+	return y(a, Q(a, (e) => s.get(e).map(d), (e, t) => i(s.get(e).map((e) => [d(e), d(o(r, e)[c.get(e)[t]])]))), Object.keys(p).length > 0 ? p : void 0);
 }
-function St(e, t, n) {
+function Et(e, t, n) {
 	let r = e.provenance?.Object?.[t];
 	return r?.kind === "element" && r.object.object === n ? r.part : void 0;
 }
-function Ct(e) {
-	let t = e.source, n = t.meta, r = gt(t), i = {}, a = {};
+function Dt(e) {
+	let t = e.domain, n = t.domain, r = bt(t).category, i = {}, a = {};
 	for (let r of n.specification.Object) for (let s of S(t, r)) {
 		let t = d(r, s);
-		a[t] = d(r, e.components[r][s]);
+		a[t] = d(r, e.specification.Object[r][s]);
 		for (let e of Object.keys(o(n, r))) (i[t] ??= {})[e] = [e];
 	}
-	return F(r, gt(e.target), {
+	return L(r, bt(e.codomain).category, {
 		Object: a,
 		Arrow: i
 	});
 }
-function wt(t, n) {
-	let r = t.domain, i = t.codomain, a = yt(r, n), s = yt(i, n);
+function Ot(t, n) {
+	let r = t.domain, i = t.codomain, a = Ct(r, n), s = Ct(i, n);
 	for (let n of r.specification.Object) {
-		let i = t.Object[n];
-		e(a.Object[n] === s.Object[i], \`Unpivoting a map needs a functor over C, but \${n} lies over \${a.Object[n]} and its image \${i} over \${s.Object[i]}\`);
+		let i = t.specification.Object[n];
+		e(a.specification.Object[n] === s.specification.Object[i], \`Unpivoting a map needs a functor over C, but \${n} lies over \${a.specification.Object[n]} and its image \${i} over \${s.specification.Object[i]}\`);
 		for (let c of Object.keys(o(r, n))) {
-			let r = a.Arrow[n][c], o = I(s, i, t.Arrow[n][c]);
-			e(o.length === 1 && o[0] === r[0], \`Unpivoting a map needs a functor over C, but \${n}.\${c} lies over \${a.Object[n]}.\${r[0]} and its image over [\${o.join(", ")}]\`);
+			let r = a.specification.Arrow[n][c], o = R(s, i, t.specification.Arrow[n][c]);
+			e(o.length === 1 && o[0] === r[0], \`Unpivoting a map needs a functor over C, but \${n}.\${c} lies over \${a.specification.Object[n]}.\${r[0]} and its image over [\${o.join(", ")}]\`);
 		}
 	}
-	let c = xt(a), l = xt(s), u = (e, t, n) => St(e, t, n)?.part ?? t, d = {};
+	let c = Tt(a), l = Tt(s), u = (e, t, n) => Et(e, t, n)?.part ?? t, d = {};
 	for (let e of n.specification.Object) d[e] = {};
 	for (let e of r.specification.Object) {
-		let n = a.Object[e];
-		d[n][u(r, e, n)] = u(i, t.Object[e], n);
+		let n = a.specification.Object[e];
+		d[n][u(r, e, n)] = u(i, t.specification.Object[e], n);
 	}
 	return E(c, l, d);
 }
 // src/copresheaf-rans.ts
-var Tt = (e) => JSON.stringify(e);
-function Et(t, n, r = {}) {
-	nt(t, n);
-	let a = t.domain, s = t.codomain, c = re(s, r.maxArrows ?? 1e3), l = r.maxParts ?? 1e5, d = /* @__PURE__ */ new Map(), f = /* @__PURE__ */ new Map(), p = (e, t, n) => \`\${e}|\${t}|\${Tt(n)}\`, m = /* @__PURE__ */ new Map();
+var kt = (e) => JSON.stringify(e);
+function At(t, n, r = {}) {
+	ot(t, n);
+	let a = t.domain, s = t.codomain, c = I(s, r.maxArrows ?? 1e3), l = r.maxParts ?? 1e5, d = /* @__PURE__ */ new Map(), f = /* @__PURE__ */ new Map(), p = (e, t, n) => \`\${e}|\${t}|\${kt(n)}\`, m = /* @__PURE__ */ new Map();
 	for (let r of s.specification.Object) {
 		let i = [];
-		for (let { path: e, target: n } of c(r)) for (let o of a.specification.Object) t.Object[o] === n && (f.set(p(r, o, e), i.length), i.push({
+		for (let { path: e, target: n } of c(r)) for (let o of a.specification.Object) t.specification.Object[o] === n && (f.set(p(r, o, e), i.length), i.push({
 			c: o,
 			g: e
 		}));
@@ -7730,7 +8794,7 @@ function Et(t, n, r = {}) {
 		let u = i.map(({ c: e, g: n }) => Object.entries(o(a, e)).map(([i, a]) => ({
 			h: i,
 			c: e,
-			to: f.get(p(r, a, N(s, r, [...n, ...t.Arrow[e][i]])))
+			to: f.get(p(r, a, N(s, r, [...n, ...t.specification.Arrow[e][i]])))
 		}))), h = i.map(() => void 0), g = [], _ = (e, t, r) => {
 			let i = [[e, t]];
 			for (; i.length;) {
@@ -7739,7 +8803,7 @@ function Et(t, n, r = {}) {
 					if (h[e] !== t) return !1;
 				} else {
 					h[e] = t, r.push(e);
-					for (let { h: r, c: a, to: o } of u[e]) i.push([o, n.data[a][r][t]]);
+					for (let { h: r, c: a, to: o } of u[e]) i.push([o, n.specification[a][r][t]]);
 				}
 			}
 			return !0;
@@ -7755,19 +8819,19 @@ function Et(t, n, r = {}) {
 		};
 		v(0), m.set(r, g);
 	}
-	let h = V();
+	let h = W();
 	for (let [e, t] of m) for (let r of t) h.add(e, u(r), {
 		kind: "ran",
 		values: Object.freeze(d.get(e).map(({ c: e, g: t }, i) => Object.freeze({
 			path: t,
-			part: B(n, e, r[i])
+			part: U(n, e, r[i])
 		})))
 	});
-	let g = y(s, Y(s, (e) => m.get(e).map(u), (e, t) => {
+	let g = y(s, Q(s, (e) => m.get(e).map(u), (e, t) => {
 		let n = o(s, e)[t];
 		return i(m.get(e).map((r) => [u(r), u(d.get(n).map(({ c: n, g: i }) => r[f.get(p(e, n, N(s, e, [t, ...i])))]))]));
 	}), h.freeze()), _ = E(C(t, g), n, i(a.specification.Object.map((e) => {
-		let n = t.Object[e], r = f.get(p(n, e, []));
+		let n = t.specification.Object[e], r = f.get(p(n, e, []));
 		return [e, i(m.get(n).map((e) => [u(e), e[r]]))];
 	})));
 	return Object.freeze({
@@ -7775,47 +8839,47 @@ function Et(t, n, r = {}) {
 		counit: _
 	});
 }
-function Dt(e, t, n) {
-	return at(t) ? Et(e, t, n).copresheaf : (n) => Et(e, n, t).copresheaf;
+function jt(e, t, n) {
+	return lt(t) ? At(e, t, n).copresheaf : (n) => At(e, n, t).copresheaf;
 }
 // src/copresheaf-limits.ts
-function Ot(e) {
-	return F(e, ke(), {
+function Mt(e) {
+	return L(e, De(), {
 		Object: Object.fromEntries(e.specification.Object.map((e) => [e, "()"])),
 		Arrow: Object.fromEntries(Object.entries(e.specification.Arrow).filter(([, e]) => Object.keys(e).length > 0).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((e) => [e, []]))]))
 	});
 }
-function kt(t, r, i) {
+function Nt(t, r, i) {
 	let a = t.specification.Object;
 	e(Object.keys(r).length === a.length && a.every((e) => n(r, e)), \`A \${i} needs one function for each object: \${a.join(", ")}\`);
 }
-function At(t, r = {}) {
-	let a = t.meta, s = a.specification.Object, { copresheaf: c, counit: l } = Et(Ot(a), t, r), u = S(c, "()"), d = i(s.map((e) => [e, l.components[e]])), f = (e) => JSON.stringify(e), p = new Map(u.map((e) => [f(s.map((t) => d[t][e])), e]));
+function Pt(t, r = {}) {
+	let a = t.domain, s = a.specification.Object, { copresheaf: c, counit: l } = At(Mt(a), t, r), u = S(c, "()"), d = i(s.map((e) => [e, l.specification.Object[e]])), f = (e) => JSON.stringify(e), p = new Map(u.map((e) => [f(s.map((t) => d[t][e])), e]));
 	return Object.freeze({
 		parts: u,
 		projections: d,
 		pair: (r, c) => {
-			kt(a, r, "cone");
+			Nt(a, r, "cone");
 			let l = c ?? (s.length > 0 ? Object.keys(r[s[0]]) : void 0);
 			e(l !== void 0, "Pairing into the limit of an empty diagram needs the parts: pair({}, W)");
 			for (let t of s) e(Object.keys(r[t]).length === l.length && l.every((e) => n(r[t], e)), \`The cone's function to \${t} must be defined exactly on the parts of its source\`);
 			return i(l.map((n) => {
 				for (let i of s) {
 					e(S(t, i).includes(r[i][n]), \`The cone sends \${n} to \${r[i][n]}, which is not a part of \${i}\`);
-					for (let [s, c] of Object.entries(o(a, i))) e(t.data[i][s][r[i][n]] === r[c][n], \`The cone does not commute along \${i}.\${s} on \${n}\`);
+					for (let [s, c] of Object.entries(o(a, i))) e(t.specification[i][s][r[i][n]] === r[c][n], \`The cone does not commute along \${i}.\${s} on \${n}\`);
 				}
 				return [n, p.get(f(s.map((e) => r[e][n])))];
 			}));
 		}
 	});
 }
-function jt(t, r = {}) {
-	let a = t.meta, o = a.specification.Object, { copresheaf: s, unit: c } = rt(Ot(a), t, r), l = S(s, "()"), u = i(o.map((e) => [e, c.components[e]]));
+function Ft(t, r = {}) {
+	let a = t.domain, o = a.specification.Object, { copresheaf: s, unit: c } = st(Mt(a), t, r), l = S(s, "()"), u = i(o.map((e) => [e, c.specification.Object[e]]));
 	return Object.freeze({
 		parts: l,
 		injections: u,
 		copair: (r) => {
-			kt(a, r, "cocone");
+			Nt(a, r, "cocone");
 			let s = /* @__PURE__ */ new Map();
 			for (let i of o) {
 				let a = S(t, i);
@@ -7830,46 +8894,46 @@ function jt(t, r = {}) {
 	});
 }
 // src/copresheaf-pullbacks.ts
-function Mt(t) {
+function It(t) {
 	let r = Object.keys(t), a = r.map((e) => t[e]);
 	e(a.length > 0, "A pullback needs at least one leg");
-	let o = a[0].target;
-	e(a.every((e) => e.target === o), "A pullback cospan needs maps into one copresheaf");
-	let s = o.meta, c = s.specification.Object, l = i(c.map((e) => [e, S(o, e).flatMap((t) => p(a.map((n) => S(n.source, e).filter((r) => n.components[e][r] === t))))])), d = V();
+	let o = a[0].codomain;
+	e(a.every((e) => e.codomain === o), "A pullback cospan needs maps into one copresheaf");
+	let s = o.domain, c = s.specification.Object, l = i(c.map((e) => [e, S(o, e).flatMap((t) => p(a.map((n) => S(n.domain, e).filter((r) => n.specification.Object[e][r] === t))))])), d = W();
 	for (let e of c) for (let t of l[e]) d.add(e, u(t), {
 		kind: "pullback",
-		legs: i(r.map((n, r) => [n, B(a[r].source, e, t[r])]))
+		legs: i(r.map((n, r) => [n, U(a[r].domain, e, t[r])]))
 	});
-	let f = y(s, Y(s, (e) => l[e].map(u), (e, t) => i(l[e].map((n) => [u(n), u(n.map((n, r) => a[r].source.data[e][t][n]))]))), d.freeze()), m = Object.fromEntries(r.map((e, t) => [e, E(f, a[t].source, i(c.map((e) => [e, i(l[e].map((e) => [u(e), e[t]]))])))]));
+	let f = y(s, Q(s, (e) => l[e].map(u), (e, t) => i(l[e].map((n) => [u(n), u(n.map((n, r) => a[r].domain.specification[e][t][n]))]))), d.freeze()), m = Object.fromEntries(r.map((e, t) => [e, E(f, a[t].domain, i(c.map((e) => [e, i(l[e].map((e) => [u(e), e[t]]))])))]));
 	return Object.freeze({
 		copresheaf: f,
 		projections: Object.freeze(m),
 		pair: (t, o) => {
 			e(Object.keys(t).length === r.length && r.every((e) => n(t, e)), \`A cone needs one map for each leg: \${r.join(", ")}\`);
-			let s = r.map((e) => t[e]), l = s[0].source;
-			return e(s.every((e, t) => e.source === l && e.target === a[t].source) && (o === void 0 || o === l), "A cone needs maps from one source into the legs’ sources"), E(l, f, i(c.map((t) => [t, i(S(l, t).map((n) => {
-				let r = s.map((e) => e.components[t][n]), i = a[0].components[t][r[0]];
-				return e(r.every((e, n) => a[n].components[t][e] === i), \`The cone does not commute at \${t} on \${n}\`), [n, u(r)];
+			let s = r.map((e) => t[e]), l = s[0].domain;
+			return e(s.every((e, t) => e.domain === l && e.codomain === a[t].domain) && (o === void 0 || o === l), "A cone needs maps from one source into the legs’ sources"), E(l, f, i(c.map((t) => [t, i(S(l, t).map((n) => {
+				let r = s.map((e) => e.specification.Object[t][n]), i = a[0].specification.Object[t][r[0]];
+				return e(r.every((e, n) => a[n].specification.Object[t][e] === i), \`The cone does not commute at \${t} on \${n}\`), [n, u(r)];
 			}))])));
 		}
 	});
 }
 // src/copresheaf-pushouts.ts
-function Nt(t) {
+function Lt(t) {
 	let r = Object.keys(t), a = r.map((e) => t[e]);
 	e(a.length > 0, "A pushout needs at least one leg");
-	let s = a[0].source;
-	e(a.every((e) => e.source === s), "A pushout span needs maps out of one copresheaf");
-	let c = s.meta, l = c.specification.Object, u = /* @__PURE__ */ new Map();
+	let s = a[0].domain;
+	e(a.every((e) => e.domain === s), "A pushout span needs maps out of one copresheaf");
+	let c = s.domain, l = c.specification.Object, u = /* @__PURE__ */ new Map();
 	for (let e of l) {
-		let t = r.flatMap((t, n) => S(a[n].target, e).map((e) => d(t, e))), n = new Map(t.map((e, t) => [e, t])), i = t.map((e, t) => t), o = (e) => {
+		let t = r.flatMap((t, n) => S(a[n].codomain, e).map((e) => d(t, e))), n = new Map(t.map((e, t) => [e, t])), i = t.map((e, t) => t), o = (e) => {
 			for (; i[e] !== e;) e = i[e] = i[i[e]];
 			return e;
 		};
 		for (let t of S(s, e)) {
-			let s = o(n.get(d(r[0], a[0].components[e][t])));
+			let s = o(n.get(d(r[0], a[0].specification.Object[e][t])));
 			r.forEach((r, c) => {
-				let l = o(n.get(d(r, a[c].components[e][t])));
+				let l = o(n.get(d(r, a[c].specification.Object[e][t])));
 				l !== s && (i[Math.max(s, l)] = Math.min(s, l));
 			});
 		}
@@ -7878,35 +8942,35 @@ function Nt(t) {
 			find: (e) => t[o(n.get(e))]
 		});
 	}
-	let f = (e, t, n) => u.get(e).find(d(t, n)), p = (e) => r.flatMap((t, n) => S(a[n].target, e).filter((n) => f(e, t, n) === d(t, n)).map((e) => ({
+	let f = (e, t, n) => u.get(e).find(d(t, n)), p = (e) => r.flatMap((t, n) => S(a[n].codomain, e).filter((n) => f(e, t, n) === d(t, n)).map((e) => ({
 		key: t,
 		i: n,
 		x: e
-	}))), m = V();
+	}))), m = W();
 	for (let e of l) for (let { key: t, i: n, x: r } of p(e)) m.add(e, d(t, r), {
 		kind: "pushout",
 		key: t,
-		part: B(a[n].target, e, r)
+		part: U(a[n].codomain, e, r)
 	});
-	let h = y(c, Y(c, (e) => p(e).map(({ key: e, x: t }) => d(e, t)), (e, t) => i(p(e).map(({ key: n, i: r, x: i }) => [d(n, i), f(o(c, e)[t], n, a[r].target.data[e][t][i])]))), m.freeze()), g = Object.fromEntries(r.map((e, t) => [e, E(a[t].target, h, i(l.map((n) => [n, i(S(a[t].target, n).map((t) => [t, f(n, e, t)]))])))]));
+	let h = y(c, Q(c, (e) => p(e).map(({ key: e, x: t }) => d(e, t)), (e, t) => i(p(e).map(({ key: n, i: r, x: i }) => [d(n, i), f(o(c, e)[t], n, a[r].codomain.specification[e][t][i])]))), m.freeze()), g = Object.fromEntries(r.map((e, t) => [e, E(a[t].codomain, h, i(l.map((n) => [n, i(S(a[t].codomain, n).map((t) => [t, f(n, e, t)]))])))]));
 	return Object.freeze({
 		copresheaf: h,
 		injections: Object.freeze(g),
 		descend: (t, o) => {
 			e(Object.keys(t).length === r.length && r.every((e) => n(t, e)), \`A cocone needs one map for each leg: \${r.join(", ")}\`);
-			let c = r.map((e) => t[e]), u = c[0].target;
-			e(c.every((e, t) => e.source === a[t].target && e.target === u) && (o === void 0 || o === u), "A cocone needs maps from the legs’ targets into one target");
+			let c = r.map((e) => t[e]), u = c[0].codomain;
+			e(c.every((e, t) => e.domain === a[t].codomain && e.codomain === u) && (o === void 0 || o === u), "A cocone needs maps from the legs’ targets into one target");
 			for (let t of l) for (let n of S(s, t)) {
-				let r = c[0].components[t][a[0].components[t][n]];
-				e(c.every((e, i) => e.components[t][a[i].components[t][n]] === r), \`The cocone does not commute at \${t} on \${n}\`);
+				let r = c[0].specification.Object[t][a[0].specification.Object[t][n]];
+				e(c.every((e, i) => e.specification.Object[t][a[i].specification.Object[t][n]] === r), \`The cocone does not commute at \${t} on \${n}\`);
 			}
-			return E(h, u, i(l.map((e) => [e, i(p(e).map(({ key: t, i: n, x: r }) => [d(t, r), c[n].components[e][r]]))])));
+			return E(h, u, i(l.map((e) => [e, i(p(e).map(({ key: t, i: n, x: r }) => [d(t, r), c[n].specification.Object[e][r]]))])));
 		}
 	});
 }
 // src/functor-maps.ts
-var Pt = (e) => \`[\${e.join(", ")}]\`;
-function Ft(n, o, s) {
+var Rt = (e) => \`[\${e.join(", ")}]\`;
+function zt(n, o, s) {
 	e(n.domain === o.domain && n.codomain === o.codomain, "A functor map needs two functors with one domain and codomain");
 	let c = n.domain, l = n.codomain;
 	e(t(s), "Components must be a record"), r(s, c.specification.Object, "Components");
@@ -7914,71 +8978,71 @@ function Ft(n, o, s) {
 	for (let t of c.specification.Object) {
 		let r = s[t];
 		e(Array.isArray(r) && r.every((e) => typeof e == "string"), \`Component \${t} must be a path\`);
-		let i = a(l.specification.Arrow, n.Object[t], r, \`component \${t}\`);
-		e(i === o.Object[t], \`Component \${t} must go from \${n.Object[t]} to \${o.Object[t]}, but \${Pt(r)} ends at \${i}\`), u.push([t, Object.freeze([...r])]);
+		let i = a(l.specification.Arrow, n.specification.Object[t], r, \`component \${t}\`);
+		e(i === o.specification.Object[t], \`Component \${t} must go from \${n.specification.Object[t]} to \${o.specification.Object[t]}, but \${Rt(r)} ends at \${i}\`), u.push([t, Object.freeze([...r])]);
 	}
 	return Object.freeze({
-		source: n,
-		target: o,
-		components: i(u)
+		domain: n,
+		codomain: o,
+		specification: Object.freeze({ Object: i(u) })
 	});
 }
-function It(e, t, n) {
-	return Ft(e, t, n);
+function Bt(e, t, n) {
+	return zt(e, t, n);
 }
-function Lt(e, t, n) {
-	return Rt(Ft(e, t, n));
+function Vt(e, t, n) {
+	return Ht(zt(e, t, n));
 }
-function Rt(t) {
+function Ht(t) {
 	if (l(t)) return t;
-	let { source: n, target: r, components: i } = t;
+	let { domain: n, codomain: r } = t, i = t.specification.Object;
 	for (let t of n.domain.specification.Object) for (let [a, s] of Object.entries(o(n.domain, t))) {
-		let o = [...n.Arrow[t][a], ...i[s]], c = [...i[t], ...r.Arrow[t][a]];
-		e(P(n.codomain, n.Object[t], o, c), \`Not natural at \${t}.\${a}: \${Pt(o)} and \${Pt(c)} are not provably equal (normal forms \${Pt(N(n.codomain, n.Object[t], o))} and \${Pt(N(n.codomain, n.Object[t], c))})\`);
+		let o = [...n.specification.Arrow[t][a], ...i[s]], c = [...i[t], ...r.specification.Arrow[t][a]];
+		e(P(n.codomain, n.specification.Object[t], o, c), \`Not natural at \${t}.\${a}: \${Rt(o)} and \${Rt(c)} are not provably equal (normal forms \${Rt(N(n.codomain, n.specification.Object[t], o))} and \${Rt(N(n.codomain, n.specification.Object[t], c))})\`);
 	}
 	return c(t);
 }
-function zt(e) {
+function Ut(e) {
 	return c(e);
 }
-function Bt(e) {
-	return c(Ft(e, e, Object.fromEntries(e.domain.specification.Object.map((e) => [e, []]))));
+function Wt(e) {
+	return c(zt(e, e, Object.fromEntries(e.domain.specification.Object.map((e) => [e, []]))));
 }
-function Vt(...e) {
+function Gt(...e) {
 	if (e.length === 1) {
 		let [t] = e;
-		return (e) => Ht(e, t);
+		return (e) => Kt(e, t);
 	}
-	return Ht(e[0], e[1]);
+	return Kt(e[0], e[1]);
 }
-function Ht(t, n) {
-	e(t.target === n.source, "Compose α : F ⇒ G with β : G ⇒ H (β must start where α ends)");
-	let r = Ft(t.source, n.target, Object.fromEntries(t.source.domain.specification.Object.map((e) => [e, [...t.components[e], ...n.components[e]]])));
+function Kt(t, n) {
+	e(t.codomain === n.domain, "Compose α : F ⇒ G with β : G ⇒ H (β must start where α ends)");
+	let r = zt(t.domain, n.codomain, Object.fromEntries(t.domain.domain.specification.Object.map((e) => [e, [...t.specification.Object[e], ...n.specification.Object[e]]])));
 	return l(t) && l(n) ? c(r) : r;
 }
-var Ut = z;
-function Wt(e, t) {
-	return t === void 0 ? (t) => Gt(e, t) : Gt(e, t);
+var qt = H;
+function Jt(e, t) {
+	return t === void 0 ? (t) => Yt(e, t) : Yt(e, t);
 }
-function Gt(t, n) {
-	e(t.codomain === n.source.domain, "Precompose F : A → D with α : G ⇒ H between functors out of D");
-	let r = Ft(Ut(t, n.source), Ut(t, n.target), Object.fromEntries(t.domain.specification.Object.map((e) => [e, n.components[t.Object[e]]])));
+function Yt(t, n) {
+	e(t.codomain === n.domain.domain, "Precompose F : A → D with α : G ⇒ H between functors out of D");
+	let r = zt(qt(t, n.domain), qt(t, n.codomain), Object.fromEntries(t.domain.specification.Object.map((e) => [e, n.specification.Object[t.specification.Object[e]]])));
 	return l(n) ? c(r) : r;
 }
-function Kt(...e) {
+function Xt(...e) {
 	if (e.length === 1) {
 		let [t] = e;
-		return (e) => qt(e, t);
+		return (e) => Zt(e, t);
 	}
-	return qt(e[0], e[1]);
+	return Zt(e[0], e[1]);
 }
-function qt(t, n) {
-	e(t.source.codomain === n.domain, "Postcompose α : G ⇒ H between functors into C with K : C → E");
-	let r = t.source, i = Ft(Ut(r, n), Ut(t.target, n), Object.fromEntries(r.domain.specification.Object.map((e) => [e, I(n, r.Object[e], t.components[e])])));
+function Zt(t, n) {
+	e(t.domain.codomain === n.domain, "Postcompose α : G ⇒ H between functors into C with K : C → E");
+	let r = t.domain, i = zt(qt(r, n), qt(t.codomain, n), Object.fromEntries(r.domain.specification.Object.map((e) => [e, R(n, r.specification.Object[e], t.specification.Object[e])])));
 	return l(t) && l(n) ? c(i) : i;
 }
 // src/presentations.ts
-var Jt = _({
+var Qt = _({
 	Object: [
 		"Object",
 		"Arrow",
@@ -8016,15 +9080,15 @@ var Jt = _({
 			sameTarget: h(["left", "target"], ["right", "target"])
 		}
 	}
-}), Yt = (e) => e.replace(/[\\\\.]/g, "\\\\$&"), Xt = (e, t) => [e, ...t].map(Yt).join(".");
-function Zt(e) {
+}), $t = (e) => e.replace(/[\\\\.]/g, "\\\\$&"), en = (e, t) => [e, ...t].map($t).join(".");
+function tn(e) {
 	let t = e.specification, n = [];
-	for (let [e, r] of Object.entries(t.Arrow)) for (let [t, i] of Object.entries(r)) n.push([Xt(e, [t]), {
+	for (let [e, r] of Object.entries(t.Arrow)) for (let [t, i] of Object.entries(r)) n.push([en(e, [t]), {
 		source: e,
 		target: i
 	}]);
 	let r = /* @__PURE__ */ new Map(), o = /* @__PURE__ */ new Map(), s = (e, n) => {
-		let i = Xt(e, n);
+		let i = en(e, n);
 		if (r.has(i)) return i;
 		if (r.set(i, {
 			source: e,
@@ -8034,17 +9098,17 @@ function Zt(e) {
 			o.set(i, {
 				path: i,
 				tail: l,
-				head: Xt(u, [c])
+				head: en(u, [c])
 			});
 		}
 		return i;
 	}, c = [];
-	for (let [e, n] of Object.entries(t.Equation)) for (let [t, { left: r, right: i }] of Object.entries(n)) c.push([Xt(e, [t]), {
+	for (let [e, n] of Object.entries(t.Equation)) for (let [t, { left: r, right: i }] of Object.entries(n)) c.push([en(e, [t]), {
 		left: s(e, r),
 		right: s(e, i)
 	}]);
 	let l = (e, t) => i([...e].map(([e, n]) => [e, n[t]]));
-	return y(Jt, {
+	return y(Qt, {
 		Object: [...t.Object],
 		Arrow: {
 			source: l(n, "source"),
@@ -8065,7 +9129,7 @@ function Zt(e) {
 		}
 	});
 }
-function Qt(t) {
+function nn(t) {
 	let n = [], r = "";
 	for (let i = 0; i < t.length; i++) {
 		let a = t[i];
@@ -8073,15 +9137,15 @@ function Qt(t) {
 	}
 	return n.push(r), n;
 }
-function $t(t, n, r) {
-	let i = Qt(n);
-	return e(i.length === 2 && i[0] === r, \`\${t} ID \${n} must have the form \${Yt(r)}.name\`), i[1];
+function rn(t, n, r) {
+	let i = nn(n);
+	return e(i.length === 2 && i[0] === r, \`\${t} ID \${n} must have the form \${$t(r)}.name\`), i[1];
 }
-function en(t) {
-	e(t.meta === Jt, "A presentation must be a copresheaf on CatPresentation");
-	let r = t.data, i = Object.keys(r.Object.$id), a = {}, o = {};
+function an(t) {
+	e(t.domain === Qt, "A presentation must be a copresheaf on CatPresentation");
+	let r = t.specification, i = Object.keys(r.Object.$id), a = {}, o = {};
 	for (let e of Object.keys(r.Arrow.$id)) {
-		let t = r.Arrow.source[e], n = $t("Arrow", e, t);
+		let t = r.Arrow.source[e], n = rn("Arrow", e, t);
 		a[e] = n, (o[t] ??= {})[n] = r.Arrow.target[e];
 	}
 	let s = {};
@@ -8101,7 +9165,7 @@ function en(t) {
 		return c[t] = Object.freeze(o);
 	}, u = {};
 	for (let e of Object.keys(r.Equation.$id)) {
-		let t = r.Equation.left[e], n = r.Equation.right[e], i = r.Path.source[t], a = $t("Equation", e, i);
+		let t = r.Equation.left[e], n = r.Equation.right[e], i = r.Path.source[t], a = rn("Equation", e, i);
 		(u[i] ??= {})[a] = h(l(t), l(n));
 	}
 	for (let e of Object.keys(r.Path.$id)) l(e);
@@ -8112,11 +9176,11 @@ function en(t) {
 	});
 }
 // src/diagrams.ts
-var tn = z;
-function nn(t, n) {
+var on = H;
+function sn(t, n) {
 	let r = n.Arrow ?? {};
 	for (let t of Object.values(r)) for (let [n, r] of Object.entries(t)) e(Array.isArray(r) && r.length === 2 && Array.isArray(r[1]), \`Shape arrow \${n} must be [target variable, path]\`);
-	return F(_({
+	return L(_({
 		Object: Object.keys(n.Object),
 		Arrow: Object.fromEntries(Object.entries(r).map(([e, t]) => [e, Object.fromEntries(Object.entries(t).map(([e, [t]]) => [e, t]))])),
 		Equation: n.Equation ?? {}
@@ -8125,90 +9189,89 @@ function nn(t, n) {
 		Arrow: Object.fromEntries(Object.entries(r).filter(([, e]) => Object.keys(e).length > 0).map(([e, t]) => [e, Object.fromEntries(Object.entries(t).map(([e, [, t]]) => [e, t]))]))
 	});
 }
-var rn = /* @__PURE__ */ new Map();
-function an(e, t, n) {
+var cn = /* @__PURE__ */ new Map();
+function ln(e, t, n) {
 	let r = n ?? t;
-	return m(rn, [t, r], [e], () => nn(e, { Object: { [r]: t } }));
+	return m(cn, [t, r], [e], () => sn(e, { Object: { [r]: t } }));
 }
-function on(t, n, r) {
+function un(t, n, r) {
 	let i = r;
-	return "domain" in i ? (e(i.domain === t && i.codomain === n, "The shape functor goes between the wrong shapes"), L(i)) : F(t, n, {
+	return "domain" in i ? (e(i.domain === t && i.codomain === n, "The shape functor goes between the wrong shapes"), z(i)) : L(t, n, {
 		Object: i.Object,
 		Arrow: i.Arrow ?? {}
 	});
 }
-function sn(t, n) {
-	e(t.codomain === n.codomain, "A diagram map needs two diagrams in one category"), L(t), L(n);
+function dn(t, n) {
+	e(t.codomain === n.codomain, "A diagram map needs two diagrams in one category"), z(t), z(n);
 }
-function X(e, t, n, r, i) {
-	let a = e === "colimit" ? Lt(t, tn(r, n), i) : Lt(tn(r, t), n, i);
+function $(e, t, n, r, i) {
+	let a = e === "colimit" ? Vt(t, on(r, n), i) : Vt(on(r, t), n, i);
 	return Object.freeze({
 		variance: e,
-		source: t,
-		target: n,
+		domain: t,
+		codomain: n,
 		shape: r,
-		components: a.components
+		specification: Object.freeze({ Object: a.specification.Object })
 	});
 }
-function cn(t, n, r) {
-	let i = t;
-	if (!("components" in i && "source" in i)) return i;
-	let a = i;
-	return e(a.source === n && a.target === r, "The functor map goes between the wrong functors"), a.components;
+function fn(n, r, i) {
+	if (e(t(n), "Diagram map components must be a record"), !("domain" in n && "specification" in n)) return n;
+	let a = n;
+	return e(a.domain === r && a.codomain === i, "The functor map goes between the wrong functors"), a.specification.Object;
 }
-function ln(e, t, n, r) {
-	sn(e, t);
-	let i = on(e.domain, t.domain, n);
-	return X("colimit", e, t, i, cn(r, e, tn(i, t)));
+function pn(e, t, n, r) {
+	dn(e, t);
+	let i = un(e.domain, t.domain, n);
+	return $("colimit", e, t, i, fn(r, e, on(i, t)));
 }
-function un(e, t, n, r) {
-	sn(e, t);
-	let i = on(t.domain, e.domain, n);
-	return X("limit", e, t, i, cn(r, tn(i, e), t));
+function mn(e, t, n, r) {
+	dn(e, t);
+	let i = un(t.domain, e.domain, n);
+	return $("limit", e, t, i, fn(r, on(i, e), t));
 }
-function dn(e, t) {
-	L(e);
+function hn(e, t) {
+	z(e);
 	let n = e.domain;
-	return X(t, e, e, ae(n), Object.fromEntries(n.specification.Object.map((e) => [e, []])));
+	return $(t, e, e, V(n), Object.fromEntries(n.specification.Object.map((e) => [e, []])));
 }
-function fn(...e) {
+function gn(...e) {
 	if (e.length === 1) {
 		let [t] = e;
-		return (e) => pn(e, t);
+		return (e) => _n(e, t);
 	}
-	return pn(e[0], e[1]);
+	return _n(e[0], e[1]);
 }
-function pn(t, n) {
-	if (e(t.variance === n.variance, "Only maps of one variance compose"), e(t.target === n.source, "Compose f : D → E with g : E → H (g must start where f ends)"), t.variance === "colimit") {
-		let e = L(tn(t.shape, n.shape));
-		return X("colimit", t.source, n.target, e, Object.fromEntries(t.source.domain.specification.Object.map((e) => [e, [...t.components[e], ...n.components[t.shape.Object[e]]]])));
+function _n(t, n) {
+	if (e(t.variance === n.variance, "Only maps of one variance compose"), e(t.codomain === n.domain, "Compose f : D → E with g : E → H (g must start where f ends)"), t.variance === "colimit") {
+		let e = z(on(t.shape, n.shape));
+		return $("colimit", t.domain, n.codomain, e, Object.fromEntries(t.domain.domain.specification.Object.map((e) => [e, [...t.specification.Object[e], ...n.specification.Object[t.shape.specification.Object[e]]]])));
 	}
-	let r = L(tn(n.shape, t.shape));
-	return X("limit", t.source, n.target, r, Object.fromEntries(n.target.domain.specification.Object.map((e) => [e, [...t.components[n.shape.Object[e]], ...n.components[e]]])));
+	let r = z(on(n.shape, t.shape));
+	return $("limit", t.domain, n.codomain, r, Object.fromEntries(n.codomain.domain.specification.Object.map((e) => [e, [...t.specification.Object[n.shape.specification.Object[e]], ...n.specification.Object[e]]])));
 }
-function mn(e, t) {
-	if (e.variance !== t.variance || e.source !== t.source || e.target !== t.target) return !1;
+function vn(e, t) {
+	if (e.variance !== t.variance || e.domain !== t.domain || e.codomain !== t.codomain) return !1;
 	let { domain: n, codomain: r } = e.shape;
-	for (let r of n.specification.Object) if (e.shape.Object[r] !== t.shape.Object[r]) return !1;
-	for (let [n, i] of Object.entries(e.shape.Arrow)) for (let [a, o] of Object.entries(i)) if (!P(r, e.shape.Object[n], o, t.shape.Arrow[n][a])) return !1;
-	let i = e.source.codomain, a = (t) => e.variance === "colimit" ? e.source.Object[t] : e.source.Object[e.shape.Object[t]];
-	return Object.keys(e.components).every((n) => P(i, a(n), e.components[n], t.components[n]));
+	for (let r of n.specification.Object) if (e.shape.specification.Object[r] !== t.shape.specification.Object[r]) return !1;
+	for (let [n, i] of Object.entries(e.shape.specification.Arrow)) for (let [a, o] of Object.entries(i)) if (!P(r, e.shape.specification.Object[n], o, t.shape.specification.Arrow[n][a])) return !1;
+	let i = e.domain.codomain, a = (t) => e.variance === "colimit" ? e.domain.specification.Object[t] : e.domain.specification.Object[e.shape.specification.Object[t]];
+	return Object.keys(e.specification.Object).every((n) => P(i, a(n), e.specification.Object[n], t.specification.Object[n]));
 }
-var hn = /* @__PURE__ */ new Map();
-function Z(t, n) {
+var yn = /* @__PURE__ */ new Map();
+function bn(t, n) {
 	let r = Object.keys(t), i = r.map((e) => t[e]), a = i.length > 0 ? i[0].codomain : n;
-	return e(a !== void 0, "The sum of no diagrams needs the category: diagramCoproduct({}, C)"), e(i.every((e) => e.codomain === a) && (n === void 0 || n === a), "A sum of diagrams needs diagrams in one category"), m(hn, r, [...i, a], () => gn(r, i, a));
+	return e(a !== void 0, "The sum of no diagrams needs the category: diagramCoproduct({}, C)"), e(i.every((e) => e.codomain === a) && (n === void 0 || n === a), "A sum of diagrams needs diagrams in one category"), m(yn, r, [...i, a], () => xn(r, i, a));
 }
-function gn(t, r, i) {
-	r.forEach((e) => L(e));
-	let a = q(Object.fromEntries(t.map((e, t) => [e, r[t].domain]))), o = a.copair, s = L(o(Object.fromEntries(t.map((e, t) => [e, r[t]])), i)), c = (e) => a.injections[t[e]], l = (e) => Object.fromEntries(e.domain.specification.Object.map((e) => [e, []])), u = Object.fromEntries(t.map((e, t) => [e, X("colimit", r[t], s, c(t), l(r[t]))])), d = Object.fromEntries(t.map((e, t) => [e, X("limit", s, r[t], c(t), l(r[t]))])), f = (i, a, l) => {
+function xn(t, r, i) {
+	r.forEach((e) => z(e));
+	let a = Y(Object.fromEntries(t.map((e, t) => [e, r[t].domain]))), o = a.copair, s = z(o(Object.fromEntries(t.map((e, t) => [e, r[t]])), i)), c = (e) => a.injections[t[e]], l = (e) => Object.fromEntries(e.domain.specification.Object.map((e) => [e, []])), u = Object.fromEntries(t.map((e, t) => [e, $("colimit", r[t], s, c(t), l(r[t]))])), d = Object.fromEntries(t.map((e, t) => [e, $("limit", s, r[t], c(t), l(r[t]))])), f = (i, a, l) => {
 		e(Object.keys(a).length === t.length && t.every((e) => n(a, e)), \`Needs one map for each diagram: \${t.join(", ")}\`);
 		let u = t.map((e) => a[e]);
 		e(u.every((e) => e.variance === i), \`Needs \${i} maps\`);
-		let d = u.map((e) => i === "colimit" ? e.target : e.source), f = d.length > 0 ? d[0] : l;
-		e(f !== void 0, \`With no diagrams, pass the other end: \${i === "colimit" ? "copair({}, E)" : "pair({}, E)"}\`), e((l === void 0 || l === f) && d.every((e, t) => e === f && (i === "colimit" ? u[t].source : u[t].target) === r[t]), i === "colimit" ? "A cocone needs maps from each diagram into one diagram" : "A cone needs maps from one diagram onto each diagram");
-		let p = L(o(Object.fromEntries(t.map((e, t) => [e, u[t].shape])), f.domain)), m = Object.fromEntries(t.flatMap((e, t) => r[t].domain.specification.Object.map((e) => [c(t).Object[e], u[t].components[e]])));
-		return i === "colimit" ? X("colimit", s, f, p, m) : X("limit", f, s, p, m);
+		let d = u.map((e) => i === "colimit" ? e.codomain : e.domain), f = d.length > 0 ? d[0] : l;
+		e(f !== void 0, \`With no diagrams, pass the other end: \${i === "colimit" ? "copair({}, E)" : "pair({}, E)"}\`), e((l === void 0 || l === f) && d.every((e, t) => e === f && (i === "colimit" ? u[t].domain : u[t].codomain) === r[t]), i === "colimit" ? "A cocone needs maps from each diagram into one diagram" : "A cone needs maps from one diagram onto each diagram");
+		let p = z(o(Object.fromEntries(t.map((e, t) => [e, u[t].shape])), f.domain)), m = Object.fromEntries(t.flatMap((e, t) => r[t].domain.specification.Object.map((e) => [c(t).specification.Object[e], u[t].specification.Object[e]])));
+		return i === "colimit" ? $("colimit", s, f, p, m) : $("limit", f, s, p, m);
 	};
 	return Object.freeze({
 		diagram: s,
@@ -8218,38 +9281,38 @@ function gn(t, r, i) {
 		pair: (e, t) => f("limit", e, t)
 	});
 }
-var _n = Z, vn = Z;
-function yn(e, t) {
-	return Z({
+var Sn = bn, Cn = bn;
+function wn(e, t) {
+	return bn({
 		left: e,
 		right: t
 	});
 }
-function bn(e, t) {
-	return Z({
+function Tn(e, t) {
+	return bn({
 		left: e,
 		right: t
 	});
 }
-function xn(e) {
-	return Z({}, e);
+function En(e) {
+	return bn({}, e);
 }
-function Sn(e) {
-	return Z({}, e);
+function Dn(e) {
+	return bn({}, e);
 }
 // src/queries.ts
-var Cn = (e) => t(e) && typeof e.build == "function" && typeof e.variance == "string";
-function wn(e, t) {
+var On = (e) => t(e) && typeof e.build == "function" && typeof e.variance == "string";
+function kn(e, t) {
 	let n = /* @__PURE__ */ new WeakMap();
 	return Object.freeze({
 		variance: e,
 		build: (e) => (n.has(e) || n.set(e, t(e)), n.get(e))
 	});
 }
-function Tn(n, r) {
+function An(n, r) {
 	e(t(r), "Factors must be a record (or a list)");
-	for (let [t, i] of Object.entries(r)) e(typeof i == "string" || Cn(i), \`Factor \${t} must be an object of the category or a query object\`), Cn(i) && e(i.variance === n, \`Factor \${t} is a \${i.variance} query, which cannot be nested in a \${n} query\`);
-	return wn(n, (e) => {
+	for (let [t, i] of Object.entries(r)) e(typeof i == "string" || On(i), \`Factor \${t} must be an object of the category or a query object\`), On(i) && e(i.variance === n, \`Factor \${t} is a \${i.variance} query, which cannot be nested in a \${n} query\`);
+	return kn(n, (e) => {
 		let t = {
 			Object: {},
 			Arrow: {},
@@ -8261,44 +9324,44 @@ function Tn(n, r) {
 				continue;
 			}
 			let r = i.build(e), a = (e) => \`\${n}.\${e}\`;
-			for (let e of r.domain.specification.Object) t.Object[a(e)] = r.Object[e];
-			for (let [e, n] of Object.entries(r.domain.specification.Arrow)) Object.keys(n).length !== 0 && (t.Arrow[a(e)] = Object.fromEntries(Object.entries(n).map(([t, n]) => [t, [a(n), r.Arrow[e][t]]])));
+			for (let e of r.domain.specification.Object) t.Object[a(e)] = r.specification.Object[e];
+			for (let [e, n] of Object.entries(r.domain.specification.Arrow)) Object.keys(n).length !== 0 && (t.Arrow[a(e)] = Object.fromEntries(Object.entries(n).map(([t, n]) => [t, [a(n), r.specification.Arrow[e][t]]])));
 			for (let [e, n] of Object.entries(r.domain.specification.Equation)) t.Equation[a(e)] = n;
 		}
-		return nn(e, t);
+		return sn(e, t);
 	});
 }
-function En(e) {
-	return Tn("limit", e);
+function jn(e) {
+	return An("limit", e);
 }
-function Dn(e) {
-	return Tn("colimit", e);
+function Mn(e) {
+	return An("colimit", e);
 }
-var On = Dn;
-function kn(e, t) {
-	return En({
+var Nn = Mn;
+function Pn(e, t) {
+	return jn({
 		left: e,
 		right: t
 	});
 }
-function An(e, t) {
-	return Dn({
+function Fn(e, t) {
+	return Mn({
 		left: e,
 		right: t
 	});
 }
-var jn = En({}), Mn = Dn({});
-function Nn() {
-	return jn;
+var In = jn({}), Ln = Mn({});
+function Rn() {
+	return In;
 }
-function Pn() {
-	return Mn;
+function zn() {
+	return Ln;
 }
-var Fn = (e) => \`[\${e.join(", ")}]\`;
-function In(r, i, o) {
+var Bn = (e) => \`[\${e.join(", ")}]\`;
+function Vn(r, i, o) {
 	e(t(i), "Variables must be a record"), e(t(o), "Equations must be a record");
 	for (let [t, n] of Object.entries(i)) e(typeof n == "string", \`Variable \${t} must be an object of the category\`);
-	return wn(r, (t) => {
+	return kn(r, (t) => {
 		let s = {
 			Object: { ...i },
 			Arrow: {},
@@ -8308,90 +9371,99 @@ function In(r, i, o) {
 			e(!n(o, r), \`Two arrows named \${r} from \${t}\`), o[r] = [i, a];
 		};
 		for (let [l, { left: u, right: d }] of Object.entries(o)) {
-			let o = (r) => (e(r.length > 0 && n(i, r[0]), \`Equation \${l}: \${Fn(r)} must start with a variable\`), a(t.specification.Arrow, i[r[0]], r.slice(1), \`equation \${l}\`)), [f, p] = [o(u), o(d)];
-			e(f === p, \`Equation \${l}: \${Fn(u)} ends at \${f} but \${Fn(d)} ends at \${p}\`), d.length === 1 ? c(u[0], l, d[0], u.slice(1)) : u.length === 1 ? c(d[0], l, u[0], d.slice(1)) : (e(r === "limit", \`Equation \${l}: in a colimit, one side must be a variable (it glues each element to an element of that variable); to glue the images of two variables, add a variable for what to glue, with an equation to each\`), e(!n(s.Object, l), \`Equation \${l} is named like a variable\`), s.Object[l] = f, c(u[0], \`\${l}.left\`, l, u.slice(1)), c(d[0], \`\${l}.right\`, l, d.slice(1)));
+			let o = (r) => (e(r.length > 0 && n(i, r[0]), \`Equation \${l}: \${Bn(r)} must start with a variable\`), a(t.specification.Arrow, i[r[0]], r.slice(1), \`equation \${l}\`)), [f, p] = [o(u), o(d)];
+			e(f === p, \`Equation \${l}: \${Bn(u)} ends at \${f} but \${Bn(d)} ends at \${p}\`), d.length === 1 ? c(u[0], l, d[0], u.slice(1)) : u.length === 1 ? c(d[0], l, u[0], d.slice(1)) : (e(r === "limit", \`Equation \${l}: in a colimit, one side must be a variable (it glues each element to an element of that variable); to glue the images of two variables, add a variable for what to glue, with an equation to each\`), e(!n(s.Object, l), \`Equation \${l} is named like a variable\`), s.Object[l] = f, c(u[0], \`\${l}.left\`, l, u.slice(1)), c(d[0], \`\${l}.right\`, l, d.slice(1)));
 		}
-		return nn(t, s);
+		return sn(t, s);
 	});
 }
-function Ln(e, t) {
-	return In("limit", e, t ?? {});
+var Hn = (e) => t(e) && "domain" in e && "codomain" in e && "specification" in e;
+function Un(t, n) {
+	return kn(t, (r) => (e(n.codomain === r, \`A \${t} of a diagram is placed in the diagram's own category only\`), z(n)));
 }
-function Rn(e, t) {
-	return In("colimit", e, t ?? {});
+function Wn(t, n) {
+	return Hn(t) ? (e(n === void 0, "The limit of a diagram takes no equations: put them in the diagram"), Un("limit", t)) : Vn("limit", t, n ?? {});
 }
-var zn = (e) => \`[\${e.join(", ")}]\`;
-function Bn(n, a, s) {
+function Gn(t, n) {
+	return Hn(t) ? (e(n === void 0, "The colimit of a diagram takes no equations: put them in the diagram"), Un("colimit", t)) : Vn("colimit", t, n ?? {});
+}
+function Kn(t, n) {
+	return e(On(n), "queryObjectDiagram takes a query object"), n.build(t);
+}
+var qn = (e) => \`[\${e.join(", ")}]\`;
+function Jn(n, a, s) {
 	e(t(s), "Query specification must be a record"), e(Object.keys(s).every((e) => e === "Object" || e === "Arrow"), "Unknown query field");
 	let c = s.Object;
 	e(t(c), "Object must be a record"), r(c, n.specification.Object, "Query objects");
-	let l = new Set(Object.values(c).flatMap((e) => Cn(e) ? [e.variance] : []));
+	let l = new Set(Object.values(c).flatMap((e) => On(e) ? [e.variance] : []));
 	e(l.size <= 1, "A query mixes limits and colimits, which is not supported yet");
 	let u = l.has("colimit") ? "colimit" : "limit", d = i(n.specification.Object.map((n) => {
 		let r = c[n];
-		if (typeof r == "string") return e(a.specification.Object.includes(r), \`Unknown object \${r} for \${n}\`), [n, an(a, r, n)];
-		if (Cn(r)) return [n, r.build(a)];
+		if (typeof r == "string") return e(a.specification.Object.includes(r), \`Unknown object \${r} for \${n}\`), [n, ln(a, r, n)];
+		if (On(r)) return [n, r.build(a)];
 		let i = r;
-		return e(t(i) && "domain" in i && i.codomain === a, \`\${n} must go to a query object or a diagram in C\`), [n, L(i)];
+		return e(t(i) && "domain" in i && i.codomain === a, \`\${n} must go to a query object or a diagram in C\`), [n, z(i)];
 	})), f = s.Arrow ?? {};
 	e(t(f), "Arrow must be a record");
 	let p = n.specification.Object.filter((e) => Object.keys(o(n, e)).length > 0);
 	r(f, p, "Query arrows");
 	let m = i(p.map((a) => {
 		let s = f[a];
-		return e(t(s), \`Query arrow scope \${a} must be a record\`), r(s, Object.keys(o(n, a)), \`Query arrow scope \${a}\`), [a, i(Object.entries(o(n, a)).map(([e, t]) => [e, Vn(u, \`\${a}.\${e}\`, d[a], d[t], s[e])]))];
+		return e(t(s), \`Query arrow scope \${a} must be a record\`), r(s, Object.keys(o(n, a)), \`Query arrow scope \${a}\`), [a, i(Object.entries(o(n, a)).map(([e, t]) => [e, Yn(u, \`\${a}.\${e}\`, d[a], d[t], s[e])]))];
 	})), h = (e, t) => {
-		let r = dn(d[e], u), i = e;
-		for (let e of t) r = fn(r, m[i][e]), i = o(n, i)[e];
+		let r = hn(d[e], u), i = e;
+		for (let e of t) r = gn(r, m[i][e]), i = o(n, i)[e];
 		return r;
 	};
-	for (let [t, r] of Object.entries(n.specification.Equation)) for (let [n, { left: i, right: a }] of Object.entries(r)) e(mn(h(t, i), h(t, a)), \`The query does not preserve equation \${t}.\${n}: \${zn(i)} and \${zn(a)} map to different maps of diagrams\`);
+	for (let [t, r] of Object.entries(n.specification.Equation)) for (let [n, { left: i, right: a }] of Object.entries(r)) e(vn(h(t, i), h(t, a)), \`The query does not preserve equation \${t}.\${n}: \${qn(i)} and \${qn(a)} map to different maps of diagrams\`);
 	return Object.freeze({
 		variance: u,
 		domain: n,
 		codomain: a,
-		Object: d,
-		Arrow: m
+		specification: Object.freeze({
+			Object: d,
+			Arrow: m
+		})
 	});
 }
-function Vn(n, r, i, a, o) {
+function Yn(n, r, i, a, o) {
 	if (t(o) && "variance" in o && "shape" in o) {
 		let t = o;
-		return e(t.variance === n && t.source === i && t.target === a, \`The image of \${r} must be a \${n} map between the objects of its ends\`), t;
+		return e(t.variance === n && t.domain === i && t.codomain === a, \`The image of \${r} must be a \${n} map between the objects of its ends\`), t;
 	}
 	let s = i.codomain, c = i.domain, l = a.domain, u = n === "limit" ? l.specification.Object : c.specification.Object, d = n === "limit" ? c.specification.Object : l.specification.Object, f;
 	if (Array.isArray(o)) e(u.length === 1, \`The image of \${r} is a single term, but there are \${u.length} variables to give (\${u.join(", ")}): give a record of terms\`), f = { [u[0]]: o };
 	else {
 		e(t(o), \`The image of \${r} must be a term, a record of terms, or a diagram map\`);
 		for (let t of Object.keys(o)) e(u.includes(t), \`The terms of \${r} have an unknown variable \${t}\`);
-		f = Hn(n, r, i, a, o);
+		f = Xn(n, r, i, a, o);
 	}
 	let p = {}, m = {};
 	for (let [t, i] of Object.entries(f)) {
 		e(Array.isArray(i) && i.length > 0 && i.every((e) => typeof e == "string"), \`The term for \${t} in \${r} must be a non-empty list of names\`);
 		let a = n === "limit" ? i[0] : i[i.length - 1];
-		e(d.includes(a), \`The term \${Fn(i)} for \${t} in \${r} must \` + (n === "limit" ? "start" : "end") + \` with a variable: one of \${d.join(", ") || "(none)"}\`), p[t] = a, m[t] = n === "limit" ? i.slice(1) : i.slice(0, -1);
+		e(d.includes(a), \`The term \${Bn(i)} for \${t} in \${r} must \` + (n === "limit" ? "start" : "end") + \` with a variable: one of \${d.join(", ") || "(none)"}\`), p[t] = a, m[t] = n === "limit" ? i.slice(1) : i.slice(0, -1);
 	}
 	let h = {
 		Object: p,
-		Arrow: Un(r, n === "limit" ? l : c, n === "limit" ? c : l, p, (e, t, r, o) => {
+		Arrow: Zn(r, n === "limit" ? l : c, n === "limit" ? c : l, p, (e, t, r, o) => {
 			if (n === "limit") {
-				let n = [...I(i, p[e], o), ...m[r]], c = [...m[e], ...a.Arrow[e][t]];
-				return P(s, i.Object[p[e]], n, c);
+				let n = [...R(i, p[e], o), ...m[r]], c = [...m[e], ...a.specification.Arrow[e][t]];
+				return P(s, i.specification.Object[p[e]], n, c);
 			}
-			let c = [...m[e], ...I(a, p[e], o)], l = [...i.Arrow[e][t], ...m[r]];
-			return P(s, i.Object[e], c, l);
+			let c = [...m[e], ...R(a, p[e], o)], l = [...i.specification.Arrow[e][t], ...m[r]];
+			return P(s, i.specification.Object[e], c, l);
 		})
 	};
-	return n === "limit" ? un(i, a, h, m) : ln(i, a, h, m);
+	return n === "limit" ? mn(i, a, h, m) : pn(i, a, h, m);
 }
-function Hn(t, r, i, a, s) {
-	let c = i.codomain, l = t === "limit" ? a : i, u = t === "limit" ? i : a, d = l.domain.specification.Object, f = { ...s }, p, m = (e) => (p ??= re(u.domain, 1e3))(e), h = (e, n, r) => {
+function Xn(t, r, i, a, s) {
+	let c = i.codomain, l = t === "limit" ? a : i, u = t === "limit" ? i : a, d = l.domain.specification.Object, f = { ...s }, p, m = (e) => (p ??= I(u.domain, 1e3))(e), h = (e, n, r) => {
 		if (t === "limit") {
-			let [t, ...o] = f[e], s = [...o, ...a.Arrow[e][n]], l = m(t).filter(({ path: e, target: n }) => i.Object[n] === a.Object[r] && P(c, i.Object[t], I(i, t, e), s));
+			let [t, ...o] = f[e], s = [...o, ...a.specification.Arrow[e][n]], l = m(t).filter(({ path: e, target: n }) => i.specification.Object[n] === a.specification.Object[r] && P(c, i.specification.Object[t], R(i, t, e), s));
 			return l.length === 1 ? [l[0].target] : [t, ...s];
 		}
-		let o = f[r].slice(0, -1), s = f[r][f[r].length - 1], l = [...i.Arrow[e][n], ...o], u = a.domain.specification.Object.filter((t) => a.Object[t] === i.Object[e] && m(t).some(({ path: e, target: n }) => n === s && P(c, a.Object[t], I(a, t, e), l)));
+		let o = f[r].slice(0, -1), s = f[r][f[r].length - 1], l = [...i.specification.Arrow[e][n], ...o], u = a.domain.specification.Object.filter((t) => a.specification.Object[t] === i.specification.Object[e] && m(t).some(({ path: e, target: n }) => n === s && P(c, a.specification.Object[t], R(a, t, e), l)));
 		return u.length === 1 ? [u[0]] : [...l, s];
 	};
 	for (let e = !0; e;) {
@@ -8404,138 +9476,141 @@ function Hn(t, r, i, a, s) {
 	let g = d.filter((e) => !n(f, e));
 	return e(g.length === 0, \`The terms of \${r} leave out \${g.join(", ")}, which no other term determines\`), f;
 }
-function Un(t, n, r, i, a) {
+function Zn(t, n, r, i, a) {
 	let s = {}, c;
 	for (let l of n.specification.Object) for (let [u, d] of Object.entries(o(n, l))) {
-		c ??= re(r, 1e3);
+		c ??= I(r, 1e3);
 		let n = c(i[l]).filter(({ target: e }) => e === i[d]).filter(({ path: e }) => a(l, u, d, e));
-		e(n.length > 0, \`In \${t}, no path from \${i[l]} to \${i[d]} matches the arrow \${l}.\${u}: the terms are not compatible with it\`), e(n.length === 1, \`In \${t}, the arrow \${l}.\${u} could go along \${n.map(({ path: e }) => zn(e)).join(" or ")}: give the map of diagrams explicitly\`), (s[l] ??= {})[u] = n[0].path;
+		e(n.length > 0, \`In \${t}, no path from \${i[l]} to \${i[d]} matches the arrow \${l}.\${u}: the terms are not compatible with it\`), e(n.length === 1, \`In \${t}, the arrow \${l}.\${u} could go along \${n.map(({ path: e }) => qn(e)).join(" or ")}: give the map of diagrams explicitly\`), (s[l] ??= {})[u] = n[0].path;
 	}
 	return s;
 }
-var Wn = /* @__PURE__ */ new Map();
-function Gn(e, t, n, r) {
+var Qn = /* @__PURE__ */ new Map();
+function $n(e, t, n, r) {
 	let i = t, a = r;
-	for (let t of n) a = e.data[i][t][a], i = o(e.meta, i)[t];
+	for (let t of n) a = e.specification[i][t][a], i = o(e.domain, i)[t];
 	return a;
 }
-function Q(t, n, r) {
-	return e(n.meta === t.codomain, "Evaluate a query on a copresheaf on its codomain"), m(Wn, [JSON.stringify(r)], [t, n], () => {
+function er(t, n, r) {
+	return e(n.domain === t.codomain, "Evaluate a query on a copresheaf on its codomain"), m(Qn, [JSON.stringify(r)], [t, n], () => {
 		let e = t.domain, a = i(e.specification.Object.map((e) => {
-			let i = C(t.Object[e], n);
-			return [e, t.variance === "limit" ? At(i, r) : jt(i, r)];
+			let i = C(t.specification.Object[e], n);
+			return [e, t.variance === "limit" ? Pt(i, r) : Ft(i, r)];
 		})), s = (r, i) => {
-			let s = t.Arrow[r][i], c = o(e, r)[i], l = s.source;
+			let s = t.specification.Arrow[r][i], c = o(e, r)[i], l = s.domain;
 			if (t.variance === "limit") {
-				let e = a[r], t = a[c], i = Object.fromEntries(s.target.domain.specification.Object.map((t) => {
-					let r = s.shape.Object[t];
-					return [t, Object.fromEntries(e.parts.map((i) => [i, Gn(n, l.Object[r], s.components[t], e.projections[r][i])]))];
+				let e = a[r], t = a[c], i = Object.fromEntries(s.codomain.domain.specification.Object.map((t) => {
+					let r = s.shape.specification.Object[t];
+					return [t, Object.fromEntries(e.parts.map((i) => [i, $n(n, l.specification.Object[r], s.specification.Object[t], e.projections[r][i])]))];
 				}));
 				return t.pair(i, e.parts);
 			}
-			let u = a[r], d = a[c], f = Object.fromEntries(l.domain.specification.Object.map((e) => [e, Object.fromEntries(S(n, l.Object[e]).map((t) => [t, d.injections[s.shape.Object[e]][Gn(n, l.Object[e], s.components[e], t)]]))]));
+			let u = a[r], d = a[c], f = Object.fromEntries(l.domain.specification.Object.map((e) => [e, Object.fromEntries(S(n, l.specification.Object[e]).map((t) => [t, d.injections[s.shape.specification.Object[e]][$n(n, l.specification.Object[e], s.specification.Object[e], t)]]))]));
 			return u.copair(f);
-		}, c = V();
+		}, c = W();
 		for (let r of e.specification.Object) {
-			let e = t.Object[r], i = e.domain, o = a[r];
+			let e = t.specification.Object[r], i = e.domain, o = a[r];
 			if (t.variance === "limit") {
 				let { projections: t } = o;
 				for (let a of o.parts) c.add(r, a, {
 					kind: "limit",
 					values: Object.freeze(i.specification.Object.map((r) => Object.freeze({
-						variable: H(i, r),
-						part: B(n, e.Object[r], t[r][a])
+						variable: G(i, r),
+						part: U(n, e.specification.Object[r], t[r][a])
 					})))
 				});
 			} else {
 				let { injections: t } = o, a = /* @__PURE__ */ new Set();
-				for (let o of i.specification.Object) for (let s of S(n, e.Object[o])) {
+				for (let o of i.specification.Object) for (let s of S(n, e.specification.Object[o])) {
 					let l = t[o][s];
 					a.has(l) || (a.add(l), c.add(r, l, {
 						kind: "colimit",
-						variable: H(i, o),
-						part: B(n, e.Object[o], s)
+						variable: G(i, o),
+						part: U(n, e.specification.Object[o], s)
 					}));
 				}
 			}
 		}
-		let l = y(e, Y(e, (e) => a[e].parts, s), c.freeze());
+		let l = y(e, Q(e, (e) => a[e].parts, s), c.freeze());
 		return Object.freeze({
 			copresheaf: l,
 			results: a
 		});
 	});
 }
-function Kn(e, t, n) {
-	return at(t) ? Q(e, t, n ?? {}).copresheaf : (n) => Q(e, n, t ?? {}).copresheaf;
+function tr(e, t, n) {
+	return lt(t) ? er(e, t, n ?? {}).copresheaf : (n) => er(e, n, t ?? {}).copresheaf;
 }
-function qn(e, t, n = {}) {
-	return t === void 0 ? (t) => Jn(e, t, {}) : Jn(e, t, n);
+function nr(e, t, n = {}) {
+	return t === void 0 ? (t) => rr(e, t, {}) : rr(e, t, n);
 }
-function Jn(e, t, n) {
-	let r = Q(e, t.source, n), a = Q(e, t.target, n), o = i(e.domain.specification.Object.map((n) => {
-		let i = e.Object[n], o = i.domain.specification.Object;
+function rr(e, t, n) {
+	let r = er(e, t.domain, n), a = er(e, t.codomain, n), o = i(e.domain.specification.Object.map((n) => {
+		let i = e.specification.Object[n], o = i.domain.specification.Object;
 		if (e.variance === "limit") {
-			let e = r.results[n], s = a.results[n], c = Object.fromEntries(o.map((n) => [n, Object.fromEntries(e.parts.map((r) => [r, t.components[i.Object[n]][e.projections[n][r]]]))]));
+			let e = r.results[n], s = a.results[n], c = Object.fromEntries(o.map((n) => [n, Object.fromEntries(e.parts.map((r) => [r, t.specification.Object[i.specification.Object[n]][e.projections[n][r]]]))]));
 			return [n, s.pair(c, e.parts)];
 		}
-		let s = r.results[n], c = a.results[n], l = Object.fromEntries(o.map((e) => [e, Object.fromEntries(S(t.source, i.Object[e]).map((n) => [n, c.injections[e][t.components[i.Object[e]][n]]]))]));
+		let s = r.results[n], c = a.results[n], l = Object.fromEntries(o.map((e) => [e, Object.fromEntries(S(t.domain, i.specification.Object[e]).map((n) => [n, c.injections[e][t.specification.Object[i.specification.Object[e]][n]]]))]));
 		return [n, s.copair(l)];
 	}));
 	return E(r.copresheaf, a.copresheaf, o);
 }
 // src/query-composition.ts
-var Yn = /* @__PURE__ */ new WeakMap();
-function Xn(e, t, n) {
-	let r = Yn.get(e);
-	r || Yn.set(e, r = /* @__PURE__ */ new Map());
+var ir = /* @__PURE__ */ new WeakMap();
+function ar(e, t, n) {
+	let r = ir.get(e);
+	r || ir.set(e, r = /* @__PURE__ */ new Map());
 	let i = JSON.stringify([t, n]), a = r.get(i);
 	if (!a) {
-		a = dn(e.Object[t], e.variance);
+		a = hn(e.specification.Object[t], e.variance);
 		let s = t;
-		for (let t of n) a = fn(a, e.Arrow[s][t]), s = o(e.domain, s)[t];
+		for (let t of n) a = gn(a, e.specification.Arrow[s][t]), s = o(e.domain, s)[t];
 		r.set(i, a);
 	}
 	return a;
 }
-function Zn(e) {
-	return Object.values(e.Object).every((e) => {
+function or(e) {
+	return Object.values(e.specification.Object).every((e) => {
 		let t = e.domain;
 		return t.specification.Object.length === 1 && Object.keys(o(t, t.specification.Object[0])).length === 0;
 	});
 }
-var Qn = /* @__PURE__ */ new Map();
-function $n(e, t) {
-	return e.variance === t ? e : m(Qn, [t], [e], () => {
-		let n = i(Object.entries(e.Arrow).map(([e, n]) => [e, i(Object.entries(n).map(([e, n]) => {
-			let r = n.source.domain.specification.Object[0], i = n.target.domain.specification.Object[0], a = n.components[t === "colimit" ? i : r];
-			return [e, t === "colimit" ? ln(n.source, n.target, { Object: { [r]: i } }, { [r]: a }) : un(n.source, n.target, { Object: { [i]: r } }, { [i]: a })];
+var sr = /* @__PURE__ */ new Map();
+function cr(e, t) {
+	return e.variance === t ? e : m(sr, [t], [e], () => {
+		let n = i(Object.entries(e.specification.Arrow).map(([e, n]) => [e, i(Object.entries(n).map(([e, n]) => {
+			let r = n.domain.domain.specification.Object[0], i = n.codomain.domain.specification.Object[0], a = n.specification.Object[t === "colimit" ? i : r];
+			return [e, t === "colimit" ? pn(n.domain, n.codomain, { Object: { [r]: i } }, { [r]: a }) : mn(n.domain, n.codomain, { Object: { [i]: r } }, { [i]: a })];
 		}))]));
 		return Object.freeze({
 			...e,
 			variance: t,
-			Arrow: n
+			specification: Object.freeze({
+				...e.specification,
+				Arrow: n
+			})
 		});
 	});
 }
-var er = /* @__PURE__ */ new WeakMap();
-function tr(t, r) {
-	let s = er.get(t);
-	s || er.set(t, s = /* @__PURE__ */ new WeakMap());
+var lr = /* @__PURE__ */ new WeakMap();
+function ur(t, r) {
+	let s = lr.get(t);
+	s || lr.set(t, s = /* @__PURE__ */ new WeakMap());
 	let c = s.get(r);
 	if (c) return c;
-	let l = t.variance, u = r.domain, d = u.specification.Object, f = (e) => t.Object[r.Object[e]], p = /* @__PURE__ */ new Map(), m = (e, n) => {
+	let l = t.variance, u = r.domain, d = u.specification.Object, f = (e) => t.specification.Object[r.specification.Object[e]], p = /* @__PURE__ */ new Map(), m = (e, n) => {
 		let i = \`\${e}\\u0000\${n}\`;
-		return p.has(i) || p.set(i, Xn(t, r.Object[e], r.Arrow[e][n])), p.get(i);
+		return p.has(i) || p.set(i, ar(t, r.specification.Object[e], r.specification.Arrow[e][n])), p.get(i);
 	}, g = (e, t) => d.length === 1 ? t : f(e).domain.specification.Object.length === 1 ? e : \`\${e}.\${t}\`, _ = d.flatMap((e) => f(e).domain.specification.Object.map((t) => [e, t])), v = _.map(([e, t]) => g(e, t)), y = new Set(v).size === v.length, b = (e, t) => y ? g(e, t) : \`\${e}.\${t}\`, x = {}, S = {};
-	for (let [e, t] of _) x[b(e, t)] = f(e).Object[t], S[b(e, t)] = [e, t];
+	for (let [e, t] of _) x[b(e, t)] = f(e).specification.Object[t], S[b(e, t)] = [e, t];
 	let C = {}, w = {}, T = /* @__PURE__ */ new Map(), E = (t, r, i, a, o, s) => {
 		let c = C[t] ??= {}, l = n(c, r) ? i : r;
 		return e(!n(c, l), \`Two arrows named \${l} from \${t} in the flattened shape\`), c[l] = [a, o], (w[t] ??= {})[l] = s, l;
 	};
 	for (let e of d) {
 		let t = f(e);
-		for (let n of t.domain.specification.Object) for (let [r, i] of Object.entries(o(t.domain, n))) E(b(e, n), r, r, b(e, i), t.Arrow[n][r], {
+		for (let n of t.domain.specification.Object) for (let [r, i] of Object.entries(o(t.domain, n))) E(b(e, n), r, r, b(e, i), t.specification.Arrow[n][r], {
 			kind: "inner",
 			j: e,
 			k: n,
@@ -8545,7 +9620,7 @@ function tr(t, r) {
 	for (let e of d) for (let [t, n] of Object.entries(o(u, e))) {
 		let r = m(e, t);
 		if (l === "colimit") for (let i of f(e).domain.specification.Object) {
-			let a = E(b(e, i), t, \`\${t}.\${i}\`, b(n, r.shape.Object[i]), r.components[i], {
+			let a = E(b(e, i), t, \`\${t}.\${i}\`, b(n, r.shape.specification.Object[i]), r.specification.Object[i], {
 				kind: "transport",
 				j: e,
 				a: t,
@@ -8554,7 +9629,7 @@ function tr(t, r) {
 			T.set(\`\${e}\\u0000\${t}\\u0000\${i}\`, a);
 		}
 		else for (let i of f(n).domain.specification.Object) {
-			let a = E(b(e, r.shape.Object[i]), t, \`\${t}.\${i}\`, b(n, i), r.components[i], {
+			let a = E(b(e, r.shape.specification.Object[i]), t, \`\${t}.\${i}\`, b(n, i), r.specification.Object[i], {
 				kind: "transport",
 				j: e,
 				a: t,
@@ -8566,7 +9641,7 @@ function tr(t, r) {
 	let D = (e, t, n) => T.get(\`\${e}\\u0000\${t}\\u0000\${n}\`), O = (e, t, n) => {
 		if (l === "colimit") {
 			let r = [], [i, a] = [e, n];
-			for (let e of t) r.push(D(i, e, a)), a = m(i, e).shape.Object[a], i = o(u, i)[e];
+			for (let e of t) r.push(D(i, e, a)), a = m(i, e).shape.specification.Object[a], i = o(u, i)[e];
 			return {
 				steps: r,
 				k: a
@@ -8575,7 +9650,7 @@ function tr(t, r) {
 		let r = [], i = e;
 		for (let e of t) r.push(i), i = o(u, i)[e];
 		let a = [], s = n;
-		for (let e = t.length - 1; e >= 0; e--) a.unshift(D(r[e], t[e], s)), s = m(r[e], t[e]).shape.Object[s];
+		for (let e = t.length - 1; e >= 0; e--) a.unshift(D(r[e], t[e], s)), s = m(r[e], t[e]).shape.specification.Object[s];
 		return {
 			steps: a,
 			k: s
@@ -8590,10 +9665,10 @@ function tr(t, r) {
 		for (let [e, r] of Object.entries(n.domain.specification.Equation)) for (let [n, { left: i, right: a }] of Object.entries(r)) A(b(t, e), n, i, a);
 		for (let [e, r] of Object.entries(o(u, t))) {
 			let i = m(t, e);
-			if (l === "colimit") for (let r of n.domain.specification.Object) for (let [a, s] of Object.entries(o(n.domain, r))) A(b(t, r), \`\${e}.\${a}\`, [a, D(t, e, s)], [D(t, e, r), ...i.shape.Arrow[r][a]]);
+			if (l === "colimit") for (let r of n.domain.specification.Object) for (let [a, s] of Object.entries(o(n.domain, r))) A(b(t, r), \`\${e}.\${a}\`, [a, D(t, e, s)], [D(t, e, r), ...i.shape.specification.Arrow[r][a]]);
 			else {
 				let n = f(r);
-				for (let r of n.domain.specification.Object) for (let [a, s] of Object.entries(o(n.domain, r))) A(b(t, i.shape.Object[r]), \`\${e}.\${a}\`, [D(t, e, r), a], [...i.shape.Arrow[r][a], D(t, e, s)]);
+				for (let r of n.domain.specification.Object) for (let [a, s] of Object.entries(o(n.domain, r))) A(b(t, i.shape.specification.Object[r]), \`\${e}.\${a}\`, [D(t, e, r), a], [...i.shape.specification.Arrow[r][a], D(t, e, s)]);
 			}
 		}
 		for (let [r, { left: i, right: o }] of Object.entries(u.specification.Equation[t] ?? {})) if (l === "colimit") for (let e of n.domain.specification.Object) A(b(t, e), \`\${r}.\${e}\`, O(t, i, e).steps, O(t, o, e).steps);
@@ -8606,7 +9681,7 @@ function tr(t, r) {
 		}
 	}
 	let j = Object.freeze({
-		diagram: nn(t.codomain, {
+		diagram: sn(t.codomain, {
 			Object: x,
 			Arrow: C,
 			Equation: k
@@ -8618,90 +9693,92 @@ function tr(t, r) {
 	});
 	return s.set(r, j), j;
 }
-function nr(e, t) {
-	let n = tr(e, t.source), r = tr(e, t.target), i = t.shape;
+function dr(e, t) {
+	let n = ur(e, t.domain), r = ur(e, t.codomain), i = t.shape;
 	if (e.variance === "colimit") {
-		let a = (n) => Xn(e, t.source.Object[n], t.components[n]), o = {}, s = {};
-		for (let [e, [t, c]] of Object.entries(n.pair)) o[e] = r.name(i.Object[t], a(t).shape.Object[c]), s[e] = a(t).components[c];
-		let c = rr(n, (e) => {
-			if (e.kind === "inner") return a(e.j).shape.Arrow[e.k][e.b];
+		let a = (n) => ar(e, t.domain.specification.Object[n], t.specification.Object[n]), o = {}, s = {};
+		for (let [e, [t, c]] of Object.entries(n.pair)) o[e] = r.name(i.specification.Object[t], a(t).shape.specification.Object[c]), s[e] = a(t).specification.Object[c];
+		let c = fr(n, (e) => {
+			if (e.kind === "inner") return a(e.j).shape.specification.Arrow[e.k][e.b];
 			let { j: t, a: n, k: o } = e;
-			return r.chain(i.Object[t], i.Arrow[t][n], a(t).shape.Object[o]).steps;
+			return r.chain(i.specification.Object[t], i.specification.Arrow[t][n], a(t).shape.specification.Object[o]).steps;
 		});
-		return ln(n.diagram, r.diagram, {
+		return pn(n.diagram, r.diagram, {
 			Object: o,
 			Arrow: c
 		}, s);
 	}
-	let a = (n) => Xn(e, t.source.Object[i.Object[n]], t.components[n]), s = {}, c = {};
-	for (let [e, [t, o]] of Object.entries(r.pair)) s[e] = n.name(i.Object[t], a(t).shape.Object[o]), c[e] = a(t).components[o];
-	let l = rr(r, (e) => {
-		if (e.kind === "inner") return a(e.j).shape.Arrow[e.k][e.b];
-		let { j: r, a: s, k: c } = e, l = o(t.target.domain, r)[s];
-		return n.chain(i.Object[r], i.Arrow[r][s], a(l).shape.Object[c]).steps;
+	let a = (n) => ar(e, t.domain.specification.Object[i.specification.Object[n]], t.specification.Object[n]), s = {}, c = {};
+	for (let [e, [t, o]] of Object.entries(r.pair)) s[e] = n.name(i.specification.Object[t], a(t).shape.specification.Object[o]), c[e] = a(t).specification.Object[o];
+	let l = fr(r, (e) => {
+		if (e.kind === "inner") return a(e.j).shape.specification.Arrow[e.k][e.b];
+		let { j: r, a: s, k: c } = e, l = o(t.codomain.domain, r)[s];
+		return n.chain(i.specification.Object[r], i.specification.Arrow[r][s], a(l).shape.specification.Object[c]).steps;
 	});
-	return un(n.diagram, r.diagram, {
+	return mn(n.diagram, r.diagram, {
 		Object: s,
 		Arrow: l
 	}, c);
 }
-function rr(e, t) {
+function fr(e, t) {
 	return Object.fromEntries(Object.entries(e.arrows).map(([e, n]) => [e, Object.fromEntries(Object.entries(n).map(([e, n]) => [e, t(n)]))]));
 }
-var ir = /* @__PURE__ */ new Map();
-function ar(t, n) {
-	return e(t.domain === n.codomain, "Compose first : data on D → data on C with second : data on C → data on B (second must be a query into the category first is a query from)"), t.variance !== n.variance && (Zn(t) ? t = $n(t, n.variance) : Zn(n) ? n = $n(n, t.variance) : e(!1, "Only queries of one variance compose: both limits, or both colimits")), m(ir, [], [t, n], () => {
-		let e = n.domain, r = i(e.specification.Object.map((e) => [e, tr(t, n.Object[e]).diagram])), a = i(Object.entries(n.Arrow).map(([e, n]) => [e, i(Object.entries(n).map(([e, n]) => [e, nr(t, n)]))]));
+var pr = /* @__PURE__ */ new Map();
+function mr(t, n) {
+	return e(t.domain === n.codomain, "Compose first : data on D → data on C with second : data on C → data on B (second must be a query into the category first is a query from)"), t.variance !== n.variance && (or(t) ? t = cr(t, n.variance) : or(n) ? n = cr(n, t.variance) : e(!1, "Only queries of one variance compose: both limits, or both colimits")), m(pr, [], [t, n], () => {
+		let e = n.domain, r = i(e.specification.Object.map((e) => [e, ur(t, n.specification.Object[e]).diagram])), a = i(Object.entries(n.specification.Arrow).map(([e, n]) => [e, i(Object.entries(n).map(([e, n]) => [e, dr(t, n)]))]));
 		return Object.freeze({
 			variance: t.variance,
 			domain: e,
 			codomain: t.codomain,
-			Object: r,
-			Arrow: a
+			specification: Object.freeze({
+				Object: r,
+				Arrow: a
+			})
 		});
 	});
 }
-function or(...e) {
+function hr(...e) {
 	if (e.length === 1) {
 		let [t] = e;
-		return (e) => ar(e, t);
+		return (e) => mr(e, t);
 	}
-	return ar(e[0], e[1]);
+	return mr(e[0], e[1]);
 }
-function sr(e) {
+function gr(e) {
 	let t = e.domain;
-	return Bn(t, e.codomain, {
-		Object: Object.fromEntries(t.specification.Object.map((t) => [t, e.Object[t]])),
-		Arrow: Object.fromEntries(Object.entries(e.Arrow).map(([e, t]) => [e, Object.fromEntries(Object.entries(t).map(([t, n]) => [t, [e, ...n]]))]))
+	return Jn(t, e.codomain, {
+		Object: Object.fromEntries(t.specification.Object.map((t) => [t, e.specification.Object[t]])),
+		Arrow: Object.fromEntries(Object.entries(e.specification.Arrow).map(([e, t]) => [e, Object.fromEntries(Object.entries(t).map(([t, n]) => [t, [e, ...n]]))]))
 	});
 }
-function cr(e) {
-	return sr(ae(e));
+function _r(e) {
+	return gr(V(e));
 }
-function lr(t, n, r, a = {}) {
-	let o = ar(t, n), s = $n(t, o.variance), c = $n(n, o.variance), l = Q(o, r, a), u = Q(s, r, a), d = Q(c, u.copresheaf, a), f = c.domain, p = i(f.specification.Object.map((e) => {
-		let t = tr(s, c.Object[e]), n = c.Object[e], i = n.domain.specification.Object;
+function vr(t, n, r, a = {}) {
+	let o = mr(t, n), s = cr(t, o.variance), c = cr(n, o.variance), l = er(o, r, a), u = er(s, r, a), d = er(c, u.copresheaf, a), f = c.domain, p = i(f.specification.Object.map((e) => {
+		let t = ur(s, c.specification.Object[e]), n = c.specification.Object[e], i = n.domain.specification.Object;
 		if (o.variance === "limit") {
 			let r = l.results[e], a = d.results[e], o = Object.fromEntries(i.map((e) => {
-				let i = n.Object[e], a = s.Object[i].domain.specification.Object;
+				let i = n.specification.Object[e], a = s.specification.Object[i].domain.specification.Object;
 				return [e, u.results[i].pair(Object.fromEntries(a.map((n) => [n, Object.fromEntries(r.parts.map((i) => [i, r.projections[t.name(e, n)][i]]))])), r.parts)];
 			}));
 			return [e, a.pair(o, r.parts)];
 		}
 		let a = l.results[e], f = d.results[e], p = Object.fromEntries(Object.entries(t.pair).map(([e, [t, i]]) => {
-			let a = n.Object[t], o = u.results[a], c = s.Object[a].Object[i];
+			let a = n.specification.Object[t], o = u.results[a], c = s.specification.Object[a].specification.Object[i];
 			return [e, Object.fromEntries(S(r, c).map((e) => [e, f.injections[t][o.injections[i][e]]]))];
 		}));
 		return [e, a.copair(p)];
 	})), m = E(l.copresheaf, d.copresheaf, p);
 	for (let t of f.specification.Object) {
-		let n = Object.values(m.components[t]);
+		let n = Object.values(m.specification.Object[t]);
 		e(new Set(n).size === n.length && n.length === S(d.copresheaf, t).length, \`The comparison is not a bijection at \${t}\`);
 	}
 	return m;
 }
 // src/query-completions.ts
-function ur(t) {
+function yr(t) {
 	let r = {};
 	return {
 		result: r,
@@ -8711,33 +9788,33 @@ function ur(t) {
 		}
 	};
 }
-function dr(e) {
+function br(e) {
 	let t = e.domain, [n, ...r] = t.specification.Object;
 	return n !== void 0 && r.length === 0 && Object.keys(o(t, n)).length === 0 ? n : void 0;
 }
-function fr(e) {
-	let t = pr.get(e);
-	return t === void 0 && pr.set(e, t = mr(e)), t;
+function xr(e) {
+	let t = Sr.get(e);
+	return t === void 0 && Sr.set(e, t = Cr(e)), t;
 }
-var pr = /* @__PURE__ */ new WeakMap();
-function mr(t) {
-	let { domain: n, codomain: r, variance: i } = t, a = i === "limit", s = (e) => t.Object[e], c = (e, n) => t.Arrow[e][n], l = (e) => {
-		let t = dr(s(e));
-		return t === void 0 ? d(a ? "lim" : "colim", e) : s(e).Object[t];
-	}, u = n.specification.Object.filter((e) => dr(s(e)) === void 0);
+var Sr = /* @__PURE__ */ new WeakMap();
+function Cr(t) {
+	let { domain: n, codomain: r, variance: i } = t, a = i === "limit", s = (e) => t.specification.Object[e], c = (e, n) => t.specification.Arrow[e][n], l = (e) => {
+		let t = br(s(e));
+		return t === void 0 ? d(a ? "lim" : "colim", e) : s(e).specification.Object[t];
+	}, u = n.specification.Object.filter((e) => br(s(e)) === void 0);
 	for (let t of u) e(!r.specification.Object.includes(l(t)), \`The apex \${l(t)} of \${t} would clash with an object of the codomain\`);
-	let f = (e, t) => dr(s(e)) === void 0 ? [a ? t : d(e, t)] : [], p = ur("Arrow"), m = ur("Equation"), g = K(), v = (e) => H(r, e).provenance;
+	let f = (e, t) => br(s(e)) === void 0 ? [a ? t : d(e, t)] : [], p = yr("Arrow"), m = yr("Equation"), g = ce(), v = (e) => G(r, e).provenance;
 	for (let e of r.specification.Object) {
 		let t = v(e);
 		t && g.object(e, t);
 		for (let [t, n] of Object.entries(o(r, e))) {
 			p.add(e, t, n);
-			let i = U(r, e, t).provenance;
+			let i = K(r, e, t).provenance;
 			i && g.arrow(e, t, i);
 		}
 		for (let [t, { left: n, right: i }] of Object.entries(r.specification.Equation[e] ?? {})) {
 			m.add(e, t, h(n, i));
-			let a = W(r, e, t).provenance;
+			let a = q(r, e, t).provenance;
 			a && g.equation(e, t, a);
 		}
 	}
@@ -8746,25 +9823,25 @@ function mr(t) {
 		g.object(c, {
 			kind: "apex",
 			variance: i,
-			object: H(n, e)
+			object: G(n, e)
 		});
 		for (let o of r.specification.Object) {
-			let [s, l] = a ? [c, t.Object[o]] : [t.Object[o], c], u = f(e, o)[0];
+			let [s, l] = a ? [c, t.specification.Object[o]] : [t.specification.Object[o], c], u = f(e, o)[0];
 			p.add(s, u, l), g.arrow(s, u, {
 				kind: "leg",
 				variance: i,
-				object: H(n, e),
-				variable: H(r, o)
+				object: G(n, e),
+				variable: G(r, o)
 			});
 		}
 		for (let s of r.specification.Object) for (let [l, u] of Object.entries(o(r, s))) {
-			let o = t.Arrow[s][l], [p, _, v, y] = a ? [
+			let o = t.specification.Arrow[s][l], [p, _, v, y] = a ? [
 				c,
 				d(s, l),
 				[...f(e, s), ...o],
 				f(e, u)
 			] : [
-				t.Object[s],
+				t.specification.Object[s],
 				d(e, d(s, l)),
 				[...o, ...f(e, u)],
 				f(e, s)
@@ -8772,22 +9849,22 @@ function mr(t) {
 			m.add(p, _, h(v, y)), g.equation(p, _, {
 				kind: "cone",
 				variance: i,
-				object: H(n, e),
-				arrow: U(r, s, l)
+				object: G(n, e),
+				arrow: K(r, s, l)
 			});
 		}
 	}
 	let y = {};
 	for (let e of n.specification.Object) for (let [t, r] of Object.entries(o(n, e))) {
-		let o = c(e, t), u = o.shape, _ = a ? o.target.domain.specification.Object.map((e) => Object.freeze({
-			source: u.Object[e],
+		let o = c(e, t), u = o.shape, _ = a ? o.codomain.domain.specification.Object.map((e) => Object.freeze({
+			source: u.specification.Object[e],
 			target: e,
-			path: o.components[e]
-		})) : o.source.domain.specification.Object.map((e) => Object.freeze({
+			path: o.specification.Object[e]
+		})) : o.domain.domain.specification.Object.map((e) => Object.freeze({
 			source: e,
-			target: u.Object[e],
-			path: o.components[e]
-		})), v = a ? dr(s(r)) : void 0, b = a ? void 0 : dr(s(e)), x;
+			target: u.specification.Object[e],
+			path: o.specification.Object[e]
+		})), v = a ? br(s(r)) : void 0, b = a ? void 0 : br(s(e)), x;
 		if (v !== void 0) {
 			let t = _[0];
 			x = [...f(e, t.source), ...t.path];
@@ -8799,7 +9876,7 @@ function mr(t) {
 			p.add(c, o, l(r)), g.arrow(c, o, {
 				kind: "induced",
 				variance: i,
-				arrow: U(n, e, t),
+				arrow: K(n, e, t),
 				terms: Object.freeze(_)
 			});
 			for (let l of _) {
@@ -8808,7 +9885,7 @@ function mr(t) {
 					[o, ...f(r, l.target)],
 					[...f(e, l.source), ...l.path]
 				] : [
-					s(e).Object[l.source],
+					s(e).specification.Object[l.source],
 					[...f(e, l.source), o],
 					[...l.path, ...f(r, l.target)]
 				];
@@ -8817,7 +9894,7 @@ function mr(t) {
 				m.add(u, v, h(p, _)), g.equation(u, v, {
 					kind: "induced",
 					variance: i,
-					arrow: U(n, e, t),
+					arrow: K(n, e, t),
 					term: l
 				});
 			}
@@ -8825,14 +9902,14 @@ function mr(t) {
 		}
 		(y[e] ??= {})[t] = x;
 	}
-	let b = G(_({
+	let b = J(_({
 		Object: [...r.specification.Object, ...u.map(l)],
 		Arrow: p.result,
 		Equation: m.result
-	}), g.freeze()), x = F(r, b, {
+	}), g.freeze()), x = L(r, b, {
 		Object: Object.fromEntries(r.specification.Object.map((e) => [e, e])),
 		Arrow: Object.fromEntries(Object.entries(r.specification.Arrow).map(([e, t]) => [e, Object.fromEntries(Object.keys(t).map((e) => [e, [e]]))]))
-	}), S = R(n, b, {
+	}), S = B(n, b, {
 		Object: Object.fromEntries(n.specification.Object.map((e) => [e, l(e)])),
 		Arrow: y
 	});
@@ -8843,123 +9920,126 @@ function mr(t) {
 	});
 }
 // src/namespaces.ts
-function $(e, t, n) {
+function wr(e, t, n) {
 	let r = t, i = (...e) => r(...e);
 	return Object.defineProperty(i, "name", { value: e }), Object.freeze(Object.assign(i, n));
 }
-var hr = $("copresheafMap", T, {
+var Tr = wr("copresheafMap", T, {
 	identity: D,
 	applyPart: O,
 	compose: k,
-	pivot: Ct,
-	unpivot: wt,
-	inverse: pt
-}), gr = $("copresheaf", b, {
+	pivot: Dt,
+	unpivot: Ot,
+	inverse: _t
+}), Er = wr("copresheaf", b, {
 	parts: S,
 	provenance: x,
-	product: Je,
-	coproduct: Ze,
-	sum: et,
-	mul: Ye,
-	add: Qe,
-	one: Xe,
-	zero: $e,
-	pullback: Mt,
-	pushout: Nt,
-	limit: At,
-	colimit: jt,
-	lan: rt,
-	ran: Et,
-	day: lt,
-	dayUnit: ft,
-	truncatedDay: dt,
-	pivot: gt,
-	unpivot: bt,
-	isomorphism: mt,
-	rename: ht
-}), _r = $("functorMap", Lt, {
-	check: Rt,
-	assume: zt,
-	identity: Bt,
-	compose: Vt,
-	precompose: Wt,
-	postcompose: Kt
-}), vr = $("functor", F, {
-	check: L,
-	assume: ie,
-	identity: ae,
-	compose: z,
+	product: Qe,
+	coproduct: tt,
+	sum: it,
+	mul: $e,
+	add: nt,
+	one: et,
+	zero: rt,
+	pullback: It,
+	pushout: Lt,
+	limit: Pt,
+	colimit: Ft,
+	lan: st,
+	ran: At,
+	day: pt,
+	dayUnit: gt,
+	truncatedDay: ht,
+	pivot: bt,
+	unpivot: wt,
+	isomorphism: vt,
+	rename: yt
+}), Dr = wr("functorMap", Vt, {
+	check: Ht,
+	assume: Ut,
+	identity: Wt,
+	compose: Gt,
+	precompose: Jt,
+	postcompose: Xt
+}), Or = wr("functor", L, {
+	check: z,
+	assume: ne,
+	identity: V,
+	compose: H,
 	delta: C,
-	sigma: ot,
-	pi: Dt,
-	applyPath: I,
-	product: We,
-	coproduct: Re,
-	sum: He,
-	mul: Ge,
-	add: ze,
-	one: qe,
-	zero: Ve
-}), yr = $("category", _, {
-	extend: ge,
-	omit: ve,
-	opposite: be,
-	qualifyArrows: Se,
-	unqualifyArrows: Ce,
-	product: Te,
-	coproduct: q,
-	sum: he,
-	mul: Oe,
-	add: pe,
-	one: ke,
-	zero: me,
-	pullback: Me,
-	pushout: Ie,
-	presentation: Zt
-}), br = $("diagram", nn, {
-	unit: an,
-	product: vn,
-	coproduct: Z,
-	sum: _n,
-	mul: yn,
-	add: bn,
-	one: xn,
-	zero: Sn,
-	limitMap: un,
-	colimitMap: ln
-}), xr = Object.freeze({
-	identity: dn,
-	compose: fn,
-	equals: mn
-}), Sr = $("query", Bn, {
-	one: Nn,
-	product: En,
-	mul: kn,
-	limit: Ln,
-	zero: Pn,
-	coproduct: Dn,
-	sum: On,
-	add: An,
-	colimit: Rn,
-	evaluate: Kn,
-	evaluateMap: qn,
-	andThen: or,
-	identity: cr,
-	fromFunctor: sr,
-	comparison: lr,
-	completion: fr
-}), Cr = Object.freeze({
+	sigma: ut,
+	pi: jt,
+	applyPath: R,
+	product: Je,
+	coproduct: He,
+	sum: Ke,
+	mul: Ye,
+	add: Ue,
+	one: Ze,
+	zero: Ge
+}), kr = wr("category", _, {
+	extend: me,
+	omit: ge,
+	opposite: ve,
+	qualifyArrows: be,
+	unqualifyArrows: xe,
+	product: Ce,
+	coproduct: Y,
+	sum: pe,
+	mul: Ee,
+	add: de,
+	one: De,
+	zero: fe,
+	pullback: Ae,
+	pushout: Be,
+	limit: Ne,
+	colimit: Ie,
+	presentation: tn
+}), Ar = wr("diagram", sn, {
+	unit: ln,
+	product: Cn,
+	coproduct: bn,
+	sum: Sn,
+	mul: wn,
+	add: Tn,
+	one: En,
+	zero: Dn,
+	limitMap: mn,
+	colimitMap: pn
+}), jr = Object.freeze({
+	identity: hn,
+	compose: gn,
+	equals: vn
+}), Mr = wr("query", Jn, {
+	one: Rn,
+	product: jn,
+	mul: Pn,
+	limit: Wn,
+	zero: zn,
+	coproduct: Mn,
+	sum: Nn,
+	add: Fn,
+	colimit: Gn,
+	objectDiagram: Kn,
+	evaluate: tr,
+	evaluateMap: nr,
+	andThen: hr,
+	identity: _r,
+	fromFunctor: gr,
+	comparison: vr,
+	completion: xr
+}), Nr = Object.freeze({
 	normalize: N,
 	equals: P
-}), wr = Object.freeze({ category: en });
+}), Pr = Object.freeze({ category: an });
 // src/pipe.ts
-function Tr(e, ...t) {
+function Fr(e, ...t) {
 	return t.reduce((e, t) => t(e), e);
 }
-export { Jt as CatPresentation, yr as category, pe as categoryAdd, q as categoryCoproduct, ge as categoryExtend, Oe as categoryMul, ve as categoryOmit, ke as categoryOne, be as categoryOpposite, Zt as categoryPresentation, Te as categoryProduct, Me as categoryPullback, Ie as categoryPushout, Se as categoryQualifyArrows, he as categorySum, Ce as categoryUnqualifyArrows, me as categoryZero, gr as copresheaf, Qe as copresheafAdd, jt as copresheafColimit, Ze as copresheafCoproduct, lt as copresheafDay, ft as copresheafDayUnit, mt as copresheafIsomorphism, rt as copresheafLan, At as copresheafLimit, hr as copresheafMap, O as copresheafMapApplyPart, k as copresheafMapCompose, D as copresheafMapIdentity, pt as copresheafMapInverse, Ct as copresheafMapPivot, wt as copresheafMapUnpivot, Ye as copresheafMul, Xe as copresheafOne, S as copresheafParts, gt as copresheafPivot, Je as copresheafProduct, x as copresheafProvenance, Mt as copresheafPullback, Nt as copresheafPushout, Et as copresheafRan, ht as copresheafRename, et as copresheafSum, dt as copresheafTruncatedDay, bt as copresheafUnpivot, $e as copresheafZero, br as diagram, bn as diagramAdd, ln as diagramColimitMap, Z as diagramCoproduct, un as diagramLimitMap, xr as diagramMap, fn as diagramMapCompose, mn as diagramMapEquals, dn as diagramMapIdentity, yn as diagramMul, xn as diagramOne, vn as diagramProduct, _n as diagramSum, an as diagramUnit, Sn as diagramZero, h as equation, vr as functor, ze as functorAdd, I as functorApplyPath, ie as functorAssume, L as functorCheck, z as functorCompose, Re as functorCoproduct, C as functorDelta, ae as functorIdentity, _r as functorMap, zt as functorMapAssume, Rt as functorMapCheck, Vt as functorMapCompose, Bt as functorMapIdentity, Kt as functorMapPostcompose, Wt as functorMapPrecompose, Ge as functorMul, qe as functorOne, Dt as functorPi, We as functorProduct, ot as functorSigma, He as functorSum, Ve as functorZero, Cr as path, ee as pathCriticalPair, P as pathEquals, N as pathNormalize, Tr as pipe, wr as presentation, en as presentationCategory, Sr as query, An as queryAdd, or as queryAndThen, Rn as queryColimit, lr as queryComparison, fr as queryCompletion, Dn as queryCoproduct, Kn as queryEvaluate, qn as queryEvaluateMap, sr as queryFromFunctor, cr as queryIdentity, Ln as queryLimit, kn as queryMul, Nn as queryOne, En as queryProduct, On as querySum, Pn as queryZero, R as rawFunctor, It as rawFunctorMap };
-`,Me=`import { category as e, categoryMul as t, categoryOmit as n, copresheaf as r, copresheafParts as i, copresheafTruncatedDay as a, equation as o, functor as s } from "@cod-ts/categories";
+export { Qt as CatPresentation, kr as category, de as categoryAdd, Ie as categoryColimit, Y as categoryCoproduct, me as categoryExtend, Ne as categoryLimit, Ee as categoryMul, ge as categoryOmit, De as categoryOne, ve as categoryOpposite, tn as categoryPresentation, Ce as categoryProduct, Ae as categoryPullback, Be as categoryPushout, be as categoryQualifyArrows, pe as categorySum, xe as categoryUnqualifyArrows, fe as categoryZero, Er as copresheaf, nt as copresheafAdd, Ft as copresheafColimit, tt as copresheafCoproduct, pt as copresheafDay, gt as copresheafDayUnit, vt as copresheafIsomorphism, st as copresheafLan, Pt as copresheafLimit, Tr as copresheafMap, O as copresheafMapApplyPart, k as copresheafMapCompose, D as copresheafMapIdentity, _t as copresheafMapInverse, Dt as copresheafMapPivot, Ot as copresheafMapUnpivot, $e as copresheafMul, et as copresheafOne, S as copresheafParts, bt as copresheafPivot, Qe as copresheafProduct, x as copresheafProvenance, It as copresheafPullback, Lt as copresheafPushout, At as copresheafRan, yt as copresheafRename, it as copresheafSum, ht as copresheafTruncatedDay, wt as copresheafUnpivot, rt as copresheafZero, Ar as diagram, Tn as diagramAdd, pn as diagramColimitMap, bn as diagramCoproduct, mn as diagramLimitMap, jr as diagramMap, gn as diagramMapCompose, vn as diagramMapEquals, hn as diagramMapIdentity, wn as diagramMul, En as diagramOne, Cn as diagramProduct, Sn as diagramSum, ln as diagramUnit, Dn as diagramZero, h as equation, Or as functor, Ue as functorAdd, R as functorApplyPath, ne as functorAssume, z as functorCheck, H as functorCompose, He as functorCoproduct, C as functorDelta, V as functorIdentity, Dr as functorMap, Ut as functorMapAssume, Ht as functorMapCheck, Gt as functorMapCompose, Wt as functorMapIdentity, Xt as functorMapPostcompose, Jt as functorMapPrecompose, Ye as functorMul, Ze as functorOne, jt as functorPi, Je as functorProduct, ut as functorSigma, Ke as functorSum, Ge as functorZero, Nr as path, F as pathCriticalPair, P as pathEquals, N as pathNormalize, Fr as pipe, Pr as presentation, an as presentationCategory, Mr as query, Fn as queryAdd, hr as queryAndThen, Gn as queryColimit, vr as queryComparison, xr as queryCompletion, Mn as queryCoproduct, tr as queryEvaluate, nr as queryEvaluateMap, gr as queryFromFunctor, _r as queryIdentity, Wn as queryLimit, Pn as queryMul, Kn as queryObjectDiagram, Rn as queryOne, jn as queryProduct, Nn as querySum, zn as queryZero, B as rawFunctor, Bt as rawFunctorMap };
+`,Pe=`import { category as e, categoryMul as t, categoryOmit as n, copresheaf as r, copresheafParts as i, copresheafTruncatedDay as a, equation as o, functor as s } from "@cod-ts/categories";
 // src/categories.ts
-var c = (e) => \`C\${e}\`, l = (e) => String(e).padStart(2, "0"), u = (e) => \`d\${l(e)}\`, d = (e) => \`s\${l(e)}\`, f = class {
+var c = (e) => \`\${e}\`, l = (e) => String(e).padStart(2, "0"), u = (e) => \`d\${l(e)}\`, d = (e) => \`s\${l(e)}\`, f = class {
 	objects;
 	arrows = {};
 	equations = {};
@@ -9081,7 +10161,7 @@ function A(e, t, n) {
 		}
 	});
 }
-var j = (e) => String(e).padStart(2, "0"), M = (e) => Number(e.slice(1));
+var j = (e) => String(e).padStart(2, "0"), M = (e) => Number(e);
 function N(e) {
 	let [t, n] = e.slice(1, -1).split(",");
 	return [t, n];
@@ -9097,7 +10177,7 @@ function P(e, r, i, a, o, c) {
 		return {
 			a: t,
 			b: n,
-			object: \`C\${a(t, n)}\`
+			object: \`\${a(t, n)}\`
 		};
 	}, g = Object.fromEntries(Object.entries(p.specification.Arrow).map(([e, t]) => {
 		let [n] = N(e), { a: r, b: i } = h(e);
@@ -9119,7 +10199,7 @@ function P(e, r, i, a, o, c) {
 function F(e) {
 	if (!A(e, [D, E], -1)) throw Error("simplexJoin needs CatAugmentedSimplex(n) or CatAugmentedSemiSimplex(n)");
 	let t = (e, t) => \`\${e[0]}\${j(Number(e.slice(1)) + t)}\`;
-	return P("simplexJoin", e, "C-1", (e, t) => e + t + 1, (e) => e, (e, n) => t(e, n + 1));
+	return P("simplexJoin", e, "-1", (e, t) => e + t + 1, (e) => e, (e, n) => t(e, n + 1));
 }
 function I(e) {
 	if (!A(e, [k, O], 0)) throw Error("cubeProduct needs CatCube(n) or CatSemiCube(n)");
@@ -9127,7 +10207,7 @@ function I(e) {
 		let [n, r] = e.split("_");
 		return \`\${n[0]}\${j(Number(n.slice(1)) + t)}\${r === void 0 ? "" : \`_\${r}\`}\`;
 	};
-	return P("cubeProduct", e, "C0", (e, t) => e + t, (e) => e, (e, n) => t(e, n));
+	return P("cubeProduct", e, "0", (e, t) => e + t, (e) => e, (e, n) => t(e, n));
 }
 function L(e, t, n, o = {}) {
 	let { copresheaf: s, external: c } = a(e, t, n, o), l = e.category, u = o.symbol ?? "⋆", d = (e, t) => {
@@ -9137,7 +10217,7 @@ function L(e, t, n, o = {}) {
 		return [\`\${r.part}\${u}\${i.part}\`, ...a].join("·");
 	}, f = Object.fromEntries(l.specification.Object.map((e) => {
 		let t = Object.entries(l.specification.Arrow[e] ?? {});
-		return [e, t.length === 0 ? i(s, e).map((t) => d(e, t)) : Object.fromEntries(t.map(([t, n]) => [t, Object.fromEntries(Object.entries(s.data[e][t]).map(([t, r]) => [d(e, t), d(n, r)]))]))];
+		return [e, t.length === 0 ? i(s, e).map((t) => d(e, t)) : Object.fromEntries(t.map(([t, n]) => [t, Object.fromEntries(Object.entries(s.specification[e][t]).map(([t, r]) => [d(e, t), d(n, r)]))]))];
 	}));
 	return Object.freeze({
 		copresheaf: r(l, f),
@@ -9145,7 +10225,7 @@ function L(e, t, n, o = {}) {
 	});
 }
 export { E as CatAugmentedSemiSimplex, D as CatAugmentedSimplex, k as CatCube, S as CatGlobe, C as CatReflexiveGlobe, O as CatSemiCube, w as CatSemiSimplex, T as CatSimplex, L as complexDay, I as cubeProduct, F as simplexJoin };
-`,Ne=`import { category as e, copresheaf as t, copresheafMap as n, copresheafMapCompose as r, copresheafMul as i, copresheafParts as a, copresheafPushout as o, equation as s } from "@cod-ts/categories";
+`,Fe=`import { category as e, copresheaf as t, copresheafMap as n, copresheafMapCompose as r, copresheafMul as i, copresheafParts as a, copresheafPushout as o, equation as s } from "@cod-ts/categories";
 // \\0rolldown/runtime.js
 var c = Object.create, l = Object.defineProperty, u = Object.getOwnPropertyDescriptor, d = Object.getOwnPropertyNames, f = Object.getPrototypeOf, p = Object.prototype.hasOwnProperty, m = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e = null), t.exports), h = (e, t, n, r) => {
 	if (t && typeof t == "object" || typeof t == "function") for (var i = d(t), a = 0, o = i.length, s; a < o; a++) s = i[a], !p.call(e, s) && s !== n && l(e, s, {
@@ -11507,7 +12587,7 @@ function Kn(e) {
 		height: t
 	} : t;
 }
-var qn = (e, t) => Object.keys(e.data[t].$id), Jn = (e, t, n) => e.data[t][n], Yn = (e, t) => Object.freeze({
+var qn = (e, t) => Object.keys(e.specification[t].$id), Jn = (e, t, n) => e.specification[t][n], Yn = (e, t) => Object.freeze({
 	object: e,
 	part: t
 }), Xn = (e, t, n, r) => Object.freeze({
@@ -11526,7 +12606,7 @@ function Zn(e, t, n) {
 	};
 }
 function Qn(e) {
-	switch (e.meta) {
+	switch (e.domain) {
 		case v: return Zn(e, !1, !1);
 		case y: return Zn(e, !0, !1);
 		case b: return Zn(e, !1, !0);
@@ -57761,7 +58841,7 @@ function lte(e, n) {
 	});
 }
 function lr(e) {
-	let r = a(e, "V"), i = e.data.V.refl, o = r.map((e) => i[e]), s = e.meta, c = t(s, {
+	let r = a(e, "V"), i = e.specification.V.refl, o = r.map((e) => i[e]), s = e.domain, c = t(s, {
 		V: { refl: Object.fromEntries(r.map((e) => [e, i[e]])) },
 		E: {
 			source: Object.fromEntries(r.map((e) => [i[e], e])),
@@ -57778,7 +58858,7 @@ function lr(e) {
 	};
 }
 function ute(e) {
-	let n = e.meta, r = (e) => e.replace(/^(left|right)\\./, "");
+	let n = e.domain, r = (e) => e.replace(/^(left|right)\\./, "");
 	for (let t of n.specification.Object) {
 		let n = a(e, t);
 		if (new Set(n.map(r)).size !== n.length) return e;
@@ -57786,11 +58866,11 @@ function ute(e) {
 	let i = (e) => Object.fromEntries(Object.entries(e).map(([e, t]) => [r(e), r(t)]));
 	return t(n, Object.fromEntries(n.specification.Object.map((t) => {
 		let o = Object.keys(n.specification.Arrow[t] ?? {});
-		return [t, o.length === 0 ? a(e, t).map(r) : Object.fromEntries(o.map((n) => [n, i(e.data[t][n])]))];
+		return [t, o.length === 0 ? a(e, t).map(r) : Object.fromEntries(o.map((n) => [n, i(e.specification[t][n])]))];
 	})));
 }
 function dte(e, t) {
-	if (e.meta !== t.meta || !sr(e.meta)) throw Error("The box product needs two graphs on CatReflexiveGraph or CatSymmetricReflexiveGraph");
+	if (e.domain !== t.domain || !sr(e.domain)) throw Error("The box product needs two graphs on CatReflexiveGraph or CatSymmetricReflexiveGraph");
 	let n = lr(e), a = lr(t), s = i(n.graph, a.graph), c = i(e, a.graph), l = i(n.graph, t), u = c.pair({
 		left: r(s.projections.left, n.inclusion),
 		right: s.projections.right
@@ -57804,7 +58884,7 @@ function dte(e, t) {
 	}).copresheaf);
 }
 export { ee as CatBipartiteGraph, v as CatGraph, S as CatHalfEdgeGraph, y as CatReflexiveGraph, b as CatSymmetricGraph, x as CatSymmetricReflexiveGraph, dte as graphBoxProduct, cte as graphLayout, Kn as graphNodeSize, lte as graphPath, Gn as graphRoutes, $n as graphSkeleton, Un as loopRoute };
-`,Pe=`import { copresheaf as e, copresheafMap as t, query as n } from "@cod-ts/categories";
+`,Ie=`import { copresheaf as e, copresheafMap as t, query as n } from "@cod-ts/categories";
 import { CatGraph as r, graphLayout as i, graphNodeSize as a, graphRoutes as o, graphSkeleton as s } from "@cod-ts/graphs";
 import { graphView as c } from "@cod-ts/views/graphs";
 // src/categories/names.ts
@@ -58033,12 +59113,12 @@ function j(e, t = {}) {
 		id: e,
 		source: r,
 		target: i
-	}), j = new Set(Object.values(e.Object)), M = /* @__PURE__ */ new Set(), N = /* @__PURE__ */ new Map();
+	}), j = new Set(Object.values(e.specification.Object)), M = /* @__PURE__ */ new Set(), N = /* @__PURE__ */ new Map();
 	for (let t of y(l)) {
-		let n = e.Arrow[t.source][t.name], r = e.Object[t.source];
+		let n = e.specification.Arrow[t.source][t.name], r = e.specification.Object[t.source];
 		n.length === 1 ? M.add(_(r, n[0])) : N.set(g(r, n), {
 			source: r,
-			target: e.Object[t.target],
+			target: e.specification.Object[t.target],
 			path: n
 		});
 	}
@@ -58047,15 +59127,15 @@ function j(e, t = {}) {
 	for (let e of y(u)) S.set(O("codomain", e.id), T.link("codomain", u, e.source, e.name));
 	for (let [e, { source: t, path: n }] of N) S.set(\`path:\${e}\`, T.path(u, t, n));
 	for (let e of l.specification.Object) S.set(\`map:\${e}\`, T.map(l, e));
-	let F = y(l).map((e) => D(O("domain", e.id), d.arrow(e.source, e.name), "cod-domain", O("domain", e.source), O("domain", e.target))), I = u.specification.Object.map((e) => w("codomain", e, !j.has(e))), L = [...y(u).map((e) => D(O("codomain", e.id), f.arrow(e.source, e.name), \`cod-codomain\${M.has(e.id) ? "" : " cod-faint"}\`, O("codomain", e.source), O("codomain", e.target))), ...[...N].map(([e, { source: t, target: n, path: r }]) => D(\`path:\${e}\`, p(t, r), "cod-codomain cod-path", O("codomain", t), O("codomain", n)))], ne = l.specification.Object.map((t) => D(\`map:\${t}\`, \`\${d.object(t)} ↦ \${f.object(e.Object[t])}\`, "cod-map", O("domain", t), O("codomain", e.Object[t]))), R = /* @__PURE__ */ new Map();
-	for (let t of l.specification.Object) R.set(C("node", O("domain", t)), {
-		nodes: [C("node", O("codomain", e.Object[t]))],
+	let F = y(l).map((e) => D(O("domain", e.id), d.arrow(e.source, e.name), "cod-domain", O("domain", e.source), O("domain", e.target))), I = u.specification.Object.map((e) => w("codomain", e, !j.has(e))), L = [...y(u).map((e) => D(O("codomain", e.id), f.arrow(e.source, e.name), \`cod-codomain\${M.has(e.id) ? "" : " cod-faint"}\`, O("codomain", e.source), O("codomain", e.target))), ...[...N].map(([e, { source: t, target: n, path: r }]) => D(\`path:\${e}\`, p(t, r), "cod-codomain cod-path", O("codomain", t), O("codomain", n)))], R = l.specification.Object.map((t) => D(\`map:\${t}\`, \`\${d.object(t)} ↦ \${f.object(e.specification.Object[t])}\`, "cod-map", O("domain", t), O("codomain", e.specification.Object[t]))), z = /* @__PURE__ */ new Map();
+	for (let t of l.specification.Object) z.set(C("node", O("domain", t)), {
+		nodes: [C("node", O("codomain", e.specification.Object[t]))],
 		links: [C("link", \`map:\${t}\`)]
 	});
-	let z = /* @__PURE__ */ new Map();
+	let B = /* @__PURE__ */ new Map();
 	for (let t of y(l)) {
-		let n = e.Arrow[t.source][t.name], r = e.Object[t.source];
-		if (R.set(C("link", O("domain", t.id)), {
+		let n = e.specification.Arrow[t.source][t.name], r = e.specification.Object[t.source];
+		if (z.set(C("link", O("domain", t.id)), {
 			nodes: [],
 			links: [C("link", n.length === 1 ? O("codomain", _(r, n[0])) : \`path:\${g(r, n)}\`)]
 		}), n.length < 2) continue;
@@ -58066,17 +59146,17 @@ function j(e, t = {}) {
 			nodes: [...new Set(a)],
 			links: o
 		};
-		z.set(C("link", O("domain", t.id)), s), z.set(C("link", \`path:\${g(r, n)}\`), s);
+		B.set(C("link", O("domain", t.id)), s), B.set(C("link", \`path:\${g(r, n)}\`), s);
 	}
-	let re = b(P, F), B = b(I, L), V = b([...P, ...I], [
+	let ne = b(P, F), re = b(I, L), ie = b([...P, ...I], [
 		...F,
 		...L,
-		...ne
-	]), H = async (e, n) => {
+		...R
+	]), ae = async (e, n) => {
 		let r = {
 			...t.layout ?? {},
 			nodes: n.nodes
-		}, c = ee(t.layout), [l, u] = await Promise.all([i(re, r), i(B, r)]), d = (e) => [...Object.values(e.nodes.V), ...Object.values(e.links.E ?? {}).flatMap((e) => e.points)], f = d(l), p = d(u), { width: m, height: h } = a(n), [g, _] = f.length === 0 || p.length === 0 ? [0, 0] : (() => {
+		}, c = ee(t.layout), [l, u] = await Promise.all([i(ne, r), i(re, r)]), d = (e) => [...Object.values(e.nodes.V), ...Object.values(e.links.E ?? {}).flatMap((e) => e.points)], f = d(l), p = d(u), { width: m, height: h } = a(n), [g, _] = f.length === 0 || p.length === 0 ? [0, 0] : (() => {
 			let e = k(f), t = k(p), [n, r] = [e.x1 - e.x0, e.y1 - e.y0];
 			return n > r || !(r > n) && c ? [(e.x0 + e.x1) / 2 - (t.x0 + t.x1) / 2, e.y1 - t.y0 + h + 120] : [e.x1 - t.x0 + m + 160, (e.y0 + e.y1) / 2 - (t.y0 + t.y1) / 2];
 		})(), v = (e) => Object.freeze({
@@ -58088,7 +59168,7 @@ function j(e, t = {}) {
 		}) }), b = Object.fromEntries(Object.entries(u.links.E ?? {}).map(([e, t]) => [e, Object.freeze({
 			kind: t.kind,
 			points: Object.freeze(t.points.map(v))
-		})])), x = s(V), S = o({
+		})])), x = s(ie), S = o({
 			...x,
 			links: x.links.filter((e) => e.part.startsWith("map:"))
 		}, y, n);
@@ -58100,23 +59180,23 @@ function j(e, t = {}) {
 				...S.E
 			}) })
 		});
-	}, ie = t.nodes?.class, ae = t.links?.class, U = (...e) => e.filter(Boolean).join(" ") || void 0;
-	return c(V, {
+	}, V = t.nodes?.class, H = t.links?.class, U = (...e) => e.filter(Boolean).join(" ") || void 0;
+	return c(ie, {
 		...t,
 		layout: {
 			...t.layout,
-			engine: H
+			engine: ae
 		},
 		style: {
 			...te,
-			...A(R),
-			...A(z, "context"),
+			...A(z),
+			...A(B, "context"),
 			...t.style
 		},
 		nodes: {
 			...t.nodes,
 			label: v(t.nodes?.label, (e) => h.get(e.part) ?? e.part),
-			class: (e) => U(x.get(e.part), ie?.(e)),
+			class: (e) => U(x.get(e.part), V?.(e)),
 			data: (e) => ({
 				...t.nodes?.data?.(e),
 				...S.get(e.part)
@@ -58125,7 +59205,7 @@ function j(e, t = {}) {
 		links: {
 			...t.links,
 			label: v(t.links?.label, (e) => h.get(e.part) ?? e.part),
-			class: (e) => U(x.get(e.part), ae?.(e)),
+			class: (e) => U(x.get(e.part), H?.(e)),
 			data: (e) => ({
 				...t.links?.data?.(e),
 				...S.get(e.part)
@@ -58134,7 +59214,7 @@ function j(e, t = {}) {
 	});
 }
 function M(t, n = {}) {
-	return D(e.pivot(t), {
+	return D(e.pivot(t).category, {
 		...n,
 		names: L(n.names)
 	});
@@ -58171,10 +59251,10 @@ function F(e, t = {}) {
 		});
 	};
 	for (let t of a.specification.Object) {
-		let n = e.Object[t];
+		let n = e.specification.Object[t];
 		for (let e of n.domain.specification.Object) {
-			p.add(O("codomain", n.Object[e]));
-			for (let t of Object.keys(n.domain.specification.Arrow[e] ?? {})) b(n.Object[e], n.Arrow[e][t]);
+			p.add(O("codomain", n.specification.Object[e]));
+			for (let t of Object.keys(n.domain.specification.Arrow[e] ?? {})) b(n.specification.Object[e], n.specification.Arrow[e][t]);
 		}
 	}
 	let x = /* @__PURE__ */ new Map(), S = (t, n) => {
@@ -58184,17 +59264,17 @@ function F(e, t = {}) {
 		e !== void 0 && C.set(e, [...C.get(e) ?? [], t]);
 	};
 	for (let t of a.specification.Object) for (let [n, r] of Object.entries(a.specification.Arrow[t] ?? {})) {
-		let s = e.Arrow[t][n], c = s.shape, u = o ? s.target.domain.specification.Object.map((e) => ({
-			source: c.Object[e],
+		let s = e.specification.Arrow[t][n], c = s.shape, u = o ? s.codomain.domain.specification.Object.map((e) => ({
+			source: c.specification.Object[e],
 			target: e,
-			from: s.source.Object[c.Object[e]],
-			path: s.components[e]
-		})) : s.source.domain.specification.Object.map((e) => ({
+			from: s.domain.specification.Object[c.specification.Object[e]],
+			path: s.specification.Object[e]
+		})) : s.domain.domain.specification.Object.map((e) => ({
 			source: e,
-			target: c.Object[e],
-			from: s.source.Object[e],
-			path: s.components[e]
-		})), d = i.Arrow[t][n].length === 1 ? l(i.Object[t], i.Arrow[t][n][0]) : void 0, f = u.flatMap(({ from: e, path: t }) => S(e, t)), p = E("link", T.link("domain", a, t, n)), m = u.flatMap(({ source: e, target: i, from: a, path: o }) => {
+			target: c.specification.Object[e],
+			from: s.domain.specification.Object[e],
+			path: s.specification.Object[e]
+		})), d = i.specification.Arrow[t][n].length === 1 ? l(i.specification.Object[t], i.specification.Arrow[t][n][0]) : void 0, f = u.flatMap(({ from: e, path: t }) => S(e, t)), p = E("link", T.link("domain", a, t, n)), m = u.flatMap(({ source: e, target: i, from: a, path: o }) => {
 			let [s, c] = [g.get(h(t, e)), g.get(h(r, i))];
 			w(s, p), w(c, p);
 			let l = y.get(h(t, n));
@@ -58211,9 +59291,9 @@ function F(e, t = {}) {
 	}
 	let D = /* @__PURE__ */ new Map();
 	for (let t of a.specification.Object) {
-		let n = e.Object[t], r = n.domain.specification.Object.map((e) => c(n.Object[e]));
+		let n = e.specification.Object[t], r = n.domain.specification.Object.map((e) => c(n.specification.Object[e]));
 		D.set(E("node", T.node("domain", a, t)), {
-			nodes: [...new Set(r)].filter((e) => e !== c(i.Object[t])),
+			nodes: [...new Set(r)].filter((e) => e !== c(i.specification.Object[t])),
 			links: v.get(t) ?? []
 		});
 		for (let e of Object.keys(a.specification.Arrow[t] ?? {})) {
@@ -58272,7 +59352,7 @@ function L(e) {
 		equation: (t) => t.provenance?.kind === "element" ? e?.equation?.(t.provenance.equation) ?? t.provenance.equation.equation : e?.equation?.(t) ?? t.equation
 	};
 }
-var ne = (e) => "domain" in e && "codomain" in e, R = (e) => "meta" in e && "data" in e, z = (e) => "variance" in e && "domain" in e && "codomain" in e, re = (e) => "source" in e && "target" in e && "components" in e && "meta" in e.source, B = Object.assign((e, t) => z(e) ? F(e, t) : re(e) ? N(e, t) : R(e) ? M(e, t) : ne(e) ? j(e, t) : D(e, t), {
+var R = (e) => typeof e == "object" && e && "specification" in e ? e.specification ?? void 0 : void 0, z = (e) => typeof e == "object" && !!e && "domain" in e && !("codomain" in e) && R(e) !== void 0, B = (e) => R(e)?.Arrow !== void 0, ne = (e) => "domain" in e && "codomain" in e && B(e) && !("variance" in e), re = (e) => z(e), ie = (e) => "variance" in e && B(e), ae = (e) => "domain" in e && "codomain" in e && z(e.domain), V = Object.assign((e, t) => ie(e) ? F(e, t) : ae(e) ? N(e, t) : re(e) ? M(e, t) : ne(e) ? j(e, t) : D(e, t), {
 	category: D,
 	functor: j,
 	copresheaf: M,
@@ -58280,42 +59360,42 @@ var ne = (e) => "domain" in e && "codomain" in e, R = (e) => "meta" in e && "dat
 	query: F
 });
 // src/categories/dom.ts
-function V(e, t, n, r) {
+function H(e, t, n, r) {
 	let i = e.createElement(t);
 	for (let [e, t] of Object.entries(n)) i.setAttribute(e, t);
 	return i.append(...r), i;
 }
-var H = "cod-ts-views-tables", ie = "\\n.cod-table-view { margin-bottom: 16px; --row-highlight: #2f5bea; }\\n.cod-table-view > .cod-tables { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }\\n.cod-table-view table { border-collapse: collapse; font-variant-numeric: tabular-nums; }\\n.cod-table-view caption { text-align: left; padding: 0 0 4px; }\\n.cod-table-view .cod-count { color: #6a7182; }\\n.cod-table-view th, .cod-table-view td {\\n  border: 1px solid #dcdad2; padding: 3px 10px; text-align: left;\\n  font-family: ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; font-size: 13px;\\n}\\n.cod-table-view th { background: #f6f5f1; font-weight: 400; }\\n.cod-table-view th strong { font-weight: 600; }\\n.cod-table-view .cod-type { color: #9aa0ad; }\\n.cod-table-view tbody tr:hover td {\\n  color: var(--row-highlight); background: color-mix(in srgb, var(--row-highlight) 8%, transparent);\\n}\\n";
-function ae(e) {
-	if (e.getElementById(H)) return;
-	let t = V(e, "style", { id: H }, [ie]);
+var U = "cod-ts-views-tables", oe = "\\n.cod-table-view { margin-bottom: 16px; --row-highlight: #2f5bea; }\\n.cod-table-view > .cod-tables { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }\\n.cod-table-view table { border-collapse: collapse; font-variant-numeric: tabular-nums; }\\n.cod-table-view caption { text-align: left; padding: 0 0 4px; }\\n.cod-table-view .cod-count { color: #6a7182; }\\n.cod-table-view th, .cod-table-view td {\\n  border: 1px solid #dcdad2; padding: 3px 10px; text-align: left;\\n  font-family: ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; font-size: 13px;\\n}\\n.cod-table-view th { background: #f6f5f1; font-weight: 400; }\\n.cod-table-view th strong { font-weight: 600; }\\n.cod-table-view .cod-type { color: #9aa0ad; }\\n.cod-table-view tbody tr:hover td {\\n  color: var(--row-highlight); background: color-mix(in srgb, var(--row-highlight) 8%, transparent);\\n}\\n";
+function se(e) {
+	if (e.getElementById(U)) return;
+	let t = H(e, "style", { id: U }, [oe]);
 	(e.head ?? e.documentElement).append(t);
 }
-function U(e, t, n) {
-	return [V(e, "strong", {}, [t]), V(e, "span", { class: "cod-type" }, [\` : \${n}\`])];
+function ce(e, t, n) {
+	return [H(e, "strong", {}, [t]), H(e, "span", { class: "cod-type" }, [\` : \${n}\`])];
 }
 function W(e, t, n) {
-	return [V(e, "strong", {}, [t]), V(e, "span", { class: "cod-count" }, [\` (\${n})\`])];
+	return [H(e, "strong", {}, [t]), H(e, "span", { class: "cod-count" }, [\` (\${n})\`])];
 }
 function G(e, t, n, r) {
-	return V(e, "table", {}, [
-		V(e, "caption", {}, [...t]),
-		V(e, "thead", {}, [V(e, "tr", {}, n.map((t) => V(e, "th", {}, typeof t == "string" ? [V(e, "strong", {}, [t])] : [...t])))]),
-		V(e, "tbody", {}, r.map((t) => V(e, "tr", {}, t.map((t) => V(e, "td", {}, [t])))))
+	return H(e, "table", {}, [
+		H(e, "caption", {}, [...t]),
+		H(e, "thead", {}, [H(e, "tr", {}, n.map((t) => H(e, "th", {}, typeof t == "string" ? [H(e, "strong", {}, [t])] : [...t])))]),
+		H(e, "tbody", {}, r.map((t) => H(e, "tr", {}, t.map((t) => H(e, "td", {}, [t])))))
 	]);
 }
 // src/categories/table-views.ts
 function K(e, t) {
 	return Object.freeze({ toNode(n) {
-		return ae(n), V(n, "div", { class: \`cod-table-view cod-\${e}\` }, [V(n, "div", { class: "cod-tables" }, [...t(n)])]);
+		return se(n), H(n, "div", { class: \`cod-table-view cod-\${e}\` }, [H(n, "div", { class: "cod-tables" }, [...t(n)])]);
 	} });
 }
-function oe(e, t) {
+function le(e, t) {
 	let n = e.specification.Arrow;
 	return Object.prototype.hasOwnProperty.call(n, t) ? n[t] : {};
 }
 function q(e) {
-	return e.specification.Object.flatMap((t) => Object.entries(oe(e, t)).map(([e, n]) => [
+	return e.specification.Object.flatMap((t) => Object.entries(le(e, t)).map(([e, n]) => [
 		e,
 		t,
 		n
@@ -58351,25 +59431,25 @@ function J(e, t) {
 	});
 }
 function Y(e, t) {
-	let n = m(e.meta, t?.names), r = h(e, t?.names);
-	return K("copresheaf", (t) => e.meta.specification.Object.map((i) => {
-		let a = Object.entries(oe(e.meta, i)), o = Object.keys(e.data[i].$id);
-		return G(t, W(t, n.object(i), o.length), [U(t, "id", n.object(i)), ...a.map(([e, r]) => U(t, n.arrow(i, e), n.object(r)))], o.map((t) => [r(i, t), ...a.map(([n, a]) => r(a, e.data[i][n][t]))]));
+	let n = m(e.domain, t?.names), r = h(e, t?.names);
+	return K("copresheaf", (t) => e.domain.specification.Object.map((i) => {
+		let a = Object.entries(le(e.domain, i)), o = Object.keys(e.specification[i].$id);
+		return G(t, W(t, n.object(i), o.length), [ce(t, "id", n.object(i)), ...a.map(([e, r]) => ce(t, n.arrow(i, e), n.object(r)))], o.map((t) => [r(i, t), ...a.map(([n, a]) => r(a, e.specification[i][n][t]))]));
 	}));
 }
 function X(e, t) {
-	let n = m(e.source.meta, t?.names), r = h(e.source, t?.names), i = h(e.target, t?.names);
-	return K("copresheaf-map", (t) => e.source.meta.specification.Object.map((a) => {
-		let o = Object.entries(e.components[a]);
+	let n = m(e.domain.domain, t?.names), r = h(e.domain, t?.names), i = h(e.codomain, t?.names);
+	return K("copresheaf-map", (t) => e.domain.domain.specification.Object.map((a) => {
+		let o = Object.entries(e.specification.Object[a]);
 		return G(t, W(t, n.object(a), o.length), ["source", "target"], o.map(([e, t]) => [r(a, e), i(a, t)]));
 	}));
 }
-function se(e, t) {
+function ue(e, t) {
 	let n = m(e.domain, t?.names), r = m(e.codomain, t?.names);
-	return K("functor", (t) => [G(t, W(t, "Object", e.domain.specification.Object.length), ["domain", "codomain"], e.domain.specification.Object.map((t) => [n.object(t), r.object(e.Object[t])])), G(t, W(t, "Arrow", q(e.domain).length), ["domain", "path in codomain"], q(e.domain).map(([t, i]) => [\`\${n.object(i)}.\${n.arrow(i, t)}\`, [r.object(e.Object[i]), ...r.steps(e.Object[i], e.Arrow[i][t])].join(".")]))]);
+	return K("functor", (t) => [G(t, W(t, "Object", e.domain.specification.Object.length), ["domain", "codomain"], e.domain.specification.Object.map((t) => [n.object(t), r.object(e.specification.Object[t])])), G(t, W(t, "Arrow", q(e.domain).length), ["domain", "path in codomain"], q(e.domain).map(([t, i]) => [\`\${n.object(i)}.\${n.arrow(i, t)}\`, [r.object(e.specification.Object[i]), ...r.steps(e.specification.Object[i], e.specification.Arrow[i][t])].join(".")]))]);
 }
-function ce(e, t) {
-	let n = e.source, r = e.target, i = m(n.domain, t?.names), a = m(n.codomain, t?.names);
+function de(e, t) {
+	let n = e.domain, r = e.codomain, i = m(n.domain, t?.names), a = m(n.codomain, t?.names);
 	return K("functor-map", (t) => {
 		let o = n.domain.specification.Object;
 		return [G(t, W(t, "Component", o.length), [
@@ -58379,89 +59459,115 @@ function ce(e, t) {
 			"to G"
 		], o.map((t) => [
 			i.object(t),
-			a.object(n.Object[t]),
-			a.path(n.Object[t], e.components[t]),
-			a.object(r.Object[t])
+			a.object(n.specification.Object[t]),
+			a.path(n.specification.Object[t], e.specification.Object[t]),
+			a.object(r.specification.Object[t])
 		]))];
 	});
 }
-var Z = (e) => typeof e == "object" && !!e, Q = (e) => Z(e) && Z(e.specification) && Array.isArray(e.specification.Object), le = (e) => Z(e) && Q(e.meta) && Z(e.data), ue = (e) => Z(e) && Q(e.domain) && Q(e.codomain), de = (e, t) => Z(e) && t(e.source) && t(e.target) && Z(e.components);
-function fe(e, t) {
-	if (de(e, le)) return X(e, t);
-	if (de(e, ue)) return ce(e, t);
-	if (le(e)) return Y(e, t);
-	if (ue(e)) return se(e, t);
+var Z = (e) => typeof e == "object" && !!e, Q = (e) => Z(e) && Z(e.specification) && Array.isArray(e.specification.Object), fe = (e) => Z(e) && Q(e.domain) && !("codomain" in e) && Z(e.specification), pe = (e) => Z(e) && Q(e.domain) && Q(e.codomain) && Z(e.specification) && Z(e.specification.Object) && Z(e.specification.Arrow) && !("variance" in e), me = (e, t) => Z(e) && t(e.domain) && t(e.codomain) && Z(e.specification);
+function he(e, t) {
+	if (me(e, fe)) return X(e, t);
+	if (me(e, pe)) return de(e, t);
+	if (fe(e)) return Y(e, t);
+	if (pe(e)) return ue(e, t);
 	if (Q(e)) return J(e, t);
 	throw Error("tableView shows categories, copresheaves, copresheaf maps, functors and functor maps");
 }
-var pe = Object.freeze(Object.assign((e, t) => fe(e, t), {
+var ge = Object.freeze(Object.assign((e, t) => he(e, t), {
 	category: J,
 	copresheaf: Y,
 	copresheafMap: X,
-	functor: se,
-	functorMap: ce
-})), me = "cod-ts-views-trees", he = "\\n.cod-tree-view { margin-bottom: 16px; }\\n.cod-tree-view ul { list-style: none; margin: 0; padding: 0; }\\n.cod-tree-view ul ul { padding-left: 36px; }\\n.cod-tree-view .cod-item { display: flex; align-items: center; gap: 6px; padding: 1px 0;\\n  font: 13px/1.5 ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; }\\n.cod-tree-view summary { list-style: none; cursor: pointer; }\\n.cod-tree-view summary::-webkit-details-marker { display: none; }\\n.cod-tree-view .cod-toggle, .cod-tree-view .cod-icon { flex: none; width: 12px; height: 12px;\\n  fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round;\\n  stroke-linejoin: round; }\\n.cod-tree-view .cod-toggle { color: #9aa0ad; transition: transform 0.1s; }\\n.cod-tree-view details[open] > summary .cod-toggle { transform: rotate(90deg); }\\n.cod-tree-view .cod-object > .cod-item > .cod-icon,\\n.cod-tree-view .cod-object > details > summary > .cod-icon { color: #4c6584; }\\n.cod-tree-view .cod-arrow .cod-icon { color: #3f7d4a; }\\n.cod-tree-view .cod-equation .cod-icon { color: #a0662a; }\\n.cod-tree-view .cod-type { color: #9aa0ad; }\\n.cod-tree-view .cod-count { color: #9aa0ad; }\\n";
-function ge(e) {
-	if (e.getElementById(me)) return;
-	let t = V(e, "style", { id: me }, [he]);
+	functor: ue,
+	functorMap: de
+})), _e = "cod-ts-views-trees", ve = "\\n.cod-tree-view { margin-bottom: 16px; }\\n.cod-tree-view ul { list-style: none; margin: 0; padding: 0; }\\n.cod-tree-view ul ul { padding-left: 36px; }\\n.cod-tree-view .cod-item { display: flex; align-items: center; gap: 6px; padding: 1px 0;\\n  font: 13px/1.5 ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; }\\n.cod-tree-view summary { list-style: none; cursor: pointer; }\\n.cod-tree-view summary::-webkit-details-marker { display: none; }\\n.cod-tree-view .cod-toggle, .cod-tree-view .cod-icon { flex: none; width: 12px; height: 12px;\\n  fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round;\\n  stroke-linejoin: round; }\\n.cod-tree-view .cod-toggle { color: #9aa0ad; transition: transform 0.1s; }\\n.cod-tree-view details[open] > summary .cod-toggle { transform: rotate(90deg); }\\n.cod-tree-view .cod-object > .cod-item > .cod-icon,\\n.cod-tree-view .cod-object > details > summary > .cod-icon { color: #4c6584; }\\n.cod-tree-view .cod-arrow .cod-icon { color: #3f7d4a; }\\n.cod-tree-view .cod-equation .cod-icon { color: #a0662a; }\\n.cod-tree-view .cod-type { color: #9aa0ad; }\\n.cod-tree-view .cod-count { color: #9aa0ad; }\\n";
+function ye(e) {
+	if (e.getElementById(_e)) return;
+	let t = H(e, "style", { id: _e }, [ve]);
 	(e.head ?? e.documentElement).append(t);
 }
-var _e = "http://www.w3.org/2000/svg", ve = {
+var be = "http://www.w3.org/2000/svg", xe = {
 	object: "M6 2.5a3.5 3.5 0 1 1 0 7a3.5 3.5 0 1 1 0-7z",
 	arrow: "M1.5 6h8.5M7 3l3 3l-3 3",
 	equation: "M2 4.25h8M2 7.75h8",
 	toggle: "M4.5 2.5l3.5 3.5l-3.5 3.5"
 };
-function ye(e, t) {
-	let n = e.createElementNS(_e, "svg");
+function Se(e, t) {
+	let n = e.createElementNS(be, "svg");
 	n.setAttribute("class", t === "toggle" ? "cod-toggle" : "cod-icon"), n.setAttribute("viewBox", "0 0 12 12"), n.setAttribute("aria-hidden", "true");
-	let r = e.createElementNS(_e, "path");
-	return r.setAttribute("d", ve[t]), n.append(r), n;
+	let r = e.createElementNS(be, "path");
+	return r.setAttribute("d", xe[t]), n.append(r), n;
 }
 function $(e, t, n, r, i, a) {
-	return V(e, t, { class: "cod-item" }, [
-		...a === "toggle" ? [ye(e, "toggle")] : a === "space" ? [V(e, "span", { class: "cod-toggle" }, [])] : [],
-		ye(e, n),
-		V(e, "span", { class: "cod-id" }, [r]),
+	return H(e, t, { class: "cod-item" }, [
+		...a === "toggle" ? [Se(e, "toggle")] : a === "space" ? [H(e, "span", { class: "cod-toggle" }, [])] : [],
+		Se(e, n),
+		H(e, "span", { class: "cod-id" }, [r]),
 		...i
 	]);
 }
-var be = (e, t) => V(e, "span", { class: "cod-type" }, [t]);
-function xe(e, t) {
+var Ce = (e, t) => H(e, "span", { class: "cod-type" }, [t]);
+function we(e, t) {
 	return Object.freeze({ toNode(n) {
-		ge(n);
+		ye(n);
 		let { Object: r, Arrow: i, Equation: a } = e.specification, o = m(e, t?.names), s = (e, t) => Object.prototype.hasOwnProperty.call(e, t) ? e[t] : void 0;
-		return V(n, "div", { class: "cod-tree-view cod-category" }, [V(n, "ul", {}, r.map((e) => {
-			let t = Object.entries(s(i, e) ?? {}).map(([t, r]) => V(n, "li", {
+		return H(n, "div", { class: "cod-tree-view cod-category" }, [H(n, "ul", {}, r.map((e) => {
+			let t = Object.entries(s(i, e) ?? {}).map(([t, r]) => H(n, "li", {
 				class: "cod-arrow",
 				"data-id": t
-			}, [$(n, "div", "arrow", o.arrow(e, t), [be(n, \` : \${o.object(e)} → \${o.object(r)}\`)], "none")])), r = Object.entries(s(a, e) ?? {}).map(([t, { left: r, right: i }]) => V(n, "li", {
+			}, [$(n, "div", "arrow", o.arrow(e, t), [Ce(n, \` : \${o.object(e)} → \${o.object(r)}\`)], "none")])), r = Object.entries(s(a, e) ?? {}).map(([t, { left: r, right: i }]) => H(n, "li", {
 				class: "cod-equation",
 				"data-id": t
-			}, [$(n, "div", "equation", o.equation(e, t), [be(n, \` : \${o.path(e, r)} = \${o.path(e, i)}\`)], "none")])), c = [...t, ...r], l = V(n, "span", { class: "cod-count" }, [\`(\${c.length})\`]);
-			return V(n, "li", {
+			}, [$(n, "div", "equation", o.equation(e, t), [Ce(n, \` : \${o.path(e, r)} = \${o.path(e, i)}\`)], "none")])), c = [...t, ...r], l = H(n, "span", { class: "cod-count" }, [\`(\${c.length})\`]);
+			return H(n, "li", {
 				class: "cod-object",
 				"data-id": e
-			}, [c.length ? V(n, "details", {}, [$(n, "summary", "object", o.object(e), [l], "toggle"), V(n, "ul", {}, c)]) : $(n, "div", "object", o.object(e), [], "space")]);
+			}, [c.length ? H(n, "details", {}, [$(n, "summary", "object", o.object(e), [l], "toggle"), H(n, "ul", {}, c)]) : $(n, "div", "object", o.object(e), [], "space")]);
 		}))]);
 	} });
 }
-var Se = Object.freeze(Object.assign((e, t) => xe(e, t), { category: xe })), Ce = Object.freeze({
-	table: pe,
-	graph: B,
-	tree: Se
+var Te = Object.freeze(Object.assign((e, t) => we(e, t), { category: we })), Ee = Object.freeze({
+	table: ge,
+	graph: V,
+	tree: Te
 });
-export { D as categoryGraphView, J as categoryTableView, xe as categoryTreeView, Ce as categoryView, M as copresheafGraphView, N as copresheafMapGraphView, X as copresheafMapTableView, Y as copresheafTableView, j as functorGraphView, ce as functorMapTableView, se as functorTableView, B as graphView, F as queryGraphView, pe as tableView, Se as treeView };
-`,Fe=`import { graphLayout as e, graphNodeSize as t, graphRoutes as n, graphSkeleton as r, loopRoute as i } from "@cod-ts/graphs";
+export { D as categoryGraphView, J as categoryTableView, we as categoryTreeView, Ee as categoryView, M as copresheafGraphView, N as copresheafMapGraphView, X as copresheafMapTableView, Y as copresheafTableView, j as functorGraphView, de as functorMapTableView, ue as functorTableView, V as graphView, F as queryGraphView, ge as tableView, Te as treeView };
+`,Le=`import { graphLayout as e, graphNodeSize as t, graphRoutes as n, graphSkeleton as r, loopRoute as i } from "@cod-ts/graphs";
+// src/graphs/graph-layouts.ts
+function a(e, t, n) {
+	let r = e[t] ?? n;
+	if (typeof r != "number" || !Number.isFinite(r)) throw Error(\`cellsInColumns: \${t} must be a number\`);
+	return r;
+}
+async function o(e, t) {
+	let n = t.options ?? {}, r = a(n, "columnSpacing", 150), i = a(n, "rowSpacing", 100), o = /* @__PURE__ */ new Map();
+	for (let t of e.nodes) {
+		let e = /^-?\\d+/.exec(t.part);
+		if (e === null) throw Error(\`cellsInColumns: \${t.part} is not named by a dimension, as the cells of complexes are\`);
+		let n = Number(e[0]);
+		o.set(n, [...o.get(n) ?? [], t]);
+	}
+	let s = Object.fromEntries(e.objects.map((e) => [e, {}]));
+	for (let [e, t] of o) t.sort((e, t) => e.part.localeCompare(t.part)).forEach((n, a) => {
+		s[n.object][n.part] = {
+			x: r * e,
+			y: i * (a - (t.length - 1) / 2)
+		};
+	});
+	return {
+		nodes: s,
+		links: {}
+	};
+}
 // src/graphs/graph-views.ts
-function a(e, t) {
+function s(e, t) {
 	if (e !== !1) return {
 		text: e?.text ?? ((e) => e.part),
 		anchor: e?.anchor ?? t,
 		gap: e?.gap ?? 4
 	};
 }
-var o = /* @__PURE__ */ new Set([
+var c = /* @__PURE__ */ new Set([
 	"opacity",
 	"fill-opacity",
 	"stroke-opacity",
@@ -58474,15 +59580,15 @@ var o = /* @__PURE__ */ new Set([
 	"order",
 	"flex-grow",
 	"flex-shrink"
-]), s = (e) => e.startsWith("--") ? e : e.replace(/[A-Z]/g, (e) => \`-\${e.toLowerCase()}\`);
-function c(e, t) {
+]), l = (e) => e.startsWith("--") ? e : e.replace(/[A-Z]/g, (e) => \`-\${e.toLowerCase()}\`);
+function u(e, t) {
 	let n = [], r = (e, t) => {
 		let i = [], a = [];
 		for (let [n, r] of Object.entries(t)) if (typeof r == "object") {
 			let t = e.split(",").flatMap((e) => n.split(",").map((t) => t.trim().replace(/&/g, e.trim())));
 			a.push([t.join(", "), r]);
 		} else {
-			let e = s(n), t = typeof r == "number" && !o.has(e) ? \`\${r}px\` : String(r);
+			let e = l(n), t = typeof r == "number" && !c.has(e) ? \`\${r}px\` : String(r);
 			i.push(\`\${e}: \${t};\`);
 		}
 		i.length > 0 && n.push(\`\${e} { \${i.join(" ")} }\`);
@@ -58491,43 +59597,43 @@ function c(e, t) {
 	for (let [n, i] of Object.entries(e)) r(n.split(",").map((e) => e.includes("&") ? e.trim().replace(/&/g, t) : \`\${t} \${e.trim()}\`).join(", "), i);
 	return n.join("\\n");
 }
-var l = "http://www.w3.org/2000/svg", u = "http://www.w3.org/1999/xhtml", d = "cod-ts-views-graphs", f = "\\n.cod-graph-view { margin-bottom: 16px; }\\n:where(.cod-graph-view) {\\n  --node-fill: #f6f5f1; --node-stroke: #5f6673; --node-highlight: #2f5bea;\\n  --node-context: #8da3d6;\\n  --link-fill: none; --link-stroke: #8a909c; --link-highlight: #2f5bea;\\n  --link-context: #8da3d6; }\\n.cod-graph-view > .cod-status { color: #6a7182; font: 12px/1.4 system-ui, sans-serif; }\\n.cod-graph-view[data-state='error'] > .cod-status { color: #c93a3a; }\\n.cod-graph-view > svg { display: block; max-width: 100%; height: auto; overflow: visible;\\n  font-family: ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; }\\n:where(.cod-graph-view .cod-node) { fill: var(--node-fill); stroke: var(--node-stroke);\\n  stroke-width: 2px; }\\n:where(.cod-graph-view .cod-node[data-object=\\"V2\\"]) { --node-fill: #e6edf5; --node-stroke: #4c6584; }\\n:where(.cod-graph-view .cod-node:hover) { stroke: var(--node-highlight); }\\n:where(.cod-graph-view .cod-link) { fill: var(--link-fill); stroke: var(--link-stroke);\\n  stroke-width: 2px; }\\n:where(.cod-graph-view .cod-link:hover) { stroke: var(--link-highlight); }\\n:where(.cod-graph-view .cod-arrowhead) { fill: var(--link-stroke); stroke: none; }\\n:where(.cod-graph-view .cod-link:hover .cod-arrowhead) { fill: var(--link-highlight); }\\n:where(.cod-graph-view .cod-hit) { stroke: transparent; stroke-width: 10px; }\\n:where(.cod-graph-view .cod-label) { visibility: hidden; pointer-events: none; overflow: visible;\\n  font-size: 11px; color: #1d2230; stroke: none; }\\n:where(.cod-graph-view .cod-label > div) { display: flex; align-items: center;\\n  justify-content: center; width: 100%; height: 100%; white-space: nowrap; line-height: 1;\\n  filter: drop-shadow(1px 0 #ffffff) drop-shadow(-1px 0 #ffffff) drop-shadow(0 1px #ffffff)\\n    drop-shadow(0 -1px #ffffff) drop-shadow(0 0 0.5px #ffffff); }\\n:where(.cod-graph-view .cod-link .cod-label) { font-size: 10px; color: var(--link-stroke); }\\n:where(.cod-graph-view .cod-node:hover .cod-label, .cod-graph-view .cod-link:hover .cod-label) {\\n  visibility: visible; }\\n:where(.cod-graph-view .cod-node:hover .cod-label) { color: var(--node-highlight); }\\n:where(.cod-graph-view .cod-link:hover .cod-label) { color: var(--link-highlight); }\\n";
-function p(e) {
-	if (e.getElementById(d)) return;
+var d = "http://www.w3.org/2000/svg", f = "http://www.w3.org/1999/xhtml", p = "cod-ts-views-graphs", m = "\\n.cod-graph-view { margin-bottom: 16px; }\\n:where(.cod-graph-view) {\\n  --node-fill: #f6f5f1; --node-stroke: #5f6673; --node-highlight: #2f5bea;\\n  --node-context: #8da3d6;\\n  --link-fill: none; --link-stroke: #8a909c; --link-highlight: #2f5bea;\\n  --link-context: #8da3d6; }\\n.cod-graph-view > .cod-status { color: #6a7182; font: 12px/1.4 system-ui, sans-serif; }\\n.cod-graph-view[data-state='error'] > .cod-status { color: #c93a3a; }\\n.cod-graph-view > svg { display: block; max-width: 100%; height: auto; overflow: visible;\\n  font-family: ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; }\\n:where(.cod-graph-view .cod-node) { fill: var(--node-fill); stroke: var(--node-stroke);\\n  stroke-width: 2px; }\\n:where(.cod-graph-view .cod-node[data-object=\\"V2\\"]) { --node-fill: #e6edf5; --node-stroke: #4c6584; }\\n:where(.cod-graph-view .cod-node:hover) { stroke: var(--node-highlight); }\\n:where(.cod-graph-view .cod-link) { fill: var(--link-fill); stroke: var(--link-stroke);\\n  stroke-width: 2px; }\\n:where(.cod-graph-view .cod-link:hover) { stroke: var(--link-highlight); }\\n:where(.cod-graph-view .cod-arrowhead) { fill: var(--link-stroke); stroke: none; }\\n:where(.cod-graph-view .cod-link:hover .cod-arrowhead) { fill: var(--link-highlight); }\\n:where(.cod-graph-view .cod-hit) { stroke: transparent; stroke-width: 10px; }\\n:where(.cod-graph-view .cod-label) { visibility: hidden; pointer-events: none; overflow: visible;\\n  font-size: 11px; color: #1d2230; stroke: none; }\\n:where(.cod-graph-view .cod-label > div) { display: flex; align-items: center;\\n  justify-content: center; width: 100%; height: 100%; white-space: nowrap; line-height: 1;\\n  filter: drop-shadow(1px 0 #ffffff) drop-shadow(-1px 0 #ffffff) drop-shadow(0 1px #ffffff)\\n    drop-shadow(0 -1px #ffffff) drop-shadow(0 0 0.5px #ffffff); }\\n:where(.cod-graph-view .cod-link .cod-label) { font-size: 10px; color: var(--link-stroke); }\\n:where(.cod-graph-view .cod-node:hover .cod-label, .cod-graph-view .cod-link:hover .cod-label) {\\n  visibility: visible; }\\n:where(.cod-graph-view .cod-node:hover .cod-label) { color: var(--node-highlight); }\\n:where(.cod-graph-view .cod-link:hover .cod-label) { color: var(--link-highlight); }\\n";
+function h(e) {
+	if (e.getElementById(p)) return;
 	let t = e.createElement("style");
-	t.id = d, t.textContent = f, (e.head ?? e.documentElement).append(t);
+	t.id = p, t.textContent = m, (e.head ?? e.documentElement).append(t);
 }
-function m(e, t, n, r = []) {
-	let i = e.createElementNS(l, t);
+function g(e, t, n, r = []) {
+	let i = e.createElementNS(d, t);
 	for (let [e, t] of Object.entries(n)) i.setAttribute(e, String(t));
 	return i.append(...r), i;
 }
-var h = (e, t) => t ? \`\${e} \${t}\` : e, g = (e) => Object.fromEntries(Object.entries(e).flatMap(([e, t]) => t === void 0 ? [] : [[\`data-\${e}\`, t]])), _ = (e) => ({ "aria-label": e }), v = (e, t) => ({
+var _ = (e, t) => t ? \`\${e} \${t}\` : e, v = (e) => Object.fromEntries(Object.entries(e).flatMap(([e, t]) => t === void 0 ? [] : [[\`data-\${e}\`, t]])), y = (e) => ({ "aria-label": e }), b = (e, t) => ({
 	x: e.x + t.x,
 	y: e.y + t.y
-}), y = (e, t) => ({
+}), x = (e, t) => ({
 	x: e.x - t.x,
 	y: e.y - t.y
-}), b = (e, t) => ({
+}), S = (e, t) => ({
 	x: e.x * t,
 	y: e.y * t
-}), x = (e) => {
+}), C = (e) => {
 	let t = Math.hypot(e.x, e.y);
 	return t === 0 ? {
 		x: 0,
 		y: -1
-	} : b(e, 1 / t);
-}, S = (e) => \`\${e.x.toFixed(1)},\${e.y.toFixed(1)}\`, C = (e, t, n, r) => (i) => v(v(b(e, (1 - i) ** 3), b(t, 3 * (1 - i) ** 2 * i)), v(b(n, 3 * (1 - i) * i ** 2), b(r, i ** 3))), w = (e, t) => Math.hypot(e.x - t.x, e.y - t.y) < 1e-6, T = (e, t, n) => v(e, b(y(t, e), n));
-function E(e, t) {
+	} : S(e, 1 / t);
+}, w = (e) => \`\${e.x.toFixed(1)},\${e.y.toFixed(1)}\`, T = (e, t, n, r) => (i) => b(b(S(e, (1 - i) ** 3), S(t, 3 * (1 - i) ** 2 * i)), b(S(n, 3 * (1 - i) * i ** 2), S(r, i ** 3))), E = (e, t) => Math.hypot(e.x - t.x, e.y - t.y) < 1e-6, D = (e, t, n) => b(e, S(x(t, e), n));
+function O(e, t) {
 	if (e.length === 2) {
-		let n = T(e[0], e[1], t);
+		let n = D(e[0], e[1], t);
 		return [[e[0], n], [n, e[1]]];
 	}
 	let [n, r, i, a] = e, [o, s, c] = [
-		T(n, r, t),
-		T(r, i, t),
-		T(i, a, t)
-	], [l, u] = [T(o, s, t), T(s, c, t)], d = T(l, u, t);
+		D(n, r, t),
+		D(r, i, t),
+		D(i, a, t)
+	], [l, u] = [D(o, s, t), D(s, c, t)], d = D(l, u, t);
 	return [[
 		n,
 		o,
@@ -58540,11 +59646,11 @@ function E(e, t) {
 		a
 	]];
 }
-var D = (e, t) => e.length === 2 ? T(e[0], e[1], t) : C(e[0], e[1], e[2], e[3])(t);
-function O(e) {
+var k = (e, t) => e.length === 2 ? D(e[0], e[1], t) : T(e[0], e[1], e[2], e[3])(t);
+function A(e) {
 	let t = e.length === 2 ? 1 : 32, n = [0];
 	for (let r = 1; r <= t; r++) {
-		let [i, a] = [D(e, (r - 1) / t), D(e, r / t)];
+		let [i, a] = [k(e, (r - 1) / t), k(e, r / t)];
 		n.push(n[r - 1] + Math.hypot(a.x - i.x, a.y - i.y));
 	}
 	return {
@@ -58557,97 +59663,97 @@ function O(e) {
 		}
 	};
 }
-function k(e, t, n) {
+function j(e, t, n) {
 	let r = n ? [...e].reverse() : [...e], i = t;
 	for (; i > 0 && r.length > 0;) {
-		let { length: e, at: t } = O(r[0]);
+		let { length: e, at: t } = A(r[0]);
 		if (e <= i && r.length > 1) {
 			r.shift(), i -= e;
 			continue;
 		}
 		let a = Math.min(t(n ? e - Math.min(i, e * .9) : Math.min(i, e * .9)), 1);
-		r[0] = n ? E(r[0], a)[0] : E(r[0], a)[1];
+		r[0] = n ? O(r[0], a)[0] : O(r[0], a)[1];
 		break;
 	}
 	return n ? r.reverse() : r;
 }
-function A(e, t, n, r) {
+function M(e, t, n, r) {
 	let i = (e) => [...e].reverse(), a = r ? [...e].reverse().map(i) : [...e], o = (e) => {
-		let r = y(e, t.at);
-		return Math.hypot(r.x, r.y) >= t.radius(x(r)) + n;
+		let r = x(e, t.at);
+		return Math.hypot(r.x, r.y) >= t.radius(C(r)) + n;
 	};
 	for (let t = 0; t < a.length; t++) {
 		let n = a[t];
 		if (!o(n[n.length - 1]) && t < a.length - 1) continue;
 		let s = n.length === 2 ? 8 : 32, c = 0;
-		for (; c < s && !o(D(n, c / s));) c++;
+		for (; c < s && !o(k(n, c / s));) c++;
 		if (c === 0) return r ? a.slice(t).reverse().map(i) : a.slice(t);
 		if (c > s) return [...e];
 		let [l, u] = [(c - 1) / s, c / s];
 		for (let e = 0; e < 20; e++) {
 			let e = (l + u) / 2;
-			o(D(n, e)) ? u = e : l = e;
+			o(k(n, e)) ? u = e : l = e;
 		}
-		let d = [E(n, u)[1], ...a.slice(t + 1)];
+		let d = [O(n, u)[1], ...a.slice(t + 1)];
 		return r ? d.reverse().map(i) : d;
 	}
 	return [...e];
 }
-function j(e) {
-	let t = e.find((t) => !w(t, e[0])) ?? e[0], n = [...e].reverse().find((t) => !w(t, e[e.length - 1])) ?? e[0];
+function N(e) {
+	let t = e.find((t) => !E(t, e[0])) ?? e[0], n = [...e].reverse().find((t) => !E(t, e[e.length - 1])) ?? e[0];
 	return {
-		start: x(y(t, e[0])),
-		end: x(y(e[e.length - 1], n))
+		start: C(x(t, e[0])),
+		end: C(x(e[e.length - 1], n))
 	};
 }
-function M(e, t, n, r, i, a) {
+function P(e, t, n, r, i, a) {
 	let o = e.points, s = [];
 	if (e.kind === "bezier") for (let e = 0; e + 3 < o.length; e += 3) s.push(o.slice(e, e + 4));
 	else for (let e = 0; e + 1 < o.length; e++) s.push(o.slice(e, e + 2));
-	let c = A(A(s, t, r, !1), n, r, !0), l = c[c.length - 1], u = l[l.length - 1], d = k(c, i, !0), f = d[d.length - 1][d[d.length - 1].length - 1], p = i > 0 && !w(f, u) ? x(y(u, f)) : j(l).end, m = k(c, a, !0), h = (e) => e.length === 4, g = [\`M\${S(m[0][0])}\`, ...m.map((e) => h(e) ? \`C\${S(e[1])} \${S(e[2])} \${S(e[3])}\` : \`L\${S(e[1])}\`)].join(" "), _ = [c[0][0]];
-	for (let e of c) if (h(e)) for (let t = 1; t <= 16; t++) _.push(D(e, t / 16));
+	let c = M(M(s, t, r, !1), n, r, !0), l = c[c.length - 1], u = l[l.length - 1], d = j(c, i, !0), f = d[d.length - 1][d[d.length - 1].length - 1], p = i > 0 && !E(f, u) ? C(x(u, f)) : N(l).end, m = j(c, a, !0), h = (e) => e.length === 4, g = [\`M\${w(m[0][0])}\`, ...m.map((e) => h(e) ? \`C\${w(e[1])} \${w(e[2])} \${w(e[3])}\` : \`L\${w(e[1])}\`)].join(" "), _ = [c[0][0]];
+	for (let e of c) if (h(e)) for (let t = 1; t <= 16; t++) _.push(k(e, t / 16));
 	else _.push(e[1]);
-	let C = [0];
-	for (let e = 1; e < _.length; e++) C.push(C[e - 1] + Math.hypot(_[e].x - _[e - 1].x, _[e].y - _[e - 1].y));
-	let T = C[C.length - 1];
+	let v = [0];
+	for (let e = 1; e < _.length; e++) v.push(v[e - 1] + Math.hypot(_[e].x - _[e - 1].x, _[e].y - _[e - 1].y));
+	let y = v[v.length - 1];
 	return {
 		d: g,
 		end: u,
 		heading: p,
 		along: (e) => {
-			let t = Math.min(Math.max(e, 0), 1) * T, n = 1;
-			for (; n < _.length - 1 && C[n] < t;) n++;
-			let [r, i] = [_[n - 1], _[n]], a = C[n] - C[n - 1], o = a === 0 ? 0 : (t - C[n - 1]) / a;
+			let t = Math.min(Math.max(e, 0), 1) * y, n = 1;
+			for (; n < _.length - 1 && v[n] < t;) n++;
+			let [r, i] = [_[n - 1], _[n]], a = v[n] - v[n - 1], o = a === 0 ? 0 : (t - v[n - 1]) / a;
 			return {
-				point: v(r, b(y(i, r), o)),
-				tangent: a === 0 ? p : y(i, r)
+				point: b(r, S(x(i, r), o)),
+				tangent: a === 0 ? p : x(i, r)
 			};
 		},
 		extent: _
 	};
 }
-function N(e, r, o, s) {
-	let { width: c, height: l } = t(s), d = s.links?.margin ?? 4, f = s.links?.arrow ?? 9, p = (e) => o.nodes[e.object][e.part], C = a(s.nodes?.label, [0, 1]), w = a(s.links?.label, [0, 0]), T = C ? [-C.anchor[0], -C.anchor[1]] : void 0, [E, D] = s.nodes?.loop?.anchor ?? (T && (T[0] !== 0 || T[1] !== 0) ? T : [0, -1]), O = E === 0 && D === 0 ? -Math.PI / 2 : Math.atan2(D * l / 2, E * c / 2), k = ({ object: e, part: t }) => \`\${e}\\u0000\${t}\`, A = /* @__PURE__ */ new Map(), j = /* @__PURE__ */ new Map();
+function F(e, r, a, o) {
+	let { width: c, height: l } = t(o), u = o.links?.margin ?? 4, d = o.links?.arrow ?? 9, p = (e) => a.nodes[e.object][e.part], m = s(o.nodes?.label, [0, 1]), h = s(o.links?.label, [0, 0]), T = m ? [-m.anchor[0], -m.anchor[1]] : void 0, [E, D] = o.nodes?.loop?.anchor ?? (T && (T[0] !== 0 || T[1] !== 0) ? T : [0, -1]), O = E === 0 && D === 0 ? -Math.PI / 2 : Math.atan2(D * l / 2, E * c / 2), k = ({ object: e, part: t }) => \`\${e}\\u0000\${t}\`, A = /* @__PURE__ */ new Map(), j = /* @__PURE__ */ new Map();
 	for (let e of r.links) {
 		if (k(e.source) !== k(e.target)) continue;
 		let t = j.get(k(e.source)) ?? 0;
 		A.set(e, t), j.set(k(e.source), t + 1);
 	}
-	let N = r.links.filter((e) => o.links[e.object]?.[e.part] === void 0), P = N.length ? n({
+	let M = r.links.filter((e) => a.links[e.object]?.[e.part] === void 0), N = M.length ? n({
 		...r,
-		links: N
-	}, o.nodes, s) : {}, F = (e) => A.has(e) ? i(p(e.source), {
+		links: M
+	}, a.nodes, o) : {}, F = (e) => A.has(e) ? i(p(e.source), {
 		width: c,
 		height: l
-	}, A.get(e), O) : o.links[e.object]?.[e.part] ?? P[e.object][e.part], I = (e) => ({
+	}, A.get(e), O) : a.links[e.object]?.[e.part] ?? N[e.object][e.part], I = (e) => ({
 		at: p(e),
 		radius: (e) => 1 / Math.hypot(e.x / (c / 2), e.y / (l / 2))
-	}), L = new Map(r.links.map((e) => [e, M(F(e), I(e.source), I(e.target), d, r.directed ? f : 0, r.directed ? f * .6 : 0)])), R = ({ end: e, heading: t }) => {
-		let n = y(e, b(t, f)), r = b({
+	}), L = new Map(r.links.map((e) => [e, P(F(e), I(e.source), I(e.target), u, r.directed ? d : 0, r.directed ? d * .6 : 0)])), R = ({ end: e, heading: t }) => {
+		let n = x(e, S(t, d)), r = S({
 			x: -t.y,
 			y: t.x
-		}, f * .45);
-		return \`M\${S(e)} L\${S(v(n, r))} L\${S(y(n, r))} Z\`;
+		}, d * .45);
+		return \`M\${w(e)} L\${w(b(n, r))} L\${w(x(n, r))} Z\`;
 	}, z = r.nodes.flatMap((e) => {
 		let t = p(e);
 		return [{
@@ -58672,10 +59778,10 @@ function N(e, r, o, s) {
 			y: r
 		}, e.text(t), 11, e.gap);
 	}, H = (e, t) => {
-		let [n, r] = e.anchor, { point: i, tangent: a } = L.get(t).along((n + 1) / 2), o = x(a), s = {
+		let [n, r] = e.anchor, { point: i, tangent: a } = L.get(t).along((n + 1) / 2), o = C(a), s = {
 			x: -o.y,
 			y: o.x
-		}, c = v(b(o, n), b(s, r));
+		}, c = b(S(o, n), S(s, r));
 		return B(i, c, e.text(t), 10, e.gap);
 	}, U = (e, t, n) => {
 		let r = t.length * .6 * n / 2;
@@ -58687,11 +59793,11 @@ function N(e, r, o, s) {
 			y: e.y + n / 2
 		}];
 	};
-	if (C) for (let e of r.nodes) z.push(...U(V(C, e), C.text(e), 11));
-	if (w) for (let e of r.links) z.push(...U(H(w, e), w.text(e), 10));
+	if (m) for (let e of r.nodes) z.push(...U(V(m, e), m.text(e), 11));
+	if (h) for (let e of r.links) z.push(...U(H(h, e), h.text(e), 10));
 	let W = z.map((e) => e.x), G = z.map((e) => e.y), [K, q] = W.length ? [Math.min(...W) - 12, Math.min(...G) - 12] : [0, 0], [J, Y] = W.length ? [Math.max(...W) + 12, Math.max(...G) + 12] : [0, 0], X = (t, n, r) => {
-		let [i, a] = [Math.max(n.length * .6 * r, r), r * 1.5], o = e.createElementNS(u, "div");
-		return o.textContent = n, m(e, "foreignObject", {
+		let [i, a] = [Math.max(n.length * .6 * r, r), r * 1.5], o = e.createElementNS(f, "div");
+		return o.textContent = n, g(e, "foreignObject", {
 			class: "cod-label",
 			x: (t.x - i / 2).toFixed(1),
 			y: (t.y - a / 2).toFixed(1),
@@ -58700,78 +59806,78 @@ function N(e, r, o, s) {
 		}, [o]);
 	}, Z = r.links.map((t) => {
 		let n = L.get(t);
-		return m(e, "g", {
-			class: h("cod-link", s.links?.class?.(t)),
-			...g({
+		return g(e, "g", {
+			class: _("cod-link", o.links?.class?.(t)),
+			...v({
 				object: t.object,
 				part: t.part,
-				...s.links?.data?.(t)
+				...o.links?.data?.(t)
 			}),
-			..._(w ? w.text(t) : t.part)
+			...y(h ? h.text(t) : t.part)
 		}, [
-			m(e, "path", {
+			g(e, "path", {
 				class: "cod-line",
 				d: n.d
 			}),
-			...r.directed ? [m(e, "path", {
+			...r.directed ? [g(e, "path", {
 				class: "cod-arrowhead",
 				d: R(n)
 			})] : [],
-			m(e, "path", {
+			g(e, "path", {
 				class: "cod-hit",
 				d: n.d
 			}),
-			...w ? [X(H(w, t), w.text(t), 10)] : []
+			...h ? [X(H(h, t), h.text(t), 10)] : []
 		]);
 	}), ee = r.nodes.map((t) => {
 		let n = p(t);
-		return m(e, "g", {
-			class: h("cod-node", s.nodes?.class?.(t)),
-			...g({
+		return g(e, "g", {
+			class: _("cod-node", o.nodes?.class?.(t)),
+			...v({
 				object: t.object,
 				part: t.part,
-				...s.nodes?.data?.(t)
+				...o.nodes?.data?.(t)
 			}),
-			..._(C ? C.text(t) : t.part)
-		}, [m(e, "ellipse", {
+			...y(m ? m.text(t) : t.part)
+		}, [g(e, "ellipse", {
 			class: "cod-shape",
 			cx: n.x.toFixed(1),
 			cy: n.y.toFixed(1),
 			rx: c / 2,
 			ry: l / 2
-		}), ...C ? [X(V(C, t), C.text(t), 11)] : []]);
+		}), ...m ? [X(V(m, t), m.text(t), 11)] : []]);
 	}), Q = J - K, $ = Y - q;
-	return m(e, "svg", {
+	return g(e, "svg", {
 		viewBox: \`\${K.toFixed(1)} \${q.toFixed(1)} \${Q.toFixed(1)} \${$.toFixed(1)}\`,
 		width: Q.toFixed(0),
 		height: $.toFixed(0),
 		role: "img"
-	}, [m(e, "g", { class: "cod-links" }, Z), m(e, "g", { class: "cod-nodes" }, ee)]);
+	}, [g(e, "g", { class: "cod-links" }, Z), g(e, "g", { class: "cod-nodes" }, ee)]);
 }
-var P = Object.freeze(Object.assign((e, t) => I(e, t), { graph: (e, t) => I(e, t) })), F = 0;
-function I(t, n = {}) {
+var I = Object.freeze(Object.assign((e, t) => R(e, t), { graph: (e, t) => R(e, t) })), L = 0;
+function R(t, n = {}) {
 	let i = r(t), a = {
 		...n.layout ?? {},
 		...n.nodes?.size === void 0 ? {} : { nodes: { size: n.nodes.size } }
 	};
 	return Object.freeze({ toNode(r) {
-		p(r);
-		let o = r.createElement("div"), s = \`cod-graph-\${++F}\`;
+		h(r);
+		let o = r.createElement("div"), s = \`cod-graph-\${++L}\`;
 		if (o.className = \`cod-graph-view \${s}\`, n.style !== void 0) {
 			let e = r.createElement("style");
-			e.textContent = c(n.style, \`.\${s}\`), o.append(e);
+			e.textContent = u(n.style, \`.\${s}\`), o.append(e);
 		}
 		o.dataset.state = "pending";
-		let l = r.createElement("div");
-		return l.className = "cod-status", l.textContent = "Laying out…", o.append(l), e(t, a).then((e) => {
-			l.replaceWith(N(r, i, e, n)), o.dataset.state = "ready";
+		let c = r.createElement("div");
+		return c.className = "cod-status", c.textContent = "Laying out…", o.append(c), e(t, a).then((e) => {
+			c.replaceWith(F(r, i, e, n)), o.dataset.state = "ready";
 		}, (e) => {
-			l.textContent = \`Could not lay out the graph: \${e instanceof Error ? e.message : String(e)}\`, o.dataset.state = "error", console.error(e);
+			c.textContent = \`Could not lay out the graph: \${e instanceof Error ? e.message : String(e)}\`, o.dataset.state = "error", console.error(e);
 		}), o;
 	} });
 }
-export { P as graphView };
-`,Ie=`import { categoryView as e } from "@cod-ts/views/categories";
+export { o as cellsInColumns, I as graphView };
+`,Re=`import { categoryView as e } from "@cod-ts/views/categories";
 import { effect as t, memo as n, signal as r, signalBatch as i, signalScope as a, signalScopeCurrent as o, signalScopeOnCleanup as s, signalScopeRun as c, signalUntrack as l } from "@cod-ts/views/signals";
 // src/views.ts
 var u = "cod-ts-views-layout", d = "\\n.cod-row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; margin-bottom: 16px; }\\n.cod-col { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 16px; }\\n.cod-row > *, .cod-col > * { margin-bottom: 0; }\\n.cod-title { margin: 0 0 8px; font: 600 15px/1.4 system-ui, sans-serif; }\\n.cod-col > .cod-title { margin-bottom: -8px; }\\n";
@@ -58803,7 +59909,7 @@ var h = Object.freeze({
 	col: (...e) => p("col", e)
 });
 export { t as effect, n as memo, r as signal, i as signalBatch, a as signalScope, o as signalScopeCurrent, s as signalScopeOnCleanup, c as signalScopeRun, l as signalUntrack, h as view };
-`,Le=`// src/signals/signals.ts
+`,ze=`// src/signals/signals.ts
 var e = () => !1;
 function t(t) {
 	return t?.equals === !1 ? e : t?.equals ?? Object.is;
@@ -58992,7 +60098,7 @@ var A = Object.freeze(Object.assign(k, {
 	run: D
 }));
 export { w as effect, C as memo, S as signal, b as signalBatch, A as signalScope, E as signalScopeCurrent, T as signalScopeOnCleanup, D as signalScopeRun, x as signalUntrack };
-`;function M(e,t){return Object.fromEntries(Object.entries(e).map(([e,n])=>[e.slice(t.length),n]))}var N=[{name:`@cod-ts/categories`,types:M(Object.assign({"../../categories/dist/categories.d.ts":i,"../../categories/dist/category-coproducts.d.ts":a,"../../categories/dist/category-extensions.d.ts":o,"../../categories/dist/category-omissions.d.ts":s,"../../categories/dist/category-opposites.d.ts":c,"../../categories/dist/category-products.d.ts":l,"../../categories/dist/category-pullbacks.d.ts":u,"../../categories/dist/category-pushouts.d.ts":d,"../../categories/dist/copresheaf-coproducts.d.ts":f,"../../categories/dist/copresheaf-day-convolutions.d.ts":p,"../../categories/dist/copresheaf-isomorphisms.d.ts":m,"../../categories/dist/copresheaf-lans.d.ts":h,"../../categories/dist/copresheaf-limits.d.ts":g,"../../categories/dist/copresheaf-pivots.d.ts":_,"../../categories/dist/copresheaf-products.d.ts":ee,"../../categories/dist/copresheaf-pullbacks.d.ts":te,"../../categories/dist/copresheaf-pushouts.d.ts":ne,"../../categories/dist/copresheaf-rans.d.ts":re,"../../categories/dist/copresheaves.d.ts":ie,"../../categories/dist/diagrams.d.ts":ae,"../../categories/dist/functor-coproducts.d.ts":oe,"../../categories/dist/functor-maps.d.ts":se,"../../categories/dist/functor-products.d.ts":ce,"../../categories/dist/functors.d.ts":le,"../../categories/dist/index.d.ts":ue,"../../categories/dist/internal.d.ts":de,"../../categories/dist/namespaces.d.ts":fe,"../../categories/dist/paths.d.ts":pe,"../../categories/dist/pipe.d.ts":me,"../../categories/dist/presentations.d.ts":he,"../../categories/dist/provenance.d.ts":ge,"../../categories/dist/queries.d.ts":_e,"../../categories/dist/query-completions.d.ts":ve,"../../categories/dist/query-composition.d.ts":ye}),`../../categories/dist/`),runtime:je},{name:`@cod-ts/graphs`,types:M(Object.assign({"../../graphs/dist/categories.d.ts":be,"../../graphs/dist/index.d.ts":xe,"../../graphs/dist/layouts/engine-dagre.d.ts":Se,"../../graphs/dist/layouts/engine-elk.d.ts":v,"../../graphs/dist/layouts/index.d.ts":y,"../../graphs/dist/layouts/routes.d.ts":b,"../../graphs/dist/layouts/skeletons.d.ts":x,"../../graphs/dist/products.d.ts":S}),`../../graphs/dist/`),runtime:Ne},{name:`@cod-ts/complexes`,types:M(Object.assign({"../../complexes/dist/categories.d.ts":C,"../../complexes/dist/day-convolutions.d.ts":w,"../../complexes/dist/index.d.ts":T}),`../../complexes/dist/`),runtime:Me},{name:`@cod-ts/views`,types:M(Object.assign({"../../views/dist/index.d.ts":E,"../../views/dist/view.d.ts":D,"../../views/dist/views.d.ts":O}),`../../views/dist/`),runtime:Ie},{name:`@cod-ts/views/categories`,types:M(Object.assign({"../../views/dist/categories/category-view.d.ts":k,"../../views/dist/categories/dom.d.ts":A,"../../views/dist/categories/graph-views.d.ts":j,"../../views/dist/categories/index.d.ts":Ce,"../../views/dist/categories/names.d.ts":we,"../../views/dist/categories/table-views.d.ts":Te,"../../views/dist/categories/tree-views.d.ts":Ee}),`../../views/dist/categories/`),runtime:Pe},{name:`@cod-ts/views/graphs`,types:M(Object.assign({"../../views/dist/graphs/graph-views.d.ts":De,"../../views/dist/graphs/index.d.ts":Oe}),`../../views/dist/graphs/`),runtime:Fe},{name:`@cod-ts/views/signals`,types:M(Object.assign({"../../views/dist/signals/index.d.ts":ke,"../../views/dist/signals/signals.d.ts":Ae}),`../../views/dist/signals/`),runtime:Le}],P=`// Runs inside the preview iframe before user code. Defines the globals
+`;function N(e,t){return Object.fromEntries(Object.entries(e).map(([e,n])=>[e.slice(t.length),n]))}var P=[{name:`@cod-ts/categories`,types:N(Object.assign({"../../categories/dist/categories.d.ts":i,"../../categories/dist/category-colimits.d.ts":a,"../../categories/dist/category-coproducts.d.ts":o,"../../categories/dist/category-extensions.d.ts":s,"../../categories/dist/category-limits.d.ts":c,"../../categories/dist/category-omissions.d.ts":l,"../../categories/dist/category-opposites.d.ts":u,"../../categories/dist/category-products.d.ts":d,"../../categories/dist/category-pullbacks.d.ts":f,"../../categories/dist/category-pushouts.d.ts":p,"../../categories/dist/copresheaf-coproducts.d.ts":m,"../../categories/dist/copresheaf-day-convolutions.d.ts":h,"../../categories/dist/copresheaf-isomorphisms.d.ts":g,"../../categories/dist/copresheaf-lans.d.ts":_,"../../categories/dist/copresheaf-limits.d.ts":v,"../../categories/dist/copresheaf-pivots.d.ts":ee,"../../categories/dist/copresheaf-products.d.ts":te,"../../categories/dist/copresheaf-pullbacks.d.ts":ne,"../../categories/dist/copresheaf-pushouts.d.ts":re,"../../categories/dist/copresheaf-rans.d.ts":ie,"../../categories/dist/copresheaves.d.ts":ae,"../../categories/dist/diagrams.d.ts":oe,"../../categories/dist/functor-coproducts.d.ts":se,"../../categories/dist/functor-maps.d.ts":ce,"../../categories/dist/functor-products.d.ts":le,"../../categories/dist/functors.d.ts":ue,"../../categories/dist/index.d.ts":de,"../../categories/dist/internal.d.ts":fe,"../../categories/dist/namespaces.d.ts":pe,"../../categories/dist/paths.d.ts":me,"../../categories/dist/pipe.d.ts":he,"../../categories/dist/presentations.d.ts":ge,"../../categories/dist/provenance.d.ts":_e,"../../categories/dist/queries.d.ts":ve,"../../categories/dist/query-completions.d.ts":ye,"../../categories/dist/query-composition.d.ts":be}),`../../categories/dist/`),runtime:Ne},{name:`@cod-ts/graphs`,types:N(Object.assign({"../../graphs/dist/categories.d.ts":xe,"../../graphs/dist/index.d.ts":y,"../../graphs/dist/layouts/engine-dagre.d.ts":b,"../../graphs/dist/layouts/engine-elk.d.ts":x,"../../graphs/dist/layouts/index.d.ts":S,"../../graphs/dist/layouts/routes.d.ts":C,"../../graphs/dist/layouts/skeletons.d.ts":w,"../../graphs/dist/products.d.ts":T}),`../../graphs/dist/`),runtime:Fe},{name:`@cod-ts/complexes`,types:N(Object.assign({"../../complexes/dist/categories.d.ts":E,"../../complexes/dist/day-convolutions.d.ts":D,"../../complexes/dist/index.d.ts":O}),`../../complexes/dist/`),runtime:Pe},{name:`@cod-ts/views`,types:N(Object.assign({"../../views/dist/index.d.ts":k,"../../views/dist/view.d.ts":A,"../../views/dist/views.d.ts":j}),`../../views/dist/`),runtime:Re},{name:`@cod-ts/views/categories`,types:N(Object.assign({"../../views/dist/categories/category-view.d.ts":M,"../../views/dist/categories/dom.d.ts":Se,"../../views/dist/categories/graph-views.d.ts":Ce,"../../views/dist/categories/index.d.ts":we,"../../views/dist/categories/names.d.ts":Te,"../../views/dist/categories/table-views.d.ts":Ee,"../../views/dist/categories/tree-views.d.ts":De}),`../../views/dist/categories/`),runtime:Ie},{name:`@cod-ts/views/graphs`,types:N(Object.assign({"../../views/dist/graphs/graph-layouts.d.ts":Oe,"../../views/dist/graphs/graph-views.d.ts":ke,"../../views/dist/graphs/index.d.ts":Ae}),`../../views/dist/graphs/`),runtime:Le},{name:`@cod-ts/views/signals`,types:N(Object.assign({"../../views/dist/signals/index.d.ts":je,"../../views/dist/signals/signals.d.ts":Me}),`../../views/dist/signals/`),runtime:ze}],Be=`// Runs inside the preview iframe before user code. Defines the globals
 // \`render(target, view)\` and \`preview\` declared in
 // packages/examples/globals.d.ts. Plain
 // JavaScript because it is inlined into the iframe document as text; a
@@ -59012,7 +60118,7 @@ globalThis.preview = Object.freeze({
     globalThis.render(document.body, view)
   },
 })
-`,Re=`
+`,Ve=`
 (function () {
   function fmt(v) {
     if (typeof v === "string") return v;
@@ -59037,11 +60143,11 @@ globalThis.preview = Object.freeze({
   addEventListener("unhandledrejection", function (e) { send("error", ["Unhandled rejection:", e.reason]); });
   parent.postMessage({ source: "playground", type: "ready" }, "*");
 })();
-`,ze=`
+`,He=`
 :root { color-scheme: light; }
 body { margin: 0; padding: 16px; font: 14px/1.5 system-ui, sans-serif; color: #1d2230; background: #fff; }
 pre { margin: 0 0 16px; font: 13px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
-`;function Be(e){let t=``;return new TextEncoder().encode(e).forEach(e=>t+=String.fromCharCode(e)),`data:text/javascript;base64,`+btoa(t)}function F(e){return e.replace(/<\/script/gi,`<\\/script`)}var Ve=`https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js`;function He(){return`
+`;function Ue(e){let t=``;return new TextEncoder().encode(e).forEach(e=>t+=String.fromCharCode(e)),`data:text/javascript;base64,`+btoa(t)}function F(e){return e.replace(/<\/script/gi,`<\\/script`)}var We=`https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js`;function Ge(){return`
 // MathJax reads saved menu settings from localStorage, which the sandbox
 // forbids; give it an empty one so it doesn't log an error on every run.
 try { localStorage } catch (e) {
@@ -59082,20 +60188,20 @@ window.MathJax = {
       });
     }
   }
-};`}function Ue(e){let t=Object.fromEntries(N.map(e=>[e.name,Be(e.runtime)])),n=JSON.stringify({imports:t}).replace(/</g,`\\u003c`);return`<!doctype html>
+};`}function Ke(e){let t=Object.fromEntries(P.map(e=>[e.name,Ue(e.runtime)])),n=JSON.stringify({imports:t}).replace(/</g,`\\u003c`);return`<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<style>${ze}</style>
-<script>${Re}<\/script>
-<script>${F(He())}<\/script>
-<script src="${Ve}" async><\/script>
+<style>${He}</style>
+<script>${Ve}<\/script>
+<script>${F(Ge())}<\/script>
+<script src="${We}" async><\/script>
 <script type="importmap">${n}<\/script>
-<script type="module">${F(P)}<\/script>
+<script type="module">${F(Be)}<\/script>
 </head>
 <body>
 <script type="module">
 ${F(e)}
 <\/script>
 </body>
-</html>`}function We(e,t){let n=n=>{n.source===e.contentWindow&&n.data?.source===`playground`&&t(n.data)};return window.addEventListener(`message`,n),()=>window.removeEventListener(`message`,n)}var I=`cod-ts-playground-theme`,L=window.matchMedia(`(prefers-color-scheme: dark)`),R=new Set;function Ge(){try{let e=localStorage.getItem(I);return e===`light`||e===`dark`?e:void 0}catch{return}}var z=Ge();function B(){return z??(L.matches?`dark`:`light`)}function V(){let e=B();document.documentElement.dataset.theme=e;for(let t of R)t(e)}function Ke(e){z=e;try{localStorage.setItem(I,e)}catch{}V()}function H(e){R.add(e)}L.addEventListener(`change`,()=>{z===void 0&&V()}),V();var qe=`modulepreload`,Je=function(e,t){return new URL(e,t).href},Ye={},Xe=function(e){return e.pathname.endsWith(`.css`)},Ze=function(e,t,n){if(t in e)return e[t];let r=n();if(!r){e[t]=void 0;return}let i=r.then(()=>{e[t]=void 0},n=>{throw e[t]=void 0,n});return e[t]=i,i},U=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=Je(t,n);let r=s(t),i=Xe(r);return Ze(Ye,r.href,()=>{if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let t=document.createElement(`link`);if(t.rel=i?`stylesheet`:qe,i||(t.as=`script`),t.crossOrigin=``,t.href=r.href,a&&t.setAttribute(`nonce`,a),document.head.appendChild(t),i)return new Promise((e,n)=>{t.addEventListener(`load`,e),t.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${r}`)))})})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},W=e=>document.getElementById(e),G=W(`preview`),K=W(`log`),q=W(`diag`),J=W(`loading`),Y=W(`examples`),Qe=W(`auto`),$e=W(`run`),X=W(`share`),Z=W(`theme`);function Q(){let e=`Switch to ${B()===`dark`?`light`:`dark`} theme`;Z.title=e,Z.setAttribute(`aria-label`,e)}Z.addEventListener(`click`,()=>Ke(B()===`dark`?`light`:`dark`)),H(Q),Q();function et(){let e=location.hash.match(/^#code=(.+)$/);if(!e)return null;try{return n.default.decompressFromEncodedURIComponent(e[1])||null}catch{return null}}function tt(e){let t=new URL(location.href);return t.hash=`code=`+n.default.compressToEncodedURIComponent(e),t.href}function nt(e,t){let n=document.createElement(`div`);n.className=`line ${e}`,n.textContent=t,K.appendChild(n),K.scrollTop=K.scrollHeight}We(G,e=>{e.type===`console`&&nt(e.level,e.text)}),W(`clear`).addEventListener(`click`,()=>K.textContent=``);var $=new Map;r.forEach((e,t)=>{let n=$.get(e.module);n||(n=document.createElement(`optgroup`),n.label=e.module,$.set(e.module,n),Y.append(n)),n.append(new Option(e.title,String(t)))});async function rt(){let e=et()??r[0].code,t,n=(e,n=400)=>{window.clearTimeout(t),t=window.setTimeout(e,n)},{createEditor:i}=await U(async()=>{let{createEditor:e}=await import(`./editor-BGeRH9vI.js`);return{createEditor:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url),a=i(W(`editor`),{code:e,onChange(){Qe.checked&&n(()=>void o())},onRun:()=>void o(),onDiagnostics(e){q.textContent=e===0?`No type errors`:`${e} type error${e===1?``:`s`}`,q.dataset.state=e===0?`ok`:`error`}});async function o(){K.textContent=``,G.srcdoc=Ue(await a.getJs())}Y.addEventListener(`change`,()=>{a.setCode(r[Number(Y.value)].code),o()}),$e.addEventListener(`click`,()=>void o()),document.addEventListener(`keydown`,e=>{if(e.target instanceof Node&&W(`editor`).contains(e.target))return;let t=e.ctrlKey||e.metaKey;(e.key===`Enter`&&(e.shiftKey||t)||t&&e.key.toLowerCase()===`s`)&&(e.preventDefault(),o())}),X.addEventListener(`click`,async()=>{await navigator.clipboard.writeText(tt(a.getCode())),X.classList.add(`copied`),X.title=`Link copied`,setTimeout(()=>{X.classList.remove(`copied`),X.title=`Copy link`},1500)}),J.remove(),o()}rt().catch(e=>{J.textContent=`Could not load the editor: `+(e instanceof Error?e.message:String(e))});export{N as i,B as n,H as r,U as t};
+</html>`}function qe(e,t){let n=n=>{n.source===e.contentWindow&&n.data?.source===`playground`&&t(n.data)};return window.addEventListener(`message`,n),()=>window.removeEventListener(`message`,n)}var I=`cod-ts-playground-theme`,L=window.matchMedia(`(prefers-color-scheme: dark)`),R=new Set;function Je(){try{let e=localStorage.getItem(I);return e===`light`||e===`dark`?e:void 0}catch{return}}var z=Je();function B(){return z??(L.matches?`dark`:`light`)}function V(){let e=B();document.documentElement.dataset.theme=e;for(let t of R)t(e)}function Ye(e){z=e;try{localStorage.setItem(I,e)}catch{}V()}function H(e){R.add(e)}L.addEventListener(`change`,()=>{z===void 0&&V()}),V();var Xe=`modulepreload`,Ze=function(e,t){return new URL(e,t).href},Qe={},$e=function(e){return e.pathname.endsWith(`.css`)},et=function(e,t,n){if(t in e)return e[t];let r=n();if(!r){e[t]=void 0;return}let i=r.then(()=>{e[t]=void 0},n=>{throw e[t]=void 0,n});return e[t]=i,i},U=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=Ze(t,n);let r=s(t),i=$e(r);return et(Qe,r.href,()=>{if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let t=document.createElement(`link`);if(t.rel=i?`stylesheet`:Xe,i||(t.as=`script`),t.crossOrigin=``,t.href=r.href,a&&t.setAttribute(`nonce`,a),document.head.appendChild(t),i)return new Promise((e,n)=>{t.addEventListener(`load`,e),t.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${r}`)))})})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},W=e=>document.getElementById(e),G=W(`preview`),K=W(`log`),q=W(`diag`),J=W(`loading`),Y=W(`examples`),tt=W(`auto`),nt=W(`run`),X=W(`share`),Z=W(`theme`);function Q(){let e=`Switch to ${B()===`dark`?`light`:`dark`} theme`;Z.title=e,Z.setAttribute(`aria-label`,e)}Z.addEventListener(`click`,()=>Ye(B()===`dark`?`light`:`dark`)),H(Q),Q();function rt(){let e=location.hash.match(/^#code=(.+)$/);if(!e)return null;try{return n.default.decompressFromEncodedURIComponent(e[1])||null}catch{return null}}function it(e){let t=new URL(location.href);return t.hash=`code=`+n.default.compressToEncodedURIComponent(e),t.href}function at(e,t){let n=document.createElement(`div`);n.className=`line ${e}`,n.textContent=t,K.appendChild(n),K.scrollTop=K.scrollHeight}qe(G,e=>{e.type===`console`&&at(e.level,e.text)}),W(`clear`).addEventListener(`click`,()=>K.textContent=``);var $=new Map;r.forEach((e,t)=>{let n=$.get(e.module);n||(n=document.createElement(`optgroup`),n.label=e.module,$.set(e.module,n),Y.append(n)),n.append(new Option(e.title,String(t)))});async function ot(){let e=rt()??r[0].code,t,n=(e,n=400)=>{window.clearTimeout(t),t=window.setTimeout(e,n)},{createEditor:i}=await U(async()=>{let{createEditor:e}=await import(`./editor-1_Guzen1.js`);return{createEditor:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url),a=i(W(`editor`),{code:e,onChange(){tt.checked&&n(()=>void o())},onRun:()=>void o(),onDiagnostics(e){q.textContent=e===0?`No type errors`:`${e} type error${e===1?``:`s`}`,q.dataset.state=e===0?`ok`:`error`}});async function o(){K.textContent=``,G.srcdoc=Ke(await a.getJs())}Y.addEventListener(`change`,()=>{a.setCode(r[Number(Y.value)].code),o()}),nt.addEventListener(`click`,()=>void o()),document.addEventListener(`keydown`,e=>{if(e.target instanceof Node&&W(`editor`).contains(e.target))return;let t=e.ctrlKey||e.metaKey;(e.key===`Enter`&&(e.shiftKey||t)||t&&e.key.toLowerCase()===`s`)&&(e.preventDefault(),o())}),X.addEventListener(`click`,async()=>{await navigator.clipboard.writeText(it(a.getCode())),X.classList.add(`copied`),X.title=`Link copied`,setTimeout(()=>{X.classList.remove(`copied`),X.title=`Copy link`},1500)}),J.remove(),o()}ot().catch(e=>{J.textContent=`Could not load the editor: `+(e instanceof Error?e.message:String(e))});export{P as i,B as n,H as r,U as t};
