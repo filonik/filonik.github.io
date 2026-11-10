@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./editor-1_Guzen1.js","./rolldown-runtime-XKyaHtl9.js","./editor.api-CSfNnW0T.js","./editor-g1MJRkXV.css","./editor-CYlBetm9.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./editor-Dn4_T71v.js","./rolldown-runtime-XKyaHtl9.js","./editor.api-Ccc0f_Hs.js","./editor-g1MJRkXV.css","./editor-CYlBetm9.css"])))=>i.map(i=>d[i]);
 import{r as e,t}from"./rolldown-runtime-XKyaHtl9.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var n=e(t(((e,t)=>{var n=(function(){var e=String.fromCharCode,t=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=`,n=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$`,r={};function i(e,t){if(!r[e]){r[e]={};for(var n=0;n<e.length;n++)r[e][e.charAt(n)]=n}return r[e][t]}var a={compressToBase64:function(e){if(e==null)return``;var n=a._compress(e,6,function(e){return t.charAt(e)});switch(n.length%4){default:case 0:return n;case 1:return n+`===`;case 2:return n+`==`;case 3:return n+`=`}},decompressFromBase64:function(e){return e==null?``:e==``?null:a._decompress(e.length,32,function(n){return i(t,e.charAt(n))})},compressToUTF16:function(t){return t==null?``:a._compress(t,15,function(t){return e(t+32)})+` `},decompressFromUTF16:function(e){return e==null?``:e==``?null:a._decompress(e.length,16384,function(t){return e.charCodeAt(t)-32})},compressToUint8Array:function(e){for(var t=a.compress(e),n=new Uint8Array(t.length*2),r=0,i=t.length;r<i;r++){var o=t.charCodeAt(r);n[r*2]=o>>>8,n[r*2+1]=o%256}return n},decompressFromUint8Array:function(t){if(t==null)return a.decompress(t);for(var n=Array(t.length/2),r=0,i=n.length;r<i;r++)n[r]=t[r*2]*256+t[r*2+1];var o=[];return n.forEach(function(t){o.push(e(t))}),a.decompress(o.join(``))},compressToEncodedURIComponent:function(e){return e==null?``:a._compress(e,6,function(e){return n.charAt(e)})},decompressFromEncodedURIComponent:function(e){return e==null?``:e==``?null:(e=e.replace(/ /g,`+`),a._decompress(e.length,32,function(t){return i(n,e.charAt(t))}))},compress:function(t){return a._compress(t,16,function(t){return e(t)})},_compress:function(e,t,n){if(e==null)return``;for(var r,i,a={},o={},s=``,c=``,l=``,u=2,d=3,f=2,p=[],m=0,h=0,g=0;g<e.length;g+=1)if(s=e.charAt(g),Object.prototype.hasOwnProperty.call(a,s)||(a[s]=d++,o[s]=!0),c=l+s,Object.prototype.hasOwnProperty.call(a,c))l=c;else{if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++),a[c]=d++,l=String(s)}if(l!==``){if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++)}for(i=2,r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;for(;;){if(m<<=1,h==t-1){p.push(n(m));break}h++}return p.join(``)},decompress:function(e){return e==null?``:e==``?null:a._decompress(e.length,32768,function(t){return e.charCodeAt(t)})},_decompress:function(t,n,r){var i=[],a=4,o=4,s=3,c=``,l=[],u,d,f,p,m,h,g,_={val:r(0),position:n,index:1};for(u=0;u<3;u+=1)i[u]=u;for(f=0,m=4,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(f){case 0:for(f=0,m=256,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 2:return``}for(i[3]=g,d=g,l.push(g);;){if(_.index>t)return``;for(f=0,m=2**s,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(g=f){case 0:for(f=0,m=256,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 2:return l.join(``)}if(a==0&&(a=2**s,s++),i[g])c=i[g];else if(g===o)c=d+d.charAt(0);else return null;l.push(c),i[o++]=d+c.charAt(0),a--,d=c,a==0&&(a=2**s,s++)}}};return a})();typeof define==`function`&&define.amd?define(function(){return n}):t!==void 0&&t!=null?t.exports=n:typeof angular<`u`&&angular!=null&&angular.module(`LZString`,[]).factory(`LZString`,function(){return n})}))(),1),r=Object.entries(Object.assign({"../../examples/src/categories/01-categories.ts":`import { type Category, category, equation } from '@cod-ts/categories'
 import { type Names, type View, view } from '@cod-ts/views'
 
@@ -2486,6 +2486,135 @@ export const fixedPointsAgain = query(CatDynamical, CatDynamical, {
 })
 
 console.log('fixed points, again:', copresheaf.parts(query.evaluate(fixedPointsAgain, system), 'X'))
+`,"../../examples/src/categories/28-query-morphisms.ts":`import { type Category, category, copresheaf, query } from '@cod-ts/categories'
+import { type Names, type View, view } from '@cod-ts/views'
+
+// A category under a title: as tables, and below them as a graph with its
+// names shown.
+const categoryView = (C: Category, { title, ...options }: { title: string; names?: Names }): View =>
+  view.col(
+    view.title(title),
+    view.table(C, options),
+    view.graph(C, { style: { '.cod-label': { visibility: 'visible' } }, ...options }),
+  )
+
+// A query sends an arrow to a map between query objects, given by terms,
+// one per variable. Into a product, every factor gets a term, so the map can
+// be the pairing of several arrows; out of a coproduct, every summand does,
+// so it can be their copairing. Out of a product or into a coproduct, there
+// is a single variable to give a term for, and its term uses one factor or
+// one summand: a projection or an injection, and an arrow.
+//
+// Four queries on the walking arrow show the four cases, each evaluated on
+// small data.
+
+export const CatArrow = category({
+  Object: ['A', 'B'],
+  Arrow: { A: { f: 'B' } },
+})
+
+preview.append(categoryView(CatArrow, { title: 'Arrow' }))
+
+export const CatSpan = category({
+  Object: ['A', 'B', 'C'],
+  Arrow: { C: { f: 'A', g: 'B' } },
+})
+
+export const CatCoSpan = category({
+  Object: ['A', 'B', 'C'],
+  Arrow: { A: { f: 'C' }, B: { g: 'C' } },
+})
+
+// Data on the span: people (C), each with a city (A) and a language (B).
+export const people = copresheaf(CatSpan, {
+  A: ['paris', 'rome'],
+  B: ['french', 'italian', 'english'],
+  C: {
+    f: { ann: 'paris', bob: 'rome', eve: 'paris' },
+    g: { ann: 'french', bob: 'italian', eve: 'french' },
+  },
+})
+
+preview.append(view.col(view.title('people, their cities and languages'), view.table(people)))
+
+// Data on the cospan: cats and dogs (A and B), each with its owner (C).
+export const pets = copresheaf(CatCoSpan, {
+  A: { f: { felix: 'ann', garfield: 'jon' } },
+  B: { g: { fido: 'bob', odie: 'jon' } },
+  C: ['ann', 'bob', 'jon'],
+})
+
+preview.append(view.col(view.title('pets and their owners'), view.table(pets)))
+
+// Into a product: the morphism induced by f and g. A goes to C, B to A × B,
+// and the arrow to the pairing ⟨f, g⟩ : C → A × B, a term for each factor,
+// each read off C's variable, named C, then along a path: from C along f,
+// and from C along g. (\`query.pair({ left: ['f'], right: ['g'] })\` is the
+// same, with C left out.)
+export const queryIntoMul = query(CatArrow, CatSpan, {
+  Object: { A: 'C', B: query.mul('A', 'B') },
+  Arrow: { A: { f: { left: ['C', 'f'], right: ['C', 'g'] } } },
+})
+
+preview.append(view.col(view.title('morphism induced by f and g, into a product'), view.graph(queryIntoMul)))
+
+// Evaluated: at A the people; at B every pair of a city and a language
+// (A × B, six pairs); and along f each person's pair ⟨city, language⟩.
+// The induced morphism need not be injective (ann and eve share theirs) or
+// surjective (nobody speaks italian in paris).
+export const profiles = query.evaluate(queryIntoMul, people)
+
+preview.append(view.col(view.title('every person, with their city and language: ⟨f, g⟩'), view.table(profiles)))
+
+// Out of a coproduct: the morphism induced by f and g. A goes to A + B, B
+// to C, and the arrow to the copairing [f, g] : A + B → C, a term for each
+// summand, each going along a path into C's variable, named C. (\`query.copair({
+// left: ['f'], right: ['g'] })\` is the same, with C left out.)
+export const queryOutOfAdd = query(CatArrow, CatCoSpan, {
+  Object: { A: query.add('A', 'B'), B: 'C' },
+  Arrow: { A: { f: { left: ['f', 'C'], right: ['g', 'C'] } } },
+})
+
+preview.append(view.col(view.title('morphism induced by f and g, out of a coproduct'), view.graph(queryOutOfAdd)))
+
+// Evaluated: at A all pets, cats and dogs side by side (A + B); at B the
+// owners; and along f each pet's owner, by f for a cat and by g for a dog.
+export const allPets = query.evaluate(queryOutOfAdd, pets)
+
+preview.append(view.col(view.title('every pet, with its owner: [f, g]'), view.table(allPets)))
+
+// Out of a product: C has a single variable, named C, and its term is read
+// off one factor, then along a path: π₁ then f (or π₂ then g). No term
+// combines a cat and a dog into one owner.
+export const queryOutOfMul = query(CatArrow, CatCoSpan, {
+  Object: { A: query.mul('A', 'B'), B: 'C' },
+  Arrow: { A: { f: ['left', 'f'] } },
+})
+
+preview.append(view.col(view.title('project left, out of a product'), view.graph(queryOutOfMul)))
+
+// Evaluated: at A every pair of a cat and a dog, and along f the cat's
+// owner, whichever the dog: (felix,fido) and (felix,odie) both go to ann.
+export const catsAndDogs = query.evaluate(queryOutOfMul, pets)
+
+preview.append(view.col(view.title('every cat and dog, with the cat’s owner: π₁ then f'), view.table(catsAndDogs)))
+
+// Into a coproduct: C has a single variable, named C, and its term goes
+// along a path into one summand: f then ι₁ (or g then ι₂). This needs
+// arrows out of C, so it is on the span; on the cospan, C has none.
+export const queryIntoAdd = query(CatArrow, CatSpan, {
+  Object: { A: 'C', B: query.add('A', 'B') },
+  Arrow: { A: { f: ['f', 'left'] } },
+})
+
+preview.append(view.col(view.title('inject left, into a coproduct'), view.graph(queryIntoAdd)))
+
+// Evaluated: at B the cities and the languages side by side, and along f
+// each person to their city: everyone lands in the cities, none in the
+// languages.
+export const cities = query.evaluate(queryIntoAdd, people)
+
+preview.append(view.col(view.title('every person, with their city: f then ι₁'), view.table(cities)))
 `,"../../examples/src/complexes/01-globes.ts":`import { type Category, type Copresheaf, copresheaf } from '@cod-ts/categories'
 import { CatGlobe, CatReflexiveGlobe } from '@cod-ts/complexes'
 import { type Names, type View, view } from '@cod-ts/views'
@@ -5164,7 +5293,7 @@ export { type Copresheaf, type CopresheafSpec, type CopresheafInput, type Copres
 export { type ArrowProvenance, type ArrowRef, type CategoryProvenance, type CopresheafProvenance, type EquationProvenance, type EquationRef, type ObjectProvenance, type ObjectRef, type PartProvenance, type PartRef, type QueryTerm, } from './provenance';
 export { functorMapAssume, functorMapCheck, type FunctorMapComposeWith, functorMapCompose, functorMapPostcompose, functorMapPrecompose, type FunctorMap, type FunctorMapInput, type FunctorMapSpec, functorMapIdentity, type RawFunctorMap, rawFunctorMap, } from './functor-maps';
 export { type ColimitMap, type Diagram, type DiagramArrow, diagramColimitMap, diagramLimitMap, type DiagramMap, type DiagramMapInput, type DiagramMapSpec, diagramMapCompose, diagramMapEquals, diagramMapIdentity, type Diagrams, type DiagramShape, diagramAdd, type DiagramCoproduct, diagramCoproduct, diagramMul, diagramOne, diagramProduct, type DiagramSum, diagramSum, diagramUnit, diagramZero, type LimitMap, type ShapeMap, type Variance, } from './diagrams';
-export { type ColimitTerm, type FactorVariables, type LimitTerm, type Query, type QueryArrowInput, queryColimit, queryCoproduct, queryEvaluate, queryEvaluateMap, type QueryFactors, queryLimit, queryObjectDiagram, type QueryObject, type QueryInput, type QueryObjectInput, type QuerySpec, queryAdd, queryMul, queryOne, queryProduct, querySum, queryZero, } from './queries';
+export { type ColimitTerm, type FactorVariables, type LimitTerm, type Query, type QueryArrowInput, queryColimit, queryCoproduct, queryEvaluate, queryEvaluateMap, type QueryFactors, queryLimit, queryObjectDiagram, type QueryObject, type QueryInput, type QueryObjectInput, type QuerySpec, queryAdd, queryMul, queryCopair, queryOne, queryPair, type QueryPairing, queryProduct, querySum, queryZero, } from './queries';
 export { queryAndThen, queryComparison, queryFromFunctor, queryIdentity } from './query-composition';
 export { type QueryCompletion, queryCompletion } from './query-completions';
 export { type CriticalPair, pathCriticalPair, pathEquals, pathNormalize } from './paths';
@@ -5217,7 +5346,7 @@ interface MemoNode<T> {
  */
 export declare function memoize<T>(cache: Memo<T>, names: readonly string[], objects: readonly object[], make: () => T): T;
 export {};
-`,pe="import { category as categoryConstructor } from './categories';\nimport { categoryAdd, categoryCoproduct, categoryZero } from './category-coproducts';\nimport { categoryExtend } from './category-extensions';\nimport { categoryOmit } from './category-omissions';\nimport { categoryOpposite, categoryQualifyArrows, categoryUnqualifyArrows } from './category-opposites';\nimport { categoryMul, categoryOne, categoryProduct } from './category-products';\nimport { categoryColimit } from './category-colimits';\nimport { categoryLimit } from './category-limits';\nimport { categoryPullback } from './category-pullbacks';\nimport { categoryPushout } from './category-pushouts';\nimport { functorAdd, functorCoproduct, functorZero } from './functor-coproducts';\nimport { functorMul, functorOne, functorProduct } from './functor-products';\nimport { copresheafAdd, copresheafCoproduct, copresheafZero } from './copresheaf-coproducts';\nimport { copresheafDay, copresheafDayUnit, copresheafTruncatedDay } from './copresheaf-day-convolutions';\nimport { copresheafIsomorphism, copresheafMapInverse, copresheafRename } from './copresheaf-isomorphisms';\nimport { copresheafLan, functorSigma } from './copresheaf-lans';\nimport { copresheafMapPivot, copresheafMapUnpivot, copresheafPivot, copresheafUnpivot } from './copresheaf-pivots';\nimport { copresheafRan, functorPi } from './copresheaf-rans';\nimport { copresheafColimit, copresheafLimit } from './copresheaf-limits';\nimport { copresheafMul, copresheafOne, copresheafProduct } from './copresheaf-products';\nimport { copresheafPullback } from './copresheaf-pullbacks';\nimport { copresheafPushout } from './copresheaf-pushouts';\nimport { copresheaf as copresheafConstructor, copresheafMap as copresheafMapConstructor, copresheafMapApplyPart, copresheafMapCompose, copresheafMapIdentity, copresheafParts, copresheafProvenance, functorDelta } from './copresheaves';\nimport { functorMap as functorMapConstructor, functorMapAssume, functorMapCheck, functorMapCompose, functorMapPostcompose, functorMapPrecompose, functorMapIdentity } from './functor-maps';\nimport { functor as functorConstructor, functorApplyPath, functorAssume, functorCheck, functorCompose, functorIdentity } from './functors';\nimport { pathEquals, pathNormalize } from './paths';\nimport { categoryPresentation, presentationCategory } from './presentations';\nimport { query as queryConstructor, queryColimit, queryCoproduct, queryEvaluate, queryEvaluateMap, queryAdd, queryLimit, queryObjectDiagram, queryMul, queryOne, queryProduct, queryZero } from './queries';\nimport { queryAndThen, queryComparison, queryFromFunctor, queryIdentity } from './query-composition';\nimport { queryCompletion } from './query-completions';\nimport { diagram as diagramConstructor, diagramColimitMap, diagramLimitMap, diagramMapCompose, diagramMapEquals, diagramMapIdentity, diagramAdd, diagramCoproduct, diagramMul, diagramOne, diagramUnit, diagramZero } from './diagrams';\n/**\n * `copresheafMap`, with `copresheafMap.identity`, `.applyPart` and `.compose`, and the\n * functor between categories of elements a map pivots to, `.pivot`, and\n * back, `.unpivot`; and its inverse, if it is an isomorphism, `.inverse`.\n */\nexport declare const copresheafMap: typeof copresheafMapConstructor & Readonly<{\n    identity: typeof copresheafMapIdentity;\n    applyPart: typeof copresheafMapApplyPart;\n    compose: typeof copresheafMapCompose;\n    pivot: typeof copresheafMapPivot;\n    unpivot: typeof copresheafMapUnpivot;\n    inverse: typeof copresheafMapInverse;\n}>;\n/**\n * `copresheaf`, with `copresheaf.parts` and `.provenance`, and the arithmetic of copresheaves\n * on one category: n-ary `.product` and `.coproduct` (also `.sum`), binary\n * `.mul` and `.add`, and `.one(C)` and `.zero(C)`; `.pullback` and `.pushout` of named legs;\n * `.limit` and `.colimit` of a copresheaf itself, as a diagram of sets; and\n * the Kan extensions along a functor, `.lan` (Σ) and `.ran` (Π); and Day\n * convolution on a monoidal category, `.day` and its unit `.dayUnit`, and\n * on a truncated one, `.truncatedDay`; and\n * its category of elements, `.pivot`, and back, `.unpivot`; an isomorphism\n * between two, if there is one, `.isomorphism`; and new part IDs, with the\n * isomorphism to them, `.rename`.\n */\nexport declare const copresheaf: typeof copresheafConstructor & Readonly<{\n    parts: typeof copresheafParts;\n    provenance: typeof copresheafProvenance;\n    product: typeof copresheafProduct;\n    coproduct: typeof copresheafCoproduct;\n    sum: typeof copresheafCoproduct;\n    mul: typeof copresheafMul;\n    add: typeof copresheafAdd;\n    one: typeof copresheafOne;\n    zero: typeof copresheafZero;\n    pullback: typeof copresheafPullback;\n    pushout: typeof copresheafPushout;\n    limit: typeof copresheafLimit;\n    colimit: typeof copresheafColimit;\n    lan: typeof copresheafLan;\n    ran: typeof copresheafRan;\n    day: typeof copresheafDay;\n    dayUnit: typeof copresheafDayUnit;\n    truncatedDay: typeof copresheafTruncatedDay;\n    pivot: typeof copresheafPivot;\n    unpivot: typeof copresheafUnpivot;\n    isomorphism: typeof copresheafIsomorphism;\n    rename: typeof copresheafRename;\n}>;\n/**\n * `functorMap`, with `functorMap.check`, `.assume`, `.identity`, `.compose`\n * and whiskering by a functor, `.precompose` and `.postcompose`. The raw\n * constructor stays separate, as `rawFunctorMap`.\n */\nexport declare const functorMap: typeof functorMapConstructor & Readonly<{\n    check: typeof functorMapCheck;\n    assume: typeof functorMapAssume;\n    identity: typeof functorMapIdentity;\n    compose: typeof functorMapCompose;\n    precompose: typeof functorMapPrecompose;\n    postcompose: typeof functorMapPostcompose;\n}>;\n/**\n * `functor`, with `functor.check`, `.assume`, `.identity`, `.compose`,\n * `.applyPath`; the data migrations along a functor, `.delta` (Δ), `.sigma`\n * (Σ) and `.pi` (Π); and the arithmetic of functors: n-ary `.product` and\n * `.coproduct` (also `.sum`), binary `.mul` and `.add`, and `.one()` and\n * `.zero()`. The constructors\n * `rawFunctor` and `functorMap` stay separate: they build other kinds of\n * values, not operations on functors.\n */\nexport declare const functor: typeof functorConstructor & Readonly<{\n    check: typeof functorCheck;\n    assume: typeof functorAssume;\n    identity: typeof functorIdentity;\n    compose: typeof functorCompose;\n    delta: typeof functorDelta;\n    sigma: typeof functorSigma;\n    pi: typeof functorPi;\n    applyPath: typeof functorApplyPath;\n    product: typeof functorProduct;\n    coproduct: typeof functorCoproduct;\n    sum: typeof functorCoproduct;\n    mul: typeof functorMul;\n    add: typeof functorAdd;\n    one: typeof functorOne;\n    zero: typeof functorZero;\n}>;\n/**\n * `category`, with `category.extend`, `.omit`, `.opposite`, `.qualifyArrows`,\n * `.unqualifyArrows`, `.presentation`, and the arithmetic\n * of categories: n-ary `.product` and `.coproduct` (also `.sum`) of named\n * categories, binary `.mul` and `.add`, and `.one()` and `.zero()`; `.pushout` and `.pullback` of named legs; and\n * `.limit` and `.colimit` of a diagram of categories. `equation` stays\n * a standalone function: it builds part of a specification, not an\n * operation on categories.\n */\nexport declare const category: typeof categoryConstructor & Readonly<{\n    extend: typeof categoryExtend;\n    omit: typeof categoryOmit;\n    opposite: typeof categoryOpposite;\n    qualifyArrows: typeof categoryQualifyArrows;\n    unqualifyArrows: typeof categoryUnqualifyArrows;\n    product: typeof categoryProduct;\n    coproduct: typeof categoryCoproduct;\n    sum: typeof categoryCoproduct;\n    mul: typeof categoryMul;\n    add: typeof categoryAdd;\n    one: typeof categoryOne;\n    zero: typeof categoryZero;\n    pullback: typeof categoryPullback;\n    pushout: typeof categoryPushout;\n    limit: typeof categoryLimit;\n    colimit: typeof categoryColimit;\n    presentation: typeof categoryPresentation;\n}>;\n/**\n * `diagram`, a diagram with its shape written inline, with `diagram.unit`;\n * the arithmetic of diagrams in one category: n-ary `.product` and\n * `.coproduct` (also `.sum`), binary `.mul` and `.add`, and `.one(C)` and\n * `.zero(C)`, where the product and the coproduct are the same diagrams\n * side by side (their product under limit maps, their coproduct under\n * colimit maps); and the maps between diagrams of either variance,\n * `.limitMap` and `.colimitMap`.\n */\nexport declare const diagram: typeof diagramConstructor & Readonly<{\n    unit: typeof diagramUnit;\n    product: typeof diagramCoproduct;\n    coproduct: typeof diagramCoproduct;\n    sum: typeof diagramCoproduct;\n    mul: typeof diagramMul;\n    add: typeof diagramAdd;\n    one: typeof diagramOne;\n    zero: typeof diagramZero;\n    limitMap: typeof diagramLimitMap;\n    colimitMap: typeof diagramColimitMap;\n}>;\n/**\n * Operations on maps between diagrams: `diagramMap.identity`, `.compose` and\n * `.equals`. Maps are built with `diagram.limitMap` and `diagram.colimitMap`.\n */\nexport declare const diagramMap: Readonly<{\n    identity: typeof diagramMapIdentity;\n    compose: typeof diagramMapCompose;\n    equals: typeof diagramMapEquals;\n}>;\n/**\n * `query`, a query from B to C specified like a functor, with its objects\n * `query.one()`, n-ary `.product`, binary `.mul` and `.limit` (for limit\n * queries) or `query.zero()`, n-ary `.coproduct` (also `.sum`), binary `.add`\n * and `.colimit` (for colimit queries), named as in the other arithmetics,\n * `.limit` and `.colimit` also of a diagram written out, and\n * `.objectDiagram`, the diagram an object stands for;\n * and its evaluation on copresheaves and their maps, `.evaluate` and\n * `.evaluateMap`. Queries\n * compose with `.andThen` (also data-last, for `pipe`), with `.identity`\n * and `.fromFunctor` among them; `.comparison` is the isomorphism between\n * evaluating a composite and evaluating its parts in turn. `.completion`\n * adds the limits (or colimits) a query asks for to its codomain, formally,\n * making the query a functor, as views draw it.\n */\nexport declare const query: typeof queryConstructor & Readonly<{\n    one: typeof queryOne;\n    product: typeof queryProduct;\n    mul: typeof queryMul;\n    limit: typeof queryLimit;\n    zero: typeof queryZero;\n    coproduct: typeof queryCoproduct;\n    sum: typeof queryCoproduct;\n    add: typeof queryAdd;\n    colimit: typeof queryColimit;\n    objectDiagram: typeof queryObjectDiagram;\n    evaluate: typeof queryEvaluate;\n    evaluateMap: typeof queryEvaluateMap;\n    andThen: typeof queryAndThen;\n    identity: typeof queryIdentity;\n    fromFunctor: typeof queryFromFunctor;\n    comparison: typeof queryComparison;\n    completion: typeof queryCompletion;\n}>;\n/** Operations on paths: `path.normalize` and `path.equals`. */\nexport declare const path: Readonly<{\n    normalize: typeof pathNormalize;\n    equals: typeof pathEquals;\n}>;\n/** Operations on presentations: `presentation.category` decodes one. */\nexport declare const presentation: Readonly<{\n    category: typeof presentationCategory;\n}>;\n",me=`import type { Category, Path } from './categories';
+`,pe="import { category as categoryConstructor } from './categories';\nimport { categoryAdd, categoryCoproduct, categoryZero } from './category-coproducts';\nimport { categoryExtend } from './category-extensions';\nimport { categoryOmit } from './category-omissions';\nimport { categoryOpposite, categoryQualifyArrows, categoryUnqualifyArrows } from './category-opposites';\nimport { categoryMul, categoryOne, categoryProduct } from './category-products';\nimport { categoryColimit } from './category-colimits';\nimport { categoryLimit } from './category-limits';\nimport { categoryPullback } from './category-pullbacks';\nimport { categoryPushout } from './category-pushouts';\nimport { functorAdd, functorCoproduct, functorZero } from './functor-coproducts';\nimport { functorMul, functorOne, functorProduct } from './functor-products';\nimport { copresheafAdd, copresheafCoproduct, copresheafZero } from './copresheaf-coproducts';\nimport { copresheafDay, copresheafDayUnit, copresheafTruncatedDay } from './copresheaf-day-convolutions';\nimport { copresheafIsomorphism, copresheafMapInverse, copresheafRename } from './copresheaf-isomorphisms';\nimport { copresheafLan, functorSigma } from './copresheaf-lans';\nimport { copresheafMapPivot, copresheafMapUnpivot, copresheafPivot, copresheafUnpivot } from './copresheaf-pivots';\nimport { copresheafRan, functorPi } from './copresheaf-rans';\nimport { copresheafColimit, copresheafLimit } from './copresheaf-limits';\nimport { copresheafMul, copresheafOne, copresheafProduct } from './copresheaf-products';\nimport { copresheafPullback } from './copresheaf-pullbacks';\nimport { copresheafPushout } from './copresheaf-pushouts';\nimport { copresheaf as copresheafConstructor, copresheafMap as copresheafMapConstructor, copresheafMapApplyPart, copresheafMapCompose, copresheafMapIdentity, copresheafParts, copresheafProvenance, functorDelta } from './copresheaves';\nimport { functorMap as functorMapConstructor, functorMapAssume, functorMapCheck, functorMapCompose, functorMapPostcompose, functorMapPrecompose, functorMapIdentity } from './functor-maps';\nimport { functor as functorConstructor, functorApplyPath, functorAssume, functorCheck, functorCompose, functorIdentity } from './functors';\nimport { pathEquals, pathNormalize } from './paths';\nimport { categoryPresentation, presentationCategory } from './presentations';\nimport { query as queryConstructor, queryColimit, queryCopair, queryCoproduct, queryEvaluate, queryEvaluateMap, queryAdd, queryLimit, queryPair, queryObjectDiagram, queryMul, queryOne, queryProduct, queryZero } from './queries';\nimport { queryAndThen, queryComparison, queryFromFunctor, queryIdentity } from './query-composition';\nimport { queryCompletion } from './query-completions';\nimport { diagram as diagramConstructor, diagramColimitMap, diagramLimitMap, diagramMapCompose, diagramMapEquals, diagramMapIdentity, diagramAdd, diagramCoproduct, diagramMul, diagramOne, diagramUnit, diagramZero } from './diagrams';\n/**\n * `copresheafMap`, with `copresheafMap.identity`, `.applyPart` and `.compose`, and the\n * functor between categories of elements a map pivots to, `.pivot`, and\n * back, `.unpivot`; and its inverse, if it is an isomorphism, `.inverse`.\n */\nexport declare const copresheafMap: typeof copresheafMapConstructor & Readonly<{\n    identity: typeof copresheafMapIdentity;\n    applyPart: typeof copresheafMapApplyPart;\n    compose: typeof copresheafMapCompose;\n    pivot: typeof copresheafMapPivot;\n    unpivot: typeof copresheafMapUnpivot;\n    inverse: typeof copresheafMapInverse;\n}>;\n/**\n * `copresheaf`, with `copresheaf.parts` and `.provenance`, and the arithmetic of copresheaves\n * on one category: n-ary `.product` and `.coproduct` (also `.sum`), binary\n * `.mul` and `.add`, and `.one(C)` and `.zero(C)`; `.pullback` and `.pushout` of named legs;\n * `.limit` and `.colimit` of a copresheaf itself, as a diagram of sets; and\n * the Kan extensions along a functor, `.lan` (Σ) and `.ran` (Π); and Day\n * convolution on a monoidal category, `.day` and its unit `.dayUnit`, and\n * on a truncated one, `.truncatedDay`; and\n * its category of elements, `.pivot`, and back, `.unpivot`; an isomorphism\n * between two, if there is one, `.isomorphism`; and new part IDs, with the\n * isomorphism to them, `.rename`.\n */\nexport declare const copresheaf: typeof copresheafConstructor & Readonly<{\n    parts: typeof copresheafParts;\n    provenance: typeof copresheafProvenance;\n    product: typeof copresheafProduct;\n    coproduct: typeof copresheafCoproduct;\n    sum: typeof copresheafCoproduct;\n    mul: typeof copresheafMul;\n    add: typeof copresheafAdd;\n    one: typeof copresheafOne;\n    zero: typeof copresheafZero;\n    pullback: typeof copresheafPullback;\n    pushout: typeof copresheafPushout;\n    limit: typeof copresheafLimit;\n    colimit: typeof copresheafColimit;\n    lan: typeof copresheafLan;\n    ran: typeof copresheafRan;\n    day: typeof copresheafDay;\n    dayUnit: typeof copresheafDayUnit;\n    truncatedDay: typeof copresheafTruncatedDay;\n    pivot: typeof copresheafPivot;\n    unpivot: typeof copresheafUnpivot;\n    isomorphism: typeof copresheafIsomorphism;\n    rename: typeof copresheafRename;\n}>;\n/**\n * `functorMap`, with `functorMap.check`, `.assume`, `.identity`, `.compose`\n * and whiskering by a functor, `.precompose` and `.postcompose`. The raw\n * constructor stays separate, as `rawFunctorMap`.\n */\nexport declare const functorMap: typeof functorMapConstructor & Readonly<{\n    check: typeof functorMapCheck;\n    assume: typeof functorMapAssume;\n    identity: typeof functorMapIdentity;\n    compose: typeof functorMapCompose;\n    precompose: typeof functorMapPrecompose;\n    postcompose: typeof functorMapPostcompose;\n}>;\n/**\n * `functor`, with `functor.check`, `.assume`, `.identity`, `.compose`,\n * `.applyPath`; the data migrations along a functor, `.delta` (Δ), `.sigma`\n * (Σ) and `.pi` (Π); and the arithmetic of functors: n-ary `.product` and\n * `.coproduct` (also `.sum`), binary `.mul` and `.add`, and `.one()` and\n * `.zero()`. The constructors\n * `rawFunctor` and `functorMap` stay separate: they build other kinds of\n * values, not operations on functors.\n */\nexport declare const functor: typeof functorConstructor & Readonly<{\n    check: typeof functorCheck;\n    assume: typeof functorAssume;\n    identity: typeof functorIdentity;\n    compose: typeof functorCompose;\n    delta: typeof functorDelta;\n    sigma: typeof functorSigma;\n    pi: typeof functorPi;\n    applyPath: typeof functorApplyPath;\n    product: typeof functorProduct;\n    coproduct: typeof functorCoproduct;\n    sum: typeof functorCoproduct;\n    mul: typeof functorMul;\n    add: typeof functorAdd;\n    one: typeof functorOne;\n    zero: typeof functorZero;\n}>;\n/**\n * `category`, with `category.extend`, `.omit`, `.opposite`, `.qualifyArrows`,\n * `.unqualifyArrows`, `.presentation`, and the arithmetic\n * of categories: n-ary `.product` and `.coproduct` (also `.sum`) of named\n * categories, binary `.mul` and `.add`, and `.one()` and `.zero()`; `.pushout` and `.pullback` of named legs; and\n * `.limit` and `.colimit` of a diagram of categories. `equation` stays\n * a standalone function: it builds part of a specification, not an\n * operation on categories.\n */\nexport declare const category: typeof categoryConstructor & Readonly<{\n    extend: typeof categoryExtend;\n    omit: typeof categoryOmit;\n    opposite: typeof categoryOpposite;\n    qualifyArrows: typeof categoryQualifyArrows;\n    unqualifyArrows: typeof categoryUnqualifyArrows;\n    product: typeof categoryProduct;\n    coproduct: typeof categoryCoproduct;\n    sum: typeof categoryCoproduct;\n    mul: typeof categoryMul;\n    add: typeof categoryAdd;\n    one: typeof categoryOne;\n    zero: typeof categoryZero;\n    pullback: typeof categoryPullback;\n    pushout: typeof categoryPushout;\n    limit: typeof categoryLimit;\n    colimit: typeof categoryColimit;\n    presentation: typeof categoryPresentation;\n}>;\n/**\n * `diagram`, a diagram with its shape written inline, with `diagram.unit`;\n * the arithmetic of diagrams in one category: n-ary `.product` and\n * `.coproduct` (also `.sum`), binary `.mul` and `.add`, and `.one(C)` and\n * `.zero(C)`, where the product and the coproduct are the same diagrams\n * side by side (their product under limit maps, their coproduct under\n * colimit maps); and the maps between diagrams of either variance,\n * `.limitMap` and `.colimitMap`.\n */\nexport declare const diagram: typeof diagramConstructor & Readonly<{\n    unit: typeof diagramUnit;\n    product: typeof diagramCoproduct;\n    coproduct: typeof diagramCoproduct;\n    sum: typeof diagramCoproduct;\n    mul: typeof diagramMul;\n    add: typeof diagramAdd;\n    one: typeof diagramOne;\n    zero: typeof diagramZero;\n    limitMap: typeof diagramLimitMap;\n    colimitMap: typeof diagramColimitMap;\n}>;\n/**\n * Operations on maps between diagrams: `diagramMap.identity`, `.compose` and\n * `.equals`. Maps are built with `diagram.limitMap` and `diagram.colimitMap`.\n */\nexport declare const diagramMap: Readonly<{\n    identity: typeof diagramMapIdentity;\n    compose: typeof diagramMapCompose;\n    equals: typeof diagramMapEquals;\n}>;\n/**\n * `query`, a query from B to C specified like a functor, with its objects\n * `query.one()`, n-ary `.product`, binary `.mul` and `.limit` (for limit\n * queries) or `query.zero()`, n-ary `.coproduct` (also `.sum`), binary `.add`\n * and `.colimit` (for colimit queries), named as in the other arithmetics,\n * `.limit` and `.colimit` also of a diagram written out, and\n * `.objectDiagram`, the diagram an object stands for; `.pair` and `.copair`,\n * the images of arrows into a limit or out of a colimit with the single\n * variable on the other side left out; and its evaluation on copresheaves\n * and their maps, `.evaluate` and\n * `.evaluateMap`. Queries\n * compose with `.andThen` (also data-last, for `pipe`), with `.identity`\n * and `.fromFunctor` among them; `.comparison` is the isomorphism between\n * evaluating a composite and evaluating its parts in turn. `.completion`\n * adds the limits (or colimits) a query asks for to its codomain, formally,\n * making the query a functor, as views draw it.\n */\nexport declare const query: typeof queryConstructor & Readonly<{\n    one: typeof queryOne;\n    product: typeof queryProduct;\n    mul: typeof queryMul;\n    limit: typeof queryLimit;\n    zero: typeof queryZero;\n    coproduct: typeof queryCoproduct;\n    sum: typeof queryCoproduct;\n    add: typeof queryAdd;\n    colimit: typeof queryColimit;\n    objectDiagram: typeof queryObjectDiagram;\n    pair: typeof queryPair;\n    copair: typeof queryCopair;\n    evaluate: typeof queryEvaluate;\n    evaluateMap: typeof queryEvaluateMap;\n    andThen: typeof queryAndThen;\n    identity: typeof queryIdentity;\n    fromFunctor: typeof queryFromFunctor;\n    comparison: typeof queryComparison;\n    completion: typeof queryCompletion;\n}>;\n/** Operations on paths: `path.normalize` and `path.equals`. */\nexport declare const path: Readonly<{\n    normalize: typeof pathNormalize;\n    equals: typeof pathEquals;\n}>;\n/** Operations on presentations: `presentation.category` decodes one. */\nexport declare const presentation: Readonly<{\n    category: typeof presentationCategory;\n}>;\n",me=`import type { Category, Path } from './categories';
 /** A rewrite rule \`from → to\`, applicable where \`from\` starts at \`source\`. */
 export interface Rule {
     readonly source: string;
@@ -5767,7 +5896,7 @@ export declare function categoryProvenanceTable(): {
     equation(source: string, equation: string, provenance: EquationProvenance): void;
     freeze(): CategoryProvenance;
 };
-`,ve=`import type { ArrowName, Category, Equation, ObjectName } from './categories';
+`,ve=`import type { ArrowName, Category, Equation, ObjectName, Path } from './categories';
 import { type CopresheafColimit, type CopresheafLimit } from './copresheaf-limits';
 import { type KanExtensionOptions } from './copresheaf-lans';
 import { type Copresheaf, type CopresheafMap } from './copresheaves';
@@ -5890,25 +6019,53 @@ export interface Query<B extends Category = Category, C extends Category = Categ
 }
 /** What a query sends an object to: an object of C, a query object, or a diagram. */
 export type QueryObjectInput<C extends Category> = ObjectName<C> | QueryObject | Diagram<Category, C>;
-type VariablesOf<S, K> = S extends string ? K : S extends QueryObject<infer Vs> ? Vs : S extends RawFunctor<infer J, Category> ? ObjectName<J> : string;
+type VariablesOf<S> = S extends string ? S : S extends QueryObject<infer Vs> ? Vs : S extends RawFunctor<infer J, Category> ? ObjectName<J> : string;
 type VarianceOf<O> = [Extract<O[keyof O], QueryObject<string, 'colimit'>>] extends [never] ? 'limit' : 'colimit';
 type ArrowTarget<B extends Category, S extends string, A extends string> = S extends keyof B['specification']['Arrow'] ? A extends keyof B['specification']['Arrow'][S] ? B['specification']['Arrow'][S][A] : never : never;
 /** A limit term: a variable of the source, then a path. */
 export type LimitTerm<Vs extends string = string> = readonly [Vs, ...string[]];
 /** A colimit term: a path, then a variable of the target. */
 export type ColimitTerm<Vs extends string = string> = readonly [...string[], Vs];
+/**
+ * Terms with their single variable left out: \`query.pair\` for a limit
+ * query, paths keyed by the target's variables, each starting at the
+ * source's one variable; \`query.copair\` for a colimit query, paths keyed by
+ * the source's variables, each ending at the target's one variable.
+ */
+export interface QueryPairing<V extends Variance = Variance, K extends string = string> {
+    readonly variance: V;
+    readonly paths: {
+        readonly [Key in K]: Path;
+    };
+}
+/**
+ * The pairing of paths into a product (or any limit-query object): one path
+ * for each variable of the target, each read off the source's single
+ * variable, which is left out. From a bare object C, \`query.pair({ left:
+ * ['f'], right: ['g'] })\` is the record of terms \`{ left: ['C', 'f'],
+ * right: ['C', 'g'] }\`: the morphism induced by f and g.
+ */
+export declare function queryPair<const P extends Readonly<Record<string, Path>>>(paths: P): QueryPairing<'limit', Extract<keyof P, string>>;
+/**
+ * The copairing of paths out of a coproduct (or any colimit-query object):
+ * one path for each variable of the source, each going into the target's
+ * single variable, which is left out. Into a bare object C,
+ * \`query.copair({ left: ['f'], right: ['g'] })\` is the record of terms
+ * \`{ left: ['f', 'C'], right: ['g', 'C'] }\`: the morphism induced by f and g.
+ */
+export declare function queryCopair<const P extends Readonly<Record<string, Path>>>(paths: P): QueryPairing<'colimit', Extract<keyof P, string>>;
 type ArrowImage<V extends Variance, Src extends string, Tgt extends string> = DiagramMap<V> | (V extends 'limit' ? LimitTerm<Src> | {
     readonly [K in Tgt]: LimitTerm<Src>;
-} : ColimitTerm<Tgt> | {
+} | QueryPairing<'limit', Tgt> : ColimitTerm<Tgt> | {
     readonly [J in Src]: ColimitTerm<Tgt>;
-});
+} | QueryPairing<'colimit', Src>);
 type Sources<B extends Category> = {
     [O in ObjectName<B>]: ArrowName<B, O> extends never ? never : O;
 }[ObjectName<B>];
 /** The images of B's arrows, as terms (or diagram maps), grouped by source. */
 export type QueryArrowInput<B extends Category, O, V extends Variance> = {
     readonly [S in Sources<B>]: {
-        readonly [A in ArrowName<B, S>]: ArrowImage<V, VariablesOf<O[S & keyof O], S>, VariablesOf<O[ArrowTarget<B, S, A> & keyof O], ArrowTarget<B, S, A>>>;
+        readonly [A in ArrowName<B, S>]: ArrowImage<V, VariablesOf<O[S & keyof O]>, VariablesOf<O[ArrowTarget<B, S, A> & keyof O]>>;
     };
 };
 /**
@@ -5930,7 +6087,11 @@ export type QueryInput<B extends Category, C extends Category, O extends {
  * (\`one\`, \`product\`, \`limit\` versus \`zero\`, \`coproduct\`, \`colimit\`); a query
  * of bare objects only is a limit query.
  *
- * A bare object \`X\` at b is the one-variable object, the variable named b.
+ * A bare object \`X\` is the one-variable object, the variable named X, as
+ * for \`diagramUnit\`: a term \`[X, ...path]\` reads as a path from X. Objects
+ * of B going to the same \`X\` do not clash: a term names only variables of
+ * its map's two ends.
+ *
  * An arrow f : b → b′ goes to a map from the object at b to the one at b′:
  *
  * - for a limit query, each variable of the target object is read off a
@@ -5939,7 +6100,11 @@ export type QueryInput<B extends Category, C extends Category, O extends {
  *   path into a variable of the target: a term \`[...path, v]\`.
  *
  * Give a record of terms, one per variable, or just a term when there is
- * only one variable to give. A variable may be left out when an arrow of the
+ * only one variable to give. A record of terms is the pairing of its terms
+ * into a limit-query object, or their copairing out of a colimit-query
+ * object: the morphism they induce. Where the other side has a single
+ * variable, \`query.pair\` and \`query.copair\` give the same with that
+ * variable left out (see example 28). A variable may be left out when an arrow of the
  * shape determines it from another (such as the variable an equation adds
  * where two paths meet). Where shapes have arrows, their images are
  * inferred. The query must preserve B's equations, which is checked.
@@ -6033,7 +6198,7 @@ export declare function queryAndThen<B extends Category, C extends Category, D e
 export declare function queryAndThen<B extends Category, C extends Category>(second: Query<B, C>): <D extends Category>(first: Query<C, D>) => Query<B, D>;
 /**
  * The query that evaluates like Δ along F : B → C: each object b goes to its
- * image F(b), a single variable named b, and each arrow to the path it maps
+ * image F(b), a single variable named F(b), and each arrow to the path it maps
  * to. It reads the same for limits and colimits.
  */
 export declare function queryFromFunctor<B extends Category, C extends Category>(F: Functor<B, C>): Query<B, C>;
@@ -6541,7 +6706,10 @@ export declare function ensureStyles(document: Document): void;
 export type Header = string | readonly Child[];
 /** A column header "name : Type": the name in bold, the type subtle. */
 export declare function typed(document: Document, name: string, type: string): readonly Child[];
-/** A table caption: a bold title, then its number of rows, subtle: "Object (3)". */
+/**
+ * A table caption: a bold title, then its number of rows, subtle:
+ * "Object (3)". The count stays on the line of the title's last word.
+ */
 export declare function caption(document: Document, title: string, n: number): readonly Child[];
 export declare function table(document: Document, captionParts: readonly Child[], headers: readonly Header[], rows: readonly (readonly string[])[]): HTMLElement;
 `,Ce="import { type Category, type Copresheaf, type CopresheafMap, type Query, type RawFunctor } from '@cod-ts/categories';\nimport { type GraphViewOptions } from '@cod-ts/views/graphs';\nimport type { View } from '../view';\nimport { type Names } from './names';\n/**\n * Options of the graph views of categories, functors and copresheaves:\n * those of `graphView` from `@cod-ts/views/graphs`, and `names`.\n */\nexport interface CategoryGraphViewOptions extends GraphViewOptions {\n    /**\n     * The names shown for objects, arrows and parts on their nodes and links\n     * (unless `nodes.label` or `links.label` sets the text), from their IDs\n     * and provenance (see `Names`). Each defaults to the ID; data attributes\n     * keep the IDs.\n     */\n    readonly names?: Names;\n}\n/** The values `graphView` can show. */\nexport type GraphViewable = Category | RawFunctor | Copresheaf | CopresheafMap | Query;\n/**\n * A category drawn as a graph: its objects as nodes, and its generating\n * arrows as links between them. Equations are not drawn; `tableView` shows\n * them. Options are those of `graphView` from `@cod-ts/views/graphs`; links\n * are labelled with their arrows' names by default.\n *\n * Nodes and links have data attributes saying what they draw, for `style`\n * to select: a node `data-object`, its object; a link `data-object` and\n * `data-arrow`, its source and its name. In a category of elements\n * (`copresheaf.pivot`), as its provenance records them, a node has\n * `data-object` and `data-part`, the object of the copresheaf's category and\n * the part, and a link also `data-arrow`, the arrow it lies over.\n */\nexport declare function categoryGraphView(C: Category, options?: CategoryGraphViewOptions): View;\n/**\n * A functor F : D → C drawn as its collage: D's objects and generating\n * arrows on one side, C's on the other, and a dotted arrow from each object\n * d of D to F(d). Where F takes an arrow of D to a path of C that is not a\n * single generating arrow (an identity or a composite), C gets a link\n * for that path, labelled with it. Objects of C that are not F(d) for any d,\n * and generating arrows that are not F(f) for any f, are drawn faintly.\n *\n * While a part of the domain is hovered, what it maps to is highlighted\n * too: for an object, its image and the dotted arrow there; for an arrow,\n * its image, a generating arrow or the link for a path. For a path, the\n * generating arrows it runs along, and their objects, are highlighted as\n * context, in a quieter colour (`--node-context`, `--link-context`) and in\n * full even where faint, also while the link for the path is hovered.\n *\n * Each side is laid out on its own, and C is put next to D along D's\n * shorter extent: below a D laid out wider than tall, right of one taller\n * than wide. That is across the way the layouts run, for categories whose\n * arrows set their shape; for others, such as discrete categories laid out\n * in a row, it keeps the two sides apart. When D is as wide as tall, C goes\n * below it when the layouts run left to right (dagre's default), and right\n * of it when they run top to bottom. Options are those of\n * `graphView` from\n * `@cod-ts/views/graphs`; parts have the classes `cod-domain` or\n * `cod-codomain`, and `cod-map` (the mapping of objects), `cod-path` (the\n * links for paths) and `cod-faint` (outside the image), for `style` to select.\n * Nodes and links have data attributes saying what they draw, as in\n * `categoryGraphView` (for categories of elements too), and `data-side`,\n * `domain` or `codomain`; a link for a path, the `data-object` (and\n * `data-part`) it starts at and `data-path`, its steps joined by `.`; and a\n * dotted arrow, `data-side` `map` and the `data-object` (and `data-part`) of\n * the object of D it starts at. The linked highlighting selects by them.\n * Lines are solid for the two categories' own arrows, dashed for the links\n * for paths, which the collage adds, and dotted for the mapping of objects\n * across the two.\n */\nexport declare function functorGraphView(F: RawFunctor, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf drawn as a graph, its category of elements: the category\n * view of `copresheaf.pivot(X).category`, with a node for every part, and a link for\n * every arrow from every part, from the part to its image (`a : o → o'`\n * takes part p of o to part a(p) of o'). Nodes are\n * labelled with their parts' names and links with their arrows' names. A\n * node has `data-object` and `data-part`, its object and part, and a link\n * `data-object`, `data-arrow` and `data-part`, its arrow's source, its\n * arrow and the part it starts from, so that `style` can select them, e.g.\n * `'.cod-link[data-object=\"Employee\"][data-arrow=\"worksIn\"]'`. Options are\n * those of `graphView` from `@cod-ts/views/graphs`, and `names` (see\n * `CategoryGraphViewOptions`).\n *\n * Copresheaves on the graph categories of `@cod-ts/graphs` are graphs\n * already, and `graphView` from `@cod-ts/views/graphs` draws them as such,\n * a node for every vertex and a link for every edge.\n */\nexport declare function copresheafGraphView(X: Copresheaf, options?: CategoryGraphViewOptions): View;\n/**\n * A copresheaf map α : X ⇒ Y drawn as the collage of the functor between\n * categories of elements it pivots to (`copresheafMap.pivot(α)`, see\n * `functorGraphView`): X's category of elements on one side, Y's on the\n * other, and a dotted arrow from each part of X to its image. Nodes are\n * named by their parts and links by their arrows, and have the data\n * attributes of a copresheaf's graph view (see `copresheafGraphView`).\n * Options are those of `functorGraphView`, with `names` for the parts and\n * arrows of the copresheaves.\n */\nexport declare function copresheafMapGraphView(alpha: CopresheafMap, options?: CategoryGraphViewOptions): View;\n/**\n * A query Q : B → C drawn as a functor collage, of the query as a functor\n * into its codomain's completion (`query.completion`): B on one side, and\n * on the other C with the limits (or colimits) of the query's diagrams\n * added as apexes, with their legs. Each object of B goes to its apex (or\n * to its single object), and each arrow to the arrow between apexes its\n * diagram map induces (or to a path).\n *\n * Apexes are named `lim b` (or `colim b`), legs by their variables, and\n * induced arrows by the arrow of B and the terms of its map, `h: v = e.f`\n * (or `h: j ↦ f.k` for colimits). Unlike a functor's collage, what the\n * diagrams use is not faint: the legs, the objects they reach, and the\n * arrows along the diagrams' arrows and the maps' components. What the\n * completion adds is dashed, like a collage's paths: apexes' outlines, legs\n * and induced arrows.\n *\n * What B goes to is drawn in full; what the diagrams use (`cod-involved`)\n * and the rest of C are faint, as in a functor's collage. Hovering\n * highlights, as there, what a part of B goes to; and in a quieter colour\n * (`--node-context`, `--link-context`), and in full, what it is made of:\n * for an object of B, its apex's legs and their objects; for an arrow of\n * B, or the arrow it induces, the square of each of its terms (the leg of\n * the term's source variable, the component's arrows and objects in C,\n * and the leg of its target variable); and for a leg, the arrows whose\n * terms use its variable.\n *\n * Options are those of `functorGraphView`. Parts have the classes of a\n * functor's collage, and `cod-apex` (apexes), `cod-leg` (legs),\n * `cod-induced` (induced arrows) and `cod-involved` (what the diagrams\n * use), for `style` to select. `names`\n * gets the completion's objects and arrows with their provenance (see\n * `ObjectProvenance`'s `'apex'`, `ArrowProvenance`'s `'leg'` and `'induced'`).\n */\nexport declare function queryGraphView(Q: Query, options?: CategoryGraphViewOptions): View;\n/**\n * A value drawn as a graph: a category (see `categoryGraphView`, also\n * `graphView.category`); a functor, as its collage (see `functorGraphView`,\n * also `graphView.functor`); or any copresheaf, graphs included, as its\n * category of elements (see `copresheafGraphView`, also\n * `graphView.copresheaf`); a copresheaf map, as the collage of its pivot\n * (see `copresheafMapGraphView`, also `graphView.copresheafMap`); or a\n * query, as the collage of its completion (see `queryGraphView`, also\n * `graphView.query`). Each also takes `names`, the names shown (see\n * `CategoryGraphViewOptions`). `graphView` from `@cod-ts/views/graphs`\n * draws graphs as graphs.\n */\nexport declare const graphView: ((x: GraphViewable, options?: CategoryGraphViewOptions) => View) & {\n    category: typeof categoryGraphView;\n    functor: typeof functorGraphView;\n    copresheaf: typeof copresheafGraphView;\n    copresheafMap: typeof copresheafMapGraphView;\n    query: typeof queryGraphView;\n};\n",we=`export { categoryView } from './category-view';
@@ -7058,7 +7226,7 @@ function P(e, t, n, r) {
 	let i = e.specification.Arrow;
 	return a(i, t, n) === a(i, t, r) && j(N(e, t, n), N(e, t, r)) === 0;
 }
-function F(e) {
+function ee(e) {
 	let t = e.specification.Arrow, n = M(e), r = (e, n, r) => a(t, e, n.slice(0, r)), i = (t, n, r, i) => j(N(e, t, r), N(e, t, i)) === 0 ? void 0 : {
 		source: t,
 		path: n,
@@ -7084,15 +7252,15 @@ function F(e) {
 		}
 	}
 }
-var ee = (e) => JSON.stringify(e), te = (e) => \`[\${e.join(", ")}]\`;
+var F = (e) => JSON.stringify(e), te = (e) => \`[\${e.join(", ")}]\`;
 function I(t, n) {
-	let r = F(t);
+	let r = ee(t);
 	e(r === void 0, \`Enumerating the arrows of a category needs confluent equations, but these are not: \${te(r?.left ?? [])} and \${te(r?.right ?? [])} from \${r?.source} are both rewrites of \${te(r?.path ?? [])} with different normal forms\`);
 	let i = /* @__PURE__ */ new Map();
 	return (r) => {
 		let a = i.get(r);
 		if (a) return a;
-		let s = /* @__PURE__ */ new Set([ee([])]), c = [{
+		let s = /* @__PURE__ */ new Set([F([])]), c = [{
 			path: [],
 			target: r
 		}];
@@ -7100,7 +7268,7 @@ function I(t, n) {
 			let { path: a, target: l } = c[i];
 			for (let [i, u] of Object.entries(o(t, l))) {
 				let o = N(t, r, [...a, i]);
-				s.has(ee(o)) || (s.add(ee(o)), e(c.length < n, \`More than \${n} arrows out of \${r}: the category may be infinite (raise maxArrows if it is just large)\`), c.push({
+				s.has(F(o)) || (s.add(F(o)), e(c.length < n, \`More than \${n} arrows out of \${r}: the category may be infinite (raise maxArrows if it is just large)\`), c.push({
 					path: o,
 					target: u
 				}));
@@ -7604,7 +7772,7 @@ function Ae(t) {
 	i.forEach((t, n) => {
 		for (let [i, a] of Object.entries(t.specification.Arrow)) for (let [t, o] of Object.entries(a)) e(o.length <= 1, \`Pullbacks need legs that send each generating arrow to a generating arrow or an identity, but \${r[n]} sends \${i}.\${t} to \${X(o)}\`);
 	});
-	let d = F(a);
+	let d = ee(a);
 	e(d === void 0, \`Pullbacks need the codomain's equations to be confluent, but \${X(d?.left ?? [])} and \${X(d?.right ?? [])} from \${d?.source} are both rewrites of \${X(d?.path ?? [])} with different normal forms\`);
 	for (let t of M(a)) i.forEach((n, i) => {
 		e(!ke(n, t), \`Pullbacks need the legs' images to avoid the codomain's equations, but \${r[i]} sends a path onto \${X(t.from)} at \${t.source}, which equals \${X(t.to)}: arrows of the pullback could then agree only up to that equation, and not be reached step by step\`);
@@ -7784,7 +7952,7 @@ function Ne(t) {
 	for (let t of a) for (let [n, r] of Object.entries(t.functor.specification.Arrow)) for (let [i, a] of Object.entries(r)) e(a.length <= 1, \`Limits need functors that send each generating arrow to a generating arrow or an identity, but \${m(t)} sends \${n}.\${i} to \${Z(a)}\`);
 	r.forEach((t, n) => {
 		if (f[n].length === 0) return;
-		let r = F(i[n]);
+		let r = ee(i[n]);
 		e(r === void 0, \`Limits need the equations of every category a functor ends at to be confluent, but at \${t}, \${Z(r?.left ?? [])} and \${Z(r?.right ?? [])} from \${r?.source} are both rewrites of \${Z(r?.path ?? [])} with different normal forms\`);
 		for (let t of M(i[n])) for (let r of f[n]) e(!ke(r.functor, t), \`Limits need the functors' images to avoid their codomains' equations, but \${m(r)} sends a path onto \${Z(t.from)} at \${t.source}, which equals \${Z(t.to)}: arrows of the limit could then agree only up to that equation, and not be reached step by step\`);
 	});
@@ -7871,7 +8039,7 @@ function Ne(t) {
 			for (let e of D(c)) a[e]++;
 		}
 		return o;
-	}, P = je("Arrow"), ee = je("Equation"), te = r.map(() => je("Arrow")), I = ce(), R = /* @__PURE__ */ new Map();
+	}, P = je("Arrow"), F = je("Equation"), te = r.map(() => je("Arrow")), I = ce(), R = /* @__PURE__ */ new Map();
 	for (let e of C) {
 		let t = w(e);
 		I.object(t, {
@@ -7891,7 +8059,7 @@ function Ne(t) {
 			for (let s of n.slice(o + 1)) {
 				if (D(a).some((e) => s[e] !== void 0)) continue;
 				let n = a.map((e, t) => e ?? s[t]), o = T(e, n);
-				ee.add(t, o, h([T(e, a), T(E(e, a), s)], [T(e, s), T(E(e, s), a)])), I.equation(t, o, {
+				F.add(t, o, h([T(e, a), T(E(e, a), s)], [T(e, s), T(E(e, s), a)])), I.equation(t, o, {
 					kind: "interchange",
 					arrows: Object.fromEntries(D(n).map((t) => [r[t], K(i[t], e[t], n[t])]))
 				});
@@ -7947,7 +8115,7 @@ function Ne(t) {
 				}
 				for (let { partners: e, left: a, right: s } of g.values()) {
 					let l = u(y.map((n) => n === o ? c : e[n].length === 0 ? t[n] : u(e[n])));
-					ee.add(n, l, h(a, s)), I.equation(n, l, {
+					F.add(n, l, h(a, s)), I.equation(n, l, {
 						kind: "limit",
 						key: r[o],
 						equation: q(i[o], t[o], c),
@@ -7960,7 +8128,7 @@ function Ne(t) {
 	let z = J(_({
 		Object: C.map(w),
 		Arrow: P.result,
-		Equation: ee.result
+		Equation: F.result
 	}), I.freeze()), ne = Object.fromEntries(r.map((e, t) => [e, L(z, i[t], {
 		Object: Object.fromEntries(C.map((e) => [w(e), e[t]])),
 		Arrow: te[t].result
@@ -8069,16 +8237,16 @@ function Ie(t) {
 	let M = (e) => {
 		let t = S[j.find(e)];
 		return d(r[t.j], t.name);
-	}, N = (e) => e.map(M), F = ce(), ee = {}, te = {};
+	}, N = (e) => e.map(M), ee = ce(), F = {}, te = {};
 	S.forEach(({ j: t, s: a, target: o }, s) => {
-		let c = A(x.get(d(r[t], a))), l = M(s), u = ee[c] ??= {}, f = te[c] ??= {};
+		let c = A(x.get(d(r[t], a))), l = M(s), u = F[c] ??= {}, f = te[c] ??= {};
 		if (n(u, l)) {
 			e(f[l] === j.find(s), \`Arrow name \${l} occurs twice at \${c} in the colimit: the diagram identifies the sources of two arrows of one category with the same name\`);
 			return;
 		}
 		u[l] = A(x.get(d(r[t], o))), f[l] = j.find(s);
 		let p = S[j.find(s)];
-		F.arrow(c, l, {
+		ee.arrow(c, l, {
 			kind: "colimit",
 			key: r[p.j],
 			arrow: K(i[p.j], p.s, p.name)
@@ -8089,7 +8257,7 @@ function Ie(t) {
 		if (n(s, r)) {
 			let n = s[r];
 			e(Fe(n.left) === Fe(i) && Fe(n.right) === Fe(a), \`Equation name \${r} occurs twice at \${t} in the colimit\`);
-		} else s[r] = h(i, a), F.equation(t, r, o());
+		} else s[r] = h(i, a), ee.equation(t, r, o());
 	}, z = (e, t, n) => {
 		let r = t;
 		return n.flatMap((t) => {
@@ -8119,7 +8287,7 @@ function Ie(t) {
 	let ne = y.filter((e, t) => k.find(t) === t);
 	ne.forEach((e) => {
 		let { j: t, o: n } = b[x.get(e)];
-		F.object(e, {
+		ee.object(e, {
 			kind: "colimit",
 			key: r[t],
 			object: G(i[t], n)
@@ -8127,9 +8295,9 @@ function Ie(t) {
 	});
 	let V = J(_({
 		Object: ne,
-		Arrow: Object.fromEntries(Object.entries(ee).filter(([, e]) => Object.keys(e).length)),
+		Arrow: Object.fromEntries(Object.entries(F).filter(([, e]) => Object.keys(e).length)),
 		Equation: I
-	}), F.freeze()), re = r.map(() => !0);
+	}), ee.freeze()), re = r.map(() => !0);
 	for (let [e] of m.map((e, t) => [t, e]).sort((e, t) => e[1] - t[1])) {
 		let t = v[e];
 		t !== void 0 && (re[e] = l(t.functor) && re[t.target]);
@@ -8285,7 +8453,7 @@ function Be(t) {
 	}), g.freeze()), N = L(u, M, {
 		Object: Object.fromEntries(v.map((e) => [e, x(e)])),
 		Arrow: Object.fromEntries(v.filter((e) => Object.keys(o(u, e)).length).map((e) => [e, Object.fromEntries(Object.keys(o(u, e)).map((t) => [t, [T(e, t)]]))]))
-	}), F = r.map((e) => Re(f[e], N)), ee = (e, t) => {
+	}), ee = r.map((e) => Re(f[e], N)), F = (e, t) => {
 		for (let n of a.specification.Object) {
 			let s = e[0].specification.Object[i[0].specification.Object[n]];
 			for (let t = 1; t < i.length; t++) if (e[t].specification.Object[i[t].specification.Object[n]] !== s) return \`object \${n} (leg \${r[t]})\`;
@@ -8298,12 +8466,12 @@ function Be(t) {
 	return Object.freeze({
 		span: Object.freeze(Object.fromEntries(r.map((e, t) => [e, i[t]]))),
 		category: M,
-		injections: Object.freeze(Object.fromEntries(r.map((e, t) => [e, F[t]]))),
+		injections: Object.freeze(Object.fromEntries(r.map((e, t) => [e, ee[t]]))),
 		descend: (t) => {
 			e(Object.keys(t).length === r.length && r.every((e) => n(t, e)), \`A cocone needs one functor for each leg: \${r.join(", ")}\`);
 			let a = r.map((e) => t[e]), o = a[0].codomain;
 			e(a.every((e, t) => e.domain === i[t].codomain && e.codomain === o), "A pushout cocone needs functors from the legs’ codomains into one category");
-			let u = ee(a, o);
+			let u = F(a, o);
 			e(u === void 0, \`The cocone does not (provably) commute at \${u}\`);
 			let d = s.copair, f = d(t), p = B(M, o, {
 				Object: Object.fromEntries(M.specification.Object.map((e) => [e, f.specification.Object[e]])),
@@ -9390,8 +9558,25 @@ function Gn(t, n) {
 function Kn(t, n) {
 	return e(On(n), "queryObjectDiagram takes a query object"), n.build(t);
 }
-var qn = (e) => \`[\${e.join(", ")}]\`;
-function Jn(n, a, s) {
+var qn = /* @__PURE__ */ new WeakSet();
+function Jn(e) {
+	return Xn("limit", e);
+}
+function Yn(e) {
+	return Xn("colimit", e);
+}
+function Xn(n, r) {
+	let a = n === "limit" ? "query.pair" : "query.copair";
+	e(t(r), \`\${a} takes a record of paths\`);
+	for (let [t, n] of Object.entries(r)) e(Array.isArray(n) && n.every((e) => typeof e == "string"), \`\${a}: the path for \${t} must be a list of arrow names\`);
+	let o = Object.freeze({
+		variance: n,
+		paths: i(Object.entries(r).map(([e, t]) => [e, Object.freeze([...t])]))
+	});
+	return qn.add(o), o;
+}
+var Zn = (e) => \`[\${e.join(", ")}]\`;
+function Qn(n, a, s) {
 	e(t(s), "Query specification must be a record"), e(Object.keys(s).every((e) => e === "Object" || e === "Arrow"), "Unknown query field");
 	let c = s.Object;
 	e(t(c), "Object must be a record"), r(c, n.specification.Object, "Query objects");
@@ -9399,7 +9584,7 @@ function Jn(n, a, s) {
 	e(l.size <= 1, "A query mixes limits and colimits, which is not supported yet");
 	let u = l.has("colimit") ? "colimit" : "limit", d = i(n.specification.Object.map((n) => {
 		let r = c[n];
-		if (typeof r == "string") return e(a.specification.Object.includes(r), \`Unknown object \${r} for \${n}\`), [n, ln(a, r, n)];
+		if (typeof r == "string") return e(a.specification.Object.includes(r), \`Unknown object \${r} for \${n}\`), [n, ln(a, r)];
 		if (On(r)) return [n, r.build(a)];
 		let i = r;
 		return e(t(i) && "domain" in i && i.codomain === a, \`\${n} must go to a query object or a diagram in C\`), [n, z(i)];
@@ -9409,13 +9594,13 @@ function Jn(n, a, s) {
 	r(f, p, "Query arrows");
 	let m = i(p.map((a) => {
 		let s = f[a];
-		return e(t(s), \`Query arrow scope \${a} must be a record\`), r(s, Object.keys(o(n, a)), \`Query arrow scope \${a}\`), [a, i(Object.entries(o(n, a)).map(([e, t]) => [e, Yn(u, \`\${a}.\${e}\`, d[a], d[t], s[e])]))];
+		return e(t(s), \`Query arrow scope \${a} must be a record\`), r(s, Object.keys(o(n, a)), \`Query arrow scope \${a}\`), [a, i(Object.entries(o(n, a)).map(([e, t]) => [e, $n(u, \`\${a}.\${e}\`, d[a], d[t], s[e])]))];
 	})), h = (e, t) => {
 		let r = hn(d[e], u), i = e;
 		for (let e of t) r = gn(r, m[i][e]), i = o(n, i)[e];
 		return r;
 	};
-	for (let [t, r] of Object.entries(n.specification.Equation)) for (let [n, { left: i, right: a }] of Object.entries(r)) e(vn(h(t, i), h(t, a)), \`The query does not preserve equation \${t}.\${n}: \${qn(i)} and \${qn(a)} map to different maps of diagrams\`);
+	for (let [t, r] of Object.entries(n.specification.Equation)) for (let [n, { left: i, right: a }] of Object.entries(r)) e(vn(h(t, i), h(t, a)), \`The query does not preserve equation \${t}.\${n}: \${Zn(i)} and \${Zn(a)} map to different maps of diagrams\`);
 	return Object.freeze({
 		variance: u,
 		domain: n,
@@ -9426,17 +9611,23 @@ function Jn(n, a, s) {
 		})
 	});
 }
-function Yn(n, r, i, a, o) {
+function $n(n, r, i, a, o) {
 	if (t(o) && "variance" in o && "shape" in o) {
 		let t = o;
 		return e(t.variance === n && t.domain === i && t.codomain === a, \`The image of \${r} must be a \${n} map between the objects of its ends\`), t;
 	}
 	let s = i.codomain, c = i.domain, l = a.domain, u = n === "limit" ? l.specification.Object : c.specification.Object, d = n === "limit" ? c.specification.Object : l.specification.Object, f;
+	if (t(o) && qn.has(o)) {
+		let { variance: t, paths: i } = o, a = t === "limit" ? "query.pair" : "query.copair";
+		e(t === n, \`The image of \${r} is \${a}, but this is a \${n} query: use \` + (n === "limit" ? "query.pair" : "query.copair")), e(d.length === 1, \`The image of \${r} is \${a}, which leaves out the \` + (n === "limit" ? "source's" : "target's") + \` variable, but there are \${d.length} (\${d.join(", ") || "none"}): give a record of terms\`);
+		let [s] = d;
+		o = Object.fromEntries(Object.entries(i).map(([e, t]) => [e, n === "limit" ? [s, ...t] : [...t, s]]));
+	}
 	if (Array.isArray(o)) e(u.length === 1, \`The image of \${r} is a single term, but there are \${u.length} variables to give (\${u.join(", ")}): give a record of terms\`), f = { [u[0]]: o };
 	else {
 		e(t(o), \`The image of \${r} must be a term, a record of terms, or a diagram map\`);
 		for (let t of Object.keys(o)) e(u.includes(t), \`The terms of \${r} have an unknown variable \${t}\`);
-		f = Xn(n, r, i, a, o);
+		f = er(n, r, i, a, o);
 	}
 	let p = {}, m = {};
 	for (let [t, i] of Object.entries(f)) {
@@ -9446,7 +9637,7 @@ function Yn(n, r, i, a, o) {
 	}
 	let h = {
 		Object: p,
-		Arrow: Zn(r, n === "limit" ? l : c, n === "limit" ? c : l, p, (e, t, r, o) => {
+		Arrow: tr(r, n === "limit" ? l : c, n === "limit" ? c : l, p, (e, t, r, o) => {
 			if (n === "limit") {
 				let n = [...R(i, p[e], o), ...m[r]], c = [...m[e], ...a.specification.Arrow[e][t]];
 				return P(s, i.specification.Object[p[e]], n, c);
@@ -9457,7 +9648,7 @@ function Yn(n, r, i, a, o) {
 	};
 	return n === "limit" ? mn(i, a, h, m) : pn(i, a, h, m);
 }
-function Xn(t, r, i, a, s) {
+function er(t, r, i, a, s) {
 	let c = i.codomain, l = t === "limit" ? a : i, u = t === "limit" ? i : a, d = l.domain.specification.Object, f = { ...s }, p, m = (e) => (p ??= I(u.domain, 1e3))(e), h = (e, n, r) => {
 		if (t === "limit") {
 			let [t, ...o] = f[e], s = [...o, ...a.specification.Arrow[e][n]], l = m(t).filter(({ path: e, target: n }) => i.specification.Object[n] === a.specification.Object[r] && P(c, i.specification.Object[t], R(i, t, e), s));
@@ -9476,23 +9667,23 @@ function Xn(t, r, i, a, s) {
 	let g = d.filter((e) => !n(f, e));
 	return e(g.length === 0, \`The terms of \${r} leave out \${g.join(", ")}, which no other term determines\`), f;
 }
-function Zn(t, n, r, i, a) {
+function tr(t, n, r, i, a) {
 	let s = {}, c;
 	for (let l of n.specification.Object) for (let [u, d] of Object.entries(o(n, l))) {
 		c ??= I(r, 1e3);
 		let n = c(i[l]).filter(({ target: e }) => e === i[d]).filter(({ path: e }) => a(l, u, d, e));
-		e(n.length > 0, \`In \${t}, no path from \${i[l]} to \${i[d]} matches the arrow \${l}.\${u}: the terms are not compatible with it\`), e(n.length === 1, \`In \${t}, the arrow \${l}.\${u} could go along \${n.map(({ path: e }) => qn(e)).join(" or ")}: give the map of diagrams explicitly\`), (s[l] ??= {})[u] = n[0].path;
+		e(n.length > 0, \`In \${t}, no path from \${i[l]} to \${i[d]} matches the arrow \${l}.\${u}: the terms are not compatible with it\`), e(n.length === 1, \`In \${t}, the arrow \${l}.\${u} could go along \${n.map(({ path: e }) => Zn(e)).join(" or ")}: give the map of diagrams explicitly\`), (s[l] ??= {})[u] = n[0].path;
 	}
 	return s;
 }
-var Qn = /* @__PURE__ */ new Map();
-function $n(e, t, n, r) {
+var nr = /* @__PURE__ */ new Map();
+function rr(e, t, n, r) {
 	let i = t, a = r;
 	for (let t of n) a = e.specification[i][t][a], i = o(e.domain, i)[t];
 	return a;
 }
-function er(t, n, r) {
-	return e(n.domain === t.codomain, "Evaluate a query on a copresheaf on its codomain"), m(Qn, [JSON.stringify(r)], [t, n], () => {
+function ir(t, n, r) {
+	return e(n.domain === t.codomain, "Evaluate a query on a copresheaf on its codomain"), m(nr, [JSON.stringify(r)], [t, n], () => {
 		let e = t.domain, a = i(e.specification.Object.map((e) => {
 			let i = C(t.specification.Object[e], n);
 			return [e, t.variance === "limit" ? Pt(i, r) : Ft(i, r)];
@@ -9501,11 +9692,11 @@ function er(t, n, r) {
 			if (t.variance === "limit") {
 				let e = a[r], t = a[c], i = Object.fromEntries(s.codomain.domain.specification.Object.map((t) => {
 					let r = s.shape.specification.Object[t];
-					return [t, Object.fromEntries(e.parts.map((i) => [i, $n(n, l.specification.Object[r], s.specification.Object[t], e.projections[r][i])]))];
+					return [t, Object.fromEntries(e.parts.map((i) => [i, rr(n, l.specification.Object[r], s.specification.Object[t], e.projections[r][i])]))];
 				}));
 				return t.pair(i, e.parts);
 			}
-			let u = a[r], d = a[c], f = Object.fromEntries(l.domain.specification.Object.map((e) => [e, Object.fromEntries(S(n, l.specification.Object[e]).map((t) => [t, d.injections[s.shape.specification.Object[e]][$n(n, l.specification.Object[e], s.specification.Object[e], t)]]))]));
+			let u = a[r], d = a[c], f = Object.fromEntries(l.domain.specification.Object.map((e) => [e, Object.fromEntries(S(n, l.specification.Object[e]).map((t) => [t, d.injections[s.shape.specification.Object[e]][rr(n, l.specification.Object[e], s.specification.Object[e], t)]]))]));
 			return u.copair(f);
 		}, c = W();
 		for (let r of e.specification.Object) {
@@ -9538,14 +9729,14 @@ function er(t, n, r) {
 		});
 	});
 }
-function tr(e, t, n) {
-	return lt(t) ? er(e, t, n ?? {}).copresheaf : (n) => er(e, n, t ?? {}).copresheaf;
+function ar(e, t, n) {
+	return lt(t) ? ir(e, t, n ?? {}).copresheaf : (n) => ir(e, n, t ?? {}).copresheaf;
 }
-function nr(e, t, n = {}) {
-	return t === void 0 ? (t) => rr(e, t, {}) : rr(e, t, n);
+function or(e, t, n = {}) {
+	return t === void 0 ? (t) => sr(e, t, {}) : sr(e, t, n);
 }
-function rr(e, t, n) {
-	let r = er(e, t.domain, n), a = er(e, t.codomain, n), o = i(e.domain.specification.Object.map((n) => {
+function sr(e, t, n) {
+	let r = ir(e, t.domain, n), a = ir(e, t.codomain, n), o = i(e.domain.specification.Object.map((n) => {
 		let i = e.specification.Object[n], o = i.domain.specification.Object;
 		if (e.variance === "limit") {
 			let e = r.results[n], s = a.results[n], c = Object.fromEntries(o.map((n) => [n, Object.fromEntries(e.parts.map((r) => [r, t.specification.Object[i.specification.Object[n]][e.projections[n][r]]]))]));
@@ -9557,10 +9748,10 @@ function rr(e, t, n) {
 	return E(r.copresheaf, a.copresheaf, o);
 }
 // src/query-composition.ts
-var ir = /* @__PURE__ */ new WeakMap();
-function ar(e, t, n) {
-	let r = ir.get(e);
-	r || ir.set(e, r = /* @__PURE__ */ new Map());
+var cr = /* @__PURE__ */ new WeakMap();
+function lr(e, t, n) {
+	let r = cr.get(e);
+	r || cr.set(e, r = /* @__PURE__ */ new Map());
 	let i = JSON.stringify([t, n]), a = r.get(i);
 	if (!a) {
 		a = hn(e.specification.Object[t], e.variance);
@@ -9570,15 +9761,15 @@ function ar(e, t, n) {
 	}
 	return a;
 }
-function or(e) {
+function ur(e) {
 	return Object.values(e.specification.Object).every((e) => {
 		let t = e.domain;
 		return t.specification.Object.length === 1 && Object.keys(o(t, t.specification.Object[0])).length === 0;
 	});
 }
-var sr = /* @__PURE__ */ new Map();
-function cr(e, t) {
-	return e.variance === t ? e : m(sr, [t], [e], () => {
+var dr = /* @__PURE__ */ new Map();
+function fr(e, t) {
+	return e.variance === t ? e : m(dr, [t], [e], () => {
 		let n = i(Object.entries(e.specification.Arrow).map(([e, n]) => [e, i(Object.entries(n).map(([e, n]) => {
 			let r = n.domain.domain.specification.Object[0], i = n.codomain.domain.specification.Object[0], a = n.specification.Object[t === "colimit" ? i : r];
 			return [e, t === "colimit" ? pn(n.domain, n.codomain, { Object: { [r]: i } }, { [r]: a }) : mn(n.domain, n.codomain, { Object: { [i]: r } }, { [i]: a })];
@@ -9593,15 +9784,15 @@ function cr(e, t) {
 		});
 	});
 }
-var lr = /* @__PURE__ */ new WeakMap();
-function ur(t, r) {
-	let s = lr.get(t);
-	s || lr.set(t, s = /* @__PURE__ */ new WeakMap());
+var pr = /* @__PURE__ */ new WeakMap();
+function mr(t, r) {
+	let s = pr.get(t);
+	s || pr.set(t, s = /* @__PURE__ */ new WeakMap());
 	let c = s.get(r);
 	if (c) return c;
 	let l = t.variance, u = r.domain, d = u.specification.Object, f = (e) => t.specification.Object[r.specification.Object[e]], p = /* @__PURE__ */ new Map(), m = (e, n) => {
 		let i = \`\${e}\\u0000\${n}\`;
-		return p.has(i) || p.set(i, ar(t, r.specification.Object[e], r.specification.Arrow[e][n])), p.get(i);
+		return p.has(i) || p.set(i, lr(t, r.specification.Object[e], r.specification.Arrow[e][n])), p.get(i);
 	}, g = (e, t) => d.length === 1 ? t : f(e).domain.specification.Object.length === 1 ? e : \`\${e}.\${t}\`, _ = d.flatMap((e) => f(e).domain.specification.Object.map((t) => [e, t])), v = _.map(([e, t]) => g(e, t)), y = new Set(v).size === v.length, b = (e, t) => y ? g(e, t) : \`\${e}.\${t}\`, x = {}, S = {};
 	for (let [e, t] of _) x[b(e, t)] = f(e).specification.Object[t], S[b(e, t)] = [e, t];
 	let C = {}, w = {}, T = /* @__PURE__ */ new Map(), E = (t, r, i, a, o, s) => {
@@ -9693,12 +9884,12 @@ function ur(t, r) {
 	});
 	return s.set(r, j), j;
 }
-function dr(e, t) {
-	let n = ur(e, t.domain), r = ur(e, t.codomain), i = t.shape;
+function hr(e, t) {
+	let n = mr(e, t.domain), r = mr(e, t.codomain), i = t.shape;
 	if (e.variance === "colimit") {
-		let a = (n) => ar(e, t.domain.specification.Object[n], t.specification.Object[n]), o = {}, s = {};
+		let a = (n) => lr(e, t.domain.specification.Object[n], t.specification.Object[n]), o = {}, s = {};
 		for (let [e, [t, c]] of Object.entries(n.pair)) o[e] = r.name(i.specification.Object[t], a(t).shape.specification.Object[c]), s[e] = a(t).specification.Object[c];
-		let c = fr(n, (e) => {
+		let c = gr(n, (e) => {
 			if (e.kind === "inner") return a(e.j).shape.specification.Arrow[e.k][e.b];
 			let { j: t, a: n, k: o } = e;
 			return r.chain(i.specification.Object[t], i.specification.Arrow[t][n], a(t).shape.specification.Object[o]).steps;
@@ -9708,9 +9899,9 @@ function dr(e, t) {
 			Arrow: c
 		}, s);
 	}
-	let a = (n) => ar(e, t.domain.specification.Object[i.specification.Object[n]], t.specification.Object[n]), s = {}, c = {};
+	let a = (n) => lr(e, t.domain.specification.Object[i.specification.Object[n]], t.specification.Object[n]), s = {}, c = {};
 	for (let [e, [t, o]] of Object.entries(r.pair)) s[e] = n.name(i.specification.Object[t], a(t).shape.specification.Object[o]), c[e] = a(t).specification.Object[o];
-	let l = fr(r, (e) => {
+	let l = gr(r, (e) => {
 		if (e.kind === "inner") return a(e.j).shape.specification.Arrow[e.k][e.b];
 		let { j: r, a: s, k: c } = e, l = o(t.codomain.domain, r)[s];
 		return n.chain(i.specification.Object[r], i.specification.Arrow[r][s], a(l).shape.specification.Object[c]).steps;
@@ -9720,13 +9911,13 @@ function dr(e, t) {
 		Arrow: l
 	}, c);
 }
-function fr(e, t) {
+function gr(e, t) {
 	return Object.fromEntries(Object.entries(e.arrows).map(([e, n]) => [e, Object.fromEntries(Object.entries(n).map(([e, n]) => [e, t(n)]))]));
 }
-var pr = /* @__PURE__ */ new Map();
-function mr(t, n) {
-	return e(t.domain === n.codomain, "Compose first : data on D → data on C with second : data on C → data on B (second must be a query into the category first is a query from)"), t.variance !== n.variance && (or(t) ? t = cr(t, n.variance) : or(n) ? n = cr(n, t.variance) : e(!1, "Only queries of one variance compose: both limits, or both colimits")), m(pr, [], [t, n], () => {
-		let e = n.domain, r = i(e.specification.Object.map((e) => [e, ur(t, n.specification.Object[e]).diagram])), a = i(Object.entries(n.specification.Arrow).map(([e, n]) => [e, i(Object.entries(n).map(([e, n]) => [e, dr(t, n)]))]));
+var _r = /* @__PURE__ */ new Map();
+function vr(t, n) {
+	return e(t.domain === n.codomain, "Compose first : data on D → data on C with second : data on C → data on B (second must be a query into the category first is a query from)"), t.variance !== n.variance && (ur(t) ? t = fr(t, n.variance) : ur(n) ? n = fr(n, t.variance) : e(!1, "Only queries of one variance compose: both limits, or both colimits")), m(_r, [], [t, n], () => {
+		let e = n.domain, r = i(e.specification.Object.map((e) => [e, mr(t, n.specification.Object[e]).diagram])), a = i(Object.entries(n.specification.Arrow).map(([e, n]) => [e, i(Object.entries(n).map(([e, n]) => [e, hr(t, n)]))]));
 		return Object.freeze({
 			variance: t.variance,
 			domain: e,
@@ -9738,26 +9929,26 @@ function mr(t, n) {
 		});
 	});
 }
-function hr(...e) {
+function yr(...e) {
 	if (e.length === 1) {
 		let [t] = e;
-		return (e) => mr(e, t);
+		return (e) => vr(e, t);
 	}
-	return mr(e[0], e[1]);
+	return vr(e[0], e[1]);
 }
-function gr(e) {
+function br(e) {
 	let t = e.domain;
-	return Jn(t, e.codomain, {
+	return Qn(t, e.codomain, {
 		Object: Object.fromEntries(t.specification.Object.map((t) => [t, e.specification.Object[t]])),
-		Arrow: Object.fromEntries(Object.entries(e.specification.Arrow).map(([e, t]) => [e, Object.fromEntries(Object.entries(t).map(([t, n]) => [t, [e, ...n]]))]))
+		Arrow: Object.fromEntries(Object.entries(e.specification.Arrow).map(([t, n]) => [t, Object.fromEntries(Object.entries(n).map(([n, r]) => [n, [e.specification.Object[t], ...r]]))]))
 	});
 }
-function _r(e) {
-	return gr(V(e));
+function xr(e) {
+	return br(V(e));
 }
-function vr(t, n, r, a = {}) {
-	let o = mr(t, n), s = cr(t, o.variance), c = cr(n, o.variance), l = er(o, r, a), u = er(s, r, a), d = er(c, u.copresheaf, a), f = c.domain, p = i(f.specification.Object.map((e) => {
-		let t = ur(s, c.specification.Object[e]), n = c.specification.Object[e], i = n.domain.specification.Object;
+function Sr(t, n, r, a = {}) {
+	let o = vr(t, n), s = fr(t, o.variance), c = fr(n, o.variance), l = ir(o, r, a), u = ir(s, r, a), d = ir(c, u.copresheaf, a), f = c.domain, p = i(f.specification.Object.map((e) => {
+		let t = mr(s, c.specification.Object[e]), n = c.specification.Object[e], i = n.domain.specification.Object;
 		if (o.variance === "limit") {
 			let r = l.results[e], a = d.results[e], o = Object.fromEntries(i.map((e) => {
 				let i = n.specification.Object[e], a = s.specification.Object[i].domain.specification.Object;
@@ -9778,7 +9969,7 @@ function vr(t, n, r, a = {}) {
 	return m;
 }
 // src/query-completions.ts
-function yr(t) {
+function Cr(t) {
 	let r = {};
 	return {
 		result: r,
@@ -9788,22 +9979,22 @@ function yr(t) {
 		}
 	};
 }
-function br(e) {
+function wr(e) {
 	let t = e.domain, [n, ...r] = t.specification.Object;
 	return n !== void 0 && r.length === 0 && Object.keys(o(t, n)).length === 0 ? n : void 0;
 }
-function xr(e) {
-	let t = Sr.get(e);
-	return t === void 0 && Sr.set(e, t = Cr(e)), t;
+function Tr(e) {
+	let t = Er.get(e);
+	return t === void 0 && Er.set(e, t = Dr(e)), t;
 }
-var Sr = /* @__PURE__ */ new WeakMap();
-function Cr(t) {
+var Er = /* @__PURE__ */ new WeakMap();
+function Dr(t) {
 	let { domain: n, codomain: r, variance: i } = t, a = i === "limit", s = (e) => t.specification.Object[e], c = (e, n) => t.specification.Arrow[e][n], l = (e) => {
-		let t = br(s(e));
+		let t = wr(s(e));
 		return t === void 0 ? d(a ? "lim" : "colim", e) : s(e).specification.Object[t];
-	}, u = n.specification.Object.filter((e) => br(s(e)) === void 0);
+	}, u = n.specification.Object.filter((e) => wr(s(e)) === void 0);
 	for (let t of u) e(!r.specification.Object.includes(l(t)), \`The apex \${l(t)} of \${t} would clash with an object of the codomain\`);
-	let f = (e, t) => br(s(e)) === void 0 ? [a ? t : d(e, t)] : [], p = yr("Arrow"), m = yr("Equation"), g = ce(), v = (e) => G(r, e).provenance;
+	let f = (e, t) => wr(s(e)) === void 0 ? [a ? t : d(e, t)] : [], p = Cr("Arrow"), m = Cr("Equation"), g = ce(), v = (e) => G(r, e).provenance;
 	for (let e of r.specification.Object) {
 		let t = v(e);
 		t && g.object(e, t);
@@ -9864,7 +10055,7 @@ function Cr(t) {
 			source: e,
 			target: u.specification.Object[e],
 			path: o.specification.Object[e]
-		})), v = a ? br(s(r)) : void 0, b = a ? void 0 : br(s(e)), x;
+		})), v = a ? wr(s(r)) : void 0, b = a ? void 0 : wr(s(e)), x;
 		if (v !== void 0) {
 			let t = _[0];
 			x = [...f(e, t.source), ...t.path];
@@ -9920,18 +10111,18 @@ function Cr(t) {
 	});
 }
 // src/namespaces.ts
-function wr(e, t, n) {
+function Or(e, t, n) {
 	let r = t, i = (...e) => r(...e);
 	return Object.defineProperty(i, "name", { value: e }), Object.freeze(Object.assign(i, n));
 }
-var Tr = wr("copresheafMap", T, {
+var kr = Or("copresheafMap", T, {
 	identity: D,
 	applyPart: O,
 	compose: k,
 	pivot: Dt,
 	unpivot: Ot,
 	inverse: _t
-}), Er = wr("copresheaf", b, {
+}), Ar = Or("copresheaf", b, {
 	parts: S,
 	provenance: x,
 	product: Qe,
@@ -9954,14 +10145,14 @@ var Tr = wr("copresheafMap", T, {
 	unpivot: wt,
 	isomorphism: vt,
 	rename: yt
-}), Dr = wr("functorMap", Vt, {
+}), jr = Or("functorMap", Vt, {
 	check: Ht,
 	assume: Ut,
 	identity: Wt,
 	compose: Gt,
 	precompose: Jt,
 	postcompose: Xt
-}), Or = wr("functor", L, {
+}), Mr = Or("functor", L, {
 	check: z,
 	assume: ne,
 	identity: V,
@@ -9977,7 +10168,7 @@ var Tr = wr("copresheafMap", T, {
 	add: Ue,
 	one: Ze,
 	zero: Ge
-}), kr = wr("category", _, {
+}), Nr = Or("category", _, {
 	extend: me,
 	omit: ge,
 	opposite: ve,
@@ -9995,7 +10186,7 @@ var Tr = wr("copresheafMap", T, {
 	limit: Ne,
 	colimit: Ie,
 	presentation: tn
-}), Ar = wr("diagram", sn, {
+}), Pr = Or("diagram", sn, {
 	unit: ln,
 	product: Cn,
 	coproduct: bn,
@@ -10006,11 +10197,11 @@ var Tr = wr("copresheafMap", T, {
 	zero: Dn,
 	limitMap: mn,
 	colimitMap: pn
-}), jr = Object.freeze({
+}), Fr = Object.freeze({
 	identity: hn,
 	compose: gn,
 	equals: vn
-}), Mr = wr("query", Jn, {
+}), Ir = Or("query", Qn, {
 	one: Rn,
 	product: jn,
 	mul: Pn,
@@ -10021,22 +10212,24 @@ var Tr = wr("copresheafMap", T, {
 	add: Fn,
 	colimit: Gn,
 	objectDiagram: Kn,
-	evaluate: tr,
-	evaluateMap: nr,
-	andThen: hr,
-	identity: _r,
-	fromFunctor: gr,
-	comparison: vr,
-	completion: xr
-}), Nr = Object.freeze({
+	pair: Jn,
+	copair: Yn,
+	evaluate: ar,
+	evaluateMap: or,
+	andThen: yr,
+	identity: xr,
+	fromFunctor: br,
+	comparison: Sr,
+	completion: Tr
+}), Lr = Object.freeze({
 	normalize: N,
 	equals: P
-}), Pr = Object.freeze({ category: an });
+}), Rr = Object.freeze({ category: an });
 // src/pipe.ts
-function Fr(e, ...t) {
+function zr(e, ...t) {
 	return t.reduce((e, t) => t(e), e);
 }
-export { Qt as CatPresentation, kr as category, de as categoryAdd, Ie as categoryColimit, Y as categoryCoproduct, me as categoryExtend, Ne as categoryLimit, Ee as categoryMul, ge as categoryOmit, De as categoryOne, ve as categoryOpposite, tn as categoryPresentation, Ce as categoryProduct, Ae as categoryPullback, Be as categoryPushout, be as categoryQualifyArrows, pe as categorySum, xe as categoryUnqualifyArrows, fe as categoryZero, Er as copresheaf, nt as copresheafAdd, Ft as copresheafColimit, tt as copresheafCoproduct, pt as copresheafDay, gt as copresheafDayUnit, vt as copresheafIsomorphism, st as copresheafLan, Pt as copresheafLimit, Tr as copresheafMap, O as copresheafMapApplyPart, k as copresheafMapCompose, D as copresheafMapIdentity, _t as copresheafMapInverse, Dt as copresheafMapPivot, Ot as copresheafMapUnpivot, $e as copresheafMul, et as copresheafOne, S as copresheafParts, bt as copresheafPivot, Qe as copresheafProduct, x as copresheafProvenance, It as copresheafPullback, Lt as copresheafPushout, At as copresheafRan, yt as copresheafRename, it as copresheafSum, ht as copresheafTruncatedDay, wt as copresheafUnpivot, rt as copresheafZero, Ar as diagram, Tn as diagramAdd, pn as diagramColimitMap, bn as diagramCoproduct, mn as diagramLimitMap, jr as diagramMap, gn as diagramMapCompose, vn as diagramMapEquals, hn as diagramMapIdentity, wn as diagramMul, En as diagramOne, Cn as diagramProduct, Sn as diagramSum, ln as diagramUnit, Dn as diagramZero, h as equation, Or as functor, Ue as functorAdd, R as functorApplyPath, ne as functorAssume, z as functorCheck, H as functorCompose, He as functorCoproduct, C as functorDelta, V as functorIdentity, Dr as functorMap, Ut as functorMapAssume, Ht as functorMapCheck, Gt as functorMapCompose, Wt as functorMapIdentity, Xt as functorMapPostcompose, Jt as functorMapPrecompose, Ye as functorMul, Ze as functorOne, jt as functorPi, Je as functorProduct, ut as functorSigma, Ke as functorSum, Ge as functorZero, Nr as path, F as pathCriticalPair, P as pathEquals, N as pathNormalize, Fr as pipe, Pr as presentation, an as presentationCategory, Mr as query, Fn as queryAdd, hr as queryAndThen, Gn as queryColimit, vr as queryComparison, xr as queryCompletion, Mn as queryCoproduct, tr as queryEvaluate, nr as queryEvaluateMap, gr as queryFromFunctor, _r as queryIdentity, Wn as queryLimit, Pn as queryMul, Kn as queryObjectDiagram, Rn as queryOne, jn as queryProduct, Nn as querySum, zn as queryZero, B as rawFunctor, Bt as rawFunctorMap };
+export { Qt as CatPresentation, Nr as category, de as categoryAdd, Ie as categoryColimit, Y as categoryCoproduct, me as categoryExtend, Ne as categoryLimit, Ee as categoryMul, ge as categoryOmit, De as categoryOne, ve as categoryOpposite, tn as categoryPresentation, Ce as categoryProduct, Ae as categoryPullback, Be as categoryPushout, be as categoryQualifyArrows, pe as categorySum, xe as categoryUnqualifyArrows, fe as categoryZero, Ar as copresheaf, nt as copresheafAdd, Ft as copresheafColimit, tt as copresheafCoproduct, pt as copresheafDay, gt as copresheafDayUnit, vt as copresheafIsomorphism, st as copresheafLan, Pt as copresheafLimit, kr as copresheafMap, O as copresheafMapApplyPart, k as copresheafMapCompose, D as copresheafMapIdentity, _t as copresheafMapInverse, Dt as copresheafMapPivot, Ot as copresheafMapUnpivot, $e as copresheafMul, et as copresheafOne, S as copresheafParts, bt as copresheafPivot, Qe as copresheafProduct, x as copresheafProvenance, It as copresheafPullback, Lt as copresheafPushout, At as copresheafRan, yt as copresheafRename, it as copresheafSum, ht as copresheafTruncatedDay, wt as copresheafUnpivot, rt as copresheafZero, Pr as diagram, Tn as diagramAdd, pn as diagramColimitMap, bn as diagramCoproduct, mn as diagramLimitMap, Fr as diagramMap, gn as diagramMapCompose, vn as diagramMapEquals, hn as diagramMapIdentity, wn as diagramMul, En as diagramOne, Cn as diagramProduct, Sn as diagramSum, ln as diagramUnit, Dn as diagramZero, h as equation, Mr as functor, Ue as functorAdd, R as functorApplyPath, ne as functorAssume, z as functorCheck, H as functorCompose, He as functorCoproduct, C as functorDelta, V as functorIdentity, jr as functorMap, Ut as functorMapAssume, Ht as functorMapCheck, Gt as functorMapCompose, Wt as functorMapIdentity, Xt as functorMapPostcompose, Jt as functorMapPrecompose, Ye as functorMul, Ze as functorOne, jt as functorPi, Je as functorProduct, ut as functorSigma, Ke as functorSum, Ge as functorZero, Lr as path, ee as pathCriticalPair, P as pathEquals, N as pathNormalize, zr as pipe, Rr as presentation, an as presentationCategory, Ir as query, Fn as queryAdd, yr as queryAndThen, Gn as queryColimit, Sr as queryComparison, Tr as queryCompletion, Yn as queryCopair, Mn as queryCoproduct, ar as queryEvaluate, or as queryEvaluateMap, br as queryFromFunctor, xr as queryIdentity, Wn as queryLimit, Pn as queryMul, Kn as queryObjectDiagram, Rn as queryOne, Jn as queryPair, jn as queryProduct, Nn as querySum, zn as queryZero, B as rawFunctor, Bt as rawFunctorMap };
 `,Pe=`import { category as e, categoryMul as t, categoryOmit as n, copresheaf as r, copresheafParts as i, copresheafTruncatedDay as a, equation as o, functor as s } from "@cod-ts/categories";
 // src/categories.ts
 var c = (e) => \`\${e}\`, l = (e) => String(e).padStart(2, "0"), u = (e) => \`d\${l(e)}\`, d = (e) => \`s\${l(e)}\`, f = class {
@@ -59365,7 +59558,7 @@ function H(e, t, n, r) {
 	for (let [e, t] of Object.entries(n)) i.setAttribute(e, t);
 	return i.append(...r), i;
 }
-var U = "cod-ts-views-tables", oe = "\\n.cod-table-view { margin-bottom: 16px; --row-highlight: #2f5bea; }\\n.cod-table-view > .cod-tables { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }\\n.cod-table-view table { border-collapse: collapse; font-variant-numeric: tabular-nums; }\\n.cod-table-view caption { text-align: left; padding: 0 0 4px; }\\n.cod-table-view .cod-count { color: #6a7182; }\\n.cod-table-view th, .cod-table-view td {\\n  border: 1px solid #dcdad2; padding: 3px 10px; text-align: left;\\n  font-family: ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; font-size: 13px;\\n}\\n.cod-table-view th { background: #f6f5f1; font-weight: 400; }\\n.cod-table-view th strong { font-weight: 600; }\\n.cod-table-view .cod-type { color: #9aa0ad; }\\n.cod-table-view tbody tr:hover td {\\n  color: var(--row-highlight); background: color-mix(in srgb, var(--row-highlight) 8%, transparent);\\n}\\n";
+var U = "cod-ts-views-tables", oe = "\\n.cod-table-view { margin-bottom: 16px; --row-highlight: #2f5bea; }\\n.cod-table-view > .cod-tables { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }\\n.cod-table-view table { border-collapse: collapse; font-variant-numeric: tabular-nums; }\\n.cod-table-view caption { text-align: left; padding: 0 0 4px; }\\n.cod-table-view .cod-count { color: #6a7182; white-space: nowrap; }\\n.cod-table-view th, .cod-table-view td {\\n  border: 1px solid #dcdad2; padding: 3px 10px; text-align: left;\\n  font-family: ui-monospace, \\"SF Mono\\", Menlo, Consolas, monospace; font-size: 13px;\\n}\\n.cod-table-view th { background: #f6f5f1; font-weight: 400; }\\n.cod-table-view th strong { font-weight: 600; }\\n.cod-table-view .cod-type { color: #9aa0ad; }\\n.cod-table-view tbody tr:hover td {\\n  color: var(--row-highlight); background: color-mix(in srgb, var(--row-highlight) 8%, transparent);\\n}\\n";
 function se(e) {
 	if (e.getElementById(U)) return;
 	let t = H(e, "style", { id: U }, [oe]);
@@ -60204,4 +60397,4 @@ window.MathJax = {
 ${F(e)}
 <\/script>
 </body>
-</html>`}function qe(e,t){let n=n=>{n.source===e.contentWindow&&n.data?.source===`playground`&&t(n.data)};return window.addEventListener(`message`,n),()=>window.removeEventListener(`message`,n)}var I=`cod-ts-playground-theme`,L=window.matchMedia(`(prefers-color-scheme: dark)`),R=new Set;function Je(){try{let e=localStorage.getItem(I);return e===`light`||e===`dark`?e:void 0}catch{return}}var z=Je();function B(){return z??(L.matches?`dark`:`light`)}function V(){let e=B();document.documentElement.dataset.theme=e;for(let t of R)t(e)}function Ye(e){z=e;try{localStorage.setItem(I,e)}catch{}V()}function H(e){R.add(e)}L.addEventListener(`change`,()=>{z===void 0&&V()}),V();var Xe=`modulepreload`,Ze=function(e,t){return new URL(e,t).href},Qe={},$e=function(e){return e.pathname.endsWith(`.css`)},et=function(e,t,n){if(t in e)return e[t];let r=n();if(!r){e[t]=void 0;return}let i=r.then(()=>{e[t]=void 0},n=>{throw e[t]=void 0,n});return e[t]=i,i},U=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=Ze(t,n);let r=s(t),i=$e(r);return et(Qe,r.href,()=>{if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let t=document.createElement(`link`);if(t.rel=i?`stylesheet`:Xe,i||(t.as=`script`),t.crossOrigin=``,t.href=r.href,a&&t.setAttribute(`nonce`,a),document.head.appendChild(t),i)return new Promise((e,n)=>{t.addEventListener(`load`,e),t.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${r}`)))})})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},W=e=>document.getElementById(e),G=W(`preview`),K=W(`log`),q=W(`diag`),J=W(`loading`),Y=W(`examples`),tt=W(`auto`),nt=W(`run`),X=W(`share`),Z=W(`theme`);function Q(){let e=`Switch to ${B()===`dark`?`light`:`dark`} theme`;Z.title=e,Z.setAttribute(`aria-label`,e)}Z.addEventListener(`click`,()=>Ye(B()===`dark`?`light`:`dark`)),H(Q),Q();function rt(){let e=location.hash.match(/^#code=(.+)$/);if(!e)return null;try{return n.default.decompressFromEncodedURIComponent(e[1])||null}catch{return null}}function it(e){let t=new URL(location.href);return t.hash=`code=`+n.default.compressToEncodedURIComponent(e),t.href}function at(e,t){let n=document.createElement(`div`);n.className=`line ${e}`,n.textContent=t,K.appendChild(n),K.scrollTop=K.scrollHeight}qe(G,e=>{e.type===`console`&&at(e.level,e.text)}),W(`clear`).addEventListener(`click`,()=>K.textContent=``);var $=new Map;r.forEach((e,t)=>{let n=$.get(e.module);n||(n=document.createElement(`optgroup`),n.label=e.module,$.set(e.module,n),Y.append(n)),n.append(new Option(e.title,String(t)))});async function ot(){let e=rt()??r[0].code,t,n=(e,n=400)=>{window.clearTimeout(t),t=window.setTimeout(e,n)},{createEditor:i}=await U(async()=>{let{createEditor:e}=await import(`./editor-1_Guzen1.js`);return{createEditor:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url),a=i(W(`editor`),{code:e,onChange(){tt.checked&&n(()=>void o())},onRun:()=>void o(),onDiagnostics(e){q.textContent=e===0?`No type errors`:`${e} type error${e===1?``:`s`}`,q.dataset.state=e===0?`ok`:`error`}});async function o(){K.textContent=``,G.srcdoc=Ke(await a.getJs())}Y.addEventListener(`change`,()=>{a.setCode(r[Number(Y.value)].code),o()}),nt.addEventListener(`click`,()=>void o()),document.addEventListener(`keydown`,e=>{if(e.target instanceof Node&&W(`editor`).contains(e.target))return;let t=e.ctrlKey||e.metaKey;(e.key===`Enter`&&(e.shiftKey||t)||t&&e.key.toLowerCase()===`s`)&&(e.preventDefault(),o())}),X.addEventListener(`click`,async()=>{await navigator.clipboard.writeText(it(a.getCode())),X.classList.add(`copied`),X.title=`Link copied`,setTimeout(()=>{X.classList.remove(`copied`),X.title=`Copy link`},1500)}),J.remove(),o()}ot().catch(e=>{J.textContent=`Could not load the editor: `+(e instanceof Error?e.message:String(e))});export{P as i,B as n,H as r,U as t};
+</html>`}function qe(e,t){let n=n=>{n.source===e.contentWindow&&n.data?.source===`playground`&&t(n.data)};return window.addEventListener(`message`,n),()=>window.removeEventListener(`message`,n)}var I=`cod-ts-playground-theme`,L=window.matchMedia(`(prefers-color-scheme: dark)`),R=new Set;function Je(){try{let e=localStorage.getItem(I);return e===`light`||e===`dark`?e:void 0}catch{return}}var z=Je();function B(){return z??(L.matches?`dark`:`light`)}function V(){let e=B();document.documentElement.dataset.theme=e;for(let t of R)t(e)}function Ye(e){z=e;try{localStorage.setItem(I,e)}catch{}V()}function H(e){R.add(e)}L.addEventListener(`change`,()=>{z===void 0&&V()}),V();var Xe=`modulepreload`,Ze=function(e,t){return new URL(e,t).href},Qe={},$e=function(e){return e.pathname.endsWith(`.css`)},et=function(e,t,n){if(t in e)return e[t];let r=n();if(!r){e[t]=void 0;return}let i=r.then(()=>{e[t]=void 0},n=>{throw e[t]=void 0,n});return e[t]=i,i},U=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=Ze(t,n);let r=s(t),i=$e(r);return et(Qe,r.href,()=>{if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let t=document.createElement(`link`);if(t.rel=i?`stylesheet`:Xe,i||(t.as=`script`),t.crossOrigin=``,t.href=r.href,a&&t.setAttribute(`nonce`,a),document.head.appendChild(t),i)return new Promise((e,n)=>{t.addEventListener(`load`,e),t.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${r}`)))})})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},W=e=>document.getElementById(e),G=W(`preview`),K=W(`log`),q=W(`diag`),J=W(`loading`),Y=W(`examples`),tt=W(`auto`),nt=W(`run`),X=W(`share`),Z=W(`theme`);function Q(){let e=`Switch to ${B()===`dark`?`light`:`dark`} theme`;Z.title=e,Z.setAttribute(`aria-label`,e)}Z.addEventListener(`click`,()=>Ye(B()===`dark`?`light`:`dark`)),H(Q),Q();function rt(){let e=location.hash.match(/^#code=(.+)$/);if(!e)return null;try{return n.default.decompressFromEncodedURIComponent(e[1])||null}catch{return null}}function it(e){let t=new URL(location.href);return t.hash=`code=`+n.default.compressToEncodedURIComponent(e),t.href}function at(e,t){let n=document.createElement(`div`);n.className=`line ${e}`,n.textContent=t,K.appendChild(n),K.scrollTop=K.scrollHeight}qe(G,e=>{e.type===`console`&&at(e.level,e.text)}),W(`clear`).addEventListener(`click`,()=>K.textContent=``);var $=new Map;r.forEach((e,t)=>{let n=$.get(e.module);n||(n=document.createElement(`optgroup`),n.label=e.module,$.set(e.module,n),Y.append(n)),n.append(new Option(e.title,String(t)))});async function ot(){let e=rt()??r[0].code,t,n=(e,n=400)=>{window.clearTimeout(t),t=window.setTimeout(e,n)},{createEditor:i}=await U(async()=>{let{createEditor:e}=await import(`./editor-Dn4_T71v.js`);return{createEditor:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url),a=i(W(`editor`),{code:e,onChange(){tt.checked&&n(()=>void o())},onRun:()=>void o(),onDiagnostics(e){q.textContent=e===0?`No type errors`:`${e} type error${e===1?``:`s`}`,q.dataset.state=e===0?`ok`:`error`}});async function o(){K.textContent=``,G.srcdoc=Ke(await a.getJs())}Y.addEventListener(`change`,()=>{a.setCode(r[Number(Y.value)].code),o()}),nt.addEventListener(`click`,()=>void o()),document.addEventListener(`keydown`,e=>{if(e.target instanceof Node&&W(`editor`).contains(e.target))return;let t=e.ctrlKey||e.metaKey;(e.key===`Enter`&&(e.shiftKey||t)||t&&e.key.toLowerCase()===`s`)&&(e.preventDefault(),o())}),X.addEventListener(`click`,async()=>{await navigator.clipboard.writeText(it(a.getCode())),X.classList.add(`copied`),X.title=`Link copied`,setTimeout(()=>{X.classList.remove(`copied`),X.title=`Copy link`},1500)}),J.remove(),o()}ot().catch(e=>{J.textContent=`Could not load the editor: `+(e instanceof Error?e.message:String(e))});export{P as i,B as n,H as r,U as t};
