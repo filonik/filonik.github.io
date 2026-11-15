@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./editor-Betn6QuH.js","./rolldown-runtime-XKyaHtl9.js","./editor.api-DVhaQu8L.js","./editor-g1MJRkXV.css","./editor-CYlBetm9.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./editor-dBsxcdWJ.js","./rolldown-runtime-XKyaHtl9.js","./editor.api-Defz8dLG.js","./editor-g1MJRkXV.css","./editor-CYlBetm9.css"])))=>i.map(i=>d[i]);
 import{r as e,t}from"./rolldown-runtime-XKyaHtl9.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var n=e(t(((e,t)=>{var n=(function(){var e=String.fromCharCode,t=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=`,n=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$`,r={};function i(e,t){if(!r[e]){r[e]={};for(var n=0;n<e.length;n++)r[e][e.charAt(n)]=n}return r[e][t]}var a={compressToBase64:function(e){if(e==null)return``;var n=a._compress(e,6,function(e){return t.charAt(e)});switch(n.length%4){default:case 0:return n;case 1:return n+`===`;case 2:return n+`==`;case 3:return n+`=`}},decompressFromBase64:function(e){return e==null?``:e==``?null:a._decompress(e.length,32,function(n){return i(t,e.charAt(n))})},compressToUTF16:function(t){return t==null?``:a._compress(t,15,function(t){return e(t+32)})+` `},decompressFromUTF16:function(e){return e==null?``:e==``?null:a._decompress(e.length,16384,function(t){return e.charCodeAt(t)-32})},compressToUint8Array:function(e){for(var t=a.compress(e),n=new Uint8Array(t.length*2),r=0,i=t.length;r<i;r++){var o=t.charCodeAt(r);n[r*2]=o>>>8,n[r*2+1]=o%256}return n},decompressFromUint8Array:function(t){if(t==null)return a.decompress(t);for(var n=Array(t.length/2),r=0,i=n.length;r<i;r++)n[r]=t[r*2]*256+t[r*2+1];var o=[];return n.forEach(function(t){o.push(e(t))}),a.decompress(o.join(``))},compressToEncodedURIComponent:function(e){return e==null?``:a._compress(e,6,function(e){return n.charAt(e)})},decompressFromEncodedURIComponent:function(e){return e==null?``:e==``?null:(e=e.replace(/ /g,`+`),a._decompress(e.length,32,function(t){return i(n,e.charAt(t))}))},compress:function(t){return a._compress(t,16,function(t){return e(t)})},_compress:function(e,t,n){if(e==null)return``;for(var r,i,a={},o={},s=``,c=``,l=``,u=2,d=3,f=2,p=[],m=0,h=0,g=0;g<e.length;g+=1)if(s=e.charAt(g),Object.prototype.hasOwnProperty.call(a,s)||(a[s]=d++,o[s]=!0),c=l+s,Object.prototype.hasOwnProperty.call(a,c))l=c;else{if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++),a[c]=d++,l=String(s)}if(l!==``){if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++)}for(i=2,r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;for(;;){if(m<<=1,h==t-1){p.push(n(m));break}h++}return p.join(``)},decompress:function(e){return e==null?``:e==``?null:a._decompress(e.length,32768,function(t){return e.charCodeAt(t)})},_decompress:function(t,n,r){var i=[],a=4,o=4,s=3,c=``,l=[],u,d,f,p,m,h,g,_={val:r(0),position:n,index:1};for(u=0;u<3;u+=1)i[u]=u;for(f=0,m=4,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(f){case 0:for(f=0,m=256,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 2:return``}for(i[3]=g,d=g,l.push(g);;){if(_.index>t)return``;for(f=0,m=2**s,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(g=f){case 0:for(f=0,m=256,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 2:return l.join(``)}if(a==0&&(a=2**s,s++),i[g])c=i[g];else if(g===o)c=d+d.charAt(0);else return null;l.push(c),i[o++]=d+c.charAt(0),a--,d=c,a==0&&(a=2**s,s++)}}};return a})();typeof define==`function`&&define.amd?define(function(){return n}):t!==void 0&&t!=null?t.exports=n:typeof angular<`u`&&angular!=null&&angular.module(`LZString`,[]).factory(`LZString`,function(){return n})}))(),1),r=Object.entries(Object.assign({"../../examples/src/categories/01-categories.ts":`import { type Category, category, equation } from '@cod-ts/categories'
 import { type Names, type View, view } from '@cod-ts/views'
 
@@ -3572,7 +3572,9 @@ import { createMemo, createSignal, onSettled } from 'solid-js'
 // updates that part of the page, whenever a signal it reads changes; the
 // nodes themselves are built once. As in JSX, whitespace around holes is
 // trimmed, so spaces that matter go in strings or styles. solidView makes
-// a view of a component, which preview.append mounts as any other.
+// a view of a component, which preview.append mounts as any other: a
+// component without props is passed as it is, solidView(Stopwatch), and one
+// with props in a template, solidView(() => html\`<\${Text} value="hi" />\`).
 
 // A view of some text that changes. A component's props are reactive:
 // passed a function, a prop reads its value (props.value, not
@@ -3609,12 +3611,7 @@ const Stopwatch = () => {
   </div>\`
 }
 
-preview.append(
-  view.col(
-    view.title('Stopwatch'),
-    solidView(() => html\`<\${Stopwatch} />\`),
-  ),
-)
+preview.append(view.col(view.title('Stopwatch'), solidView(Stopwatch)))
 
 // Components can also share a signal made outside them: here, buttons that
 // change a count, and views of it. Changing the signal in one updates the
@@ -3632,12 +3629,7 @@ const Counter = () => html\`
   </div>
 \`
 
-preview.append(
-  view.col(
-    view.title('Counter'),
-    solidView(() => html\`<\${Counter} />\`),
-  ),
-)
+preview.append(view.col(view.title('Counter'), solidView(Counter)))
 `,"../../examples/src/views/03-solid-views-2.ts":`import type { Category } from '@cod-ts/categories'
 import { CatBipartiteGraph, CatGraph, CatHalfEdgeGraph, CatReflexiveGraph, CatSymmetricGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
@@ -3649,8 +3641,8 @@ import { createSignal, For, onSettled, Show } from 'solid-js'
 // Solid), and the other way round. solidElement(v) mounts a view in an
 // element of its own, to put in a template; in a reactive hole, it is made
 // again whenever the signals the hole reads change, and the last one is
-// unmounted (its signal aborted). solidView(() => component) is a view of
-// a component, which preview.append mounts as any other.
+// unmounted (its signal aborted). solidView(App) is a view of a component,
+// which preview.append mounts as any other.
 
 // The categories of graphs, one to choose.
 const categories: Readonly<Record<string, Category>> = {
@@ -3719,7 +3711,7 @@ const App = () => html\`
   </div>
 \`
 
-preview.append(solidView(() => App()))
+preview.append(solidView(App))
 `,"../../examples/src/views/04-solid-webgl.ts":`import { view } from '@cod-ts/views'
 import { solidView } from '@cod-ts/views/solid'
 import html from '@solidjs/html'
@@ -3842,12 +3834,7 @@ const Shapes = () => html\`
   </div>
 \`
 
-preview.append(
-  view.col(
-    view.title('A WebGL canvas, swapped as its shape changes'),
-    solidView(() => html\`<\${Shapes} />\`),
-  ),
-)
+preview.append(view.col(view.title('A WebGL canvas, swapped as its shape changes'), solidView(Shapes)))
 `,"../../examples/src/views/05-vega-views.ts":`import { type Copresheaf, copresheaf } from '@cod-ts/categories'
 import { CatGraph } from '@cod-ts/graphs'
 import { view } from '@cod-ts/views'
@@ -3948,12 +3935,7 @@ const followers = (v: string) => {
   return names.length === 0 ? 'no one' : names.join(', ')
 }
 
-preview.append(
-  view.col(
-    view.title('Followers, picked in the plot'),
-    solidView(() => html\`<\${Picker} />\`),
-  ),
-)
+preview.append(view.col(view.title('Followers, picked in the plot'), solidView(Picker)))
 `})).filter(([e])=>!e.endsWith(`.d.ts`)).map(([e,t])=>{let[n,r]=e.split(`/`).slice(-2);return{module:n,title:r.replace(/\.ts$/,``),code:t}}).sort((e,t)=>`${e.module}/${e.title}`.localeCompare(`${t.module}/${t.title}`)),i=`import type { CategoryProvenance } from './provenance';
 export type ArrowScopes = Readonly<Record<string, Readonly<Record<string, string>>>>;
 export type Path = readonly string[];
@@ -7141,12 +7123,15 @@ export { type Anchor, graphView, type GraphViewOptions, type GraphStyle, type La
 `,Ie=`import { type JSX } from '@solidjs/web';
 import type { View } from '../view';
 /**
- * A view of a Solid component: \`code\` (e.g. \`() => html\\\`<\${App} />\\\`\`, or
- * \`() => <App />\`) rendered in a container of its own in the view's parent,
- * and disposed of when the view's signal aborts, which runs its cleanups
- * (those \`onSettled\` returns, and \`onCleanup\`'s). The container takes no
- * part in layout (\`display: contents\`), and is on the page when Solid
- * renders in it, so \`onSettled\` can measure.
+ * A view of a Solid component: \`code\` rendered in a container of its own in
+ * the view's parent, and disposed of when the view's signal aborts, which
+ * runs its cleanups (those \`onSettled\` returns, and \`onCleanup\`'s). \`code\`
+ * is a component without props, as it is (\`solidView(App)\`, which Solid
+ * runs untracked, as it would \`<App />\`), or a function that makes one with
+ * its props (\`() => html\\\`<\${Text} value="hi" />\\\`\`, or
+ * \`() => <Text value="hi" />\`). The container takes no part in layout
+ * (\`display: contents\`), and is on the page when Solid renders in it, so
+ * \`onSettled\` can measure.
  */
 export declare function solidView(code: () => JSX.Element): View;
 /**
@@ -120673,4 +120658,4 @@ window.MathJax = {
 ${F(e)}
 <\/script>
 </body>
-</html>`}function Pc(e,t){let n=n=>{n.source===e.contentWindow&&n.data?.source===`playground`&&t(n.data)};return window.addEventListener(`message`,n),()=>window.removeEventListener(`message`,n)}var I=`cod-ts-playground-theme`,L=window.matchMedia(`(prefers-color-scheme: dark)`),R=new Set;function Fc(){try{let e=localStorage.getItem(I);return e===`light`||e===`dark`?e:void 0}catch{return}}var z=Fc();function B(){return z??(L.matches?`dark`:`light`)}function V(){let e=B();document.documentElement.dataset.theme=e;for(let t of R)t(e)}function Ic(e){z=e;try{localStorage.setItem(I,e)}catch{}V()}function H(e){R.add(e)}L.addEventListener(`change`,()=>{z===void 0&&V()}),V();var Lc=`modulepreload`,Rc=function(e,t){return new URL(e,t).href},zc={},Bc=function(e){return e.pathname.endsWith(`.css`)},Vc=function(e,t,n){if(t in e)return e[t];let r=n();if(!r){e[t]=void 0;return}let i=r.then(()=>{e[t]=void 0},n=>{throw e[t]=void 0,n});return e[t]=i,i},U=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=Rc(t,n);let r=s(t),i=Bc(r);return Vc(zc,r.href,()=>{if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let t=document.createElement(`link`);if(t.rel=i?`stylesheet`:Lc,i||(t.as=`script`),t.crossOrigin=``,t.href=r.href,a&&t.setAttribute(`nonce`,a),document.head.appendChild(t),i)return new Promise((e,n)=>{t.addEventListener(`load`,e),t.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${r}`)))})})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},W=e=>document.getElementById(e),G=W(`preview`),K=W(`log`),q=W(`diag`),J=W(`loading`),Y=W(`examples`),Hc=W(`auto`),Uc=W(`run`),X=W(`share`),Z=W(`theme`);function Q(){let e=`Switch to ${B()===`dark`?`light`:`dark`} theme`;Z.title=e,Z.setAttribute(`aria-label`,e)}Z.addEventListener(`click`,()=>Ic(B()===`dark`?`light`:`dark`)),H(Q),Q();function Wc(){let e=location.hash.match(/^#code=(.+)$/);if(!e)return null;try{return n.default.decompressFromEncodedURIComponent(e[1])||null}catch{return null}}function Gc(e){let t=new URL(location.href);return t.hash=`code=`+n.default.compressToEncodedURIComponent(e),t.href}function Kc(e,t){let n=document.createElement(`div`);n.className=`line ${e}`,n.textContent=t,K.appendChild(n),K.scrollTop=K.scrollHeight}Pc(G,e=>{e.type===`console`&&Kc(e.level,e.text)}),W(`clear`).addEventListener(`click`,()=>K.textContent=``);var $=new Map;r.forEach((e,t)=>{let n=$.get(e.module);n||(n=document.createElement(`optgroup`),n.label=e.module,$.set(e.module,n),Y.append(n)),n.append(new Option(e.title,String(t)))});async function qc(){let e=Wc()??r[0].code,t,n=(e,n=400)=>{window.clearTimeout(t),t=window.setTimeout(e,n)},{createEditor:i}=await U(async()=>{let{createEditor:e}=await import(`./editor-Betn6QuH.js`);return{createEditor:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url),a=i(W(`editor`),{code:e,onChange(){Hc.checked&&n(()=>void o())},onRun:()=>void o(),onDiagnostics(e){q.textContent=e===0?`No type errors`:`${e} type error${e===1?``:`s`}`,q.dataset.state=e===0?`ok`:`error`}});async function o(){K.textContent=``,G.srcdoc=Nc(await a.getJs())}Y.addEventListener(`change`,()=>{a.setCode(r[Number(Y.value)].code),o()}),Uc.addEventListener(`click`,()=>void o()),document.addEventListener(`keydown`,e=>{if(e.target instanceof Node&&W(`editor`).contains(e.target))return;let t=e.ctrlKey||e.metaKey;(e.key===`Enter`&&(e.shiftKey||t)||t&&e.key.toLowerCase()===`s`)&&(e.preventDefault(),o())}),X.addEventListener(`click`,async()=>{await navigator.clipboard.writeText(Gc(a.getCode())),X.classList.add(`copied`),X.title=`Link copied`,setTimeout(()=>{X.classList.remove(`copied`),X.title=`Copy link`},1500)}),J.remove(),o()}qc().catch(e=>{J.textContent=`Could not load the editor: `+(e instanceof Error?e.message:String(e))});export{M as i,B as n,H as r,U as t};
+</html>`}function Pc(e,t){let n=n=>{n.source===e.contentWindow&&n.data?.source===`playground`&&t(n.data)};return window.addEventListener(`message`,n),()=>window.removeEventListener(`message`,n)}var I=`cod-ts-playground-theme`,L=window.matchMedia(`(prefers-color-scheme: dark)`),R=new Set;function Fc(){try{let e=localStorage.getItem(I);return e===`light`||e===`dark`?e:void 0}catch{return}}var z=Fc();function B(){return z??(L.matches?`dark`:`light`)}function V(){let e=B();document.documentElement.dataset.theme=e;for(let t of R)t(e)}function Ic(e){z=e;try{localStorage.setItem(I,e)}catch{}V()}function H(e){R.add(e)}L.addEventListener(`change`,()=>{z===void 0&&V()}),V();var Lc=`modulepreload`,Rc=function(e,t){return new URL(e,t).href},zc={},Bc=function(e){return e.pathname.endsWith(`.css`)},Vc=function(e,t,n){if(t in e)return e[t];let r=n();if(!r){e[t]=void 0;return}let i=r.then(()=>{e[t]=void 0},n=>{throw e[t]=void 0,n});return e[t]=i,i},U=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=Rc(t,n);let r=s(t),i=Bc(r);return Vc(zc,r.href,()=>{if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let t=document.createElement(`link`);if(t.rel=i?`stylesheet`:Lc,i||(t.as=`script`),t.crossOrigin=``,t.href=r.href,a&&t.setAttribute(`nonce`,a),document.head.appendChild(t),i)return new Promise((e,n)=>{t.addEventListener(`load`,e),t.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${r}`)))})})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},W=e=>document.getElementById(e),G=W(`preview`),K=W(`log`),q=W(`diag`),J=W(`loading`),Y=W(`examples`),Hc=W(`auto`),Uc=W(`run`),X=W(`share`),Z=W(`theme`);function Q(){let e=`Switch to ${B()===`dark`?`light`:`dark`} theme`;Z.title=e,Z.setAttribute(`aria-label`,e)}Z.addEventListener(`click`,()=>Ic(B()===`dark`?`light`:`dark`)),H(Q),Q();function Wc(){let e=location.hash.match(/^#code=(.+)$/);if(!e)return null;try{return n.default.decompressFromEncodedURIComponent(e[1])||null}catch{return null}}function Gc(e){let t=new URL(location.href);return t.hash=`code=`+n.default.compressToEncodedURIComponent(e),t.href}function Kc(e,t){let n=document.createElement(`div`);n.className=`line ${e}`,n.textContent=t,K.appendChild(n),K.scrollTop=K.scrollHeight}Pc(G,e=>{e.type===`console`&&Kc(e.level,e.text)}),W(`clear`).addEventListener(`click`,()=>K.textContent=``);var $=new Map;r.forEach((e,t)=>{let n=$.get(e.module);n||(n=document.createElement(`optgroup`),n.label=e.module,$.set(e.module,n),Y.append(n)),n.append(new Option(e.title,String(t)))});async function qc(){let e=Wc()??r[0].code,t,n=(e,n=400)=>{window.clearTimeout(t),t=window.setTimeout(e,n)},{createEditor:i}=await U(async()=>{let{createEditor:e}=await import(`./editor-dBsxcdWJ.js`);return{createEditor:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url),a=i(W(`editor`),{code:e,onChange(){Hc.checked&&n(()=>void o())},onRun:()=>void o(),onDiagnostics(e){q.textContent=e===0?`No type errors`:`${e} type error${e===1?``:`s`}`,q.dataset.state=e===0?`ok`:`error`}});async function o(){K.textContent=``,G.srcdoc=Nc(await a.getJs())}Y.addEventListener(`change`,()=>{a.setCode(r[Number(Y.value)].code),o()}),Uc.addEventListener(`click`,()=>void o()),document.addEventListener(`keydown`,e=>{if(e.target instanceof Node&&W(`editor`).contains(e.target))return;let t=e.ctrlKey||e.metaKey;(e.key===`Enter`&&(e.shiftKey||t)||t&&e.key.toLowerCase()===`s`)&&(e.preventDefault(),o())}),X.addEventListener(`click`,async()=>{await navigator.clipboard.writeText(Gc(a.getCode())),X.classList.add(`copied`),X.title=`Link copied`,setTimeout(()=>{X.classList.remove(`copied`),X.title=`Copy link`},1500)}),J.remove(),o()}qc().catch(e=>{J.textContent=`Could not load the editor: `+(e instanceof Error?e.message:String(e))});export{M as i,B as n,H as r,U as t};
